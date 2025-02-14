@@ -1,0 +1,110 @@
+{
+  "?xml": {
+    "@version": "1.0",
+    "@encoding": "ISO-8859-1"
+  },
+  "PPMDResults": {
+    "@s": "PRDAPI3WFE8V3VB",
+    "@lst": "2/10/2022 5:28:19 AM",
+    "Results": {
+      "patientlist": {
+        "patient": {
+          "@id": "pat5984106",
+          "@name": "SHAH,AMI",
+          "@respparty": "resp6849741",
+          "@profile": "prof3",
+          "@insorder": "1",
+          "@chart": "2784",
+          "@finclasscode": "SP",
+          "episodelist": {
+            "episode": {
+              "@id": "eps5949680",
+              "@name": "STANDARD",
+              "@insorder": "1",
+              "@respparty": "resp6849741",
+              "@finclasscode": "SP",
+              "@refplan": "rplan6895536",
+              "@groupbymonth": "0",
+              "@plancreatedate": "",
+              "@ptoffsetdays": "",
+              "@stoffsetdays": "",
+              "@otoffsetdays": "",
+              "@maintenancedate": "",
+              "authorizationlist": null,
+              "extins": null
+            }
+          },
+          "refplanlist": {
+            "refplan": {
+              "@id": "rplan6895536",
+              "@refprov": "rprov387",
+              "@type": "I",
+              "@reason": "SELF-REFERRAL",
+              "@preauthreq": "0",
+              "@preauth": "",
+              "@begindate": "08/13/2021",
+              "@enddate": "",
+              "@maxvisits": "",
+              "@usedvisits": "0",
+              "@maxamount": "",
+              "@usedamount": "0.00",
+              "@sequence": "1",
+              "@ismain": "1"
+            }
+          },
+          "insplanlist": {
+            "insplan": {
+              "@id": "ins3700909",
+              "@carrier": "car1",
+              "@begindate": "09/01/2021",
+              "@subscriber": "resp6850027",
+              "@sequence": "1",
+              "@finclasscode": "SP"
+            }
+          }
+        }
+      },
+      "defaults": {
+        "finclass": {
+          "@id": "fclass12",
+          "@code": "SP",
+          "@name": "SELF PAY"
+        }
+      },
+      "carrierlist": {
+        "carrier": {
+          "@id": "car1",
+          "@name": " ",
+          "@code": "     "
+        }
+      },
+      "resppartylist": {
+        "respparty": [
+          {
+            "@id": "resp6849741",
+            "@name": "SHAH,AMI",
+            "@isinvoiceentity": "0"
+          },
+          {
+            "@id": "resp6850027",
+            "@name": "",
+            "@isinvoiceentity": "0"
+          }
+        ]
+      },
+      "finclasslist": {
+        "finclass": {
+          "@id": "fclass12",
+          "@code": "SP",
+          "@name": "SELF PAY"
+        }
+      },
+      "refproviderlist": {
+        "refprovider": {
+          "@id": "rprov387",
+          "@name": "JONES,CAMERON"
+        }
+      }
+    }
+  }
+}

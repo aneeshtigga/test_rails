@@ -1,0 +1,43 @@
+{
+  "?xml": {
+    "@version": "1.0",
+    "@encoding": "ISO-8859-1"
+  },
+  "PPMDResults": {
+    "@s": "PRDAPI1WFETUCXC",
+    "@lst": "3/18/2022 3:24:06 AM",
+    "Results": {
+      "resppartylist": {
+        "@itemcount": "1",
+        "@page": "1",
+        "@pagecount": "1",
+        "@itemsfrom": "1",
+        "@itemsto": "1",
+        "respparty": {
+          "@id": "resp6850427",
+          "@name": "POLICE,TRAFFIC",
+          "@acctnum": "6850427",
+          "@ssn": "            ",
+          "@isinvoiceentity": "0",
+          "@dob": "01/04/1993",
+          "@email": "POLICE@EMAIL.COM",
+          "@gender": "F",
+          "address": {
+            "@zipid": "1",
+            "@zip": "",
+            "@city": "",
+            "@state": "",
+            "@address1": "",
+            "@address2": "",
+            "@countrycode": "",
+            "@areacode": ""
+          },
+          "contactinfo": {
+            "@homephone": ""
+          }
+        }
+      }
+    },
+    "Error": null
+  }
+}

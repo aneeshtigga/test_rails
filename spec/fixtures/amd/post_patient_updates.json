@@ -1,0 +1,34 @@
+{
+  "?xml": {
+    "@version": "1.0",
+    "@encoding": "ISO-8859-1"
+  },
+  "PPMDResults": {
+    "@s": "PRDAPI2WFE82WDD",
+    "@lst": "10/28/2021 2:42:45 AM",
+    "Results": {
+      "@success": "0",
+      "usercontext": {
+        "@webserver": "https://provapi.advancedmd.com/processrequest/api-102/LIFESTANCE",
+        "@reportingServerURL": "https://reportingservices-100.advancedmd.com/rs/reportrequest.aspx",
+        "@helpurl": "https://ow2-help-01-prd.advancedmd.com/help/",
+        "@username": "LS-API"
+      }
+    },
+    "Error": {
+      "Fault": {
+        "faultcode": "Client",
+        "faultstring": "Client Error",
+        "detail": {
+          "code": "-2147220476",
+          "description": "The Office Key 995456 must be redirected to https://provapi.advancedmd.com/processrequest/api-102/LIFESTANCE. When logging in to AdvancedMD, if no security token (<usercontext> text) is returned, then you must redirect your login to the server indicated in the \"webserver\" attribute of the usercontext element.",
+          "class": "AdvancedMD.Security.Login",
+          "method": "LoginUser",
+          "linenum": "0",
+          "source": "AdvancedMD.Security.Login",
+          "extrainfo": null
+        }
+      }
+    }
+  }
+}

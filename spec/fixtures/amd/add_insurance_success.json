@@ -1,0 +1,19 @@
+{
+  "?xml": {
+    "@version": "1.0",
+    "@encoding": "ISO-8859-1"
+  },
+  "PPMDResults": {
+    "@s": "PRDAPI1WFECSSFR",
+    "@lst": "7/13/2021 2:35:43 AM",
+    "Results": {
+      "@success": "1",
+      "patient": {
+        "@id": "ins3700778",
+        "@sequence": "13",
+        "@insnotefid": "3910315"
+      }
+    },
+    "Error": null
+  }
+}

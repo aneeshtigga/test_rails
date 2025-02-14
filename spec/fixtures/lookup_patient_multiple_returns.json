@@ -1,0 +1,43 @@
+{
+  "?xml": {
+    "@version": "1.0",
+    "@encoding": "ISO-8859-1"
+  },
+  "PPMDResults": {
+    "@s": "PRDAPI2WFE82WDD",
+    "@lst": "8/31/2021 10:37:28 AM",
+    "Results": {
+      "patientlist": {
+        "@itemcount": "1",
+        "@page": "1",
+        "@pagecount": "1",
+        "@itemsfrom": "1",
+        "@itemsto": "1",
+        "patient": {
+          "@id": "pat54",
+          "@name": "BIANCHI,BRENDA",
+          "@chart": "0855",
+          "@ssn": "XXX-XX-6196",
+          "@hipaarelationship": "18",
+          "@email": "BRENDA.BIANCHI@EXAMPLE.COM",
+          "@gender": "F",
+          "@dob": "11/03/1964",
+          "address": {
+            "@zipid": "1",
+            "@zip": "36605",
+            "@city": "MOBILE",
+            "@state": "AL",
+            "@address1": "",
+            "@address2": "341 B HOOK RD",
+            "@countrycode": "USA",
+            "@areacode": "520"
+          },
+          "contactinfo": {
+            "@homephone": "(334) 661-0551"
+          }
+        }
+      }
+    },
+    "Error": null
+  }
+}

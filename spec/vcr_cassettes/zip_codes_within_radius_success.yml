@@ -1,0 +1,122 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.zipcodeapi.com/rest/ChDimMN4QwCcX3m6by3KzipvDfS27odFD19M1G7Iu2fxbQkjbKvbM0qSD7oz4o5r/radius.json/27041/60/mile
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (darwin20 x86_64) ruby/3.0.1p64
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - www.zipcodeapi.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 10 Jan 2022 19:37:18 GMT
+      Server:
+      - Apache/2.4.48 () OpenSSL/1.0.2k-fips
+      X-Powered-By:
+      - PHP/7.4.21
+      Upgrade:
+      - h2,h2c
+      Connection:
+      - Upgrade
+      Vary:
+      - Accept-Encoding
+      Content-Length:
+      - '3592'
+      Content-Type:
+      - application/json
+    body:
+      encoding: ASCII-8BIT
+      string: '{"zip_codes":[{"zip_code":"28023","distance":59.596,"city":"China Grove","state":"NC"},{"zip_code":"28041","distance":58.424,"city":"Faith","state":"NC"},{"zip_code":"28072","distance":56.098,"city":"Granite
+        Quarry","state":"NC"},{"zip_code":"28146","distance":55.939,"city":"Salisbury","state":"NC"},{"zip_code":"28125","distance":54.246,"city":"Mount
+        Ulla","state":"NC"},{"zip_code":"28145","distance":52.879,"city":"Salisbury","state":"NC"},{"zip_code":"28039","distance":51.65,"city":"East
+        Spencer","state":"NC"},{"zip_code":"28166","distance":55.698,"city":"Troutman","state":"NC"},{"zip_code":"28147","distance":51.593,"city":"Salisbury","state":"NC"},{"zip_code":"28159","distance":50.569,"city":"Spencer","state":"NC"},{"zip_code":"28144","distance":49.666,"city":"Salisbury","state":"NC"},{"zip_code":"28010","distance":53.9,"city":"Barium
+        Springs","state":"NC"},{"zip_code":"28677","distance":53.433,"city":"Statesville","state":"NC"},{"zip_code":"27292","distance":49.967,"city":"Lexington","state":"NC"},{"zip_code":"27013","distance":48.109,"city":"Cleveland","state":"NC"},{"zip_code":"27299","distance":46.839,"city":"Linwood","state":"NC"},{"zip_code":"28687","distance":49.676,"city":"Statesville","state":"NC"},{"zip_code":"27054","distance":44.15,"city":"Woodleaf","state":"NC"},{"zip_code":"27293","distance":45.185,"city":"Lexington","state":"NC"},{"zip_code":"27294","distance":45.185,"city":"Lexington","state":"NC"},{"zip_code":"27350","distance":54.188,"city":"Sophia","state":"NC"},{"zip_code":"27370","distance":51.182,"city":"Trinity","state":"NC"},{"zip_code":"27351","distance":44.368,"city":"Southmont","state":"NC"},{"zip_code":"27014","distance":42.679,"city":"Cooleemee","state":"NC"},{"zip_code":"28678","distance":52.569,"city":"Stony
+        Point","state":"NC"},{"zip_code":"28699","distance":49.539,"city":"Scotts","state":"NC"},{"zip_code":"27317","distance":55.596,"city":"Randleman","state":"NC"},{"zip_code":"27360","distance":44.618,"city":"Thomasville","state":"NC"},{"zip_code":"28625","distance":44.473,"city":"Statesville","state":"NC"},{"zip_code":"27295","distance":39.501,"city":"Lexington","state":"NC"},{"zip_code":"27361","distance":44.283,"city":"Thomasville","state":"NC"},{"zip_code":"27233","distance":57.108,"city":"Climax","state":"NC"},{"zip_code":"28688","distance":40.271,"city":"Turnersburg","state":"NC"},{"zip_code":"27374","distance":37.98,"city":"Welcome","state":"NC"},{"zip_code":"27263","distance":46.94,"city":"High
+        Point","state":"NC"},{"zip_code":"28681","distance":53.754,"city":"Taylorsville","state":"NC"},{"zip_code":"27028","distance":35.102,"city":"Mocksville","state":"NC"},{"zip_code":"27313","distance":53.116,"city":"Pleasant
+        Garden","state":"NC"},{"zip_code":"27006","distance":33.7,"city":"Advance","state":"NC"},{"zip_code":"28636","distance":46.456,"city":"Hiddenite","state":"NC"},{"zip_code":"27283","distance":57.695,"city":"Julian","state":"NC"},{"zip_code":"27260","distance":42.829,"city":"High
+        Point","state":"NC"},{"zip_code":"27262","distance":40.465,"city":"High Point","state":"NC"},{"zip_code":"28660","distance":37.666,"city":"Olin","state":"NC"},{"zip_code":"28634","distance":34.695,"city":"Harmony","state":"NC"},{"zip_code":"27261","distance":41.418,"city":"High
+        Point","state":"NC"},{"zip_code":"27264","distance":41.418,"city":"High Point","state":"NC"},{"zip_code":"27282","distance":43.367,"city":"Jamestown","state":"NC"},{"zip_code":"27406","distance":49.833,"city":"Greensboro","state":"NC"},{"zip_code":"27012","distance":29.833,"city":"Clemmons","state":"NC"},{"zip_code":"27407","distance":44.513,"city":"Greensboro","state":"NC"},{"zip_code":"27373","distance":34.61,"city":"Wallburg","state":"NC"},{"zip_code":"27265","distance":38.238,"city":"High
+        Point","state":"NC"},{"zip_code":"27107","distance":33.357,"city":"Winston
+        Salem","state":"NC"},{"zip_code":"27127","distance":30.249,"city":"Winston
+        Salem","state":"NC"},{"zip_code":"28689","distance":36.89,"city":"Union Grove","state":"NC"},{"zip_code":"27377","distance":55.661,"city":"Whitsett","state":"NC"},{"zip_code":"28606","distance":53.142,"city":"Boomer","state":"NC"},{"zip_code":"27103","distance":26.997,"city":"Winston
+        Salem","state":"NC"},{"zip_code":"28654","distance":45.219,"city":"Moravian
+        Falls","state":"NC"},{"zip_code":"27403","distance":44.506,"city":"Greensboro","state":"NC"},{"zip_code":"27401","distance":47.184,"city":"Greensboro","state":"NC"},{"zip_code":"27497","distance":38.722,"city":"Greensboro","state":"NC"},{"zip_code":"27402","distance":44.564,"city":"Greensboro","state":"NC"},{"zip_code":"27404","distance":44.564,"city":"Greensboro","state":"NC"},{"zip_code":"27411","distance":44.564,"city":"Greensboro","state":"NC"},{"zip_code":"27412","distance":44.564,"city":"Greensboro","state":"NC"},{"zip_code":"27413","distance":44.564,"city":"Greensboro","state":"NC"},{"zip_code":"27415","distance":44.564,"city":"Greensboro","state":"NC"},{"zip_code":"27416","distance":44.564,"city":"Greensboro","state":"NC"},{"zip_code":"27417","distance":44.564,"city":"Greensboro","state":"NC"},{"zip_code":"27419","distance":44.564,"city":"Greensboro","state":"NC"},{"zip_code":"27420","distance":44.564,"city":"Greensboro","state":"NC"},{"zip_code":"27425","distance":44.564,"city":"Greensboro","state":"NC"},{"zip_code":"27427","distance":44.564,"city":"Greensboro","state":"NC"},{"zip_code":"27429","distance":44.564,"city":"Greensboro","state":"NC"},{"zip_code":"27435","distance":44.564,"city":"Greensboro","state":"NC"},{"zip_code":"27438","distance":44.564,"city":"Greensboro","state":"NC"},{"zip_code":"27495","distance":44.564,"city":"Greensboro","state":"NC"},{"zip_code":"27498","distance":44.564,"city":"Greensboro","state":"NC"},{"zip_code":"27499","distance":44.564,"city":"Greensboro","state":"NC"},{"zip_code":"27395","distance":45.959,"city":"Greensboro","state":"NC"},{"zip_code":"27480","distance":45.959,"city":"Greensboro","state":"NC"},{"zip_code":"27110","distance":27.438,"city":"Winston
+        Salem","state":"NC"},{"zip_code":"27235","distance":35.203,"city":"Colfax","state":"NC"},{"zip_code":"27023","distance":23.243,"city":"Lewisville","state":"NC"},{"zip_code":"27104","distance":24.662,"city":"Winston
+        Salem","state":"NC"},{"zip_code":"27102","distance":26.367,"city":"Winston
+        Salem","state":"NC"},{"zip_code":"27108","distance":26.367,"city":"Winston
+        Salem","state":"NC"},{"zip_code":"27111","distance":26.367,"city":"Winston
+        Salem","state":"NC"},{"zip_code":"27113","distance":26.367,"city":"Winston
+        Salem","state":"NC"},{"zip_code":"27114","distance":26.367,"city":"Winston
+        Salem","state":"NC"},{"zip_code":"27115","distance":26.367,"city":"Winston
+        Salem","state":"NC"},{"zip_code":"27116","distance":26.367,"city":"Winston
+        Salem","state":"NC"},{"zip_code":"27117","distance":26.367,"city":"Winston
+        Salem","state":"NC"},{"zip_code":"27120","distance":26.367,"city":"Winston
+        Salem","state":"NC"},{"zip_code":"27130","distance":26.367,"city":"Winston
+        Salem","state":"NC"},{"zip_code":"27150","distance":26.367,"city":"Winston
+        Salem","state":"NC"},{"zip_code":"27152","distance":26.367,"city":"Winston
+        Salem","state":"NC"},{"zip_code":"27155","distance":26.367,"city":"Winston
+        Salem","state":"NC"},{"zip_code":"27157","distance":26.367,"city":"Winston
+        Salem","state":"NC"},{"zip_code":"27198","distance":26.367,"city":"Winston
+        Salem","state":"NC"},{"zip_code":"27199","distance":26.367,"city":"Winston
+        Salem","state":"NC"},{"zip_code":"27020","distance":28.419,"city":"Hamptonville","state":"NC"},{"zip_code":"27408","distance":43.621,"city":"Greensboro","state":"NC"},{"zip_code":"27409","distance":37.745,"city":"Greensboro","state":"NC"},{"zip_code":"27151","distance":25.782,"city":"Winston-salem","state":"NC"},{"zip_code":"27285","distance":31.851,"city":"Kernersville","state":"NC"},{"zip_code":"27101","distance":26.976,"city":"Winston
+        Salem","state":"NC"},{"zip_code":"27301","distance":50.584,"city":"Mc Leansville","state":"NC"},{"zip_code":"27055","distance":22.963,"city":"Yadkinville","state":"NC"},{"zip_code":"27405","distance":46.99,"city":"Greensboro","state":"NC"},{"zip_code":"27284","distance":31.095,"city":"Kernersville","state":"NC"},{"zip_code":"27410","distance":39.285,"city":"Greensboro","state":"NC"},{"zip_code":"28624","distance":55.414,"city":"Ferguson","state":"NC"},{"zip_code":"27109","distance":23.273,"city":"Winston
+        Salem","state":"NC"},{"zip_code":"28697","distance":42.811,"city":"Wilkesboro","state":"NC"},{"zip_code":"27010","distance":22.303,"city":"Bethania","state":"NC"},{"zip_code":"27156","distance":24.71,"city":"Winston-salem","state":"NC"},{"zip_code":"27342","distance":54.761,"city":"Sedalia","state":"NC"},{"zip_code":"27106","distance":21.491,"city":"Winston
+        Salem","state":"NC"},{"zip_code":"28674","distance":41.02,"city":"North Wilkesboro","state":"NC"},{"zip_code":"27249","distance":53.784,"city":"Gibsonville","state":"NC"},{"zip_code":"28656","distance":40.703,"city":"North
+        Wilkesboro","state":"NC"},{"zip_code":"27105","distance":22.962,"city":"Winston
+        Salem","state":"NC"},{"zip_code":"27040","distance":18.451,"city":"Pfafftown","state":"NC"},{"zip_code":"27202","distance":57.733,"city":"Altamahaw","state":"NC"},{"zip_code":"27310","distance":32.574,"city":"Oak
+        Ridge","state":"NC"},{"zip_code":"27455","distance":40.752,"city":"Greensboro","state":"NC"},{"zip_code":"28670","distance":28.547,"city":"Ronda","state":"NC"},{"zip_code":"27051","distance":24.434,"city":"Walkertown","state":"NC"},{"zip_code":"27018","distance":15.858,"city":"East
+        Bend","state":"NC"},{"zip_code":"27214","distance":47.912,"city":"Browns Summit","state":"NC"},{"zip_code":"28618","distance":59.25,"city":"Deep
+        Gap","state":"NC"},{"zip_code":"28665","distance":51.633,"city":"Purlear","state":"NC"},{"zip_code":"27244","distance":57.579,"city":"Elon","state":"NC"},{"zip_code":"28659","distance":39.518,"city":"North
+        Wilkesboro","state":"NC"},{"zip_code":"27011","distance":18.598,"city":"Boonville","state":"NC"},{"zip_code":"28642","distance":23.404,"city":"Jonesville","state":"NC"},{"zip_code":"28669","distance":31.256,"city":"Roaring
+        River","state":"NC"},{"zip_code":"27050","distance":14.406,"city":"Tobaccoville","state":"NC"},{"zip_code":"27358","distance":36.445,"city":"Summerfield","state":"NC"},{"zip_code":"27094","distance":17.41,"city":"Rural
+        Hall","state":"NC"},{"zip_code":"27098","distance":17.41,"city":"Rural Hall","state":"NC"},{"zip_code":"27099","distance":17.41,"city":"Rural
+        Hall","state":"NC"},{"zip_code":"27009","distance":26.409,"city":"Belews Creek","state":"NC"},{"zip_code":"27045","distance":16.952,"city":"Rural
+        Hall","state":"NC"},{"zip_code":"27357","distance":30.779,"city":"Stokesdale","state":"NC"},{"zip_code":"28621","distance":25.934,"city":"Elkin","state":"NC"},{"zip_code":"27019","distance":16.871,"city":"Germanton","state":"NC"},{"zip_code":"28626","distance":58.05,"city":"Fleetwood","state":"NC"},{"zip_code":"28635","distance":36.495,"city":"Hays","state":"NC"},{"zip_code":"28651","distance":46.447,"city":"Millers
+        Creek","state":"NC"},{"zip_code":"27047","distance":8.931,"city":"Siloam","state":"NC"},{"zip_code":"27021","distance":11.055,"city":"King","state":"NC"},{"zip_code":"27052","distance":20.085,"city":"Walnut
+        Cove","state":"NC"},{"zip_code":"28676","distance":21.456,"city":"State Road","state":"NC"},{"zip_code":"28649","distance":40.787,"city":"Mc
+        Grady","state":"NC"},{"zip_code":"27043","distance":6.394,"city":"Pinnacle","state":"NC"},{"zip_code":"27323","distance":45.86,"city":"Reidsville","state":"NC"},{"zip_code":"28629","distance":49.145,"city":"Glendale
+        Springs","state":"NC"},{"zip_code":"27320","distance":46.509,"city":"Reidsville","state":"NC"},{"zip_code":"27321","distance":46.312,"city":"Reidsville","state":"NC"},{"zip_code":"27322","distance":46.312,"city":"Reidsville","state":"NC"},{"zip_code":"27042","distance":24.077,"city":"Pine
+        Hall","state":"NC"},{"zip_code":"28685","distance":32.145,"city":"Traphill","state":"NC"},{"zip_code":"28694","distance":54.705,"city":"West
+        Jefferson","state":"NC"},{"zip_code":"27025","distance":28.981,"city":"Madison","state":"NC"},{"zip_code":"27017","distance":15.239,"city":"Dobson","state":"NC"},{"zip_code":"27007","distance":6.123,"city":"Ararat","state":"NC"},{"zip_code":"28683","distance":23.668,"city":"Thurmond","state":"NC"},{"zip_code":"27375","distance":40.498,"city":"Wentworth","state":"NC"},{"zip_code":"28640","distance":50.736,"city":"Jefferson","state":"NC"},{"zip_code":"28668","distance":27.999,"city":"Roaring
+        Gap","state":"NC"},{"zip_code":"27041","distance":0,"city":"Pilot Mountain","state":"NC"},{"zip_code":"28644","distance":43.957,"city":"Laurel
+        Springs","state":"NC"},{"zip_code":"27031","distance":7.996,"city":"White
+        Plains","state":"NC"},{"zip_code":"27027","distance":27.733,"city":"Mayodan","state":"NC"},{"zip_code":"27016","distance":15.016,"city":"Danbury","state":"NC"},{"zip_code":"28627","distance":28.802,"city":"Glade
+        Valley","state":"NC"},{"zip_code":"27326","distance":51.786,"city":"Ruffin","state":"NC"},{"zip_code":"28693","distance":59.634,"city":"Warrensville","state":"NC"},{"zip_code":"27053","distance":8.475,"city":"Westfield","state":"NC"},{"zip_code":"27311","distance":56.517,"city":"Pelham","state":"NC"},{"zip_code":"28617","distance":48.741,"city":"Crumpler","state":"NC"},{"zip_code":"27048","distance":31.897,"city":"Stoneville","state":"NC"},{"zip_code":"28672","distance":46.82,"city":"Scottville","state":"NC"},{"zip_code":"27030","distance":9.04,"city":"Mount
+        Airy","state":"NC"},{"zip_code":"27049","distance":9.103,"city":"Toast","state":"NC"},{"zip_code":"27288","distance":41.28,"city":"Eden","state":"NC"},{"zip_code":"27289","distance":41.837,"city":"Eden","state":"NC"},{"zip_code":"27046","distance":23.346,"city":"Sandy
+        Ridge","state":"NC"},{"zip_code":"28675","distance":36.376,"city":"Sparta","state":"NC"},{"zip_code":"27022","distance":16.241,"city":"Lawsonville","state":"NC"},{"zip_code":"27024","distance":20.687,"city":"Lowgap","state":"NC"},{"zip_code":"28643","distance":58.976,"city":"Lansing","state":"NC"},{"zip_code":"28663","distance":46.269,"city":"Piney
+        Creek","state":"NC"},{"zip_code":"28623","distance":27.937,"city":"Ennice","state":"NC"},{"zip_code":"28631","distance":51.966,"city":"Grassy
+        Creek","state":"NC"},{"zip_code":"24069","distance":48.061,"city":"Cascade","state":"VA"},{"zip_code":"24351","distance":18.751,"city":"Lambsburg","state":"VA"},{"zip_code":"24148","distance":35.502,"city":"Ridgeway","state":"VA"},{"zip_code":"24165","distance":26.58,"city":"Spencer","state":"VA"},{"zip_code":"24541","distance":55.167,"city":"Danville","state":"VA"},{"zip_code":"24317","distance":15.875,"city":"Cana","state":"VA"},{"zip_code":"24076","distance":12.967,"city":"Claudville","state":"VA"},{"zip_code":"24053","distance":12.835,"city":"Ararat","state":"VA"},{"zip_code":"24363","distance":52.653,"city":"Mouth
+        Of Wilson","state":"VA"},{"zip_code":"24082","distance":24.593,"city":"Critz","state":"VA"},{"zip_code":"24333","distance":28.934,"city":"Galax","state":"VA"},{"zip_code":"24328","distance":19.286,"city":"Fancy
+        Gap","state":"VA"},{"zip_code":"24348","distance":43.331,"city":"Independence","state":"VA"},{"zip_code":"24054","distance":46.561,"city":"Axton","state":"VA"},{"zip_code":"24133","distance":25.865,"city":"Patrick
+        Springs","state":"VA"},{"zip_code":"24113","distance":39.017,"city":"Martinsville","state":"VA"},{"zip_code":"24114","distance":39.017,"city":"Martinsville","state":"VA"},{"zip_code":"24115","distance":39.017,"city":"Martinsville","state":"VA"},{"zip_code":"24378","distance":56.033,"city":"Troutdale","state":"VA"},{"zip_code":"24120","distance":18.849,"city":"Meadows
+        Of Dan","state":"VA"},{"zip_code":"24171","distance":23.877,"city":"Stuart","state":"VA"},{"zip_code":"24549","distance":57.921,"city":"Dry
+        Fork","state":"VA"},{"zip_code":"24089","distance":34.667,"city":"Fieldale","state":"VA"},{"zip_code":"24352","distance":19.752,"city":"Laurel
+        Fork","state":"VA"},{"zip_code":"24177","distance":21.069,"city":"Vesta","state":"VA"},{"zip_code":"24078","distance":38.496,"city":"Collinsville","state":"VA"},{"zip_code":"24112","distance":41.004,"city":"Martinsville","state":"VA"},{"zip_code":"24330","distance":36.155,"city":"Fries","state":"VA"},{"zip_code":"24326","distance":44.911,"city":"Elk
+        Creek","state":"VA"},{"zip_code":"24381","distance":28.774,"city":"Woodlawn","state":"VA"},{"zip_code":"24168","distance":36.848,"city":"Stanleytown","state":"VA"},{"zip_code":"24055","distance":35.514,"city":"Bassett","state":"VA"},{"zip_code":"24375","distance":55.26,"city":"Sugar
+        Grove","state":"VA"},{"zip_code":"24343","distance":26.382,"city":"Hillsville","state":"VA"},{"zip_code":"24374","distance":47.599,"city":"Speedwell","state":"VA"},{"zip_code":"24325","distance":26.344,"city":"Dugspur","state":"VA"},{"zip_code":"24322","distance":43.279,"city":"Cripple
+        Creek","state":"VA"},{"zip_code":"24530","distance":54.892,"city":"Callands","state":"VA"},{"zip_code":"24185","distance":29.307,"city":"Woolwine","state":"VA"},{"zip_code":"24350","distance":38.854,"city":"Ivanhoe","state":"VA"},{"zip_code":"24312","distance":35.831,"city":"Austinville","state":"VA"},{"zip_code":"24102","distance":39.529,"city":"Henry","state":"VA"},{"zip_code":"24380","distance":30.038,"city":"Willis","state":"VA"},{"zip_code":"24323","distance":49.295,"city":"Crockett","state":"VA"},{"zip_code":"24088","distance":39.208,"city":"Ferrum","state":"VA"},{"zip_code":"24368","distance":55.359,"city":"Rural
+        Retreat","state":"VA"},{"zip_code":"24313","distance":38.193,"city":"Barren
+        Springs","state":"VA"},{"zip_code":"24105","distance":34.215,"city":"Indian
+        Valley","state":"VA"},{"zip_code":"24091","distance":35.27,"city":"Floyd","state":"VA"},{"zip_code":"24137","distance":57.601,"city":"Penhook","state":"VA"},{"zip_code":"24360","distance":41.817,"city":"Max
+        Meadows","state":"VA"},{"zip_code":"24151","distance":50.23,"city":"Rocky
+        Mount","state":"VA"},{"zip_code":"24382","distance":50.23,"city":"Wytheville","state":"VA"},{"zip_code":"24347","distance":38.119,"city":"Hiwassee","state":"VA"},{"zip_code":"24324","distance":41.169,"city":"Draper","state":"VA"},{"zip_code":"24176","distance":59.538,"city":"Union
+        Hall","state":"VA"},{"zip_code":"24146","distance":55.888,"city":"Redwood","state":"VA"},{"zip_code":"24092","distance":57.231,"city":"Glade
+        Hill","state":"VA"},{"zip_code":"24149","distance":41.101,"city":"Riner","state":"VA"},{"zip_code":"24067","distance":48.13,"city":"Callaway","state":"VA"},{"zip_code":"24126","distance":43.791,"city":"Newbern","state":"VA"},{"zip_code":"24072","distance":44.723,"city":"Check","state":"VA"},{"zip_code":"24138","distance":43.829,"city":"Pilot","state":"VA"},{"zip_code":"24079","distance":47.221,"city":"Copper
+        Hill","state":"VA"},{"zip_code":"24301","distance":47.859,"city":"Pulaski","state":"VA"},{"zip_code":"24141","distance":46.571,"city":"Radford","state":"VA"},{"zip_code":"24065","distance":54.952,"city":"Boones
+        Mill","state":"VA"},{"zip_code":"24129","distance":48.217,"city":"New River","state":"VA"},{"zip_code":"24143","distance":48.124,"city":"Radford","state":"VA"},{"zip_code":"24084","distance":52.451,"city":"Dublin","state":"VA"},{"zip_code":"24162","distance":50.401,"city":"Shawsville","state":"VA"},{"zip_code":"24073","distance":48.977,"city":"Christiansburg","state":"VA"},{"zip_code":"24315","distance":58.337,"city":"Bland","state":"VA"},{"zip_code":"24142","distance":49.361,"city":"Radford","state":"VA"},{"zip_code":"24068","distance":49.619,"city":"Christiansburg","state":"VA"},{"zip_code":"24059","distance":54.71,"city":"Bent
+        Mountain","state":"VA"},{"zip_code":"24058","distance":52.447,"city":"Belspring","state":"VA"},{"zip_code":"24132","distance":54.621,"city":"Parrott","state":"VA"},{"zip_code":"24018","distance":59.753,"city":"Roanoke","state":"VA"},{"zip_code":"24087","distance":55.973,"city":"Elliston","state":"VA"},{"zip_code":"24111","distance":56.013,"city":"Mc
+        Coy","state":"VA"},{"zip_code":"24061","distance":55.726,"city":"Blacksburg","state":"VA"},{"zip_code":"24062","distance":55.726,"city":"Blacksburg","state":"VA"},{"zip_code":"24063","distance":55.726,"city":"Blacksburg","state":"VA"},{"zip_code":"24134","distance":59.057,"city":"Pearisburg","state":"VA"},{"zip_code":"24167","distance":58.827,"city":"Staffordsville","state":"VA"},{"zip_code":"24060","distance":57.474,"city":"Blacksburg","state":"VA"},{"zip_code":"24086","distance":59.296,"city":"Eggleston","state":"VA"}]}'
+  recorded_at: Mon, 10 Jan 2022 19:37:18 GMT
+recorded_with: VCR 6.0.0

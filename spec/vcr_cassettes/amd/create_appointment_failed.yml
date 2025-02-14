@@ -1,0 +1,53 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api-101.advancedmd.com/API/scheduler/Appointments/
+    body:
+      encoding: UTF-8
+      string: '{"patientid":5983949,"columnid":17,"startdatetime":"2021-07-27T16:00:00.0Z","duration":30,"color":"string","profileid":9,"episodeid":1,"type":[{"id":1}]}'
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - rest-client/2.1.0 (darwin20 x86_64) ruby/3.0.1p64
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '153'
+      Cookie:
+      - token=995456Sa3vPWZ7ri2p2TxlPXFEgC4RiL/mUPuQ1lvSvublDq5jjLhEMh8TB+z76K75Sz32knFuev5kEqBJLNOjipSynHzfOogvOXvug0ucP7LGB1t6uXYrUzQc+a16b3ssmlQcf6udwwKk1XgKWgir4WP7pmUpHPZchtNzIc4ppK+wJM2vPqIUU3hmxqA33LHxnGZY
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - api-101.advancedmd.com
+  response:
+    status:
+      code: 409
+      message: Conflict
+    headers:
+      Date:
+      - Mon, 26 Jul 2021 22:19:15 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '96'
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - no-store,no-cache
+      Pragma:
+      - no-cache
+      Vary:
+      - none,Accept-Encoding
+      Server:
+      - Microsoft-IIS/10.0
+      Amds-Lst:
+      - 07/26/2021 15:19:15
+      Permission-Granted:
+      - MAKE APPOINTMENTS
+    body:
+      encoding: ASCII-8BIT
+      string: '{"title":"Requested appointment overlaps with existing appointment.","errorcode":4101}'
+  recorded_at: Mon, 26 Jul 2021 22:19:15 GMT
+recorded_with: VCR 6.0.0

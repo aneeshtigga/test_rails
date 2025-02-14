@@ -1,0 +1,185 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://partnerlogin.advancedmd.com/practicemanager/xmlrpc/processrequest.aspx
+    body:
+      encoding: UTF-8
+      string: '{"ppmdmsg":{"@action":"login","@class":"login","@username":"LS-API","@psw":"lifestance2021!","@officecode":995456,"@appname":"LIFESTANCE"}}'
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/3.0.1p64
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '139'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - partnerlogin.advancedmd.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 28 Oct 2021 09:42:45 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '971'
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - no-cache,no-store,must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - Thu, 28 Oct 2021 09:41:45 GMT
+      Server:
+      - Microsoft-IIS/10.0
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET,PUT,POST,DELETE,OPTIONS
+      Access-Control-Allow-Headers:
+      - Origin, Depth, User-Agent, X-File-Size, X-Requested-With, If-Modified-Since,
+        X-File-Name, Cache-ControlOrigin, Content-Type, Accept, Authorization, X-ProofSignature,
+        InternalRequestType
+    body:
+      encoding: UTF-8
+      string: '{"?xml":{"@version":"1.0","@encoding":"ISO-8859-1"},"PPMDResults":{"@s":"PRDAPI2WFE82WDD","@lst":"10/28/2021
+        2:42:45 AM","Results":{"@success":"0","usercontext":{"@webserver":"https://provapi.advancedmd.com/processrequest/api-102/LIFESTANCE","@reportingServerURL":"https://reportingservices-100.advancedmd.com/rs/reportrequest.aspx","@helpurl":"https://ow2-help-01-prd.advancedmd.com/help/","@username":"LS-API"}},"Error":{"Fault":{"faultcode":"Client","faultstring":"Client
+        Error","detail":{"code":"-2147220476","description":"The Office Key 995456
+        must be redirected to https://provapi.advancedmd.com/processrequest/api-102/LIFESTANCE.
+        When logging in to AdvancedMD, if no security token (<usercontext> text) is
+        returned, then you must redirect your login to the server indicated in the
+        \"webserver\" attribute of the usercontext element.","class":"AdvancedMD.Security.Login","method":"LoginUser","linenum":"0","source":"AdvancedMD.Security.Login","extrainfo":null}}}}}'
+  recorded_at: Thu, 28 Oct 2021 09:42:45 GMT
+- request:
+    method: post
+    uri: https://provapi.advancedmd.com/processrequest/api-102/LIFESTANCE/xmlrpc/processrequest.aspx
+    body:
+      encoding: UTF-8
+      string: '{"ppmdmsg":{"@action":"login","@class":"login","@username":"LS-API","@psw":"lifestance2021!","@officecode":995456,"@appname":"LIFESTANCE"}}'
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/3.0.1p64
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '139'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - provapi.advancedmd.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 28 Oct 2021 09:42:46 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '2449'
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - no-cache,no-store,must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - Thu, 28 Oct 2021 09:41:46 GMT
+      Server:
+      - Microsoft-IIS/10.0
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET,PUT,POST,DELETE,OPTIONS
+      Access-Control-Allow-Headers:
+      - Origin, Depth, User-Agent, X-File-Size, X-Requested-With, If-Modified-Since,
+        X-File-Name, Cache-ControlOrigin, Content-Type, Accept, Authorization, X-ProofSignature,
+        InternalRequestType
+    body:
+      encoding: UTF-8
+      string: '{"?xml":{"@version":"1.0","@encoding":"ISO-8859-1"},"PPMDResults":{"@s":"PRDAPI2WFES2KDM","@lst":"10/28/2021
+        2:42:46 AM","Results":{"@success":"1","@api":"1","@version":"21.2","usercontext":{"@reportingServerURL":"https://reportingservices-100.advancedmd.com/rs/reportrequest.aspx","@adhocReportingURL":"https://advancedinsight.advancedmd.com","@aibenchmarksurl":"https://benchmarks.advancedmd.com/index.html","@helpurl":"https://ow2-help-01-prd.advancedmd.com/help/","@webserver":"https://provapi.advancedmd.com/processrequest/api-102/LIFESTANCE","@webserverbaseurl":"https://provapi.advancedmd.com","@username":"LS-API","@userguid":"acad6a2d-10f6-42a8-b35b-bb0f839cbe9d","@email":"bridget.landis@lifestance.com","@checkemail":"1","@needsconfirmation":"1","@sendnewconfirmation":"1","@pmredirecturl":"https://pm-wfe-136.advancedmd.com/practicemanager","@ehrredirecturl":"https://wc-wfe-136.advancedmd.com/practicemanager","@telemedicineapiurl":"https://telemed.advancedmd.com/Application.Web.API","@pmapiredirecturl":"https://pm-api-136.advancedmd.com","@ehrapiredirecturl":"https://go.advancedmd.com/api/wc/","@staticcontentredirecturl":"https://static-100.advancedmd.com","@capturechallengesettings":"1","@scanningserverurl":"https://scan.advancedmd.com/dynamsoft/Resources.15.2/Resources/","@cqmssoserviceurl":"https://ow2-cqmsso-01.advancedmd.com/api/account","@cqmsolutionurl":"https://ow2-cqm-01.advancedmd.com","@portalappintakeurl":"https://patientportal.advancedmd.com/995456/onlineintake","@portalappolsurl":"https://patientportal.advancedmd.com/995456/onlinescheduling","@apptreminderapiurl":"https://pm-api-136.advancedmd.com/api/reminders","@servertimezone":"Pacific
+        Standard Time","@webdavurl":"https://ow2-api-102.advancedmd.com","@providerid":"0","@defaultprofileid":"0","@departmentid":"0","@clinicaluser":"1","@ehronly":"0","@roleid":"219","@officecode":"995456","@logincode":"995456","@officename":"LifeStance
+        Health Demo","@admin":"0","@adminlimited":"0","@edicontact":"0","@ssoprovidername":"","@twofactorenabled":"0","@iscbouser":"1","@status":"
+        ","@trainingTrackerUrl":"https://pm-wfe-136.advancedmd.com/AdvancedMD.TrainingTracker/","#text":"995456/zcbA6amIJIxmfo7Qvx86rrXH8vEdad5ruZA4BpxCys8QwWslQcOZQYFGkcAhqyEUZV/Wglstdr8M5ph6sPBNMmFxnUmsGPMC/ewST2pyDqgAWr9qWS3n5ycDL3n62a3RZdq2XUJb0jpL3TqUFxAUeiRzUKLAHBUQ1AiZjDa4j6ZmtDO96Os9F6GMrGUPa4V/QPbRlZDGB0c5bCtAdtBnw=="},"variation":{"@code":"AMDSPRO","@name":""}},"Error":null}}'
+  recorded_at: Thu, 28 Oct 2021 09:42:46 GMT
+- request:
+    method: post
+    uri: https://provapi.advancedmd.com/processrequest/api-102/LIFESTANCE/xmlrpc/processrequest.aspx/xmlrpc/processrequest.aspx
+    body:
+      encoding: UTF-8
+      string: '{"ppmdmsg":{"@action":"lookuppatient","@class":"api","@exactmatch":"-1","@name":"Wilson,David","@page":"1"}}'
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/3.0.1p64
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '108'
+      Cookie:
+      - token=995456/zcbA6amIJIxmfo7Qvx86rrXH8vEdad5ruZA4BpxCys8QwWslQcOZQYFGkcAhqyEUZV/Wglstdr8M5ph6sPBNMmFxnUmsGPMC/ewST2pyDqgAWr9qWS3n5ycDL3n62a3RZdq2XUJb0jpL3TqUFxAUeiRzUKLAHBUQ1AiZjDa4j6ZmtDO96Os9F6GMrGUPa4V/QPbRlZDGB0c5bCtAdtBnw==
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - provapi.advancedmd.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 28 Oct 2021 09:42:48 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '574'
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - no-cache,no-store,must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - Thu, 28 Oct 2021 09:41:48 GMT
+      Server:
+      - Microsoft-IIS/10.0
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET,PUT,POST,DELETE,OPTIONS
+      Access-Control-Allow-Headers:
+      - Origin, Depth, User-Agent, X-File-Size, X-Requested-With, If-Modified-Since,
+        X-File-Name, Cache-ControlOrigin, Content-Type, Accept, Authorization, X-ProofSignature,
+        InternalRequestType
+    body:
+      encoding: UTF-8
+      string: '{"?xml":{"@version":"1.0","@encoding":"ISO-8859-1"},"PPMDResults":{"@s":"PRDAPI2WFEVTWZG","@lst":"10/28/2021
+        2:42:48 AM","Results":{"patientlist":{"@itemcount":"1","@page":"1","@pagecount":"1","@itemsfrom":"1","@itemsto":"1","patient":{"@id":"pat5984010","@name":"WILSON,DAVID","@chart":"2735","@ssn":"","@hipaarelationship":"19","@email":"TEST@GMAIL.COM","@gender":"M","@dob":"01/04/1995","address":{"@zipid":"1","@zip":"","@city":"","@state":"","@address1":"","@address2":"","@countrycode":"","@areacode":""},"contactinfo":{"@homephone":"(123)
+        456-7890"}}}},"Error":null}}'
+  recorded_at: Thu, 28 Oct 2021 09:42:48 GMT
+recorded_with: VCR 6.0.0

@@ -1,0 +1,12 @@
+--- 
+advpng: false
+jhead: false
+jpegoptim: 
+  allow_lossy: true
+  max_quality: 85
+jpegrecompress: false
+jpegtran: false
+optipng: false
+pngout: false
+pngquant: false
+svgo: false

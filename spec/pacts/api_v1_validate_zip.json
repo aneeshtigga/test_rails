@@ -1,0 +1,47 @@
+{
+  "provider": {
+    "name": "V1::ValidateZip"
+  },
+  "consumer": {
+    "name": "V1::ValidateZip Consumer"
+  },
+  "interactions": [
+    {
+      "description": "a GET request to validate a ZipCode",
+      "request": {
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "method": "GET",
+        "path": "/api/v1/validate_zip",
+        "query": {
+          "address_info[zip_code]": [
+            "36111"
+          ],
+          "app_name": [
+            "obie"
+          ]
+        }
+      },
+      "response": {
+        "body": {
+          "city": "Montgomery",
+          "insurances": [],
+          "message": "Valid",
+          "nearby_search": true,
+          "state": "AL",
+          "type_of_cares": []
+        },
+        "headers": {
+          "Content-Type": "application/json; charset=utf-8"
+        },
+        "status": 200
+      }
+    }
+  ],
+  "metadata": {
+    "pactSpecification": {
+      "version": "3.0.0"
+    }
+  }
+}

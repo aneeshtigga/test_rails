@@ -1,0 +1,694 @@
+{
+  "zip_codes": [
+    {
+      "zip_code": "77617",
+      "distance": 53.388,
+      "city": "Gilchrist",
+      "state": "TX"
+    },
+    {
+      "zip_code": "77623",
+      "distance": 47.862,
+      "city": "High Island",
+      "state": "TX"
+    },
+    {
+      "zip_code": "77514",
+      "distance": 43.818,
+      "city": "Anahuac",
+      "state": "TX"
+    },
+    {
+      "zip_code": "77655",
+      "distance": 38.977,
+      "city": "Sabine Pass",
+      "state": "TX"
+    },
+    {
+      "zip_code": "77520",
+      "distance": 58.676,
+      "city": "Baytown",
+      "state": "TX"
+    },
+    {
+      "zip_code": "77522",
+      "distance": 56.738,
+      "city": "Baytown",
+      "state": "TX"
+    },
+    {
+      "zip_code": "77661",
+      "distance": 35.519,
+      "city": "Stowell",
+      "state": "TX"
+    },
+    {
+      "zip_code": "77523",
+      "distance": 49.851,
+      "city": "Baytown",
+      "state": "TX"
+    },
+    {
+      "zip_code": "77521",
+      "distance": 54.793,
+      "city": "Baytown",
+      "state": "TX"
+    },
+    {
+      "zip_code": "77665",
+      "distance": 31.514,
+      "city": "Winnie",
+      "state": "TX"
+    },
+    {
+      "zip_code": "77562",
+      "distance": 57.895,
+      "city": "Highlands",
+      "state": "TX"
+    },
+    {
+      "zip_code": "77597",
+      "distance": 40.547,
+      "city": "Wallisville",
+      "state": "TX"
+    },
+    {
+      "zip_code": "70631",
+      "distance": 45.666,
+      "city": "Cameron",
+      "state": "LA"
+    },
+    {
+      "zip_code": "77622",
+      "distance": 25.85,
+      "city": "Hamshire",
+      "state": "TX"
+    },
+    {
+      "zip_code": "77560",
+      "distance": 34.586,
+      "city": "Hankamer",
+      "state": "TX"
+    },
+    {
+      "zip_code": "77580",
+      "distance": 46.429,
+      "city": "Mont Belvieu",
+      "state": "TX"
+    },
+    {
+      "zip_code": "77640",
+      "distance": 28.406,
+      "city": "Port Arthur",
+      "state": "TX"
+    },
+    {
+      "zip_code": "77641",
+      "distance": 28.636,
+      "city": "Port Arthur",
+      "state": "TX"
+    },
+    {
+      "zip_code": "77643",
+      "distance": 28.636,
+      "city": "Port Arthur",
+      "state": "TX"
+    },
+    {
+      "zip_code": "77705",
+      "distance": 22.893,
+      "city": "Beaumont",
+      "state": "TX"
+    },
+    {
+      "zip_code": "70645",
+      "distance": 47.941,
+      "city": "Hackberry",
+      "state": "LA"
+    },
+    {
+      "zip_code": "77532",
+      "distance": 55.311,
+      "city": "Crosby",
+      "state": "TX"
+    },
+    {
+      "zip_code": "77619",
+      "distance": 25.541,
+      "city": "Groves",
+      "state": "TX"
+    },
+    {
+      "zip_code": "77642",
+      "distance": 26.095,
+      "city": "Port Arthur",
+      "state": "TX"
+    },
+    {
+      "zip_code": "77538",
+      "distance": 26.161,
+      "city": "Devers",
+      "state": "TX"
+    },
+    {
+      "zip_code": "77629",
+      "distance": 21.092,
+      "city": "Nome",
+      "state": "TX"
+    },
+    {
+      "zip_code": "77651",
+      "distance": 22.073,
+      "city": "Port Neches",
+      "state": "TX"
+    },
+    {
+      "zip_code": "77627",
+      "distance": 20.092,
+      "city": "Nederland",
+      "state": "TX"
+    },
+    {
+      "zip_code": "77582",
+      "distance": 36.358,
+      "city": "Raywood",
+      "state": "TX"
+    },
+    {
+      "zip_code": "77611",
+      "distance": 26.528,
+      "city": "Bridge City",
+      "state": "TX"
+    },
+    {
+      "zip_code": "77639",
+      "distance": 22.886,
+      "city": "Orangefield",
+      "state": "TX"
+    },
+    {
+      "zip_code": "77613",
+      "distance": 15.604,
+      "city": "China",
+      "state": "TX"
+    },
+    {
+      "zip_code": "77345",
+      "distance": 58.668,
+      "city": "Kingwood",
+      "state": "TX"
+    },
+    {
+      "zip_code": "77707",
+      "distance": 12.157,
+      "city": "Beaumont",
+      "state": "TX"
+    },
+    {
+      "zip_code": "77535",
+      "distance": 44.933,
+      "city": "Dayton",
+      "state": "TX"
+    },
+    {
+      "zip_code": "77336",
+      "distance": 55.072,
+      "city": "Huffman",
+      "state": "TX"
+    },
+    {
+      "zip_code": "77630",
+      "distance": 22.544,
+      "city": "Orange",
+      "state": "TX"
+    },
+    {
+      "zip_code": "77713",
+      "distance": 11.327,
+      "city": "Beaumont",
+      "state": "TX"
+    },
+    {
+      "zip_code": "77701",
+      "distance": 12.018,
+      "city": "Beaumont",
+      "state": "TX"
+    },
+    {
+      "zip_code": "77575",
+      "distance": 33.723,
+      "city": "Liberty",
+      "state": "TX"
+    },
+    {
+      "zip_code": "77704",
+      "distance": 10.776,
+      "city": "Beaumont",
+      "state": "TX"
+    },
+    {
+      "zip_code": "77710",
+      "distance": 10.776,
+      "city": "Beaumont",
+      "state": "TX"
+    },
+    {
+      "zip_code": "77720",
+      "distance": 10.776,
+      "city": "Beaumont",
+      "state": "TX"
+    },
+    {
+      "zip_code": "77725",
+      "distance": 10.776,
+      "city": "Beaumont",
+      "state": "TX"
+    },
+    {
+      "zip_code": "77726",
+      "distance": 10.776,
+      "city": "Beaumont",
+      "state": "TX"
+    },
+    {
+      "zip_code": "77702",
+      "distance": 10.613,
+      "city": "Beaumont",
+      "state": "TX"
+    },
+    {
+      "zip_code": "77533",
+      "distance": 25.921,
+      "city": "Daisetta",
+      "state": "TX"
+    },
+    {
+      "zip_code": "77631",
+      "distance": 28.121,
+      "city": "Orange",
+      "state": "TX"
+    },
+    {
+      "zip_code": "77706",
+      "distance": 8.794,
+      "city": "Beaumont",
+      "state": "TX"
+    },
+    {
+      "zip_code": "77670",
+      "distance": 13.935,
+      "city": "Vidor",
+      "state": "TX"
+    },
+    {
+      "zip_code": "70665",
+      "distance": 45.157,
+      "city": "Sulphur",
+      "state": "LA"
+    },
+    {
+      "zip_code": "70605",
+      "distance": 55.585,
+      "city": "Lake Charles",
+      "state": "LA"
+    },
+    {
+      "zip_code": "77709",
+      "distance": 6.971,
+      "city": "Beaumont",
+      "state": "TX"
+    },
+    {
+      "zip_code": "77703",
+      "distance": 7.054,
+      "city": "Beaumont",
+      "state": "TX"
+    },
+    {
+      "zip_code": "77708",
+      "distance": 6.059,
+      "city": "Beaumont",
+      "state": "TX"
+    },
+    {
+      "zip_code": "77357",
+      "distance": 59.476,
+      "city": "New Caney",
+      "state": "TX"
+    },
+    {
+      "zip_code": "77561",
+      "distance": 32.441,
+      "city": "Hardin",
+      "state": "TX"
+    },
+    {
+      "zip_code": "77659",
+      "distance": 14.56,
+      "city": "Sour Lake",
+      "state": "TX"
+    },
+    {
+      "zip_code": "77662",
+      "distance": 11.219,
+      "city": "Vidor",
+      "state": "TX"
+    },
+    {
+      "zip_code": "77564",
+      "distance": 28.106,
+      "city": "Hull",
+      "state": "TX"
+    },
+    {
+      "zip_code": "70668",
+      "distance": 35.858,
+      "city": "Vinton",
+      "state": "LA"
+    },
+    {
+      "zip_code": "77632",
+      "distance": 23.504,
+      "city": "Orange",
+      "state": "TX"
+    },
+    {
+      "zip_code": "77626",
+      "distance": 19.572,
+      "city": "Mauriceville",
+      "state": "TX"
+    },
+    {
+      "zip_code": "70602",
+      "distance": 59.535,
+      "city": "Lake Charles",
+      "state": "LA"
+    },
+    {
+      "zip_code": "70606",
+      "distance": 59.535,
+      "city": "Lake Charles",
+      "state": "LA"
+    },
+    {
+      "zip_code": "70609",
+      "distance": 59.535,
+      "city": "Lake Charles",
+      "state": "LA"
+    },
+    {
+      "zip_code": "70612",
+      "distance": 59.535,
+      "city": "Lake Charles",
+      "state": "LA"
+    },
+    {
+      "zip_code": "70616",
+      "distance": 59.535,
+      "city": "Lake Charles",
+      "state": "LA"
+    },
+    {
+      "zip_code": "70629",
+      "distance": 59.535,
+      "city": "Lake Charles",
+      "state": "LA"
+    },
+    {
+      "zip_code": "77519",
+      "distance": 22.586,
+      "city": "Batson",
+      "state": "TX"
+    },
+    {
+      "zip_code": "70664",
+      "distance": 50.594,
+      "city": "Sulphur",
+      "state": "LA"
+    },
+    {
+      "zip_code": "70601",
+      "distance": 58.593,
+      "city": "Lake Charles",
+      "state": "LA"
+    },
+    {
+      "zip_code": "77657",
+      "distance": 0,
+      "city": "Lumberton",
+      "state": "TX"
+    },
+    {
+      "zip_code": "77372",
+      "distance": 57.501,
+      "city": "Splendora",
+      "state": "TX"
+    },
+    {
+      "zip_code": "70669",
+      "distance": 55.211,
+      "city": "Westlake",
+      "state": "LA"
+    },
+    {
+      "zip_code": "70663",
+      "distance": 49.462,
+      "city": "Sulphur",
+      "state": "LA"
+    },
+    {
+      "zip_code": "77585",
+      "distance": 20.105,
+      "city": "Saratoga",
+      "state": "TX"
+    },
+    {
+      "zip_code": "77614",
+      "distance": 25.786,
+      "city": "Deweyville",
+      "state": "TX"
+    },
+    {
+      "zip_code": "77327",
+      "distance": 43.325,
+      "city": "Cleveland",
+      "state": "TX"
+    },
+    {
+      "zip_code": "77615",
+      "distance": 11.032,
+      "city": "Evadale",
+      "state": "TX"
+    },
+    {
+      "zip_code": "70611",
+      "distance": 59.854,
+      "city": "Lake Charles",
+      "state": "LA"
+    },
+    {
+      "zip_code": "70661",
+      "distance": 33.829,
+      "city": "Starks",
+      "state": "LA"
+    },
+    {
+      "zip_code": "77625",
+      "distance": 14.767,
+      "city": "Kountze",
+      "state": "TX"
+    },
+    {
+      "zip_code": "77374",
+      "distance": 27.985,
+      "city": "Thicket",
+      "state": "TX"
+    },
+    {
+      "zip_code": "77612",
+      "distance": 20.345,
+      "city": "Buna",
+      "state": "TX"
+    },
+    {
+      "zip_code": "77656",
+      "distance": 12.989,
+      "city": "Silsbee",
+      "state": "TX"
+    },
+    {
+      "zip_code": "77369",
+      "distance": 34.772,
+      "city": "Rye",
+      "state": "TX"
+    },
+    {
+      "zip_code": "70633",
+      "distance": 49.956,
+      "city": "Dequincy",
+      "state": "LA"
+    },
+    {
+      "zip_code": "77376",
+      "distance": 31.56,
+      "city": "Votaw",
+      "state": "TX"
+    },
+    {
+      "zip_code": "77368",
+      "distance": 40.183,
+      "city": "Romayor",
+      "state": "TX"
+    },
+    {
+      "zip_code": "77371",
+      "distance": 50.437,
+      "city": "Shepherd",
+      "state": "TX"
+    },
+    {
+      "zip_code": "77326",
+      "distance": 41.62,
+      "city": "Ace",
+      "state": "TX"
+    },
+    {
+      "zip_code": "77663",
+      "distance": 22.95,
+      "city": "Village Mills",
+      "state": "TX"
+    },
+    {
+      "zip_code": "75933",
+      "distance": 32.128,
+      "city": "Call",
+      "state": "TX"
+    },
+    {
+      "zip_code": "70660",
+      "distance": 50.245,
+      "city": "Singer",
+      "state": "LA"
+    },
+    {
+      "zip_code": "77616",
+      "distance": 23.638,
+      "city": "Fred",
+      "state": "TX"
+    },
+    {
+      "zip_code": "77335",
+      "distance": 48.82,
+      "city": "Goodrich",
+      "state": "TX"
+    },
+    {
+      "zip_code": "77664",
+      "distance": 28.857,
+      "city": "Warren",
+      "state": "TX"
+    },
+    {
+      "zip_code": "77660",
+      "distance": 29.343,
+      "city": "Spurger",
+      "state": "TX"
+    },
+    {
+      "zip_code": "77332",
+      "distance": 37.766,
+      "city": "Dallardsville",
+      "state": "TX"
+    },
+    {
+      "zip_code": "70653",
+      "distance": 48.488,
+      "city": "Merryville",
+      "state": "LA"
+    },
+    {
+      "zip_code": "75928",
+      "distance": 42.15,
+      "city": "Bon Wier",
+      "state": "TX"
+    },
+    {
+      "zip_code": "75956",
+      "distance": 33.515,
+      "city": "Kirbyville",
+      "state": "TX"
+    },
+    {
+      "zip_code": "77624",
+      "distance": 32.03,
+      "city": "Hillister",
+      "state": "TX"
+    },
+    {
+      "zip_code": "77399",
+      "distance": 54.486,
+      "city": "Livingston",
+      "state": "TX"
+    },
+    {
+      "zip_code": "77351",
+      "distance": 50.087,
+      "city": "Livingston",
+      "state": "TX"
+    },
+    {
+      "zip_code": "75979",
+      "distance": 37.749,
+      "city": "Woodville",
+      "state": "TX"
+    },
+    {
+      "zip_code": "75990",
+      "distance": 39.738,
+      "city": "Woodville",
+      "state": "TX"
+    },
+    {
+      "zip_code": "75942",
+      "distance": 42.885,
+      "city": "Doucette",
+      "state": "TX"
+    },
+    {
+      "zip_code": "77350",
+      "distance": 55.984,
+      "city": "Leggett",
+      "state": "TX"
+    },
+    {
+      "zip_code": "75966",
+      "distance": 50.434,
+      "city": "Newton",
+      "state": "TX"
+    },
+    {
+      "zip_code": "75934",
+      "distance": 56.938,
+      "city": "Camden",
+      "state": "TX"
+    },
+    {
+      "zip_code": "75951",
+      "distance": 49.5,
+      "city": "Jasper",
+      "state": "TX"
+    },
+    {
+      "zip_code": "75938",
+      "distance": 50.11,
+      "city": "Colmesneil",
+      "state": "TX"
+    },
+    {
+      "zip_code": "75936",
+      "distance": 54.973,
+      "city": "Chester",
+      "state": "TX"
+    }
+  ]
+}

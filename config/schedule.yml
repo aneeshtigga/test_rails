@@ -1,0 +1,64 @@
+state_postal_code_worker:
+  cron: "0 2 15 * *" #every month on 15th at 2AM
+  class: "StatePostalCodeWorker"
+  queue: state_postal_code_worker_queue
+
+import_type_of_care_worker:
+  cron: "0 12 * * *" #every day 12PM
+  class: "ImportTypeOfCareWorker"
+  queue: import_type_of_care_worker_queue
+
+import_clinician_mart_worker:
+  cron: "0 9 * * *" #every day at 9AM     FIRST
+  class: "ImportClinicianMartWorker"
+  queue: import_clinician_mart_worker_queue
+
+import_clinician_locations_worker:
+  cron: "20 9 * * *" #every day at 9:20AM     SECOND
+  class: "ImportClinicianLocationsWorker"
+  queue: import_clinician_locations_worker_queue
+
+import_clinician_education_worker:
+  cron: "40 9 * * *" #every day at 9:40AM
+  class: "ImportClinicianEducationsWorker"
+  queue: import_clinician_educations_worker_queue
+
+import_carrier_categories_worker:
+  cron: "45 9 * * *" #every day at 9:45AM
+  class: ImportCarrierCategoriesWorker
+  queue: import_carrier_categories_worker_queue
+
+import_special_cases_worker:
+  cron: "0 4 * * *" #every day at 4AM
+  class: "ImportSpecialCasesWorker"
+  queue: import_type_of_care_worker_queue
+
+clinician_inactive_worker:
+  cron: "30 6 * * *" #At 06:30 everyday.
+  class: "ClinicianInactiveWorker"
+  queue: clinician_inactive_worker_queue
+
+clinician_availability_status_prune_worker:
+  cron: "0 * * * *" #every hour
+  class: "ClinicianAvailabilityStatusPruneWorker"
+  queue: clinician_availability_status_prune_worker_queue
+
+monitoring_sidekiq_worker:
+  cron: "*/5 * * * *" #every 5 minutes
+  class: "MonitoringSidekiqWorker"
+  queue: monitoring_sidekiq_worker_queue
+
+active_record_sso_session_clear_worker:
+  cron: "30 0 * * *" #At 12:30 Am daily
+  class: "ActiverecordSsoSessionClearWorker"
+  queue: active_record_sso_session_clear_worker_queue
+
+clinician_data_worker:
+  cron: "30 2 * * 6" #At 02:30 on every Saturday.     - 10 days
+  class: "ClinicianDataWorker"
+  queue: clinician_data_worker_queue
+
+clinician_location_data_worker:
+  cron: "30 3 * * 6" #At 03:30 on every Saturday.     - 10 days
+  class: "ClinicianLocationDataWorker"
+  queue: clinician_location_data_worker_queue

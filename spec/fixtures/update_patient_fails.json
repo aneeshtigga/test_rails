@@ -1,0 +1,28 @@
+{
+  "?xml": {
+    "@version": "1.0",
+    "@encoding": "ISO-8859-1"
+  },
+  "PPMDResults": {
+    "@s": "PRDAPI1WFECJPSW",
+    "@lst": "7/12/2021 3:52:26 PM",
+    "Results": {
+      "@success": "0"
+    },
+    "Error": {
+      "Fault": {
+        "faultcode": "Server",
+        "faultstring": "Server Error",
+        "detail": {
+          "code": "-2147218426",
+          "description": "AMD-995456-07121552 | No Patient ID Included",
+          "class": "AdvancedMD.Demographics.Demographics",
+          "method": "UpdatePatient",
+          "linenum": "0",
+          "source": "AdvancedMD.Demographics",
+          "extrainfo": null
+        }
+      }
+    }
+  }
+}

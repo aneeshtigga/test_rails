@@ -1,0 +1,37 @@
+{
+  "provider": {
+    "name": "V1::GenerateToken"
+  },
+  "consumer": {
+    "name": "V1::GenerateToken Consumer"
+  },
+  "interactions": [
+    {
+      "description": "a POST request to generate a token",
+      "request": {
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "method": "POST",
+        "path": "/api/v1/generate_token",
+        "body": {
+          "application_name": "lsh_api_053254"
+        }
+      },
+      "response": {
+        "body": {
+          "message": "Jwt token"
+        },
+        "headers": {
+          "Content-Type": "application/json; charset=utf-8"
+        },
+        "status": 200
+      }
+    }
+  ],
+  "metadata": {
+    "pactSpecification": {
+      "version": "3.0.0"
+    }
+  }
+}

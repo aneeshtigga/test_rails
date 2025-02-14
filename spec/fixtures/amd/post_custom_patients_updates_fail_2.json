@@ -1,0 +1,43 @@
+{
+  "?xml": {
+    "@version": "1.0",
+    "@encoding": "ISO-8859-1"
+  },
+  "PPMDResults": {
+    "@s": "PRDAPI2WFES2KDM",
+    "@lst": "10/28/2021 2:57:28 AM",
+    "Results": {
+      "patientlist": {
+        "@itemcount": "1",
+        "@page": "1",
+        "@pagecount": "1",
+        "@itemsfrom": "1",
+        "@itemsto": "1",
+        "patient": {
+          "@id": "pat5984010",
+          "@name": "WILSON,DAVID",
+          "@chart": "2735",
+          "@ssn": "",
+          "@hipaarelationship": "19",
+          "@email": "TEST@GMAIL.COM",
+          "@gender": "M",
+          "@dob": "01/04/1995",
+          "address": {
+            "@zipid": "1",
+            "@zip": "",
+            "@city": "",
+            "@state": "",
+            "@address1": "",
+            "@address2": "",
+            "@countrycode": "",
+            "@areacode": ""
+          },
+          "contactinfo": {
+            "@homephone": "(123) 456-7890"
+          }
+        }
+      }
+    },
+    "Error": null
+  }
+}

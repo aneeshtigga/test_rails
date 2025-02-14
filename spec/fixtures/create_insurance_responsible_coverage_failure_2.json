@@ -1,0 +1,68 @@
+{
+  "?xml": {
+    "@version": "1.0",
+    "@encoding": "ISO-8859-1"
+  },
+  "PPMDResults": {
+    "@s": "PRDAPI3WFEIDC5T",
+    "@lst": "12/3/2021 12:56:14 AM",
+    "Results": {
+      "resppartylist": {
+        "@itemcount": "2",
+        "@page": "1",
+        "@pagecount": "1",
+        "@itemsfrom": "1",
+        "@itemsto": "2",
+        "respparty": [
+          {
+            "@id": "resp6849630",
+            "@name": "WILSON,DAVID",
+            "@acctnum": "6849630",
+            "@ssn": "            ",
+            "@isinvoiceentity": "0",
+            "@dob": "01/04/1995",
+            "@email": "TEST@GMAIL.COM",
+            "@gender": "M",
+            "address": {
+              "@zipid": "1",
+              "@zip": "",
+              "@city": "",
+              "@state": "",
+              "@address1": "",
+              "@address2": "",
+              "@countrycode": "",
+              "@areacode": ""
+            },
+            "contactinfo": {
+              "@homephone": "(123) 456-7890"
+            }
+          },
+          {
+            "@id": "resp6850260",
+            "@name": "WILSON,DAVID",
+            "@acctnum": "6850260",
+            "@ssn": "            ",
+            "@isinvoiceentity": "0",
+            "@dob": "04/01/1995",
+            "@email": "TEST@GMAIL.COM",
+            "@gender": "M",
+            "address": {
+              "@zipid": "1",
+              "@zip": "30301",
+              "@city": "ATLANTA",
+              "@state": "AT",
+              "@address1": "BLUEFLIES STREET",
+              "@address2": "3RD AVENUE",
+              "@countrycode": "",
+              "@areacode": "404"
+            },
+            "contactinfo": {
+              "@homephone": ""
+            }
+          }
+        ]
+      }
+    },
+    "Error": null
+  }
+}

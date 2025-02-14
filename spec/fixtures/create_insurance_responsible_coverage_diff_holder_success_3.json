@@ -1,0 +1,123 @@
+{
+  "?xml": {
+    "@version": "1.0",
+    "@encoding": "ISO-8859-1"
+  },
+  "PPMDResults": {
+    "@s": "PRDAPI3WFEWUBDU",
+    "@lst": "12/3/2021 12:51:26 AM",
+    "Results": {
+      "@success": "1",
+      "respparty": {
+        "@id": "resp6850260",
+        "@name": "WILSON,DAVID",
+        "@accttype": "ac_type4",
+        "@acctnum": "6850260",
+        "@dob": "04/01/1995",
+        "@sex": "M",
+        "@title": "",
+        "@employer": "",
+        "@employstatus": "1",
+        "@ssn": "",
+        "@sendstmt": "0",
+        "@stmtrestart": "01/01/1900",
+        "@holdreasonfid": "0",
+        "@holdreasondesc": "",
+        "@holdreasoncode": "",
+        "@billcycle": "1",
+        "@fincharge": "0",
+        "@stmtformat": "",
+        "@balancefwd": "0",
+        "@lastpmtdate": "",
+        "@lastpmtamount": "",
+        "@laststmtdate": "",
+        "@laststmtamount": "",
+        "@paymentplanbalance": "",
+        "@ispaperless": "0",
+        "@ispaperlessportalchangedate": "",
+        "address": {
+          "@zip": "30301",
+          "@city": "Atlanta",
+          "@state": "AT",
+          "@address1": "BLUEFLIES STREET",
+          "@address2": "3RD AVENUE",
+          "@areacode": "404",
+          "@countrycode": ""
+        },
+        "contactinfo": {
+          "@name": "",
+          "@homephone": "",
+          "@officephone": "",
+          "@officeext": "",
+          "@otherphone": "(123) 456-7890",
+          "@othertype": "C",
+          "@email": "TEST@GMAIL.COM",
+          "@preferredcommunicationfid": "",
+          "@communicationnote": ""
+        },
+        "creditcardonfile": null,
+        "arbucketlist": {
+          "arbucket": [
+            {
+              "@buckettype": "r",
+              "@current": "0.00",
+              "@past30": "0.00",
+              "@past60": "0.00",
+              "@past90": "0.00",
+              "@past120": "0.00",
+              "@unapplied": "0.00",
+              "@total": "0.00"
+            },
+            {
+              "@buckettype": "ri",
+              "@current": "0.00",
+              "@past30": "0.00",
+              "@past60": "0.00",
+              "@past90": "0.00",
+              "@past120": "0.00",
+              "@unapplied": "0.00",
+              "@total": "0.00"
+            }
+          ]
+        },
+        "familymemberlist": {
+          "familymember": {
+            "@id": "family61722",
+            "@name": "TEST,PATIENT",
+            "@chart": "2512",
+            "@isrp": "1",
+            "@previousfirstname": "",
+            "@previousmiddlename": "",
+            "@previouslastname": "",
+            "@hipparelationship": "18",
+            "contactinfo": {
+              "@homephone": "(334) 555-1602"
+            },
+            "address": {
+              "@zip": "36601",
+              "@city": "MOBILE",
+              "@state": "AL",
+              "@address1": "",
+              "@address2": "11111 MAIN ST",
+              "@countrycode": "USA"
+            },
+            "previousaddress": {
+              "@address1": "",
+              "@address2": "",
+              "@countrycode": "",
+              "@state": "",
+              "@city": "",
+              "@zip": ""
+            }
+          }
+        }
+      },
+      "accttype": {
+        "@id": "ac_type4",
+        "@name": "TYPICAL ACCOUNT",
+        "@code": "TA"
+      }
+    },
+    "Error": null
+  }
+}

@@ -1,0 +1,64 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://provapi.advancedmd.com/processrequest/api-102/LIFESTANCE/xmlrpc/processrequest.aspx
+    body:
+      encoding: UTF-8
+      string: '{"ppmdmsg":{"@action":"lookupmarstatus","@class":"api","@exactmatch":"0","@name":"1-SCHEDULED
+        CONSULT"}}'
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/3.0.1p64
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '104'
+      Cookie:
+      - token=995456AWX/4q//hQOSOP+0rsMonov4/bHaVJibxm3hyRv/qI7JpWUBjlTuVLlUGckePheIlklan3eaN1lnguYx+Nv8CKp0fYOuo72YYgQOuka2RYSO6fKJEfTgj5QqhASpozpKREN1ENkYkCMXHHs8nJ6w4oX60R+Dsa0ZEkS4IJCD8rUtUo18yWcEBF2nN51t+BIW1UYscsAG9BizZULhlhH+mQ==
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - provapi.advancedmd.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 08 Nov 2021 10:10:16 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '223'
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - no-cache,no-store,must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - Mon, 08 Nov 2021 10:09:16 GMT
+      Server:
+      - Microsoft-IIS/10.0
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET,PUT,POST,DELETE,OPTIONS
+      Access-Control-Allow-Headers:
+      - Origin, Depth, User-Agent, X-File-Size, X-Requested-With, If-Modified-Since,
+        X-File-Name, Cache-ControlOrigin, Content-Type, Accept, Authorization, X-ProofSignature,
+        InternalRequestType
+    body:
+      encoding: UTF-8
+      string: '{"?xml":{"@version":"1.0","@encoding":"ISO-8859-1"},"PPMDResults":{"@s":"PRDAPI2WFEYQZQ2","@lst":"11/8/2021
+        2:10:16 AM","Results":{"marstatuslist":{"marstatus":{"@id":"stat21","@name":"1-SCHEDULED
+        CONSULT"}}},"Error":null}}'
+  recorded_at: Mon, 08 Nov 2021 10:10:16 GMT
+recorded_with: VCR 6.0.0

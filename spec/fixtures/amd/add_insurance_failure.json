@@ -1,0 +1,71 @@
+{
+  "?xml": {
+    "@version": "1.0",
+    "@encoding": "ISO-8859-1"
+  },
+  "PPMDResults": {
+    "@s": "PRDAPI1WFERXSV6",
+    "@lst": "7/13/2021 2:45:30 AM",
+    "Error": {
+      "Fault": {
+        "faultcode": "Server",
+        "faultstring": "Server Error",
+        "detail": {
+          "code": "-2147221504",
+          "description": "AMD-995456-07130245 | The INSERT statement conflicted with the FOREIGN KEY constraint \"FK_pt_InsuranceCoverages_pt_ResponsibleParties\". The conflict occurred in database \"PPMD_CLIENT_CBO_2615_5_0\", table \"dbo.pt_ResponsibleParties\".",
+          "class": "AdvancedMD.Demographics.Demographics",
+          "method": "Interop.MSSEventLog._IPPMDGateway.Gateway",
+          "linenum": "0",
+          "source": "System.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint \"FK_pt_InsuranceCoverages_pt_ResponsibleParties\". The conflict occurred in database \"PPMD_CLIENT_CBO_2615_5_0\", table \"dbo.pt_ResponsibleParties\".\r\n   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)\r\n   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)\r\n   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)\r\n   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)\r\n   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)\r\n   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)\r\n   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)\r\n   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()\r\n   at AdvancedMD.Demographics.Demographics.AddInsurance(String patientId, XmlElement insurancePlan, SqlTransaction transaction, String username, Int32 licenseKey)\r\n   at AdvancedMD.Demographics.Demographics.UpdateInsurance(XmlDocument xmlIn)\r\n   at AdvancedMD.Demographics.Demographics.Interop.MSSEventLog._IPPMDGateway.Gateway(String xmlIn)\r\nClientConnectionId:2d96d18c-619e-4893-a1fe-b513af91eb6d\r\nError Number:547,State:0,Class:16",
+          "extrainfo": {
+            "requestinfo": {
+              "ppmdmsg": {
+                "@action": "addinsurance",
+                "@class": "demographics",
+                "@msgtime": "7/13/2021 09:45:23 AM",
+                "@ip": "122.180.204.70",
+                "usercontext": "995456[Removed]",
+                "patient": {
+                  "@id": "pat61722",
+                  "@changed": "1",
+                  "insplanlist": {
+                    "insplan": {
+                      "@id": "",
+                      "@begindate": "07/13/2021",
+                      "@enddate": "07/20/2021",
+                      "@carrier": "car7562",
+                      "@subscriber": "resp684954",
+                      "@subscribernum": "",
+                      "@hipaarelationship": "18",
+                      "@relationship": "1",
+                      "@grpname": "",
+                      "@grpnum": "",
+                      "@copay": "0.0",
+                      "@copaytype": "$",
+                      "@coverage": "3",
+                      "@payerid": "",
+                      "@mspcode": "",
+                      "@eligibilityid": "",
+                      "@eligibilitystatusid": "",
+                      "@eligibilitychangedat": "",
+                      "@eligibilitycreatedat": "",
+                      "@eligibilityresponsedate": "",
+                      "@finclasscode": "",
+                      "@deductible": "0.00",
+                      "@deductiblemet": "0.00",
+                      "@yearendmonth": "1",
+                      "@lifetime": "0.00",
+                      "insnote": {
+                        "@self-closing": "true"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

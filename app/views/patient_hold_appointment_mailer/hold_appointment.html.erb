@@ -1,0 +1,722 @@
+<style>
+  body {
+    font-family: Helvetica;
+    font-style: normal;
+    margin: 0;
+  }
+
+  table {
+    border-spacing: 0;
+  }
+
+  td {
+    padding: 0;
+  }
+
+  img {
+    border: 0;
+  }
+
+  .wrapper {
+    width: 100%;
+    table-layout: fixed;
+    background-color: #e5e5e5;
+  }
+
+  .main {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 600px;
+    border-spacing: 0;
+    background-color: #ffffff;
+  }
+
+  .column {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    max-width: 265px;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+  }
+
+  .separator-column {
+    width: 100%;
+    max-width: 300px;
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .header {
+    background-color: #3b79b9;
+    color: white;
+    display: block;
+    font-weight: 400;
+    font-size: 28px;
+    padding: 30px;
+    text-align: center;
+  }
+
+  .appt-info {
+    min-height: 300px;
+  }
+
+  .subtext {
+    color: #333333;
+    margin-top: 8px;
+    font-weight: 400;
+    text-align: center;
+  }
+
+  .title {
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    margin: 0;
+    margin-top: 40px;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .before-title {
+    margin-top: 20px;
+    text-align: left !important;
+    padding-left: 0!important;
+    padding-right: 0 !important;
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .visit-container {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .visit-info {
+    font-size: 0;
+    border-spacing: 0;
+    border-color: #e3e3e3;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    padding: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 220px;
+    height: 220px !important;
+    table-layout: fixed;
+  }
+
+  .icon {
+    margin: 3px;
+    text-align: center;
+  }
+  .visit-content-title {
+    color: white;
+    font-weight: 400;
+    font-size: 24px;
+  }
+  .visit-content-text {
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #333333;
+    width: 100%;
+    padding-top:10px;
+  }
+
+  .visit-detail-text {
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #515151;
+  }
+
+  .visit-link-text {
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: normal;
+    text-align: center;
+    font-size: 16px;
+    line-height: 24px;
+    color: #0067ce;
+    margin: 16px 2px;
+    padding: 25px 0px 0px;
+  }
+  .visit-link-text a {
+    margin-top: 10px;
+    text-decoration: none;
+    font-weight: 700;
+    color: #0067CE;
+  }
+  .cancellation {
+    margin-top: 20px;
+    text-align: center;
+    color: #8b8b8b;
+    position: static;
+    width: 216px;
+    height: 24px;
+    left: 32px;
+    border-radius: 2px;
+    font-weight: 700;
+    top: 14px;
+  }
+
+  .cancellation a {
+    text-decoration: none;
+  }
+
+  .cancel-text {
+    color: #8b8b8b;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-weight: 400;
+    font-size: 14px;
+    margin-bottom: 40px;
+  }
+
+  .before-visit {
+    background-color: #fff2de;
+    display: block;
+    padding: 20px;
+    color: #333333;
+  }
+
+  .before-visit > .content {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .help {
+    display: block;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .highlight {
+    color: #3b79b9;
+  }
+
+  .help-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+    color: #333333;
+    margin: 0;
+  }
+
+  .help-tele {
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #333333;
+    margin: 12px;
+  }
+
+  .footer {
+    border-radius: 0px;
+    padding: 5px 0px;
+    left: 0px;
+    top: 786px;
+    background: #333333;
+    font-size: 0;
+  }
+
+  .footer-tele {
+    left: 0px;
+    top: 0px;
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #ffffff;
+    align-self: stretch;
+    margin: 8px 0px;
+    text-align: left;
+  }
+
+  .social-apps {
+    padding-left: 38px;
+    text-align: right;
+    padding-top: 10px;
+  }
+
+  .table-text {
+    height: 24px;
+    left: 0px;
+    top: 0px;
+    border-radius: 0px;
+    padding-left: 50px;
+    margin: 1px;
+  }
+
+  .social-icon {
+    height: 8.900604248046875px;
+    width: 8.900601387023926px;
+    left: 11.55078125px;
+    top: 11.5498046875px;
+    border-radius: 0px;
+    padding: 8px;
+  }
+
+  .cancel-btn {
+    background-color: #0067ce;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-weight: 700;
+    display: inline-block;
+    margin: 4px 2px;
+    padding: 17px 30px;
+    text-align: center;
+  }
+
+  .clinician-name {
+    color: #3b79b9;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+
+  .clinician-name a{
+    color: #0067CE;
+    text-decoration: none;
+  }
+
+  .support-wrap {
+    white-space: nowrap;
+  }
+
+  .visit-info-spacing {
+    white-space: pre-line;
+  }
+
+  .visit-status-text {
+    font-family: Helvetica;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: center;
+  }
+
+  .registration-btn {
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      padding: 10px 32px;
+      position: absolute;
+      width: 145px;
+      height: 32px;
+      left: 174px;
+      top: 266px;
+      background: #FFFFFF;
+      border: 1px solid #ACACAC;
+      border-radius: 8px;
+   }
+
+   .registration-btn-text {
+      position: static;
+      width: 187px;
+      height: 24px;
+      left: 32px;
+      top: 14px;
+      font-family: Helvetica;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 24px;
+      text-align: center;
+      color: #333333;
+      flex: none;
+      order: 0;
+      flex-grow: 1;
+      margin: 0px 10px;
+      text-decoration:none;
+   }
+   .highlight-link a{
+     color: #0067CE;
+     text-decoration: none;
+   }
+</style>
+
+<body>
+  <center class="wrapper">
+    <table class="main" width="100%">
+      <!-- header -->
+      <tr>
+        <td class="header">
+          <table width="100%">
+            <tr class="logo" style="text-align: center">
+              <td><%= image_tag attachments['logo.png'].url %></td>
+            </tr>
+            <% unless @patient.child? %>
+            <tr style="text-align: center; ">
+              <td clss="visit-content-title">
+                <p style="margin-bottom: 0px"><%= "#{@patient.display_name}, your visit is booked." %></p>
+              </td>
+            </tr>
+            <% else %>
+            <tr style="text-align: center; margin-bottom: 0px">
+              <td class="visit-content-title">
+                <p style="margin-bottom: 0px"><%= "#{@patient.display_name}'s visit is booked." %></p>
+              </td>
+            </tr>
+            <% end %>
+            <tr style="text-align: center">
+              <td>
+                <p class="visit-status-text">There are still a few steps that need your attention. Your appointment may be cancelled if you do not complete these necessary steps.</p>
+                <a href="<%= @registration_link %>" class="registration-btn-text registration-btn"> Complete Registration </a>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <!-- appointment info -->
+      <tr>
+        <td class="appt-info">
+          <table width="100%">
+            <tr>
+              <td>
+                <p class="title">
+                  <%= "Appointment with " %>
+                  <span class="clinician-name">
+                    <%= link_to @clinician_name, @clinician_profile_link %>
+                  </span>
+                </p>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <p class="subtext">
+                  <%= "Need to get in touch? Call us at " %><span
+                    class="title-subtext support-wrap"
+                  >
+                    <%="#{@support_number}" %></span
+                  >
+                </p>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="visit-container">
+                <table width="100%">
+                  <tr>
+                    <td width="100%" style="text-align: center">
+                      <table class="column visit-info" width="100%">
+                        <tr>
+                          <td>
+                            <table>
+                              <tr>
+                                <td colspan="1" class="icon">
+                                  <%= image_tag attachments['clock_icon.png'].url %>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td colspan="1" class="visit-content-text">
+                                  <%= @patient_appointment.type_of_care %>,
+                                  Initial Evaluation
+                                </td>
+                              </tr>
+                              <tr>
+                                <td colspan="1" class="visit-detail-text">
+                                  <%= @patient_appointment.start_time.in_time_zone("#{@time_zone}").strftime("%a, %B #{@patient_appointment.start_time.in_time_zone("#{@time_zone}").to_date.day.ordinalize}") %>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td colspan="1" class="visit-detail-text">
+                                  <%=
+                                  @patient_appointment.start_time.in_time_zone("#{@time_zone}").strftime("%l:%M")
+                                  %> - <%=
+                                  @patient_appointment.end_time.in_time_zone("#{@time_zone}").strftime("%l:%M %P")
+                                  %> <%= @time_zone_abbr%>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td  colspan="1" class="visit-link-text"><a href="webcal://<%= attachments["event.ics"].url %>"> Add to Calendar </a></td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                      <table class="column visit-info" width="100%">
+                        <tr width="100%">
+                          <td>
+                            <table>
+                              <tr>
+                                <td colspan="1" class="icon">
+                                  <% if @patient_appointment.in_office? ||
+                                    @patient_appointment.in_office_or_virtual? %>
+                                  <%= image_tag attachments['building_icon.png'].url %>
+                                  <% else %>
+                                  <%= image_tag attachments['video_icon.png'].url %>
+                                  <% end %>
+                                </td>
+                              </tr>
+                              <% if @patient_appointment.in_office? ||
+                              @patient_appointment.in_office_or_virtual? %>
+                              <tr>
+                                <td colspan="1" class="visit-content-text">
+                                  In office visit: <%=
+                                  @patient_appointment.clinician_address.facility_name
+                                  %>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td colspan="1" class="visit-detail-text">
+                                  <%=
+                                  @patient_appointment.clinician_address.address_line1
+                                  %>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td colspan="1" class="visit-detail-text">
+                                  <%=
+                                  @patient_appointment.clinician_address.city
+                                  %>, <%=
+                                  @patient_appointment.clinician_address.state
+                                  %>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td
+                                  colspan="1"
+                                  class="visit-link-text"
+                                  style="margin-bottom: 30px"
+                                >
+                                  <a href="<%= @google_map_link %>"
+                                    >Open in Google Maps</a
+                                  >
+                                </td>
+                              </tr>
+                              <% else %>
+
+                              <tr>
+                                <td colspan="1" class="visit-content-text">
+                                  Video visit
+                                </td>
+                              </tr>
+                              <tr>
+                                <td colspan="1" class="visit-detail-text">
+                                  Use this link to access your virtual session
+                                </td>
+                              </tr>
+                              <tr>
+                                <td colspan="1" class="visit-link-text">
+                                  <a href="<%= @telehealth_link %>"
+                                    >Join waiting room</a
+                                  >
+                                </td>
+                              </tr>
+                              <% end %>
+                              <tr>
+                                <td
+                                  class="visit-detail-text"
+                                  style="padding-bottom: 8px"
+                                >
+                                  <p></p>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="cancellation">
+          <a href="<%= @cancellation_link %>" class="cancel-btn">
+            Cancel Appointment
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td class="cancellation">
+          <p class="cancel-text">
+            Please cancel at least 2 business days in advance of your appointment.
+          </p>
+        </td>
+      </tr>
+      <!-- before visit -->
+
+      <tr>
+        <td class="before-visit">
+          <table>
+            <tr>
+              <td class="content" style="line-height:24px">
+                <table>
+                
+                  <tr>
+                    <td>
+                      <p class="title before-title" >
+                        Before your first visit
+                      </p>
+                      <p>
+                        Your first appointment is an initial evaluation with
+                        your provider. You may cover a variety of topics so your
+                        provider can learn about your needs. Here are some tips
+                        to make the most of this visit.
+                      </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <table>
+                        <tr><td style="height:20px"></td></tr>
+                        <tr>
+                          <td>
+                            <%= image_tag attachments['computer_icon.png'].url
+                            %>
+                          </td>
+                          <td style="padding-left: 20px;" class="highlight-link">
+                            Check your email to join the
+                            <a href="<%= @lfs_patient_portal_link %>"
+                              >LifeStance Patient Portal</a
+                            >
+                            and complete a Clinical Assessment. This will
+                            provide a starting place for you and your provider.
+                          </td>
+                        </tr>
+                        <tr><td style="height:20px"></td></tr>
+                        <tr>
+                          <td>
+                            <%= image_tag attachments['clipboard_icon.png'].url
+                            %>
+                          </td>
+                          <td style="padding-left: 20px">
+                            Come with any questions you have, plus a list of any
+                            medications you’re currently taking.
+                          </td>
+                        </tr>
+                        <tr><td style="height:20px"></td></tr>
+                        <tr>
+                          <td>
+                            <%= image_tag attachments['calendar_icon.png'].url
+                            %>
+                          </td>
+                          <td style="padding-left: 20px" class="highlight-link">
+                            If you need to
+                            <a href="<%= @cancellation_link %>">cancel</a><%=",
+                            please do so at least 2 business days in advance or
+                            you will be charged a cancellation fee. If you need
+                            to reschedule, call the office at
+                            #{@support_number}." %>
+                          </td>
+                        </tr>
+                        <tr><td style="height:20px"></td></tr>
+                        <tr>
+                        <td valign="top">
+                          <%= image_tag attachments['credit_card.png'].url
+                          %>
+                        </td>
+                        <td style="padding-left: 20px;">
+                          If you haven’t provided your credit card information you may be called before your visit to
+                         put a credit card on file. The credit card would be charged in the event of a missed appointment, 
+                         late cancel and/or to cover any outstanding patient balance.
+                        </td>
+                        </tr>
+                        <tr><td style="height:40px"></td></tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <!-- help -->
+
+      <!-- help section  -->
+      <tr>
+        <td class="help">
+          <table width="100%">
+            <tr>
+              <td>
+                <p class="help-title">
+                  We’re here for you if you have any questions.
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p class="help-tele">
+                  Speak to a Care Guide at
+                  <span class="highlight support-wrap"><%= @support_number %></span>
+                </p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <!-- footer content  -->
+
+      <tr>
+        <td class="footer">
+          <table width="100%">
+            <tr width="100%">
+              <td>
+                <table class="footer-tele separator-column">
+                  <tr>
+                    <td class="table-text"><%= @support_number %></td>
+                  </tr>
+                  <tr>
+                    <td class="table-text">lifestance.com</td>
+                  </tr>
+                </table>
+                <table class="separator-column social-apps">
+                  <tr>
+                    <td>
+                      <a href="#" class="social-icon">
+                        <%= image_tag attachments['instagram.png'].url %>
+                      </a>
+                      <a href="#" class="social-icon">
+                        <%= image_tag attachments['facebook.png'].url %>
+                      </a>
+                      <a href="#" class="social-icon">
+                        <%= image_tag attachments['twitter.png'].url %>
+                      </a>
+                      <a href="#" class="social-icon">
+                        <%= image_tag attachments['linkedin.png'].url %>
+                      </a>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </center>
+</body>

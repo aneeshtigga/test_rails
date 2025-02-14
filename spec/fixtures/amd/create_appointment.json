@@ -1,0 +1,103 @@
+{
+  "id": 9543446,
+  "startdatetime": "2021-12-29T08:00:00",
+  "status": 0,
+  "confirmdate": null,
+  "columnid": 17,
+  "heading": "BEACHWOOD - MILLER",
+  "profileid": 9,
+  "provider": "MILLER,ALEX",
+  "providercode": "MILL00",
+  "facilityid": 1,
+  "facility": " ",
+  "facilitycode": "     ",
+  "episodeid": 5949585,
+  "episode": "STANDARD",
+  "patientid": 5983949,
+  "firstname": "CAPTAIN",
+  "lastname": "BLACKBEARD",
+  "middlename": "",
+  "ssn": "            ",
+  "dob": "1990-07-15T00:00:00",
+  "patientemail": "TESTING@EMAIL.COM",
+  "patientinactivestatusid": null,
+  "ispatientapproved": true,
+  "chartnumber": "2689",
+  "deceased": null,
+  "gender": "M",
+  "patientaddress": {
+    "address1": "",
+    "address2": "",
+    "city": "",
+    "state": "",
+    "zipcode": "          ",
+    "countrycode": ""
+  },
+  "responsiblepartyid": 6849548,
+  "hasccof": false,
+  "rpname": "BLACKBEARD,CAPTAIN",
+  "copay": null,
+  "paymentid": null,
+  "coverageid": null,
+  "carriername": "",
+  "carriercode": "",
+  "waitlist": null,
+  "recurringappointmentid": null,
+  "recurringappointment": null,
+  "hasrecurrenceexception": false,
+  "recurrenceexception": null,
+  "transitionofcare": false,
+  "tocrequestedavailable": null,
+  "istelemedicine": false,
+  "duration": 30,
+  "color": "STRING",
+  "comments": "Sample Appointment note",
+  "referralplanid": 1,
+  "authorizations": null,
+  "referringprovider": {
+    "id": 387,
+    "code": "JONES ",
+    "name": "JONES,CAMERON"
+  },
+  "visitposted": false,
+  "chargesposted": false,
+  "homephone": " ",
+  "officephone": " ",
+  "officeextension": " ",
+  "otherphone": " ",
+  "otherphonetype": " ",
+  "preferredphone": "",
+  "appointmenttypeids": [
+    1
+  ],
+  "appointmenttype": [
+    {
+      "licensekey": 995456,
+      "id": 1,
+      "name": " ",
+      "isdefault": false,
+      "display": false,
+      "billable": true,
+      "transitionofcare": false
+    }
+  ],
+  "appointmentinstruction": [
+
+  ],
+  "sequence": "",
+  "globalperiod": [
+
+  ],
+  "insuranceorder": "",
+  "insurance": [
+
+  ],
+  "arpatientbalance": 0.0,
+  "arfamilybalance": 0.0,
+  "remainingvisits": null,
+  "maxauthvisits": null,
+  "authvisitsused": null,
+  "appointmentgroupid": null,
+  "superbill": null,
+  "linkednotestatus": 0
+}

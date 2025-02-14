@@ -1,0 +1,64 @@
+{
+  "?xml": {
+    "@version": "1.0",
+    "@encoding": "ISO-8859-1"
+  },
+  "PPMDResults": {
+    "@s": "PRDAPI3WFEOT8NE",
+    "@lst": "12/9/2021 2:41:26 AM",
+    "Results": {
+      "filelist": {
+        "file": {
+          "@id": "18862685",
+          "@name": "INSURANCECARDFRONTVIEW",
+          "@description": "INSURANCECARDFRONTVIEW",
+          "@filename": "995456-18862685-0000",
+          "@filelocation": "2021\\12\\09\\",
+          "@filetype": "I",
+          "@fileext": "JPEG",
+          "@filesize": "",
+          "@patientid": "5983957",
+          "@patientname": "CAPTAIN,BLACKBEARD",
+          "@patientchartnumber": "2697",
+          "@profileid": "",
+          "@profilecode": "",
+          "@profilename": "",
+          "@visitid": "",
+          "@facilityid": "",
+          "@referringproviderid": "",
+          "@referringprovidername": "",
+          "@referringprovidercode": "",
+          "@dos": "",
+          "@createdby": "LS-API",
+          "@createdat": "2021-12-08T23:41:26.597",
+          "@printedby": "",
+          "@printedat": "",
+          "@reviewedby": "",
+          "@reviewedat": "",
+          "@approvedby": "",
+          "@approvedat": "",
+          "@lockedby": "",
+          "@lockedat": "",
+          "@changedby": "LS-API",
+          "@changedat": "2021-12-08T23:41:26.677",
+          "@revision": "0",
+          "@zipmode": "0",
+          "@serverfile": "1",
+          "@charttype": "Chart",
+          "categorylist": {
+            "category": {
+              "@id": "19",
+              "@code": "BININS",
+              "@name": "Insurance Cards",
+              "@groupcode": "BILLIN",
+              "@groupname": "Billing",
+              "@filetype": "1"
+            }
+          },
+          "revisionlist": null
+        }
+      },
+      "updatedlist": null
+    }
+  }
+}

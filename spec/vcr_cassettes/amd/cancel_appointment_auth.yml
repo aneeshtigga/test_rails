@@ -1,0 +1,43 @@
+---
+http_interactions:
+- request:
+    method: put
+    uri: https://api-101.advancedmd.com/API/scheduler/Appointments/9543341/cancel
+    body:
+      encoding: UTF-8
+      string: '{"id":9543341}'
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/3.0.1p64
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '14'
+      Cookie:
+      - token="invalid token"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - api-101.advancedmd.com
+  response:
+    status:
+      code: 401
+      message: Unauthorized
+    headers:
+      Date:
+      - Tue, 27 Jul 2021 11:56:39 GMT
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Server:
+      - Microsoft-IIS/10.0
+      Amds-Lst:
+      - 07/27/2021 04:56:39
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: Tue, 27 Jul 2021 11:56:39 GMT
+recorded_with: VCR 6.0.0

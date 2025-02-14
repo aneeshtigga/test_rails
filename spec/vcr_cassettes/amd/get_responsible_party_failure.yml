@@ -1,0 +1,74 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://provapi.advancedmd.com/processrequest/api-101/LIFESTANCE/xmlrpc/processrequest.aspx
+    body:
+      encoding: UTF-8
+      string: '{"ppmdmsg":{"@action":"getrespparty","@class":"demographics","@msgtime":"7/21/2021
+        06:48:55 PM","@resppartyid":"non-existent"}}'
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - rest-client/2.1.0 (darwin20 x86_64) ruby/3.0.1p64
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '127'
+      Cookie:
+      - token=995456grkYawN6JbkQ0IY4VDoCF/+1fOJiMr3voIHM6XHX/RssN0AJ2FpfaNrIB7RY60TVbwFoaUH/zISgd4r1Gu3UoR71Nly0/jlUQfp49PMbIiZDEigQm7NooIIGaEGb0DbxZv3R/BnONS21IVYDTwV/nHW+vTSHoO+53sZu4qTvPjieFGdoEchiwiHs06k8OuutNCra2iQE5q9MKJEIVDo8OA==
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - provapi.advancedmd.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 21 Jul 2021 18:49:01 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '1331'
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - no-cache,no-store,must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - Wed, 21 Jul 2021 18:48:00 GMT
+      Server:
+      - Microsoft-IIS/10.0
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET,PUT,POST,DELETE,OPTIONS
+      Access-Control-Allow-Headers:
+      - Origin, Depth, User-Agent, X-File-Size, X-Requested-With, If-Modified-Since,
+        X-File-Name, Cache-ControlOrigin, Content-Type, Accept, Authorization, X-ProofSignature,
+        InternalRequestType
+    body:
+      encoding: UTF-8
+      string: '{"?xml":{"@version":"1.0","@encoding":"ISO-8859-1"},"PPMDResults":{"@s":"PRDAPI1WFEGWK8T","@lst":"7/21/2021
+        11:49:00 AM","Error":{"Fault":{"faultcode":"Server","faultstring":"Server
+        Error","detail":{"code":"-2147221504","description":"AMD-995456-07211149 |
+        Invalid attempt to read when no data is present.","class":"AdvancedMD.Demographics.Demographics","method":"Interop.MSSEventLog._IPPMDGateway.Gateway","linenum":"0","source":"System.InvalidOperationException:
+        Invalid attempt to read when no data is present.\r\n   at System.Data.SqlClient.SqlDataReader.CheckDataIsReady(Int32
+        columnIndex, Boolean allowPartiallyReadColumn, Boolean permitAsync, String
+        methodName)\r\n   at System.Data.SqlClient.SqlDataReader.TryReadColumn(Int32
+        i, Boolean setTimeout, Boolean allowPartiallyReadColumn)\r\n   at System.Data.SqlClient.SqlDataReader.GetValueInternal(Int32
+        i)\r\n   at System.Data.SqlClient.SqlDataReader.GetValue(Int32 i)\r\n   at
+        AdvancedMD.Demographics.Demographics.AssembleRespParty(XmlDocument requestXml)\r\n   at
+        AdvancedMD.Demographics.Demographics.Interop.MSSEventLog._IPPMDGateway.Gateway(String
+        xmlIn)","extrainfo":{"requestinfo":{"ppmdmsg":{"@action":"getrespparty","@class":"demographics","@msgtime":"7/21/2021
+        06:48:55 PM","@resppartyid":"non-existent","@ip":"96.237.174.248","usercontext":"995456[Removed]"}}}}}}}}'
+  recorded_at: Wed, 21 Jul 2021 18:49:01 GMT
+recorded_with: VCR 6.0.0

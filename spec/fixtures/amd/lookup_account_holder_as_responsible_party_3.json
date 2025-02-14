@@ -1,0 +1,126 @@
+{
+  "?xml": {
+    "@version": "1.0",
+    "@encoding": "ISO-8859-1"
+  },
+  "PPMDResults": {
+    "@s": "PRDAPI1WFEGOUUN",
+    "@lst": "3/18/2022 3:24:17 AM",
+    "Results": {
+      "resppartylist": {
+        "respparty": {
+          "@id": "resp6850427",
+          "@name": "POLICE,TRAFFIC",
+          "@accttype": "ac_type4",
+          "@acctnum": "6850427",
+          "@dob": "01/04/1993",
+          "@sex": "F",
+          "@title": "",
+          "@employer": "",
+          "@employstatus": "1",
+          "@ssn": "",
+          "@sendstmt": "1",
+          "@stmtrestart": "",
+          "@holdreasonfid": "0",
+          "@holdreasondesc": "",
+          "@holdreasoncode": "",
+          "@billcycle": "1",
+          "@fincharge": "0",
+          "@stmtformat": "",
+          "@balancefwd": "1",
+          "@lastpmtdate": "",
+          "@lastpmtamount": "",
+          "@laststmtdate": "",
+          "@laststmtamount": "",
+          "@paymentplanbalance": "",
+          "@ispaperless": "0",
+          "@ispaperlessportalchangedate": "",
+          "address": {
+            "@zip": "",
+            "@city": "",
+            "@state": "",
+            "@address1": "",
+            "@address2": "",
+            "@areacode": "",
+            "@countrycode": ""
+          },
+          "contactinfo": {
+            "@name": "",
+            "@homephone": "",
+            "@officephone": "",
+            "@officeext": "",
+            "@otherphone": "(152) 672-5522",
+            "@othertype": "C",
+            "@email": "POLICE@EMAIL.COM",
+            "@preferredcommunicationfid": "",
+            "@communicationnote": ""
+          },
+          "creditcardonfile": null,
+          "arbucketlist": {
+            "arbucket": [
+              {
+                "@buckettype": "r",
+                "@current": "0.00",
+                "@past30": "0.00",
+                "@past60": "0.00",
+                "@past90": "0.00",
+                "@past120": "0.00",
+                "@unapplied": "0.00",
+                "@total": "0.00"
+              },
+              {
+                "@buckettype": "ri",
+                "@current": "0.00",
+                "@past30": "0.00",
+                "@past60": "0.00",
+                "@past90": "0.00",
+                "@past120": "0.00",
+                "@unapplied": "0.00",
+                "@total": "0.00"
+              }
+            ]
+          },
+          "familymemberlist": {
+            "familymember": {
+              "@id": "family5984647",
+              "@name": "POLICE,TRAFFIC",
+              "@chart": "3196",
+              "@isrp": "1",
+              "@previousfirstname": "",
+              "@previousmiddlename": "",
+              "@previouslastname": "",
+              "@hipparelationship": "18",
+              "contactinfo": {
+                "@homephone": ""
+              },
+              "address": {
+                "@zip": "",
+                "@city": "",
+                "@state": "",
+                "@address1": "",
+                "@address2": "",
+                "@countrycode": ""
+              },
+              "previousaddress": {
+                "@address1": "",
+                "@address2": "",
+                "@countrycode": "",
+                "@state": "",
+                "@city": "",
+                "@zip": ""
+              }
+            }
+          }
+        }
+      },
+      "accttypelist": {
+        "accttype": {
+          "@id": "ac_type4",
+          "@name": "TYPICAL ACCOUNT",
+          "@code": "TA"
+        }
+      }
+    },
+    "Error": null
+  }
+}

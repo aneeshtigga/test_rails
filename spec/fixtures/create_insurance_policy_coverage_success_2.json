@@ -1,0 +1,43 @@
+{
+  "?xml": {
+    "@version": "1.0",
+    "@encoding": "ISO-8859-1"
+  },
+  "PPMDResults": {
+    "@s": "PRDAPI1WFE7A2KO",
+    "@lst": "3/22/2022 3:09:56 AM",
+    "Results": {
+      "resppartylist": {
+        "@itemcount": "1",
+        "@page": "1",
+        "@pagecount": "1",
+        "@itemsfrom": "1",
+        "@itemsto": "1",
+        "respparty": {
+          "@id": "resp6850251",
+          "@name": "JAANE,CAPTAIN",
+          "@acctnum": "6850251",
+          "@ssn": "            ",
+          "@isinvoiceentity": "0",
+          "@dob": "01/01/1986",
+          "@email": "TEST@GMAIL.COM",
+          "@gender": "M",
+          "address": {
+            "@zipid": "1",
+            "@zip": "02151",
+            "@city": "BOSTON",
+            "@state": "MA",
+            "@address1": "",
+            "@address2": "10 STORROW DR",
+            "@countrycode": "",
+            "@areacode": "781"
+          },
+          "contactinfo": {
+            "@homephone": ""
+          }
+        }
+      }
+    },
+    "Error": null
+  }
+}

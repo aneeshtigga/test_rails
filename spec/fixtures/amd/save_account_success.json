@@ -1,0 +1,25 @@
+{
+  "?xml": {
+    "@version": "1.0",
+    "@encoding": "ISO-8859-1"
+  },
+  "PPMDResults": {
+    "@s": "PRDAPI2WFE82WDD",
+    "@lst": "11/8/2021 1:16:02 AM",
+    "Results": {
+      "patientportalaccount": {
+        "@id": "6575",
+        "@emailaddress": "blackbeardctest@email.com",
+        "@fullname": "blackbeard,captain",
+        "@display": "1",
+        "@comment": "",
+        "@disable": "0",
+        "@invitationstatus": "notsent",
+        "@invitationdate": "",
+        "@enrollmentstatus": "notenrolled",
+        "@lastlogindate": "",
+        "authorizedpatientlist": null
+      }
+    }
+  }
+}

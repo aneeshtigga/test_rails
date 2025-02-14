@@ -1,0 +1,31 @@
+{
+  "meta": {
+    "code": 200
+  },
+  "addresses": [
+    {
+      "latitude": 38.187883,
+      "longitude": -85.710782,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.710782,
+          38.187883
+        ]
+      },
+      "country": "United States",
+      "countryCode": "US",
+      "countryFlag": "🇺🇸",
+      "distance": 0,
+      "confidence": "exact",
+      "city": "Louisville",
+      "neighborhood": "Camp Taylor",
+      "postalCode": "40213",
+      "stateCode": "KY",
+      "state": "Kentucky",
+      "layer": "postalCode",
+      "formattedAddress": "Louisville, KY 40213 USA",
+      "addressLabel": "40213"
+    }
+  ]
+}

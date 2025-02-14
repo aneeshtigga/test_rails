@@ -1,0 +1,538 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://partnerlogin.advancedmd.com/practicemanager/xmlrpc/processrequest.aspx
+    body:
+      encoding: UTF-8
+      string: '{"ppmdmsg":{"@action":"login","@class":"login","@username":"LS-API","@psw":"lifestance2021!","@officecode":995456,"@appname":"LIFESTANCE"}}'
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/3.0.1p64
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '139'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - partnerlogin.advancedmd.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 28 Oct 2021 10:00:23 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '971'
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - no-cache,no-store,must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - Thu, 28 Oct 2021 09:59:23 GMT
+      Server:
+      - Microsoft-IIS/10.0
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET,PUT,POST,DELETE,OPTIONS
+      Access-Control-Allow-Headers:
+      - Origin, Depth, User-Agent, X-File-Size, X-Requested-With, If-Modified-Since,
+        X-File-Name, Cache-ControlOrigin, Content-Type, Accept, Authorization, X-ProofSignature,
+        InternalRequestType
+    body:
+      encoding: UTF-8
+      string: '{"?xml":{"@version":"1.0","@encoding":"ISO-8859-1"},"PPMDResults":{"@s":"PRDAPI2WFEYWZQN","@lst":"10/28/2021
+        3:00:23 AM","Results":{"@success":"0","usercontext":{"@webserver":"https://provapi.advancedmd.com/processrequest/api-102/LIFESTANCE","@reportingServerURL":"https://reportingservices-100.advancedmd.com/rs/reportrequest.aspx","@helpurl":"https://ow2-help-01-prd.advancedmd.com/help/","@username":"LS-API"}},"Error":{"Fault":{"faultcode":"Client","faultstring":"Client
+        Error","detail":{"code":"-2147220476","description":"The Office Key 995456
+        must be redirected to https://provapi.advancedmd.com/processrequest/api-102/LIFESTANCE.
+        When logging in to AdvancedMD, if no security token (<usercontext> text) is
+        returned, then you must redirect your login to the server indicated in the
+        \"webserver\" attribute of the usercontext element.","class":"AdvancedMD.Security.Login","method":"LoginUser","linenum":"0","source":"AdvancedMD.Security.Login","extrainfo":null}}}}}'
+  recorded_at: Thu, 28 Oct 2021 10:00:23 GMT
+- request:
+    method: post
+    uri: https://provapi.advancedmd.com/processrequest/api-102/LIFESTANCE/xmlrpc/processrequest.aspx
+    body:
+      encoding: UTF-8
+      string: '{"ppmdmsg":{"@action":"login","@class":"login","@username":"LS-API","@psw":"lifestance2021!","@officecode":995456,"@appname":"LIFESTANCE"}}'
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/3.0.1p64
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '139'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - provapi.advancedmd.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 28 Oct 2021 10:00:24 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '2449'
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - no-cache,no-store,must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - Thu, 28 Oct 2021 09:59:24 GMT
+      Server:
+      - Microsoft-IIS/10.0
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET,PUT,POST,DELETE,OPTIONS
+      Access-Control-Allow-Headers:
+      - Origin, Depth, User-Agent, X-File-Size, X-Requested-With, If-Modified-Since,
+        X-File-Name, Cache-ControlOrigin, Content-Type, Accept, Authorization, X-ProofSignature,
+        InternalRequestType
+    body:
+      encoding: UTF-8
+      string: '{"?xml":{"@version":"1.0","@encoding":"ISO-8859-1"},"PPMDResults":{"@s":"PRDAPI2WFE9ID3C","@lst":"10/28/2021
+        3:00:24 AM","Results":{"@success":"1","@api":"1","@version":"21.2","usercontext":{"@reportingServerURL":"https://reportingservices-100.advancedmd.com/rs/reportrequest.aspx","@adhocReportingURL":"https://advancedinsight.advancedmd.com","@aibenchmarksurl":"https://benchmarks.advancedmd.com/index.html","@helpurl":"https://ow2-help-01-prd.advancedmd.com/help/","@webserver":"https://provapi.advancedmd.com/processrequest/api-102/LIFESTANCE","@webserverbaseurl":"https://provapi.advancedmd.com","@username":"LS-API","@userguid":"acad6a2d-10f6-42a8-b35b-bb0f839cbe9d","@email":"bridget.landis@lifestance.com","@checkemail":"1","@needsconfirmation":"1","@sendnewconfirmation":"1","@pmredirecturl":"https://pm-wfe-136.advancedmd.com/practicemanager","@ehrredirecturl":"https://wc-wfe-136.advancedmd.com/practicemanager","@telemedicineapiurl":"https://telemed.advancedmd.com/Application.Web.API","@pmapiredirecturl":"https://pm-api-136.advancedmd.com","@ehrapiredirecturl":"https://go.advancedmd.com/api/wc/","@staticcontentredirecturl":"https://static-100.advancedmd.com","@capturechallengesettings":"1","@scanningserverurl":"https://scan.advancedmd.com/dynamsoft/Resources.15.2/Resources/","@cqmssoserviceurl":"https://ow2-cqmsso-01.advancedmd.com/api/account","@cqmsolutionurl":"https://ow2-cqm-01.advancedmd.com","@portalappintakeurl":"https://patientportal.advancedmd.com/995456/onlineintake","@portalappolsurl":"https://patientportal.advancedmd.com/995456/onlinescheduling","@apptreminderapiurl":"https://pm-api-136.advancedmd.com/api/reminders","@servertimezone":"Pacific
+        Standard Time","@webdavurl":"https://ow2-api-102.advancedmd.com","@providerid":"0","@defaultprofileid":"0","@departmentid":"0","@clinicaluser":"1","@ehronly":"0","@roleid":"219","@officecode":"995456","@logincode":"995456","@officename":"LifeStance
+        Health Demo","@admin":"0","@adminlimited":"0","@edicontact":"0","@ssoprovidername":"","@twofactorenabled":"0","@iscbouser":"1","@status":"
+        ","@trainingTrackerUrl":"https://pm-wfe-136.advancedmd.com/AdvancedMD.TrainingTracker/","#text":"995456fGq/JUHOMJGPNYNGdcIyPUtMMMefvGk3v1sWqA+ahrR7fw4BAzuSlS+AZH7/EU6XSzzBvrSKwNwk723oFInM5HsA5BTWRd2fILOtIMDsTwDWPRDurai4fYrFvRvIElt4qOgfhKGKsMYHTe/KXOQ1YvlrYZYa5WWqTj3AigCe0kdaKJkBpdx1P7DoYsE+4CrIcoiJqbAj0gKt+MgxgW05Uw=="},"variation":{"@code":"AMDSPRO","@name":""}},"Error":null}}'
+  recorded_at: Thu, 28 Oct 2021 10:00:24 GMT
+- request:
+    method: post
+    uri: https://provapi.advancedmd.com/processrequest/api-102/LIFESTANCE/xmlrpc/processrequest.aspx/xmlrpc/processrequest.aspx
+    body:
+      encoding: UTF-8
+      string: '{"ppmdmsg":{"@action":"lookuppatient","@class":"api","@exactmatch":"-1","@name":"Wilson,David","@page":"1"}}'
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/3.0.1p64
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '108'
+      Cookie:
+      - token=995456fGq/JUHOMJGPNYNGdcIyPUtMMMefvGk3v1sWqA+ahrR7fw4BAzuSlS+AZH7/EU6XSzzBvrSKwNwk723oFInM5HsA5BTWRd2fILOtIMDsTwDWPRDurai4fYrFvRvIElt4qOgfhKGKsMYHTe/KXOQ1YvlrYZYa5WWqTj3AigCe0kdaKJkBpdx1P7DoYsE+4CrIcoiJqbAj0gKt+MgxgW05Uw==
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - provapi.advancedmd.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 28 Oct 2021 10:00:26 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '574'
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - no-cache,no-store,must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - Thu, 28 Oct 2021 09:59:25 GMT
+      Server:
+      - Microsoft-IIS/10.0
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET,PUT,POST,DELETE,OPTIONS
+      Access-Control-Allow-Headers:
+      - Origin, Depth, User-Agent, X-File-Size, X-Requested-With, If-Modified-Since,
+        X-File-Name, Cache-ControlOrigin, Content-Type, Accept, Authorization, X-ProofSignature,
+        InternalRequestType
+    body:
+      encoding: UTF-8
+      string: '{"?xml":{"@version":"1.0","@encoding":"ISO-8859-1"},"PPMDResults":{"@s":"PRDAPI2WFEJS3ZY","@lst":"10/28/2021
+        3:00:25 AM","Results":{"patientlist":{"@itemcount":"1","@page":"1","@pagecount":"1","@itemsfrom":"1","@itemsto":"1","patient":{"@id":"pat5984010","@name":"WILSON,DAVID","@chart":"2735","@ssn":"","@hipaarelationship":"19","@email":"TEST@GMAIL.COM","@gender":"M","@dob":"01/04/1995","address":{"@zipid":"1","@zip":"","@city":"","@state":"","@address1":"","@address2":"","@countrycode":"","@areacode":""},"contactinfo":{"@homephone":"(123)
+        456-7890"}}}},"Error":null}}'
+  recorded_at: Thu, 28 Oct 2021 10:00:26 GMT
+- request:
+    method: post
+    uri: https://provapi.advancedmd.com/processrequest/api-102/LIFESTANCE/xmlrpc/processrequest.aspx/xmlrpc/processrequest.aspx
+    body:
+      encoding: UTF-8
+      string: '{"ppmdmsg":{"@action":"selectuserfiletemplates","@class":"masterfiles","@templatetype":"pt","@nocookie":"0"}}'
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/3.0.1p64
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '109'
+      Cookie:
+      - token=995456fGq/JUHOMJGPNYNGdcIyPUtMMMefvGk3v1sWqA+ahrR7fw4BAzuSlS+AZH7/EU6XSzzBvrSKwNwk723oFInM5HsA5BTWRd2fILOtIMDsTwDWPRDurai4fYrFvRvIElt4qOgfhKGKsMYHTe/KXOQ1YvlrYZYa5WWqTj3AigCe0kdaKJkBpdx1P7DoYsE+4CrIcoiJqbAj0gKt+MgxgW05Uw==
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - provapi.advancedmd.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 28 Oct 2021 10:00:27 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '79613'
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - no-cache,no-store,must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - Thu, 28 Oct 2021 09:59:27 GMT
+      Server:
+      - Microsoft-IIS/10.0
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET,PUT,POST,DELETE,OPTIONS
+      Access-Control-Allow-Headers:
+      - Origin, Depth, User-Agent, X-File-Size, X-Requested-With, If-Modified-Since,
+        X-File-Name, Cache-ControlOrigin, Content-Type, Accept, Authorization, X-ProofSignature,
+        InternalRequestType
+    body:
+      encoding: UTF-8
+      string: '{"?xml":{"@version":"1.0","@encoding":"ISO-8859-1"},"PPMDResults":{"@s":"PRDAPI2WFERRGDX","@lst":"10/28/2021
+        3:00:27 AM","Results":{"record":[{"@ordinal":"-999","@uid":"515","@code":"OBIE","@name":"OBIE","@templatetype":"pt","@issingleuse":"0","@hasmultiple":"1","@includeinmailmerge":"0","@includeonfacesheet":"0","@alwaysshowonfacesheet":"0","@includeindemographics":"1","@alwaysshowindemographics":"0","@restrictupdates":"0","@sortby1id":"","@sortby1desc":"1","@sortby2id":"","@sortby2desc":"0","@changedat":"2021-08-06
+        12:37:54","@changedby":"DFONTAINE","@createdat":"2021-08-04 07:42:48","@createdby":"DFONTAINE","@systemtype":"0","@display":"1","@fieldlist":"Preferred
+        Name, Pronouns, Tell us about.., Special Cases","fieldlist":{"field":[{"@id":"5159","@ordinal":"0","@name":"Preferred
+        Name","@alias":"C_OBIE_Nickname","@datatype":"Text","@subtype":"","@isrequired":"0","@defaultvalue":"","@defaultvaluename":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"0","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"0"},{"@id":"5164","@ordinal":"1","@name":"Pronouns","@alias":"C_OBIE_Pronouns1","@datatype":"List","@subtype":"PRONOUNS","@isrequired":"0","@defaultvalue":"","@defaultvaluename":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"0","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"0"},{"@id":"5160","@ordinal":"2","@name":"Tell
+        us about..","@alias":"C_OBIE_Tellusabout__","@datatype":"Multi-line Text","@subtype":"","@isrequired":"0","@defaultvalue":"","@defaultvaluename":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"0","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"0"},{"@id":"5163","@ordinal":"3","@name":"Special
+        Cases","@alias":"C_OBIE_SpecialCases1","@datatype":"List","@subtype":"SPECIAL
+        CASES","@isrequired":"0","@defaultvalue":"7","@defaultvaluename":"NONE APPLY","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"0","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"0"}]}},{"@ordinal":"0","@uid":"2","@code":"ER","@name":"ER
+        Contact","@templatetype":"PT","@issingleuse":"1","@hasmultiple":"0","@includeinmailmerge":"0","@includeonfacesheet":"0","@alwaysshowonfacesheet":"0","@includeindemographics":"1","@alwaysshowindemographics":"1","@restrictupdates":"0","@sortby1id":"","@sortby1desc":"1","@sortby2id":"","@sortby2desc":"0","@changedat":"2006-03-17
+        13:15:37","@changedby":"PPMD_JKOJIMA","@createdat":"2004-09-23 17:24:33","@createdby":"PPMD_BEV","@systemtype":"0","@display":"1","@fieldlist":"Emergency
+        Contact, Relation, Address, City, State, Zip, Home Phone, Work/Alt Phone,
+        Cell Phone","fieldlist":{"field":[{"@id":"68","@ordinal":"0","@name":"Emergency
+        Contact","@alias":"C_ER_EmergencyContac","@datatype":"Text","@subtype":"","@isrequired":"0","@defaultvalue":"","@defaultvaluename":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"0","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"0"},{"@id":"6","@ordinal":"1","@name":"Relation","@alias":"C_ER_Relation","@datatype":"Text","@subtype":"","@isrequired":"0","@defaultvalue":"","@defaultvaluename":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"0","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"0"},{"@id":"2","@ordinal":"2","@name":"Address","@alias":"C_ER_Address","@datatype":"Text","@subtype":"","@isrequired":"0","@defaultvalue":"","@defaultvaluename":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"0","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"0"},{"@id":"3","@ordinal":"3","@name":"City","@alias":"C_ER_City","@datatype":"Text","@subtype":"","@isrequired":"0","@defaultvalue":"","@defaultvaluename":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"0","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"0"},{"@id":"4","@ordinal":"4","@name":"State","@alias":"C_ER_State","@datatype":"Text","@subtype":"","@isrequired":"0","@defaultvalue":"","@defaultvaluename":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"0","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"0"},{"@id":"5","@ordinal":"5","@name":"Zip","@alias":"C_ER_Zip","@datatype":"Text","@subtype":"ZIP/Postal
+        Code","@isrequired":"0","@defaultvalue":"","@defaultvaluename":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"0","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"0"},{"@id":"66","@ordinal":"6","@name":"Home
+        Phone","@alias":"C_ER_Phone","@datatype":"Text","@subtype":"Phone Number","@isrequired":"0","@defaultvalue":"","@defaultvaluename":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"0","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"0"},{"@id":"70","@ordinal":"7","@name":"Work/Alt
+        Phone","@alias":"C_ER_Work_AltPhone","@datatype":"Text","@subtype":"Phone
+        Number","@isrequired":"0","@defaultvalue":"","@defaultvaluename":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"0","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"0"},{"@id":"69","@ordinal":"8","@name":"Cell
+        Phone","@alias":"C_ER_CellPhone","@datatype":"Text","@subtype":"Phone Number","@isrequired":"0","@defaultvalue":"","@defaultvaluename":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"0","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"0"}]}},{"@ordinal":"0","@uid":"28","@code":"#VFC","@name":"Immun
+        Fund","@templatetype":"PT","@issingleuse":"1","@hasmultiple":"0","@includeinmailmerge":"0","@includeonfacesheet":"0","@alwaysshowonfacesheet":"0","@includeindemographics":"1","@alwaysshowindemographics":"0","@restrictupdates":"0","@sortby1id":"","@sortby1desc":"1","@sortby2id":"","@sortby2desc":"0","@changedat":"2017-08-22
+        12:13:49","@changedby":"","@createdat":"2015-02-24 18:38:32","@createdby":"SYS_U20016","@systemtype":"2","@display":"1","@fieldlist":"Immunization
+        Funding","fieldlist":{"field":{"@id":"353","@ordinal":"0","@name":"Immunization
+        Funding","@alias":"#Immun_Funding","@datatype":"List","@subtype":"#ImmunFunding","@isrequired":"0","@defaultvalue":"","@defaultvaluename":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"0","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"0"}}},{"@ordinal":"1","@uid":"3","@code":"#VIT","@name":"Vitals","@templatetype":"pt","@issingleuse":"0","@hasmultiple":"1","@includeinmailmerge":"1","@includeonfacesheet":"1","@alwaysshowonfacesheet":"1","@includeindemographics":"1","@alwaysshowindemographics":"0","@restrictupdates":"0","@sortby1id":"67","@sortby1desc":"0","@sortby2id":"55","@sortby2desc":"0","@changedat":"2006-05-01
+        10:30:29","@changedby":"PPMD_JKOJIMA","@createdat":"2005-11-04 22:01:15","@createdby":"SYSTEM","@systemtype":"1","@display":"1","@fieldlist":"Visit,
+        Systolic, Diastolic, Bp Location, Bp Position, Pulse Rate, Respirations, Weight,
+        Height, BMI, Temperature, Blood Sugar, Time","fieldlist":{"field":[{"@id":"67","@ordinal":"0","@name":"Visit","@alias":"C_VIT_Visit","@datatype":"Lookup","@subtype":"visit","@isrequired":"0","@defaultvalue":"Most
+        Recent Visit","@defaultvaluename":"Most Recent Visit","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"0","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"0"},{"@id":"56","@ordinal":"1","@name":"Systolic","@alias":"C_VIT_Systolic","@datatype":"Numeric","@subtype":"0","@isrequired":"0","@defaultvalue":"","@defaultvaluename":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"1","@display":"1","@normalrangelow":"110","@normalrangehigh":"150","@userfileformid":"0"},{"@id":"7","@ordinal":"2","@name":"Diastolic","@alias":"C_VIT_Diastolic","@datatype":"Numeric","@subtype":"0","@isrequired":"0","@defaultvalue":"","@defaultvaluename":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"1","@display":"1","@normalrangelow":"60","@normalrangehigh":"80","@userfileformid":"0"},{"@id":"15","@ordinal":"3","@name":"Bp
+        Location","@alias":"C_VIT_BpLocation","@datatype":"List","@subtype":"#BP LOCATION","@isrequired":"0","@defaultvalue":"","@defaultvaluename":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"0","@includeinmailmerge":"1","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"0"},{"@id":"23","@ordinal":"4","@name":"Bp
+        Position","@alias":"C_VIT_BpPosition","@datatype":"List","@subtype":"#BP POSITION","@isrequired":"0","@defaultvalue":"","@defaultvaluename":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"0","@includeinmailmerge":"1","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"0"},{"@id":"31","@ordinal":"5","@name":"Pulse
+        Rate","@alias":"C_VIT_PulseRate","@datatype":"Numeric","@subtype":"0","@isrequired":"0","@defaultvalue":"","@defaultvaluename":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"1","@display":"1","@normalrangelow":"60","@normalrangehigh":"100","@userfileformid":"0"},{"@id":"37","@ordinal":"6","@name":"Respirations","@alias":"C_VIT_Respirations","@datatype":"Numeric","@subtype":"0","@isrequired":"0","@defaultvalue":"","@defaultvaluename":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"1","@display":"1","@normalrangelow":"16","@normalrangehigh":"20","@userfileformid":"0"},{"@id":"42","@ordinal":"7","@name":"Weight","@alias":"C_VIT_Weight","@datatype":"Text","@subtype":"Weight
+        (English)","@isrequired":"0","@defaultvalue":"","@defaultvaluename":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"1","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"0"},{"@id":"47","@ordinal":"8","@name":"Height","@alias":"C_VIT_Height","@datatype":"Text","@subtype":"Height
+        (English)","@isrequired":"0","@defaultvalue":"","@defaultvaluename":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"1","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"0"},{"@id":"129","@ordinal":"9","@name":"BMI","@alias":"C_VIT_BMI","@datatype":"Calculated","@subtype":"BMI","@isrequired":"0","@defaultvalue":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"1","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"0"},{"@id":"50","@ordinal":"10","@name":"Temperature","@alias":"C_VIT_Temperature","@datatype":"Numeric","@subtype":"1","@isrequired":"0","@defaultvalue":"","@defaultvaluename":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"1","@display":"1","@normalrangelow":"97.0","@normalrangehigh":"99.0","@userfileformid":"0"},{"@id":"52","@ordinal":"11","@name":"Blood
+        Sugar","@alias":"C_VIT_BloodSugar","@datatype":"Numeric","@subtype":"0","@isrequired":"0","@defaultvalue":"","@defaultvaluename":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"1","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"0"},{"@id":"55","@ordinal":"12","@name":"Time","@alias":"C_VIT_Time","@datatype":"Text","@subtype":"","@isrequired":"0","@defaultvalue":"","@defaultvaluename":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"1","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"0"}]}},{"@ordinal":"2","@uid":"4","@code":"#ALLE","@name":"Allergies","@templatetype":"pt","@issingleuse":"0","@hasmultiple":"1","@includeinmailmerge":"0","@includeonfacesheet":"1","@alwaysshowonfacesheet":"0","@includeindemographics":"0","@alwaysshowindemographics":"0","@restrictupdates":"0","@sortby1id":"64","@sortby1desc":"0","@sortby2id":"","@sortby2desc":"0","@changedat":"2006-05-01
+        10:36:06","@changedby":"PPMD_JKOJIMA","@createdat":"2005-11-04 22:11:56","@createdby":"SYSTEM","@systemtype":"1","@display":"1","@fieldlist":"Allergy,
+        Severity, First Noted, Entry Date, Note","fieldlist":{"field":[{"@id":"64","@ordinal":"0","@name":"Allergy","@alias":"C_ALLE_Allergy1","@datatype":"Lookup","@subtype":"allergy","@isrequired":"0","@defaultvalue":"","@defaultvaluename":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"1","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"0"},{"@id":"71","@ordinal":"1","@name":"Severity","@alias":"C_ALLE_Severity1","@datatype":"List","@subtype":"SEVERITY","@isrequired":"0","@defaultvalue":"","@defaultvaluename":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"1","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"0"},{"@id":"19","@ordinal":"2","@name":"First
+        Noted","@alias":"C_ALLE_FirstNoted","@datatype":"Date","@subtype":"","@isrequired":"0","@defaultvalue":"","@defaultvaluename":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"1","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"0"},{"@id":"36","@ordinal":"3","@name":"Entry
+        Date","@alias":"C_ALLE_EntryDate","@datatype":"Date","@subtype":"","@isrequired":"0","@defaultvalue":"0","@defaultvaluename":"Today","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"1","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"0"},{"@id":"72","@ordinal":"4","@name":"Note","@alias":"C_ALLE_Note1","@datatype":"Multi-line
+        Text","@subtype":"","@isrequired":"0","@defaultvalue":"","@defaultvaluename":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"0","@includeinmailmerge":"1","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"0"}]}},{"@ordinal":"3","@uid":"6","@code":"#LAB","@name":"Lab
+        Order","@templatetype":"pt","@issingleuse":"0","@hasmultiple":"0","@includeinmailmerge":"0","@includeonfacesheet":"1","@alwaysshowonfacesheet":"0","@includeindemographics":"0","@alwaysshowindemographics":"0","@restrictupdates":"0","@sortby1id":"78","@sortby1desc":"0","@sortby2id":"57","@sortby2desc":"0","@changedat":"2006-05-01
+        10:37:04","@changedby":"PPMD_JKOJIMA","@createdat":"2005-11-04 22:02:59","@createdby":"SYSTEM","@systemtype":"1","@display":"1","@fieldlist":"Visit,
+        Order #, Lab Ordered, Order Date, Lab, Notes, Performed On, Ordered By, Notes","fieldlist":{"field":[{"@id":"78","@ordinal":"0","@name":"Visit","@alias":"C_LAB_Visit","@datatype":"Lookup","@subtype":"visit","@isrequired":"0","@defaultvalue":"Most
+        Recent Visit","@defaultvaluename":"Most Recent Visit","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"0","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"0"},{"@id":"57","@ordinal":"1","@name":"Order
+        #","@alias":"C_LAB_Order_","@datatype":"Text","@subtype":"","@isrequired":"0","@defaultvalue":"","@defaultvaluename":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"1","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"0"},{"@id":"8","@ordinal":"2","@name":"Lab
+        Ordered","@alias":"C_LAB_Description","@datatype":"Text","@subtype":"","@isrequired":"0","@defaultvalue":"","@defaultvaluename":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"1","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"0"},{"@id":"16","@ordinal":"3","@name":"Order
+        Date","@alias":"C_LAB_OrderDate","@datatype":"Date","@subtype":"","@isrequired":"0","@defaultvalue":"0","@defaultvaluename":"Today","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"1","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"0"},{"@id":"32","@ordinal":"4","@name":"Lab","@alias":"C_LAB_Lab","@datatype":"Lookup","@subtype":"facility","@isrequired":"0","@defaultvalue":"","@defaultvaluename":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"1","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"0"},{"@id":"38","@ordinal":"5","@name":"Notes","@alias":"C_LAB_Notes","@datatype":"Text","@subtype":"","@isrequired":"0","@defaultvalue":"","@defaultvaluename":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"1","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"0"},{"@id":"43","@ordinal":"6","@name":"Performed
+        On","@alias":"C_LAB_PerformedDate","@datatype":"Date","@subtype":"","@isrequired":"0","@defaultvalue":"0","@defaultvaluename":"Today","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"1","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"0"},{"@id":"74","@ordinal":"7","@name":"Ordered
+        By","@alias":"C_LAB_OrderedBy1","@datatype":"Lookup","@subtype":"user","@isrequired":"1","@defaultvalue":"","@defaultvaluename":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"1","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"0"},{"@id":"75","@ordinal":"8","@name":"Notes","@alias":"C_LAB_Notes1","@datatype":"Multi-line
+        Text","@subtype":"","@isrequired":"0","@defaultvalue":"","@defaultvaluename":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"0","@includeinmailmerge":"1","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"0"}]}},{"@ordinal":"4","@uid":"7","@code":"#LABR","@name":"Lab
+        Result","@templatetype":"pt","@issingleuse":"0","@hasmultiple":"0","@includeinmailmerge":"0","@includeonfacesheet":"1","@alwaysshowonfacesheet":"0","@includeindemographics":"0","@alwaysshowindemographics":"0","@restrictupdates":"0","@sortby1id":"79","@sortby1desc":"0","@sortby2id":"58","@sortby2desc":"0","@changedat":"2006-05-01
+        10:38:05","@changedby":"PPMD_JKOJIMA","@createdat":"2005-11-04 22:05:54","@createdby":"SYSTEM","@systemtype":"1","@display":"1","@fieldlist":"Visit,
+        Order #, Date of Result, Result, Date Pt Notified, Pt Notified Via, Scanned,
+        Note","fieldlist":{"field":[{"@id":"79","@ordinal":"0","@name":"Visit","@alias":"C_LABR_Visit","@datatype":"Lookup","@subtype":"visit","@isrequired":"0","@defaultvalue":"","@defaultvaluename":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"0","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"0"},{"@id":"58","@ordinal":"1","@name":"Order
+        #","@alias":"C_LABR_Order_","@datatype":"Text","@subtype":"","@isrequired":"0","@defaultvalue":"","@defaultvaluename":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"1","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"0"},{"@id":"17","@ordinal":"2","@name":"Date
+        of Result","@alias":"C_LABR_DateofResult","@datatype":"Date","@subtype":"","@isrequired":"0","@defaultvalue":"0","@defaultvaluename":"Today","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"1","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"0"},{"@id":"25","@ordinal":"3","@name":"Result","@alias":"C_LABR_Result","@datatype":"List","@subtype":"#LAB
+        RESULT","@isrequired":"0","@defaultvalue":"","@defaultvaluename":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"1","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"0"},{"@id":"44","@ordinal":"4","@name":"Date
+        Pt Notified","@alias":"C_LABR_DatePtNotifi","@datatype":"Date","@subtype":"","@isrequired":"0","@defaultvalue":"0","@defaultvaluename":"Today","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"1","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"0"},{"@id":"77","@ordinal":"5","@name":"Pt
+        Notified Via","@alias":"C_LABR_PtNotifiedVia","@datatype":"List","@subtype":"NOTIFICATION","@isrequired":"0","@defaultvalue":"","@defaultvaluename":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"1","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"0"},{"@id":"33","@ordinal":"6","@name":"Scanned","@alias":"C_LABR_Scanned","@datatype":"List","@subtype":"#YES/NO","@isrequired":"0","@defaultvalue":"","@defaultvaluename":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"1","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"0"},{"@id":"76","@ordinal":"7","@name":"Note","@alias":"C_LABR_Note1","@datatype":"Multi-line
+        Text","@subtype":"","@isrequired":"0","@defaultvalue":"","@defaultvaluename":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"0","@includeinmailmerge":"1","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"0"}]}},{"@ordinal":"5","@uid":"11","@code":"NNOTE","@name":"Nurse
+        Note","@templatetype":"pt","@issingleuse":"0","@hasmultiple":"0","@includeinmailmerge":"1","@includeonfacesheet":"1","@alwaysshowonfacesheet":"0","@includeindemographics":"1","@alwaysshowindemographics":"0","@restrictupdates":"0","@sortby1id":"88","@sortby1desc":"0","@sortby2id":"","@sortby2desc":"0","@changedat":"2006-03-17
+        14:28:25","@changedby":"PPMD_JKOJIMA","@createdat":"2006-03-13 12:55:13","@createdby":"PPMD_JKOJIMA","@systemtype":"0","@display":"1","@fieldlist":"Visit,
+        Nurse, Chief Complaint, Note","fieldlist":{"field":[{"@id":"88","@ordinal":"0","@name":"Visit","@alias":"C_NNOTE_Visit","@datatype":"Lookup","@subtype":"visit","@isrequired":"0","@defaultvalue":"","@defaultvaluename":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"0","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"0"},{"@id":"89","@ordinal":"1","@name":"Nurse","@alias":"C_NNOTE_Nurse","@datatype":"Lookup","@subtype":"user","@isrequired":"0","@defaultvalue":"","@defaultvaluename":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"1","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"0"},{"@id":"90","@ordinal":"2","@name":"Chief
+        Complaint","@alias":"C_NNOTE_ChiefComplai","@datatype":"Text","@subtype":"","@isrequired":"0","@defaultvalue":"","@defaultvaluename":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"1","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"0"},{"@id":"91","@ordinal":"3","@name":"Note","@alias":"C_NNOTE_Note","@datatype":"Multi-line
+        Text","@subtype":"","@isrequired":"0","@defaultvalue":"","@defaultvaluename":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"0","@includeinmailmerge":"1","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"0"}]}},{"@ordinal":"6","@uid":"5","@code":"#MEDS","@name":"Medication","@templatetype":"pt","@issingleuse":"0","@hasmultiple":"1","@includeinmailmerge":"0","@includeonfacesheet":"1","@alwaysshowonfacesheet":"0","@includeindemographics":"0","@alwaysshowindemographics":"0","@restrictupdates":"0","@sortby1id":"65","@sortby1desc":"0","@sortby2id":"51","@sortby2desc":"0","@changedat":"2006-05-01
+        10:35:14","@changedby":"PPMD_JKOJIMA","@createdat":"2005-11-04 22:10:40","@createdby":"SYSTEM","@systemtype":"1","@display":"1","@fieldlist":"Medication,
+        Generic, Dose, Form, Sig, Quantity, Refills, Start Date, Stop Date, If Injection
+        Where?, Notes","fieldlist":{"field":[{"@id":"65","@ordinal":"0","@name":"Medication","@alias":"C_MEDS_Medication","@datatype":"Lookup","@subtype":"medication","@isrequired":"1","@defaultvalue":"","@defaultvaluename":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"1","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"0"},{"@id":"130","@ordinal":"1","@name":"Generic","@alias":"C_MEDS_Generic1","@datatype":"Checkbox","@subtype":"","@isrequired":"0","@defaultvalue":"0","@defaultvaluename":"0","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"1","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"0"},{"@id":"18","@ordinal":"2","@name":"Dose","@alias":"C_MEDS_Dose","@datatype":"Text","@subtype":"","@isrequired":"0","@defaultvalue":"","@defaultvaluename":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"1","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"0"},{"@id":"26","@ordinal":"3","@name":"Form","@alias":"C_MEDS_Form","@datatype":"List","@subtype":"#RXFORMS","@isrequired":"0","@defaultvalue":"","@defaultvaluename":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"1","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"0"},{"@id":"34","@ordinal":"4","@name":"Sig","@alias":"C_MEDS_Sig","@datatype":"List","@subtype":"#SIG","@isrequired":"0","@defaultvalue":"","@defaultvaluename":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"1","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"0"},{"@id":"40","@ordinal":"5","@name":"Quantity","@alias":"C_MEDS_Quantity","@datatype":"Numeric","@subtype":"0","@isrequired":"0","@defaultvalue":"","@defaultvaluename":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"1","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"0"},{"@id":"45","@ordinal":"6","@name":"Refills","@alias":"C_MEDS_Refills","@datatype":"Numeric","@subtype":"0","@isrequired":"0","@defaultvalue":"","@defaultvaluename":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"1","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"0"},{"@id":"51","@ordinal":"7","@name":"Start
+        Date","@alias":"C_MEDS_StartDate","@datatype":"Date","@subtype":"","@isrequired":"0","@defaultvalue":"0","@defaultvaluename":"Today","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"1","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"0"},{"@id":"49","@ordinal":"8","@name":"Stop
+        Date","@alias":"C_MEDS_StopDate","@datatype":"Date","@subtype":"","@isrequired":"0","@defaultvalue":"","@defaultvaluename":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"1","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"0"},{"@id":"53","@ordinal":"9","@name":"If
+        Injection Where?","@alias":"C_MEDS_IfInjectionW","@datatype":"Text","@subtype":"","@isrequired":"0","@defaultvalue":"","@defaultvaluename":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"1","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"0"},{"@id":"73","@ordinal":"10","@name":"Notes","@alias":"C_MEDS_Notes","@datatype":"Multi-line
+        Text","@subtype":"","@isrequired":"0","@defaultvalue":"","@defaultvaluename":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"0","@includeinmailmerge":"1","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"0"}]}},{"@ordinal":"7","@uid":"8","@code":"#XRAY","@name":"X-ray","@templatetype":"pt","@issingleuse":"0","@hasmultiple":"0","@includeinmailmerge":"0","@includeonfacesheet":"1","@alwaysshowonfacesheet":"0","@includeindemographics":"0","@alwaysshowindemographics":"0","@restrictupdates":"0","@sortby1id":"82","@sortby1desc":"0","@sortby2id":"","@sortby2desc":"0","@changedat":"2006-05-01
+        10:39:29","@changedby":"PPMD_JKOJIMA","@createdat":"2005-11-04 22:13:53","@createdby":"SYSTEM","@systemtype":"1","@display":"1","@fieldlist":"Visit,
+        Description, Reading/Results, Date Read, Read By, Facility, Notes","fieldlist":{"field":[{"@id":"82","@ordinal":"0","@name":"Visit","@alias":"C_XRAY_Visit","@datatype":"Lookup","@subtype":"visit","@isrequired":"0","@defaultvalue":"","@defaultvaluename":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"0","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"0"},{"@id":"12","@ordinal":"1","@name":"Description","@alias":"C_XRAY_Description","@datatype":"Text","@subtype":"","@isrequired":"0","@defaultvalue":"","@defaultvaluename":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"1","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"0"},{"@id":"80","@ordinal":"2","@name":"Reading/Results","@alias":"C_XRAY_Reading_Resul","@datatype":"Multi-line
+        Text","@subtype":"","@isrequired":"0","@defaultvalue":"","@defaultvaluename":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"0","@includeinmailmerge":"1","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"0"},{"@id":"28","@ordinal":"3","@name":"Date
+        Read","@alias":"C_XRAY_DateRead","@datatype":"Date","@subtype":"","@isrequired":"0","@defaultvalue":"0","@defaultvaluename":"Today","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"1","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"0"},{"@id":"35","@ordinal":"4","@name":"Read
+        By","@alias":"C_XRAY_ReadBy","@datatype":"Lookup","@subtype":"provider","@isrequired":"0","@defaultvalue":"","@defaultvaluename":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"1","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"0"},{"@id":"41","@ordinal":"5","@name":"Facility","@alias":"C_XRAY_Facility","@datatype":"Lookup","@subtype":"facility","@isrequired":"0","@defaultvalue":"","@defaultvaluename":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"1","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"0"},{"@id":"81","@ordinal":"6","@name":"Notes","@alias":"C_XRAY_Notes1","@datatype":"Multi-line
+        Text","@subtype":"","@isrequired":"0","@defaultvalue":"","@defaultvaluename":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"0","@includeinmailmerge":"1","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"0"}]}},{"@ordinal":"8","@uid":"9","@code":"#G0-3","@name":"G
+        0-36m","@templatetype":"pt","@issingleuse":"0","@hasmultiple":"0","@includeinmailmerge":"0","@includeonfacesheet":"0","@alwaysshowonfacesheet":"0","@includeindemographics":"0","@alwaysshowindemographics":"0","@restrictupdates":"0","@sortby1id":"83","@sortby1desc":"0","@sortby2id":"","@sortby2desc":"0","@changedat":"2006-03-17
+        13:15:42","@changedby":"PPMD_JKOJIMA","@createdat":"2005-11-04 22:16:25","@createdby":"SYSTEM","@systemtype":"1","@display":"1","@fieldlist":"Visit,
+        Head Circ, Date, Length, Weight, Note","fieldlist":{"field":[{"@id":"83","@ordinal":"0","@name":"Visit","@alias":"C_G03_Visit","@datatype":"Lookup","@subtype":"visit","@isrequired":"0","@defaultvalue":"","@defaultvaluename":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"0","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"0"},{"@id":"13","@ordinal":"1","@name":"Head
+        Circ","@alias":"C_G03_HeadCirc","@datatype":"Numeric","@subtype":"0","@isrequired":"0","@defaultvalue":"","@defaultvaluename":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"0","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"0"},{"@id":"29","@ordinal":"2","@name":"Date","@alias":"C_G03_Date","@datatype":"Date","@subtype":"","@isrequired":"0","@defaultvalue":"0","@defaultvaluename":"Today","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"0","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"0"},{"@id":"62","@ordinal":"3","@name":"Length","@alias":"C_G03_Length","@datatype":"Numeric","@subtype":"0","@isrequired":"0","@defaultvalue":"","@defaultvaluename":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"0","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"0"},{"@id":"84","@ordinal":"4","@name":"Weight","@alias":"C_G03_Weight1","@datatype":"Text","@subtype":"Weight
+        (English)","@isrequired":"0","@defaultvalue":"","@defaultvaluename":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"0","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"0"},{"@id":"85","@ordinal":"5","@name":"Note","@alias":"C_G03_Note","@datatype":"Multi-line
+        Text","@subtype":"","@isrequired":"0","@defaultvalue":"","@defaultvaluename":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"0","@includeinmailmerge":"0","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"0"}]}},{"@ordinal":"9","@uid":"10","@code":"#G2-1","@name":"G
+        2-18y","@templatetype":"pt","@issingleuse":"0","@hasmultiple":"0","@includeinmailmerge":"0","@includeonfacesheet":"0","@alwaysshowonfacesheet":"0","@includeindemographics":"0","@alwaysshowindemographics":"0","@restrictupdates":"0","@sortby1id":"86","@sortby1desc":"0","@sortby2id":"","@sortby2desc":"0","@changedat":"2006-03-17
+        13:15:37","@changedby":"PPMD_JKOJIMA","@createdat":"2005-11-04 22:17:25","@createdby":"SYSTEM","@systemtype":"1","@display":"1","@fieldlist":"Visit,
+        Height, Weight, Date, Stature, Note","fieldlist":{"field":[{"@id":"86","@ordinal":"0","@name":"Visit","@alias":"C_G21_Visit","@datatype":"Lookup","@subtype":"visit","@isrequired":"0","@defaultvalue":"","@defaultvaluename":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"0","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"0"},{"@id":"14","@ordinal":"1","@name":"Height","@alias":"C_G21_Height","@datatype":"Text","@subtype":"Height
+        (English)","@isrequired":"0","@defaultvalue":"","@defaultvaluename":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"0","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"0"},{"@id":"22","@ordinal":"2","@name":"Weight","@alias":"C_G21_Weight","@datatype":"Text","@subtype":"Weight
+        (English)","@isrequired":"0","@defaultvalue":"","@defaultvaluename":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"0","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"0"},{"@id":"30","@ordinal":"3","@name":"Date","@alias":"C_G21_Date","@datatype":"Date","@subtype":"","@isrequired":"0","@defaultvalue":"0","@defaultvaluename":"Today","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"0","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"0"},{"@id":"63","@ordinal":"4","@name":"Stature","@alias":"C_G21_Stature","@datatype":"Text","@subtype":"","@isrequired":"0","@defaultvalue":"","@defaultvaluename":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"0","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"0"},{"@id":"87","@ordinal":"5","@name":"Note","@alias":"C_G21_Note","@datatype":"Multi-line
+        Text","@subtype":"","@isrequired":"0","@defaultvalue":"","@defaultvaluename":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"0","@includeinmailmerge":"0","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"0"}]}},{"@ordinal":"10","@uid":"12","@code":"IM","@name":"Immunize","@templatetype":"pt","@issingleuse":"0","@hasmultiple":"0","@includeinmailmerge":"0","@includeonfacesheet":"0","@alwaysshowonfacesheet":"0","@includeindemographics":"0","@alwaysshowindemographics":"0","@restrictupdates":"0","@sortby1id":"93","@sortby1desc":"0","@sortby2id":"","@sortby2desc":"0","@changedat":"2006-03-17
+        13:15:37","@changedby":"PPMD_JKOJIMA","@createdat":"2006-03-13 12:58:58","@createdby":"PPMD_JKOJIMA","@systemtype":"0","@display":"1","@fieldlist":"Visit,
+        Vaccine, Vile, Exp Date","fieldlist":{"field":[{"@id":"93","@ordinal":"0","@name":"Visit","@alias":"C_IM_Visit","@datatype":"Lookup","@subtype":"visit","@isrequired":"0","@defaultvalue":"","@defaultvaluename":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"0","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"0"},{"@id":"92","@ordinal":"1","@name":"Vaccine","@alias":"C_IM_Vaccine","@datatype":"List","@subtype":"VACCINE","@isrequired":"1","@defaultvalue":"","@defaultvaluename":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"1","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"0"},{"@id":"94","@ordinal":"2","@name":"Vile","@alias":"C_IM_Vile","@datatype":"Text","@subtype":"","@isrequired":"0","@defaultvalue":"","@defaultvaluename":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"0","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"0"},{"@id":"95","@ordinal":"3","@name":"Exp
+        Date","@alias":"C_IM_ExpDate","@datatype":"Date","@subtype":"","@isrequired":"0","@defaultvalue":"","@defaultvaluename":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"0","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"0"}]}},{"@ordinal":"11","@uid":"13","@code":"DIA","@name":"Diabetes","@templatetype":"pt","@issingleuse":"0","@hasmultiple":"0","@includeinmailmerge":"0","@includeonfacesheet":"1","@alwaysshowonfacesheet":"0","@includeindemographics":"0","@alwaysshowindemographics":"0","@restrictupdates":"0","@sortby1id":"96","@sortby1desc":"0","@sortby2id":"","@sortby2desc":"0","@changedat":"2006-03-17
+        13:17:11","@changedby":"PPMD_JKOJIMA","@createdat":"2006-03-13 13:03:51","@createdby":"PPMD_JKOJIMA","@systemtype":"0","@display":"1","@fieldlist":"Visit,
+        VLDL, Triglycerides, LDL Cholesterol, Cholesterol, CHOL/HDL Ratio, HDL, ALT","fieldlist":{"field":[{"@id":"96","@ordinal":"0","@name":"Visit","@alias":"C_DIA_Visit","@datatype":"Lookup","@subtype":"visit","@isrequired":"0","@defaultvalue":"","@defaultvaluename":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"0","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"0"},{"@id":"97","@ordinal":"1","@name":"VLDL","@alias":"C_DIA_VLDL","@datatype":"Numeric","@subtype":"0","@isrequired":"0","@defaultvalue":"","@defaultvaluename":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"0","@display":"1","@normalrangelow":"5","@normalrangehigh":"40","@userfileformid":"0"},{"@id":"98","@ordinal":"2","@name":"Triglycerides","@alias":"C_DIA_Triglycerides","@datatype":"Numeric","@subtype":"0","@isrequired":"0","@defaultvalue":"","@defaultvaluename":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"0","@display":"1","@normalrangelow":"0","@normalrangehigh":"149","@userfileformid":"0"},{"@id":"99","@ordinal":"3","@name":"LDL
+        Cholesterol","@alias":"C_DIA_LDLCholesterol","@datatype":"Numeric","@subtype":"0","@isrequired":"0","@defaultvalue":"","@defaultvaluename":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"0","@display":"1","@normalrangelow":"0","@normalrangehigh":"99","@userfileformid":"0"},{"@id":"100","@ordinal":"4","@name":"Cholesterol","@alias":"C_DIA_cholesterol","@datatype":"Numeric","@subtype":"0","@isrequired":"0","@defaultvalue":"","@defaultvaluename":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"0","@display":"1","@normalrangelow":"100","@normalrangehigh":"199","@userfileformid":"0"},{"@id":"101","@ordinal":"5","@name":"CHOL/HDL
+        Ratio","@alias":"C_DIA_CHOL_HDLRatio","@datatype":"Numeric","@subtype":"1","@isrequired":"0","@defaultvalue":"","@defaultvaluename":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"0","@display":"1","@normalrangelow":"0.0","@normalrangehigh":"5.0","@userfileformid":"0"},{"@id":"102","@ordinal":"6","@name":"HDL","@alias":"C_DIA_HDL","@datatype":"Numeric","@subtype":"0","@isrequired":"0","@defaultvalue":"","@defaultvaluename":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"0","@display":"1","@normalrangelow":"40","@normalrangehigh":"59","@userfileformid":"0"},{"@id":"103","@ordinal":"7","@name":"ALT","@alias":"C_DIA_ALT","@datatype":"Numeric","@subtype":"0","@isrequired":"0","@defaultvalue":"","@defaultvaluename":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"0","@display":"1","@normalrangelow":"0","@normalrangehigh":"55","@userfileformid":"0"}]}},{"@ordinal":"12","@uid":"14","@code":"LCBC","@name":"Lab
+        CBC","@templatetype":"pt","@issingleuse":"0","@hasmultiple":"0","@includeinmailmerge":"0","@includeonfacesheet":"1","@alwaysshowonfacesheet":"0","@includeindemographics":"0","@alwaysshowindemographics":"0","@restrictupdates":"0","@sortby1id":"104","@sortby1desc":"0","@sortby2id":"","@sortby2desc":"0","@changedat":"2006-03-17
+        13:15:37","@changedby":"PPMD_JKOJIMA","@createdat":"2006-03-13 13:13:43","@createdby":"PPMD_JKOJIMA","@systemtype":"0","@display":"1","@fieldlist":"Visit,
+        WBC, RDW, RBC, POLYS%, Platelets, NEUT#, Mono%, MCV, MCHC, MCH, Lymph%, Hemoglobin,
+        Hematocrit, EOSIN%, BASO%, Platelet Coagulation","fieldlist":{"field":[{"@id":"104","@ordinal":"0","@name":"Visit","@alias":"C_LCBC_Visit","@datatype":"Lookup","@subtype":"visit","@isrequired":"0","@defaultvalue":"","@defaultvaluename":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"0","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"0"},{"@id":"105","@ordinal":"1","@name":"WBC","@alias":"C_LCBC_WBC","@datatype":"Numeric","@subtype":"1","@isrequired":"0","@defaultvalue":"","@defaultvaluename":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"0","@display":"1","@normalrangelow":"4.0","@normalrangehigh":"10.5","@userfileformid":"0"},{"@id":"106","@ordinal":"2","@name":"RDW","@alias":"C_LCBC_RDW","@datatype":"Numeric","@subtype":"1","@isrequired":"0","@defaultvalue":"","@defaultvaluename":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"0","@display":"1","@normalrangelow":"11.7","@normalrangehigh":"15.0","@userfileformid":"0"},{"@id":"107","@ordinal":"3","@name":"RBC","@alias":"C_LCBC_RBC","@datatype":"Numeric","@subtype":"2","@isrequired":"0","@defaultvalue":"","@defaultvaluename":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"0","@display":"1","@normalrangelow":"4.10","@normalrangehigh":"5.60","@userfileformid":"0"},{"@id":"108","@ordinal":"4","@name":"POLYS%","@alias":"C_LCBC_POLYS_","@datatype":"Numeric","@subtype":"0","@isrequired":"0","@defaultvalue":"","@defaultvaluename":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"0","@display":"1","@normalrangelow":"40","@normalrangehigh":"74","@userfileformid":"0"},{"@id":"109","@ordinal":"5","@name":"Platelets","@alias":"C_LCBC_Platelets","@datatype":"Numeric","@subtype":"0","@isrequired":"0","@defaultvalue":"","@defaultvaluename":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"0","@display":"1","@normalrangelow":"140","@normalrangehigh":"415","@userfileformid":"0"},{"@id":"110","@ordinal":"6","@name":"NEUT#","@alias":"C_LCBC_NEUT_","@datatype":"Numeric","@subtype":"1","@isrequired":"0","@defaultvalue":"","@defaultvaluename":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"0","@display":"1","@normalrangelow":"1.8","@normalrangehigh":"7.8","@userfileformid":"0"},{"@id":"111","@ordinal":"7","@name":"Mono%","@alias":"C_LCBC_Mono_","@datatype":"Numeric","@subtype":"0","@isrequired":"0","@defaultvalue":"","@defaultvaluename":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"0","@display":"1","@normalrangelow":"0","@normalrangehigh":"7","@userfileformid":"0"},{"@id":"112","@ordinal":"8","@name":"MCV","@alias":"C_LCBC_MCV","@datatype":"Numeric","@subtype":"0","@isrequired":"0","@defaultvalue":"","@defaultvaluename":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"0","@display":"1","@normalrangelow":"80","@normalrangehigh":"98","@userfileformid":"0"},{"@id":"113","@ordinal":"9","@name":"MCHC","@alias":"C_LCBC_MCHC","@datatype":"Numeric","@subtype":"1","@isrequired":"0","@defaultvalue":"","@defaultvaluename":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"0","@display":"1","@normalrangelow":"32.0","@normalrangehigh":"36.0","@userfileformid":"0"},{"@id":"114","@ordinal":"10","@name":"MCH","@alias":"C_LCBC_MCH","@datatype":"Numeric","@subtype":"1","@isrequired":"0","@defaultvalue":"","@defaultvaluename":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"0","@display":"1","@normalrangelow":"27.0","@normalrangehigh":"34.0","@userfileformid":"0"},{"@id":"115","@ordinal":"11","@name":"Lymph%","@alias":"C_LCBC_Lymph_","@datatype":"Numeric","@subtype":"0","@isrequired":"0","@defaultvalue":"","@defaultvaluename":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"0","@display":"1","@normalrangelow":"14","@normalrangehigh":"46","@userfileformid":"0"},{"@id":"116","@ordinal":"12","@name":"Hemoglobin","@alias":"C_LCBC_Hemoglobin","@datatype":"Numeric","@subtype":"1","@isrequired":"0","@defaultvalue":"","@defaultvaluename":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"0","@display":"1","@normalrangelow":"13.5","@normalrangehigh":"17.5","@userfileformid":"0"},{"@id":"117","@ordinal":"13","@name":"Hematocrit","@alias":"C_LCBC_Hematocrit","@datatype":"Numeric","@subtype":"1","@isrequired":"0","@defaultvalue":"","@defaultvaluename":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"0","@display":"1","@normalrangelow":"40.0","@normalrangehigh":"53.0","@userfileformid":"0"},{"@id":"118","@ordinal":"14","@name":"EOSIN%","@alias":"C_LCBC_EOSIN_","@datatype":"Numeric","@subtype":"0","@isrequired":"0","@defaultvalue":"","@defaultvaluename":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"0","@display":"1","@normalrangelow":"0","@normalrangehigh":"3","@userfileformid":"0"},{"@id":"119","@ordinal":"15","@name":"BASO%","@alias":"C_LCBC_BASO_","@datatype":"Numeric","@subtype":"1","@isrequired":"0","@defaultvalue":"","@defaultvaluename":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"0","@display":"1","@normalrangelow":"0.0","@normalrangehigh":"0.2","@userfileformid":"0"},{"@id":"120","@ordinal":"16","@name":"Platelet
+        Coagulation","@alias":"C_LCBC_PlateletCoagu","@datatype":"Numeric","@subtype":"0","@isrequired":"0","@defaultvalue":"","@defaultvaluename":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"0","@display":"1","@normalrangelow":"140","@normalrangehigh":"415","@userfileformid":"0"}]}},{"@ordinal":"13","@uid":"15","@code":"CADF","@name":"CAD
+        Risk","@templatetype":"pt","@issingleuse":"0","@hasmultiple":"1","@includeinmailmerge":"1","@includeonfacesheet":"1","@alwaysshowonfacesheet":"0","@includeindemographics":"0","@alwaysshowindemographics":"0","@restrictupdates":"0","@sortby1id":"121","@sortby1desc":"0","@sortby2id":"","@sortby2desc":"0","@changedat":"2006-03-17
+        13:15:37","@changedby":"PPMD_JKOJIMA","@createdat":"2006-03-15 09:03:55","@createdby":"PPMD_JKOJIMA","@systemtype":"0","@display":"1","@fieldlist":"Visit,
+        FHx Early CAD, DM, HTN, Sedentary, Tobacco, Chol, Obese","fieldlist":{"field":[{"@id":"121","@ordinal":"0","@name":"Visit","@alias":"C_CADF_Visit","@datatype":"Lookup","@subtype":"visit","@isrequired":"0","@defaultvalue":"Most
+        Recent Visit","@defaultvaluename":"Most Recent Visit","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"0","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"0"},{"@id":"122","@ordinal":"1","@name":"FHx
+        Early CAD","@alias":"C_CADF_FHxEarlyCAD","@datatype":"List","@subtype":"+/-","@isrequired":"0","@defaultvalue":"","@defaultvaluename":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"1","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"0"},{"@id":"123","@ordinal":"2","@name":"DM","@alias":"C_CADF_DM","@datatype":"List","@subtype":"+/-","@isrequired":"0","@defaultvalue":"","@defaultvaluename":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"1","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"0"},{"@id":"124","@ordinal":"3","@name":"HTN","@alias":"C_CADF_HTN","@datatype":"List","@subtype":"+/-","@isrequired":"0","@defaultvalue":"","@defaultvaluename":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"1","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"0"},{"@id":"125","@ordinal":"4","@name":"Sedentary","@alias":"C_CADF_Sedentary","@datatype":"List","@subtype":"+/-","@isrequired":"0","@defaultvalue":"","@defaultvaluename":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"1","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"0"},{"@id":"126","@ordinal":"5","@name":"Tobacco","@alias":"C_CADF_Tobacco","@datatype":"List","@subtype":"+/-","@isrequired":"0","@defaultvalue":"","@defaultvaluename":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"1","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"0"},{"@id":"127","@ordinal":"6","@name":"Chol","@alias":"C_CADF_Chol","@datatype":"List","@subtype":"+/-","@isrequired":"0","@defaultvalue":"","@defaultvaluename":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"1","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"0"},{"@id":"128","@ordinal":"7","@name":"Obese","@alias":"C_CADF_Obese","@datatype":"List","@subtype":"+/-","@isrequired":"0","@defaultvalue":"","@defaultvaluename":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"1","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"0"}]}},{"@ordinal":"14","@uid":"18","@code":"#4843","@name":"DME
+        484.03","@templatetype":"PT","@issingleuse":"0","@hasmultiple":"1","@includeinmailmerge":"0","@includeonfacesheet":"0","@alwaysshowonfacesheet":"0","@includeindemographics":"1","@alwaysshowindemographics":"0","@restrictupdates":"0","@sortby1id":"","@sortby1desc":"0","@sortby2id":"","@sortby2desc":"0","@changedat":"2010-02-25
+        12:47:13","@changedby":"SYSTEM","@createdat":"2008-07-22 20:52:10","@createdby":"system","@systemtype":"2","@display":"1","@fieldlist":"Visit
+        #, 1a: Blood Gas PO2, 1b: O2 Saturation, 1c: Date of Test, 2: Out/Inpatient,
+        3: Test Condition, 4: If O2, Pt Mobile, 5: Highest O2 Flow, 6a: &gt; 4 LPM,
+        PO2, 6b: &gt; 4 LPM, O2 Sat, 6c: Date of Test, 7: Edema Due to CHF, 8: CP/PH
+        Documented, 9: Hematocrit &gt; 56%","fieldlist":{"field":[{"@id":"145","@ordinal":"0","@name":"Visit
+        #","@alias":"C_4843_Visit","@datatype":"Lookup","@subtype":"visit","@isrequired":"1","@defaultvalue":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"0","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"0"},{"@id":"148","@ordinal":"1","@name":"1a:
+        Blood Gas PO2","@alias":"C_4843_1A","@datatype":"Numeric","@subtype":"0","@isrequired":"0","@defaultvalue":"","@defaultvaluename":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"0","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"1"},{"@id":"151","@ordinal":"2","@name":"1b:
+        O2 Saturation","@alias":"C_4843_1B","@datatype":"Text","@subtype":"Percent
+        (CMN)","@isrequired":"0","@defaultvalue":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"0","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"1"},{"@id":"154","@ordinal":"3","@name":"1c:
+        Date of Test","@alias":"C_4843_1C","@datatype":"Date","@subtype":"","@isrequired":"0","@defaultvalue":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"0","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"1"},{"@id":"157","@ordinal":"4","@name":"2:
+        Out/Inpatient","@alias":"C_4843_2","@datatype":"List","@subtype":"#DME 484.03
+        Q2","@isrequired":"0","@defaultvalue":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"0","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"1"},{"@id":"160","@ordinal":"5","@name":"3:
+        Test Condition","@alias":"C_4843_3","@datatype":"List","@subtype":"#DME 484.03
+        Q3","@isrequired":"0","@defaultvalue":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"0","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"1"},{"@id":"163","@ordinal":"6","@name":"4:
+        If O2, Pt Mobile","@alias":"C_4843_4","@datatype":"List","@subtype":"#YES/NO/DNA","@isrequired":"0","@defaultvalue":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"0","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"1"},{"@id":"166","@ordinal":"7","@name":"5:
+        Highest O2 Flow","@alias":"C_4843_5","@datatype":"Text","@subtype":"","@isrequired":"0","@defaultvalue":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"0","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"1"},{"@id":"169","@ordinal":"8","@name":"6a:
+        > 4 LPM, PO2","@alias":"C_4843_6A","@datatype":"Numeric","@subtype":"0","@isrequired":"0","@defaultvalue":"","@defaultvaluename":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"0","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"1"},{"@id":"172","@ordinal":"9","@name":"6b:
+        > 4 LPM, O2 Sat","@alias":"C_4843_6B","@datatype":"Text","@subtype":"Percent
+        (CMN)","@isrequired":"0","@defaultvalue":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"0","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"1"},{"@id":"175","@ordinal":"10","@name":"6c:
+        Date of Test","@alias":"C_4843_6C","@datatype":"Date","@subtype":"","@isrequired":"0","@defaultvalue":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"0","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"1"},{"@id":"178","@ordinal":"11","@name":"7:
+        Edema Due to CHF","@alias":"C_4843_7","@datatype":"List","@subtype":"#YES/NO
+        (CMN)","@isrequired":"0","@defaultvalue":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"0","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"1"},{"@id":"181","@ordinal":"12","@name":"8:
+        CP/PH Documented","@alias":"C_4843_8","@datatype":"List","@subtype":"#YES/NO
+        (CMN)","@isrequired":"0","@defaultvalue":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"0","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"1"},{"@id":"184","@ordinal":"13","@name":"9:
+        Hematocrit > 56%","@alias":"C_4843_9","@datatype":"List","@subtype":"#YES/NO
+        (CMN)","@isrequired":"0","@defaultvalue":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"0","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"1"},{"@id":"274","@ordinal":"14","@name":"0a:
+        PWK Rpt Xmit Cd","@alias":"C_4843_0a_PWKRptXmit","@datatype":"List","@subtype":"#PWK","@isrequired":"0","@defaultvalue":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"0","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"1"},{"@id":"275","@ordinal":"15","@name":"0b:
+        Cert Type Code","@alias":"C_4843_0b_CertTypeCo","@datatype":"List","@subtype":"#CERTIFICATION
+        TYPE","@isrequired":"0","@defaultvalue":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"0","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"1"},{"@id":"276","@ordinal":"16","@name":"0c:
+        DMERC Quantity","@alias":"C_4843_0c_DMERCQuant","@datatype":"Numeric","@subtype":"0","@isrequired":"0","@defaultvalue":"","@defaultvaluename":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"0","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"1"},{"@id":"277","@ordinal":"17","@name":"0d:
+        Code Category","@alias":"C_4843_0d_CodeCatego","@datatype":"List","@subtype":"#CODE
+        CATEGORY","@isrequired":"0","@defaultvalue":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"0","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"1"},{"@id":"278","@ordinal":"18","@name":"0e:
+        Cond or Resp Cd","@alias":"C_4843_0e_CondorResp","@datatype":"List","@subtype":"#YES/NO
+        (CMN)","@isrequired":"0","@defaultvalue":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"0","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"1"},{"@id":"279","@ordinal":"19","@name":"0f:
+        Cond Indicator 1","@alias":"C_4843_0f_CondIndica","@datatype":"List","@subtype":"#CONDITION
+        INDICATOR","@isrequired":"0","@defaultvalue":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"0","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"1"},{"@id":"280","@ordinal":"20","@name":"0g:
+        Cond Indicator 2","@alias":"C_4843_0g_CondIndica","@datatype":"List","@subtype":"#CONDITION
+        INDICATOR","@isrequired":"0","@defaultvalue":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"0","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"1"},{"@id":"281","@ordinal":"21","@name":"0h:
+        Cond Indicator 3","@alias":"C_4843_0h_CondIndica","@datatype":"List","@subtype":"#CONDITION
+        INDICATOR","@isrequired":"0","@defaultvalue":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"0","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"1"},{"@id":"282","@ordinal":"22","@name":"0i:
+        Cond Indicator 4","@alias":"C_4843_0i_CondIndica","@datatype":"List","@subtype":"#CONDITION
+        INDICATOR","@isrequired":"0","@defaultvalue":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"0","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"1"},{"@id":"283","@ordinal":"23","@name":"0j:
+        Cond Indicator 5","@alias":"C_4843_0j_CondIndica","@datatype":"List","@subtype":"#CONDITION
+        INDICATOR","@isrequired":"0","@defaultvalue":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"0","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"1"},{"@id":"284","@ordinal":"24","@name":"0k:
+        Cert Revision Dt","@alias":"C_4843_0k_CertRevsio","@datatype":"Date","@subtype":"","@isrequired":"0","@defaultvalue":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"0","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"1"},{"@id":"285","@ordinal":"25","@name":"0l:
+        Last Certif Date","@alias":"C_4843_0l_LastCertif","@datatype":"Date","@subtype":"","@isrequired":"0","@defaultvalue":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"0","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"1"},{"@id":"286","@ordinal":"26","@name":"0m:
+        Beg Therapy Dt","@alias":"C_4843_0m_BegThera","@datatype":"Date","@subtype":"","@isrequired":"0","@defaultvalue":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"0","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"1"}]}},{"@ordinal":"14","@uid":"21","@code":"#0903","@name":"DME
+        09.03","@templatetype":"PT","@issingleuse":"0","@hasmultiple":"0","@includeinmailmerge":"0","@includeonfacesheet":"0","@alwaysshowonfacesheet":"0","@includeindemographics":"1","@alwaysshowindemographics":"0","@restrictupdates":"0","@sortby1id":"","@sortby1desc":"0","@sortby2id":"","@sortby2desc":"0","@changedat":"2010-02-25
+        12:47:13","@changedby":"SYSTEM","@createdat":"2008-07-22 20:52:10","@createdby":"system","@systemtype":"2","@display":"1","@fieldlist":"Visit
+        #, 1a: Drug HCPCS, 1b: Drug HCPCS, 1c: Drug HCPCS, 2a: NOC Drug Name, 2b:
+        NOC Drug Name, 2c: NOC Drug Name, 3: Admin Route, 4: Admin Method, 0a: PWK
+        Rpt Xmit Cd, 0b: Cert Type Code, 0c: DMERC Quantity, 0d: Code Category, 0e:
+        Cond or Resp Cd, 0f: Cond Indicator 1, 0g: Cond Indicator 2, 0h: Cond Indicator
+        3, 0i: Cond Indicator 4, 0j: Cond Indicator 5, 0k: Cert Revision Dt, 0l: Last
+        Certif Date, 0m: Beg Therapy Dt","fieldlist":{"field":[{"@id":"187","@ordinal":"0","@name":"Visit
+        #","@alias":"C_0903_Visit","@datatype":"Lookup","@subtype":"visit","@isrequired":"1","@defaultvalue":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"0","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"0"},{"@id":"190","@ordinal":"1","@name":"1a:
+        Drug HCPCS","@alias":"C_0903_1A","@datatype":"Lookup","@subtype":"proccode","@isrequired":"0","@defaultvalue":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"0","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"4"},{"@id":"193","@ordinal":"2","@name":"1b:
+        Drug HCPCS","@alias":"C_0903_1B","@datatype":"Lookup","@subtype":"proccode","@isrequired":"0","@defaultvalue":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"0","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"4"},{"@id":"196","@ordinal":"3","@name":"1c:
+        Drug HCPCS","@alias":"C_0903_1C","@datatype":"Lookup","@subtype":"proccode","@isrequired":"0","@defaultvalue":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"0","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"4"},{"@id":"199","@ordinal":"4","@name":"2a:
+        NOC Drug Name","@alias":"C_0903_2A","@datatype":"Lookup","@subtype":"medication","@isrequired":"0","@defaultvalue":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"0","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"4"},{"@id":"202","@ordinal":"5","@name":"2b:
+        NOC Drug Name","@alias":"C_0903_2B","@datatype":"Lookup","@subtype":"medication","@isrequired":"0","@defaultvalue":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"0","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"4"},{"@id":"205","@ordinal":"6","@name":"2c:
+        NOC Drug Name","@alias":"C_0903_2C","@datatype":"Lookup","@subtype":"medication","@isrequired":"0","@defaultvalue":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"0","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"4"},{"@id":"208","@ordinal":"7","@name":"3:
+        Admin Route","@alias":"C_0903_3","@datatype":"List","@subtype":"#ROUTE OF
+        ADMIN","@isrequired":"0","@defaultvalue":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"0","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"4"},{"@id":"211","@ordinal":"8","@name":"4:
+        Admin Method","@alias":"C_0903_4","@datatype":"List","@subtype":"#METHOD OF
+        ADMIN","@isrequired":"0","@defaultvalue":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"0","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"4"},{"@id":"214","@ordinal":"9","@name":"0a:
+        PWK Rpt Xmit Cd","@alias":"C_0903_0a_PWKRptXmit","@datatype":"List","@subtype":"#PWK","@isrequired":"0","@defaultvalue":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"0","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"4"},{"@id":"217","@ordinal":"10","@name":"0b:
+        Cert Type Code","@alias":"C_0903_0b_CertTypeCo","@datatype":"List","@subtype":"#CERTIFICATION
+        TYPE","@isrequired":"0","@defaultvalue":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"0","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"4"},{"@id":"220","@ordinal":"11","@name":"0c:
+        DMERC Quantity","@alias":"C_0903_0c_DMERCQuant","@datatype":"Numeric","@subtype":"0","@isrequired":"0","@defaultvalue":"","@defaultvaluename":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"0","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"4"},{"@id":"223","@ordinal":"12","@name":"0d:
+        Code Category","@alias":"C_0903_0d_CodeCatego","@datatype":"List","@subtype":"#CODE
+        CATEGORY","@isrequired":"0","@defaultvalue":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"0","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"4"},{"@id":"226","@ordinal":"13","@name":"0e:
+        Cond or Resp Cd","@alias":"C_0903_0e_CondorResp","@datatype":"List","@subtype":"#YES/NO
+        (CMN)","@isrequired":"0","@defaultvalue":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"0","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"4"},{"@id":"229","@ordinal":"14","@name":"0f:
+        Cond Indicator 1","@alias":"C_0903_0f_CondIndica","@datatype":"List","@subtype":"#CONDITION
+        INDICATOR","@isrequired":"0","@defaultvalue":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"0","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"4"},{"@id":"232","@ordinal":"15","@name":"0g:
+        Cond Indicator 2","@alias":"C_0903_0g_CondIndica","@datatype":"List","@subtype":"#CONDITION
+        INDICATOR","@isrequired":"0","@defaultvalue":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"0","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"4"},{"@id":"235","@ordinal":"16","@name":"0h:
+        Cond Indicator 3","@alias":"C_0903_0h_CondIndica","@datatype":"List","@subtype":"#CONDITION
+        INDICATOR","@isrequired":"0","@defaultvalue":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"0","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"4"},{"@id":"238","@ordinal":"17","@name":"0i:
+        Cond Indicator 4","@alias":"C_0903_0i_CondIndica","@datatype":"List","@subtype":"#CONDITION
+        INDICATOR","@isrequired":"0","@defaultvalue":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"0","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"4"},{"@id":"241","@ordinal":"18","@name":"0j:
+        Cond Indicator 5","@alias":"C_0903_0j_CondIndica","@datatype":"List","@subtype":"#CONDITION
+        INDICATOR","@isrequired":"0","@defaultvalue":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"0","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"4"},{"@id":"244","@ordinal":"19","@name":"0k:
+        Cert Revision Dt","@alias":"C_0903_0k_CertRevsio","@datatype":"Date","@subtype":"","@isrequired":"0","@defaultvalue":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"0","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"4"},{"@id":"247","@ordinal":"20","@name":"0l:
+        Last Certif Date","@alias":"C_0903_0l_LastCertif","@datatype":"Date","@subtype":"","@isrequired":"0","@defaultvalue":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"0","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"4"},{"@id":"250","@ordinal":"21","@name":"0m:
+        Beg Therapy Dt","@alias":"C_0903_0m_BegThera","@datatype":"Date","@subtype":"","@isrequired":"0","@defaultvalue":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"0","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"4"}]}},{"@ordinal":"17","@uid":"32","@code":"#PC","@name":"Pt
+        Contact","@templatetype":"PT","@issingleuse":"0","@hasmultiple":"0","@includeinmailmerge":"0","@includeonfacesheet":"0","@alwaysshowonfacesheet":"0","@includeindemographics":"1","@alwaysshowindemographics":"0","@restrictupdates":"0","@sortby1id":"","@sortby1desc":"1","@sortby2id":"","@sortby2desc":"0","@changedat":"2017-08-22
+        12:13:49","@changedby":"","@createdat":"2015-05-12 18:11:07","@createdby":"SYS_U20820","@systemtype":"2","@display":"1","@fieldlist":"Contact,
+        Relationship, Phone, Auth to view PHI","fieldlist":{"field":[{"@id":"360","@ordinal":"1","@name":"Contact","@alias":"#PC_Contact","@datatype":"Text","@subtype":"","@isrequired":"0","@defaultvalue":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"0","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"0"},{"@id":"361","@ordinal":"2","@name":"Relationship","@alias":"#PC_Relationship","@datatype":"Text","@subtype":"","@isrequired":"0","@defaultvalue":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"0","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"0"},{"@id":"362","@ordinal":"3","@name":"Phone","@alias":"#PC_Phone","@datatype":"Text","@subtype":"Phone
+        Number","@isrequired":"0","@defaultvalue":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"0","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"0"},{"@id":"363","@ordinal":"4","@name":"Auth
+        to view PHI","@alias":"#PC_AuthtoviewPHI","@datatype":"Checkbox","@subtype":"","@isrequired":"0","@defaultvalue":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"0","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"0"}]}},{"@ordinal":"18","@uid":"514","@code":"#INTK","@name":"Intake/OLS","@templatetype":"PT","@issingleuse":"0","@hasmultiple":"1","@includeinmailmerge":"0","@includeonfacesheet":"0","@alwaysshowonfacesheet":"0","@includeindemographics":"1","@alwaysshowindemographics":"1","@restrictupdates":"1","@sortby1id":"","@sortby1desc":"0","@sortby2id":"","@sortby2desc":"0","@changedat":"2020-05-07
+        19:14:23","@changedby":"SYS_196904","@createdat":"2019-09-19 19:01:50","@createdby":"SYS_164161","@systemtype":"2","@display":"1","@fieldlist":"Are
+        You the Patient, Legal Guardian, Submitter First Name, Submitter Last Name,
+        Submitter Phone, Referring Provider, Primary Prov. (PCP), Primary Insurance,
+        Primary Insurance ID, Additional Insurance, Additional Details, Submitted
+        DateTime","fieldlist":{"field":[{"@id":"4666","@ordinal":"1","@name":"Are
+        You the Patient","@alias":"C_INTK_AreYouthePati","@datatype":"List","@subtype":"#Yes/No
+        (H)","@isrequired":"0","@defaultvalue":"","@defaultvaluename":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"0","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"0"},{"@id":"4707","@ordinal":"2","@name":"Legal
+        Guardian","@alias":"C_INTK_LegalGuardian","@datatype":"Checkbox","@subtype":"","@isrequired":"0","@defaultvalue":"","@defaultvaluename":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"0","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"0"},{"@id":"4748","@ordinal":"3","@name":"Submitter
+        First Name","@alias":"C_INTK_SubmitterFirs","@datatype":"Text","@subtype":"","@isrequired":"0","@defaultvalue":"","@defaultvaluename":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"0","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"0"},{"@id":"4789","@ordinal":"4","@name":"Submitter
+        Last Name","@alias":"C_INTK_SubmitterLast","@datatype":"Text","@subtype":"","@isrequired":"0","@defaultvalue":"","@defaultvaluename":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"0","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"0"},{"@id":"4830","@ordinal":"5","@name":"Submitter
+        Phone","@alias":"C_INTK_SubmitterPhon","@datatype":"Text","@subtype":"Phone
+        Number","@isrequired":"0","@defaultvalue":"","@defaultvaluename":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"0","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"0"},{"@id":"4871","@ordinal":"6","@name":"Ref.
+        Provider/Entity","@alias":"C_INTK_ReferringProv","@datatype":"Text","@subtype":"","@isrequired":"0","@defaultvalue":"","@defaultvaluename":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"0","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"0"},{"@id":"4912","@ordinal":"7","@name":"Primary
+        Prov. (PCP)","@alias":"C_INTK_PrimaryProvid","@datatype":"Text","@subtype":"","@isrequired":"0","@defaultvalue":"","@defaultvaluename":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"0","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"0"},{"@id":"4953","@ordinal":"8","@name":"Primary
+        Insurance","@alias":"C_INTK_PrimaryInsura","@datatype":"Text","@subtype":"","@isrequired":"0","@defaultvalue":"","@defaultvaluename":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"0","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"0"},{"@id":"4994","@ordinal":"9","@name":"Primary
+        Insurance ID","@alias":"C_INTK_PrimaryInsuID","@datatype":"Text","@subtype":"","@isrequired":"0","@defaultvalue":"","@defaultvaluename":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"0","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"0"},{"@id":"5035","@ordinal":"10","@name":"Additional
+        Insurance","@alias":"C_INTK_AdditionalIns","@datatype":"Text","@subtype":"","@isrequired":"0","@defaultvalue":"","@defaultvaluename":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"0","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"0"},{"@id":"5076","@ordinal":"11","@name":"Additional
+        Details","@alias":"C_INTK_AdditionalDet","@datatype":"Multi-line Text","@subtype":"","@isrequired":"0","@defaultvalue":"","@defaultvaluename":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"0","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"0"},{"@id":"5117","@ordinal":"12","@name":"Submitted
+        DateTime","@alias":"C_INTK_SubmittedDate","@datatype":"Date","@subtype":"","@isrequired":"0","@defaultvalue":"","@defaultvaluename":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"0","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"0"},{"@id":"5158","@ordinal":"13","@name":"Heard
+        of Us Through","@alias":"C_INTK_ReferralInfo","@datatype":"Text","@subtype":"","@isrequired":"0","@defaultvalue":"","@defaultvaluename":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"0","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"0"},{"@id":"5166","@ordinal":"14","@name":"Select
+        if True","@alias":"C_INTK_SataQuestions","@datatype":"Multi-line Text","@subtype":"","@isrequired":"0","@defaultvalue":"","@defaultvaluename":"","@defaultvaluecode":"","@validationregexp":"","@includeinlist":"1","@includeinmailmerge":"0","@display":"1","@normalrangelow":"","@normalrangehigh":"","@userfileformid":"0"}]}}],"validationlist":{"validation":[{"@id":"5","@name":"Height
+        (English)","@regex":"^(([0-9]''(\\ ?([0-9]|1[01])(\\.[0-9])?\")?)|([0-9]{1,2}(\\.[0-9])?\"))$","@errormsg":"Please
+        enter a valid height in feet and/or inches (e.g., 6'', 5'' 10.5\", 32\")."},{"@id":"8","@name":"Percent
+        (CMN)","@regex":"^[0-9]\\d{0,2}(\\.\\d{0,1})?$","@errormsg":"Please enter
+        a numeric value between 0 - 999.9 with no more than one decimal place (e.g.,
+        3, 1.4, 59.2, 653.5, etc.)"},{"@id":"1","@name":"Phone Number","@regex":"((\\(\\d{3}\\)
+        ?)|(\\d{3}[- \\.]))?\\d{3}[- \\.]\\d{4}(\\s([xX]\\d+)?){0,1}$","@errormsg":"Please
+        enter a valid telephone number (e.g., 123-555-1234, (123) 555-1234, 555-1234)."},{"@id":"7","@name":"RxOther","@regex":".*","@errormsg":""},{"@id":"2","@name":"Social
+        Security No.","@regex":"^\\d{3}-\\d{2}-\\d{4}$","@errormsg":"Please enter
+        a valid Social Security Number (e.g., 123-45-6789)."},{"@id":"6","@name":"Time","@regex":"^(([0]{0,1}[1-9]|[1][0-2])(([:.][0-5]\\d){1,2})(\\s{0,1})([AaPp][Mm])|([0]{0,1}[0-9]|[1][0-9]|[2][0-3])(([:.][0-5]\\d){1,2}))$","@errormsg":"Please
+        enter a valid time (e.g., 12:30PM, 12:30 PM, 14:30)."},{"@id":"4","@name":"Weight
+        (English)","@regex":"^((([0-9]{1,3}\\s(lbs|LBS))\\s([0-9]|(1[0-5]))(\\.[0-9])?\\s(oz|OZ))|(([0-9]{1,3}\\s(lbs|LBS)))|(([0-9]|(1[0-5]))(\\.[0-9])?\\s(oz|OZ)))$","@errormsg":"Please
+        enter a valid weight in lbs. and/or oz. (e.g., 145 LBS, 15.3 OZ, 8 LBS 3 OZ)."},{"@id":"3","@name":"ZIP/Postal
+        Code","@regex":"^((\\d{5}-\\d{4})|(\\d{5})|([AaBbCcEeGgHhJjKkLlMmNnPpRrSsTtVvXxYy]\\d[A-Za-z]\\s?\\d[A-Za-z]\\d))$","@errormsg":"Please
+        enter a valid US ZIP Code or Canadian Postal Code (e.g., 12345, 12345-6789,
+        G3H 6A3)."}]}}}}'
+  recorded_at: Thu, 28 Oct 2021 10:00:28 GMT
+- request:
+    method: post
+    uri: https://provapi.advancedmd.com/processrequest/api-102/LIFESTANCE/xmlrpc/processrequest.aspx/xmlrpc/processrequest.aspx
+    body:
+      encoding: UTF-8
+      string: '{"ppmdmsg":{"@action":"insertcustomdata","@class":"providerdesktop","@patientid":5983942,"@templateid":"515","fieldvaluelist":{"fieldvalue":[{"@templatefieldid":"5159","@value":"Dav"},{"@templatefieldid":"5164","@value":1},{"@templatefieldid":"5160","@value":"Been
+        through couple of theraphies in the past"},{"@templatefieldid":"5163","@value":7}]}}}'
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/3.0.1p64
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '350'
+      Cookie:
+      - token=995456fGq/JUHOMJGPNYNGdcIyPUtMMMefvGk3v1sWqA+ahrR7fw4BAzuSlS+AZH7/EU6XSzzBvrSKwNwk723oFInM5HsA5BTWRd2fILOtIMDsTwDWPRDurai4fYrFvRvIElt4qOgfhKGKsMYHTe/KXOQ1YvlrYZYa5WWqTj3AigCe0kdaKJkBpdx1P7DoYsE+4CrIcoiJqbAj0gKt+MgxgW05Uw==
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - provapi.advancedmd.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 28 Oct 2021 10:00:29 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '1268'
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - no-cache,no-store,must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - Thu, 28 Oct 2021 09:59:29 GMT
+      Server:
+      - Microsoft-IIS/10.0
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET,PUT,POST,DELETE,OPTIONS
+      Access-Control-Allow-Headers:
+      - Origin, Depth, User-Agent, X-File-Size, X-Requested-With, If-Modified-Since,
+        X-File-Name, Cache-ControlOrigin, Content-Type, Accept, Authorization, X-ProofSignature,
+        InternalRequestType
+    body:
+      encoding: UTF-8
+      string: '{"?xml":{"@version":"1.0","@encoding":"ISO-8859-1"},"PPMDResults":{"@s":"PRDAPI2WFE2AAQJ","@lst":"10/28/2021
+        3:00:29 AM","Results":{"patientlist":{"patient":{"@id":"5983942","@visitid":"9543326","@visitdos":"07/30/2021","templatelist":{"template":{"@id":"515","@restrictupdates":"0","instancelist":{"instance":{"@id":"21622","@createdby":"LS-API","@changedat":"","@changedby":"","fieldvaluelist":{"fieldvalue":[{"@id":"151047","@templatefieldid":"5159","@ordinal":"0","@value":"DAV","@valuecode":"","@valuename":"","@createdat":"2021-10-28T03:00:29.517","@createdby":"LS-API","@changedat":"","@changedby":""},{"@id":"151048","@templatefieldid":"5164","@ordinal":"1","@value":"1","@valuecode":"","@valuename":"SHE
+        HER","@createdat":"2021-10-28T03:00:29.517","@createdby":"LS-API","@changedat":"","@changedby":""},{"@id":"151049","@templatefieldid":"5160","@ordinal":"2","@value":"BEEN
+        THROUGH COUPLE OF THERAPHIES IN THE PAST","@valuecode":"","@valuename":"","@createdat":"2021-10-28T03:00:29.517","@createdby":"LS-API","@changedat":"","@changedby":""},{"@id":"151050","@templatefieldid":"5163","@ordinal":"3","@value":"7","@valuecode":"","@valuename":"NONE
+        APPLY","@createdat":"2021-10-28T03:00:29.517","@createdby":"LS-API","@changedat":"","@changedby":""}]}}}}}}}}}}'
+  recorded_at: Thu, 28 Oct 2021 10:00:29 GMT
+recorded_with: VCR 6.0.0

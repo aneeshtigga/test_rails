@@ -1,0 +1,199 @@
+<style>
+  .background {
+    position: absolute;
+    width: 833px;
+    left: -1px;
+    top: 1px;
+  }
+
+  .logo {
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+    position: relative;
+    width: 149.96px;
+    height: 13%;
+    left: 85px;
+    top: 53px;
+    margin-bottom: 20px;
+  }
+  .content1 {
+    position: absolute;
+    width: 529px;
+    left: 85px;
+    top: 114px;
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 32px;
+    color: #333333;
+    margin-bottom: 15px;
+  }
+  .content1-text {
+    font-family: Helvetica;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  .content2 {
+    position: absolute;
+    width: 490px;
+    left: 85px;
+    top: 162px;
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #333333;
+    margin-bottom: 12px;
+  }
+  .content2-text {
+    font-family: Helvetica;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  .content3 {
+    position: absolute;
+    width: 490px;
+    left: 85px;
+    top: 218px;
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #333333;
+    margin-bottom: 25px;
+  }
+
+  .content3-text {
+    font-family: Helvetica;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #0067CE;
+    text-decoration: none;
+  }
+
+  .content3-text1 {
+      font-family: Helvetica;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px;
+      letter-spacing: 0em;
+      text-align: left;
+  }
+
+  .btn-size {
+    height: 52px;
+    width: 212px;
+    left: 209px;
+    top: 498px;
+    border-radius: 8px;
+    padding: 14px 32px 14px 32px;
+  }
+
+  .button {
+    display: flex;
+    flex-direction: row;
+    padding: 14px 32px;
+    position: absolute;
+    width: 88px;
+    height: 28px;
+    left: 85px;
+    top: 330px;
+    bottom: 37px;
+    right: 635px;
+    background: #0067CE;
+    border-radius: 8px;
+    padding: 14px 32px 14px 32px;
+  }
+
+  .btn-content {
+    position: static;
+    width: 148px;
+    height: 24px;
+    left: 32px;
+    top: 14px;
+    font-family: Styrene B;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+    margin: 0px 10px;
+  }
+
+  .btn-text {
+    font-family: Styrene B;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #FFFFFF;
+    text-decoration: none;
+  }
+
+  .footer {
+      position: absolute;
+      width: 263px;
+      height: 24px;
+      left: 85px;
+      top: 398.54px;
+      font-family: Helvetica;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 70px;
+      color: #0067CE;
+      text-decoration: none;
+  } 
+</style>
+<div class= "background">
+  <div class = "logo">
+    <%= image_tag attachments['lfslogo.png'].url, width: '150', height: '40' %>
+  </div>
+  <div class ="content1 content1-text">
+    Let’s finish booking your first appointment.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </div>
+  <div class= "content2 content2-text">
+    Please verify your email to continue booking your appointment with LifeStance Health.
+  </div>
+  <div class= "content3 content3-text1">
+    If you didn’t attempt to verify your email address with LifeStance Health or you feel that your email may have been used by someone else,
+    <a class="content3-text" href= <%= @report_url%> >
+      <span >please let us know.</span>
+    </a>
+  </div>
+  <div type="button" >
+    <a href= <%= @url%> class = "button btn-text">     
+      Verify email
+    </a>
+  </div>
+</div>
+  
+<div class= "footer">
+  <!-- a href="mailto: support@lifestance.com" style="text-decoration: none;color: #0067CE;">Contact us</a -->
+  • Terms of Use 
+  <a href="https://lifestance.com/privacy-policy" style="text-decoration: none;color: #0067CE;">• Privacy Policy</a>
+</div>

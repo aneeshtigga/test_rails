@@ -1,0 +1,190 @@
+{
+  "?xml": {
+    "@version": "1.0",
+    "@encoding": "ISO-8859-1"
+  },
+  "PPMDResults": {
+    "@s": "PRDAPI1WFEZJ7HE",
+    "@lst": "7/22/2021 2:05:15 PM",
+    "Results": {
+      "patientlist": {
+        "@itemcount": "8",
+        "@page": "1",
+        "@pagecount": "1",
+        "@itemsfrom": "1",
+        "@itemsto": "8",
+        "patient": [
+          {
+            "@id": "pat5983949",
+            "@name": "BLACKBEARD,CAPTAIN",
+            "@chart": "2689",
+            "@ssn": "",
+            "@hipaarelationship": "18",
+            "@dob": "07/15/1990",
+            "address": {
+              "@zipid": "1",
+              "@zip": "",
+              "@city": "",
+              "@state": "",
+              "@address1": "",
+              "@address2": "",
+              "@countrycode": "",
+              "@areacode": ""
+            },
+            "contactinfo": {
+              "@homephone": ""
+            }
+          },
+          {
+            "@id": "pat5983967",
+            "@name": "BLACKBEARD,CAPTAIN",
+            "@chart": "2706",
+            "@ssn": "",
+            "@hipaarelationship": "18",
+            "@dob": "07/19/1990",
+            "address": {
+              "@zipid": "1",
+              "@zip": "",
+              "@city": "",
+              "@state": "",
+              "@address1": "",
+              "@address2": "",
+              "@countrycode": "",
+              "@areacode": ""
+            },
+            "contactinfo": {
+              "@homephone": ""
+            }
+          },
+          {
+            "@id": "pat5983968",
+            "@name": "BLACKBEARD,CAPTAIN",
+            "@chart": "2707",
+            "@ssn": "",
+            "@hipaarelationship": "18",
+            "@dob": "07/19/1991",
+            "address": {
+              "@zipid": "1",
+              "@zip": "",
+              "@city": "",
+              "@state": "",
+              "@address1": "",
+              "@address2": "",
+              "@countrycode": "",
+              "@areacode": ""
+            },
+            "contactinfo": {
+              "@homephone": ""
+            }
+          },
+          {
+            "@id": "pat5983969",
+            "@name": "BLACKBEARD,CAPTAIN",
+            "@chart": "2708",
+            "@ssn": "",
+            "@hipaarelationship": "18",
+            "@dob": "07/19/1981",
+            "address": {
+              "@zipid": "1",
+              "@zip": "",
+              "@city": "",
+              "@state": "",
+              "@address1": "",
+              "@address2": "",
+              "@countrycode": "",
+              "@areacode": ""
+            },
+            "contactinfo": {
+              "@homephone": ""
+            }
+          },
+          {
+            "@id": "pat5983973",
+            "@name": "BLACKBEARD,CAPTAIN",
+            "@chart": "2712",
+            "@ssn": "",
+            "@hipaarelationship": "18",
+            "@dob": "07/20/1981",
+            "address": {
+              "@zipid": "1",
+              "@zip": "",
+              "@city": "",
+              "@state": "",
+              "@address1": "",
+              "@address2": "",
+              "@countrycode": "",
+              "@areacode": ""
+            },
+            "contactinfo": {
+              "@homephone": ""
+            }
+          },
+          {
+            "@id": "pat5983974",
+            "@name": "BLACKBEARD,CAPTAIN",
+            "@chart": "2713",
+            "@ssn": "",
+            "@hipaarelationship": "18",
+            "@dob": "07/20/1990",
+            "address": {
+              "@zipid": "1",
+              "@zip": "",
+              "@city": "",
+              "@state": "",
+              "@address1": "",
+              "@address2": "",
+              "@countrycode": "",
+              "@areacode": ""
+            },
+            "contactinfo": {
+              "@homephone": ""
+            }
+          },
+          {
+            "@id": "pat5983975",
+            "@name": "BLACKBEARD,CAPTAIN",
+            "@chart": "2714",
+            "@ssn": "",
+            "@hipaarelationship": "18",
+            "@dob": "07/20/1971",
+            "address": {
+              "@zipid": "1",
+              "@zip": "",
+              "@city": "",
+              "@state": "",
+              "@address1": "",
+              "@address2": "",
+              "@countrycode": "",
+              "@areacode": ""
+            },
+            "contactinfo": {
+              "@homephone": ""
+            }
+          },
+          {
+            "@id": "pat5983982",
+            "@name": "BLACKBEARD,CAPTAIN",
+            "@chart": "2716",
+            "@ssn": "",
+            "@hipaarelationship": "18",
+            "@dob": "07/21/1990",
+            "address": {
+              "@zipid": "1",
+              "@zip": "",
+              "@city": "",
+              "@state": "",
+              "@address1": "",
+              "@address2": "",
+              "@countrycode": "",
+              "@areacode": ""
+            },
+            "contactinfo": {
+              "@homephone": ""
+            }
+          }
+        ]
+      }
+    },
+    "Error": null
+  }
+}

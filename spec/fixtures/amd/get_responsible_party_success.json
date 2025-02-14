@@ -1,0 +1,186 @@
+{
+  "?xml": {
+    "@version": "1.0",
+    "@encoding": "ISO-8859-1"
+  },
+  "PPMDResults": {
+    "@s": "PRDAPI1WFEVBVER",
+    "@lst": "7/21/2021 11:47:17 AM",
+    "Results": {
+      "resppartylist": {
+        "respparty": {
+          "@id": "resp6849573",
+          "@name": "KENICHI,KEN",
+          "@accttype": "ac_type4",
+          "@acctnum": "6849573",
+          "@dob": "01/01/1992",
+          "@sex": "M",
+          "@title": "MR",
+          "@employer": "",
+          "@employstatus": "1",
+          "@ssn": "",
+          "@sendstmt": "1",
+          "@stmtrestart": "",
+          "@holdreasonfid": "0",
+          "@holdreasondesc": "",
+          "@holdreasoncode": "",
+          "@billcycle": "1",
+          "@fincharge": "0",
+          "@stmtformat": "",
+          "@balancefwd": "1",
+          "@lastpmtdate": "",
+          "@lastpmtamount": "",
+          "@laststmtdate": "",
+          "@laststmtamount": "",
+          "@paymentplanbalance": "",
+          "@ispaperless": "0",
+          "@ispaperlessportalchangedate": "",
+          "address": {
+            "@zip": "02151",
+            "@city": "BEACHMONT",
+            "@state": "MA",
+            "@address1": "1",
+            "@address2": "20 DEHON STREET",
+            "@areacode": "781",
+            "@countrycode": "USA"
+          },
+          "contactinfo": {
+            "@name": "",
+            "@homephone": "",
+            "@officephone": "",
+            "@officeext": "",
+            "@otherphone": "",
+            "@othertype": "C",
+            "@email": "",
+            "@preferredcommunicationfid": "",
+            "@communicationnote": ""
+          },
+          "creditcardonfile": null,
+          "arbucketlist": {
+            "arbucket": [
+              {
+                "@buckettype": "r",
+                "@current": "0.00",
+                "@past30": "0.00",
+                "@past60": "0.00",
+                "@past90": "0.00",
+                "@past120": "0.00",
+                "@unapplied": "0.00",
+                "@total": "0.00"
+              },
+              {
+                "@buckettype": "ri",
+                "@current": "0.00",
+                "@past30": "0.00",
+                "@past60": "0.00",
+                "@past90": "0.00",
+                "@past120": "0.00",
+                "@unapplied": "0.00",
+                "@total": "0.00"
+              }
+            ]
+          },
+          "familymemberlist": {
+            "familymember": [
+              {
+                "@id": "family5983970",
+                "@name": "STRIFE,CLOUD",
+                "@chart": "2709",
+                "@isrp": "0",
+                "@previousfirstname": "",
+                "@previousmiddlename": "",
+                "@previouslastname": "",
+                "@hipparelationship": "G8",
+                "contactinfo": {
+                  "@homephone": ""
+                },
+                "address": {
+                  "@zip": "02151",
+                  "@city": "BEACHMONT",
+                  "@state": "MA",
+                  "@address1": "1",
+                  "@address2": "20 DEHON STREET",
+                  "@countrycode": "USA"
+                },
+                "previousaddress": {
+                  "@address1": "1",
+                  "@address2": "1 DEHON STREET",
+                  "@countrycode": "",
+                  "@state": "MA",
+                  "@city": "BEACHMONT",
+                  "@zip": "02151"
+                }
+              },
+              {
+                "@id": "family5983971",
+                "@name": "KENICHI,KEN",
+                "@chart": "2710",
+                "@isrp": "1",
+                "@previousfirstname": "",
+                "@previousmiddlename": "",
+                "@previouslastname": "",
+                "@hipparelationship": "18",
+                "contactinfo": {
+                  "@homephone": ""
+                },
+                "address": {
+                  "@zip": "02151",
+                  "@city": "BEACHMONT",
+                  "@state": "MA",
+                  "@address1": "1",
+                  "@address2": "20 DEHON STREET",
+                  "@countrycode": "USA"
+                },
+                "previousaddress": {
+                  "@address1": "1",
+                  "@address2": "1 DEHON STREET",
+                  "@countrycode": "",
+                  "@state": "MA",
+                  "@city": "BEACHMONT",
+                  "@zip": "02151"
+                }
+              },
+              {
+                "@id": "family5983972",
+                "@name": "LAKE,LUIGI",
+                "@chart": "2711",
+                "@isrp": "0",
+                "@previousfirstname": "",
+                "@previousmiddlename": "",
+                "@previouslastname": "",
+                "@hipparelationship": "G8",
+                "contactinfo": {
+                  "@homephone": ""
+                },
+                "address": {
+                  "@zip": "02105",
+                  "@city": "BOSTON",
+                  "@state": "MA",
+                  "@address1": "1",
+                  "@address2": "1 revere dr",
+                  "@countrycode": "USA"
+                },
+                "previousaddress": {
+                  "@address1": "",
+                  "@address2": "",
+                  "@countrycode": "",
+                  "@state": "",
+                  "@city": "",
+                  "@zip": ""
+                }
+              }
+            ]
+          }
+        }
+      },
+      "accttypelist": {
+        "accttype": {
+          "@id": "ac_type4",
+          "@name": "TYPICAL ACCOUNT",
+          "@code": "TA"
+        }
+      }
+    },
+    "Error": null
+  }
+}

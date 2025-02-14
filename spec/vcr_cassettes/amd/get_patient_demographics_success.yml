@@ -1,0 +1,80 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://provapi.advancedmd.com/processrequest/api-102/LIFESTANCE/xmlrpc/processrequest.aspx
+    body:
+      encoding: UTF-8
+      string: '{"ppmdmsg":{"@action":"getdemographic","@class":"api","@msgtime":"12/10/2021
+        10:10:22 AM","@patientid":5983942}}'
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - rest-client/2.1.0 (darwin19 x86_64) ruby/3.0.1p64
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '112'
+      Cookie:
+      - token=995456n2Ubgmmv5oZ5uxlhPM4LbPslpRqbt67scFy15yQIvf2okqlmwVsr9y2fQgdDBCkUwRrKGAtTmg8YnTLxpULQIMycrByHslNLPly+rwqQVqOAVNqklMo4+vdRVe+cUL3K5NXU2lhOurLvLdQrra1Wb/xzmKtgH/zmh8zPEsfiJq9/BTi9TU921sBsZ2Jwo56OMepWEU2ULm4EAk9iuvpOmg==
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - provapi.advancedmd.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 10 Dec 2021 10:10:24 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '10145'
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - no-cache,no-store,must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - Fri, 10 Dec 2021 10:09:24 GMT
+      Server:
+      - Microsoft-IIS/10.0
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET,PUT,POST,DELETE,OPTIONS
+      Access-Control-Allow-Headers:
+      - Origin, Depth, User-Agent, X-File-Size, X-Requested-With, If-Modified-Since,
+        X-File-Name, Cache-ControlOrigin, Content-Type, Accept, Authorization, X-ProofSignature,
+        InternalRequestType
+    body:
+      encoding: UTF-8
+      string: '{"?xml":{"@version":"1.0","@encoding":"ISO-8859-1"},"PPMDResults":{"@s":"PRDAPI3WFE8V3VB","@lst":"12/10/2021
+        2:10:24 AM","Results":{"patientlist":{"patient":{"@id":"pat5983942","@importid":"","@dob":"12/04/1989","@deceased":"","@inactive":"","@inactivestatus":"","@inactivetitle":"","@inactivedescription":"","@name":"ROGELIO,GODINEZ","@previouslastname":"","@previousfirstname":"","@previousmiddlename":"","@respparty":"resp6849556","@isinvoiceentity":"0","@profile":"prof3","@insorder":"","@sex":"M","@genderidentity":"","@genderidentityother":"","@orientation":"","@orientationother":"","@chart":"2686","@maritalstatus":"2","@employerid":"","@employer":"ENCORATEST,
+        INC.","@ssn":"XXX-XX-1234","@finclasscode":"SP","@title":"MR","@relationship":"1","@hipaarelationship":"18","@languageid":"","@ethnicityid":"","@language":"","@ethnicity":"","@races":"","@recalcbuckets":"0","@additionalmrn":"","address":{"@zip":"30301","@city":"ATLANTA","@state":"AT","@address1":"BLUEFLIES
+        STREET","@address2":"3RD AVENUE","@areacode":"662","@countrycode":""},"previousaddress":{"@zip":"","@city":"","@state":"","@address1":"","@address2":"","@countrycode":""},"contactinfo":{"@name":"","@homephone":"(662)
+        555-1343","@officephone":"(662) 555-9238","@officeext":"213","@otherphone":"(662)
+        555-3823","@othertype":"C","@email":"ROGELIOGODINEZ@ENCORATEST.COM","@emailverificationstatus":"2","@preferredcommunicationfid":"","@confidentialcommunicationfid":"","@communicationnote":""},"arbucketlist":{"arbucket":[{"@buckettype":"p","@current":"0.00","@past30":"0.00","@past60":"0.00","@past90":"0.00","@past120":"0.00","@unapplied":"0.00","@total":"0.00"},{"@buckettype":"pi","@current":"0.00","@past30":"0.00","@past60":"0.00","@past90":"0.00","@past120":"0.00","@unapplied":"0.00","@total":"0.00"}]},"primarycareprovider":null}},"resppartylist":{"respparty":{"@id":"resp6849556","@name":"CAPTAIN,BLACKBEARD","@accttype":"ac_type4","@acctnum":"6849556","@dob":"07/14/1991","@sex":"M","@title":"","@employer":"","@employstatus":"1","@ssn":"XXX-XX-1234","@sendstmt":"1","@stmtrestart":"","@holdreasonfid":"0","@holdreasondesc":"","@holdreasoncode":"","@billcycle":"1","@fincharge":"0","@stmtformat":"","@balancefwd":"1","@lastpmtdate":"","@lastpmtamount":"","@laststmtdate":"","@laststmtamount":"","@lastbillingcaption":"","@lastbillingtip":"","@paymentplanbalance":"","@ispaperless":"0","@ispaperlessportalchangedate":"","address":{"@zip":"","@city":"","@state":"","@address1":"","@address2":"","@areacode":"","@countrycode":""},"contactinfo":{"@name":"","@homephone":"","@officephone":"","@officeext":"","@otherphone":"","@othertype":"","@email":"TEST@GMAIL.COM","@preferredcommunicationfid":"","@communicationnote":""},"creditcardonfile":null,"arbucketlist":{"arbucket":[{"@buckettype":"r","@current":"0.00","@past30":"0.00","@past60":"0.00","@past90":"0.00","@past120":"0.00","@unapplied":"0.00","@total":"0.00"},{"@buckettype":"ri","@current":"0.00","@past30":"0.00","@past60":"0.00","@past90":"0.00","@past120":"0.00","@unapplied":"0.00","@total":"0.00"}]},"familymemberlist":{"familymember":[{"@id":"family5983942","@name":"ROGELIO,GODINEZ","@chart":"2686","@isrp":"1","@previousfirstname":"","@previousmiddlename":"","@previouslastname":"","@hipparelationship":"18","contactinfo":{"@homephone":"(662)
+        555-1343"},"address":{"@zip":"30301","@city":"ATLANTA","@state":"AT","@address1":"BLUEFLIES
+        STREET","@address2":"3RD AVENUE","@countrycode":""},"previousaddress":{"@address1":"","@address2":"","@countrycode":"","@state":"","@city":"","@zip":""}},{"@id":"family5983957","@name":"CAPTAIN,BLACKBEARD","@chart":"2697","@isrp":"1","@previousfirstname":"","@previousmiddlename":"","@previouslastname":"","@hipparelationship":"18","contactinfo":{"@homephone":""},"address":{"@zip":"","@city":"","@state":"","@address1":"","@address2":"","@countrycode":""},"previousaddress":{"@address1":"","@address2":"","@countrycode":"","@state":"","@city":"","@zip":""}}]}}},"profilelist":{"profile":{"@id":"prof3","@name":"JONES,CAMERON","@fullname":"JONES,CAMERON","@code":"JONES","@chargefeesched":"feesch21092","@fullinactive":"No","@status":"ACTIVE","finclasslist":{"finclass":[{"@id":"fclass1","@name":"","@code":"","@billins":"0","@billlab":"1","@ca":"0","@responsible":"0","@acceptassign":"0","@allowablewocode":"","@autowo":"0","@autowocode":"","@riskwocode":"","@riskpercent":"0"},{"@id":"fclass2","@name":"DOUBLE
+        INSURANCE COVERAGE","@code":"DC","@billins":"1","@billlab":"1","@ca":"0","@responsible":"1","@accttype":"ac_type4","@acceptassign":"1","@allowablewocode":"WOINS","@autowo":"0","@autowocode":"None","@riskwocode":"None","@riskpercent":"0"},{"@id":"fclass4","@name":"COMMERCIAL","@code":"CM","@billins":"1","@billlab":"1","@ca":"0","@responsible":"1","@accttype":"ac_type4","@acceptassign":"1","@allowablewocode":"WOINS","@autowo":"0","@autowocode":"None","@riskwocode":"None","@riskpercent":"0"},{"@id":"fclass6","@name":"MONTGOMERY
+        HEALTH","@code":"MH","@billins":"1","@billlab":"1","@ca":"0","@responsible":"1","@accttype":"ac_type4","@acceptassign":"1","@allowfeesched":"feesch21103","@allowablewocode":"WOINS","@autowo":"0","@autowocode":"WOCOUR","@riskwocode":"None","@riskpercent":"0"},{"@id":"fclass8","@name":"MEDICARE","@code":"MC","@billins":"1","@billlab":"1","@ca":"0","@responsible":"1","@accttype":"ac_type4","@acceptassign":"1","@allowfeesched":"feesch21110","@allowablewocode":"WOINS","@autowo":"0","@autowocode":"WOINS","@riskwocode":"None","@riskpercent":"0"},{"@id":"fclass10","@name":"MEDICAID","@code":"MD","@billins":"1","@billlab":"1","@ca":"0","@responsible":"1","@accttype":"ac_type5","@acceptassign":"1","@allowfeesched":"feesch21111","@allowablewocode":"WOINS","@autowo":"1","@autowocode":"WOINS","@riskwocode":"None","@riskpercent":"0"},{"@id":"fclass12","@name":"SELF
+        PAY","@code":"SP","@billins":"0","@billlab":"1","@ca":"0","@responsible":"0","@accttype":"ac_type4","@acceptassign":"1","@allowfeesched":"feesch21780","@allowablewocode":"SDDISC","@autowo":"0","@autowocode":"None","@riskwocode":"None","@riskpercent":"0"},{"@id":"fclass14","@name":"WORKERS
+        COMP","@code":"WC","@billins":"1","@billlab":"1","@ca":"0","@responsible":"1","@accttype":"ac_type4","@acceptassign":"1","@allowablewocode":"WOINS","@autowo":"1","@autowocode":"WOWC","@riskwocode":"None","@riskpercent":"0"},{"@id":"fclass16","@name":"CHANGE
+        THIS!!!!","@code":"XX","@billins":"1","@billlab":"1","@ca":"0","@responsible":"0","@accttype":"ac_type4","@acceptassign":"1","@allowfeesched":"feesch21093","@allowablewocode":"WOINS","@autowo":"0","@autowocode":"None","@riskwocode":"None","@riskpercent":"0"},{"@id":"fclass18","@name":"NO
+        PAY","@code":"NP","@billins":"0","@billlab":"1","@ca":"0","@responsible":"0","@acceptassign":"0","@allowfeesched":"feesch21093","@allowablewocode":"WOCOUR","@autowo":"0","@autowocode":"WOCOUR","@riskwocode":"","@riskpercent":"0"},{"@id":"fclass19","@name":"TEST","@code":"TE","@billins":"1","@billlab":"1","@ca":"0","@responsible":"1","@accttype":"ac_type4","@acceptassign":"1","@allowablewocode":"None","@autowo":"0","@autowocode":"","@riskwocode":"","@riskpercent":"0"},{"@id":"fclass24","@name":"BLUECROSS
+        BLUESHIELD","@code":"BA","@billins":"1","@billlab":"1","@ca":"0","@responsible":"1","@accttype":"ac_type4","@acceptassign":"1","@allowfeesched":"feesch21107","@allowablewocode":"WOINS","@autowo":"0","@autowocode":"","@riskwocode":"","@riskpercent":"0"},{"@id":"fclass25","@name":"TRICARE","@code":"TC","@billins":"1","@billlab":"1","@ca":"0","@responsible":"1","@accttype":"ac_type4","@acceptassign":"1","@allowfeesched":"feesch21112","@allowablewocode":"WOINS","@autowo":"0","@autowocode":"","@riskwocode":"","@riskpercent":"0"},{"@id":"fclass26","@name":"AETNA","@code":"AT","@billins":"1","@billlab":"1","@ca":"0","@responsible":"1","@accttype":"ac_type4","@acceptassign":"1","@allowfeesched":"feesch21104","@allowablewocode":"WOINS","@autowo":"0","@autowocode":"WOINS","@riskwocode":"","@riskpercent":"0"},{"@id":"fclass27","@name":"CIGNA","@code":"CA","@billins":"1","@billlab":"1","@ca":"0","@responsible":"1","@accttype":"ac_type4","@acceptassign":"1","@allowfeesched":"feesch21108","@allowablewocode":"WOINS","@autowo":"0","@autowocode":"","@riskwocode":"","@riskpercent":"0"},{"@id":"fclass28","@name":"UNITED
+        HEALTHCARE","@code":"UH","@billins":"1","@billlab":"1","@ca":"0","@responsible":"1","@accttype":"ac_type4","@acceptassign":"1","@allowfeesched":"feesch21113","@allowablewocode":"WOINS","@autowo":"0","@autowocode":"","@riskwocode":"","@riskpercent":"0"},{"@id":"fclass29","@name":"ALTIUS","@code":"AS","@billins":"1","@billlab":"1","@ca":"0","@responsible":"1","@accttype":"ac_type4","@acceptassign":"1","@allowfeesched":"feesch21106","@allowablewocode":"WOINS","@autowo":"0","@autowocode":"","@riskwocode":"","@riskpercent":"0"},{"@id":"fclass30","@name":"IHC","@code":"IH","@billins":"1","@billlab":"1","@ca":"0","@responsible":"1","@accttype":"ac_type4","@acceptassign":"1","@allowfeesched":"feesch21109","@allowablewocode":"WOINS","@autowo":"0","@autowocode":"","@riskwocode":"","@riskpercent":"0"},{"@id":"fclass259","@name":"AETNA
+        BBH MD","@code":"A1","@billins":"1","@billlab":"1","@ca":"0","@responsible":"1","@accttype":"ac_type4","@acceptassign":"1","@allowfeesched":"feesch21777","@allowablewocode":"WOINS","@autowo":"0","@autowocode":"","@riskwocode":"","@riskpercent":"0"},{"@id":"fclass260","@name":"AETNA
+        BBH APN","@code":"A2","@billins":"1","@billlab":"1","@ca":"0","@responsible":"1","@accttype":"ac_type4","@acceptassign":"1","@allowfeesched":"feesch21778","@allowablewocode":"WOINS","@autowo":"0","@autowocode":"","@riskwocode":"","@riskpercent":"0"},{"@id":"fclass269","@name":"GOVERNMENT
+        OTHER","@code":"GO","@billins":"1","@billlab":"1","@ca":"0","@responsible":"1","@accttype":"ac_type4","@acceptassign":"1","@allowablewocode":"WOMISC","@autowo":"0","@autowocode":"","@riskwocode":"","@riskpercent":"0"},{"@id":"fclass270","@name":"OTHER","@code":"OT","@billins":"1","@billlab":"1","@ca":"0","@responsible":"1","@accttype":"ac_type4","@acceptassign":"1","@allowablewocode":"WOMISC","@autowo":"0","@autowocode":"","@riskwocode":"","@riskpercent":"0"}]}}}},"Error":null}}'
+  recorded_at: Fri, 10 Dec 2021 10:10:25 GMT
+recorded_with: VCR 6.0.0

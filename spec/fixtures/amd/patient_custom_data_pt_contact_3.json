@@ -1,0 +1,85 @@
+{
+  "?xml": {
+    "@version": "1.0",
+    "@encoding": "ISO-8859-1"
+  },
+  "PPMDResults": {
+    "@s": "PRDWAPI3WFE0HIX",
+    "@lst": "1/23/2023 11:27:34 AM",
+    "Results": {
+      "patientlist": {
+        "patient": {
+          "@id": "5983942",
+          "@visitid": "9543326",
+          "@visitdos": "07/30/2021",
+          "templatelist": {
+            "template": {
+              "@id": "32",
+              "@restrictupdates": "0",
+              "instancelist": {
+                "instance": {
+                  "@id": "21755",
+                  "@createdby": "LS-API",
+                  "@changedat": "",
+                  "@changedby": "",
+                  "fieldvaluelist": {
+                    "fieldvalue": [
+                      {
+                        "@id": "151736",
+                        "@templatefieldid": "360",
+                        "@ordinal": "1",
+                        "@value": "JOHN DOE",
+                        "@valuecode": "",
+                        "@valuename": "",
+                        "@createdat": "2023-01-23T11:27:34.043",
+                        "@createdby": "LS-API",
+                        "@changedat": "",
+                        "@changedby": ""
+                      },
+                      {
+                        "@id": "151737",
+                        "@templatefieldid": "361",
+                        "@ordinal": "2",
+                        "@value": "PARENTS",
+                        "@valuecode": "",
+                        "@valuename": "",
+                        "@createdat": "2023-01-23T11:27:34.043",
+                        "@createdby": "LS-API",
+                        "@changedat": "",
+                        "@changedby": ""
+                      },
+                      {
+                        "@id": "151738",
+                        "@templatefieldid": "362",
+                        "@ordinal": "3",
+                        "@value": "+9893815768",
+                        "@valuecode": "",
+                        "@valuename": "",
+                        "@createdat": "2023-01-23T11:27:34.043",
+                        "@createdby": "LS-API",
+                        "@changedat": "",
+                        "@changedby": ""
+                      },
+                      {
+                        "@id": "151739",
+                        "@templatefieldid": "363",
+                        "@ordinal": "4",
+                        "@value": "",
+                        "@valuecode": "",
+                        "@valuename": "",
+                        "@createdat": "2023-01-23T11:27:34.043",
+                        "@createdby": "LS-API",
+                        "@changedat": "",
+                        "@changedby": ""
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

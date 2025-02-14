@@ -1,0 +1,727 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "clinicians": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "addresses": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "address_line1": {
+                      "type": "string"
+                    },
+                    "address_line2": {
+                      "type": ["string", "null"]
+                    },
+                    "city": {
+                      "type": "string"
+                    },
+                    "state": {
+                      "type": "string"
+                    },
+                    "postal_code": {
+                      "type": "string"
+                    },
+                    "clinician_id": {
+                      "type": "integer"
+                    },
+                    "created_at": {
+                      "type": "string"
+                    },
+                    "updated_at": {
+                      "type": "string"
+                    },
+                    "address_code": {
+                      "type": ["string", "null"]
+                    },
+                    "office_key": {
+                      "type": "integer"
+                    },
+                    "facility_id": {
+                      "type": "integer"
+                    },
+                    "primary_location": {
+                      "type": "boolean"
+                    },
+                    "facility_name": {
+                      "type": "string"
+                    },
+                    "apt_suite": {
+                      "type": "string"
+                    },
+                    "country_code": {
+                      "type": ["string", "null"]
+                    },
+                    "area_code": {
+                      "type": ["string", "null"]
+                    },
+                    "provider_id": {
+                      "type": "integer"
+                    },
+                    "deleted_at": {
+                      "type": ["string", "null"]
+                    },
+                    "cbo": {
+                      "type": "integer"
+                    },
+                    "latitude": {
+                      "type": "number"
+                    },
+                    "longitude": {
+                      "type": "number"
+                    },
+                    "license_key": {
+                      "type": "integer"
+                    },
+                    "rank_most_available": {
+                      "type": "integer"
+                    },
+                    "rank_soonest_available": {
+                      "type": "integer"
+                    },
+                    "license_type": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "address_line1",
+                    "address_line2",
+                    "city",
+                    "state",
+                    "postal_code",
+                    "clinician_id",
+                    "created_at",
+                    "updated_at",
+                    "address_code",
+                    "office_key",
+                    "facility_id",
+                    "primary_location",
+                    "facility_name",
+                    "apt_suite",
+                    "country_code",
+                    "area_code",
+                    "provider_id",
+                    "deleted_at",
+                    "cbo",
+                    "latitude",
+                    "longitude",
+                    "license_key",
+                    "rank_most_available",
+                    "rank_soonest_available",
+                    "license_type"
+                  ]
+                }
+              ]
+            },
+            "ages_accepted": {
+              "type": "string"
+            },
+            "clinician_availabilities": {
+              "type": "array",
+              "minItems": 1,
+              "maxItems": 6,
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "clinician_availability_key": {
+                      "type": "string"
+                    },
+                    "license_key": {
+                      "type": "integer"
+                    },
+                    "available_date": {
+                      "type": "string"
+                    },
+                    "profile_id": {
+                      "type": "integer"
+                    },
+                    "provider_id": {
+                      "type": "integer"
+                    },
+                    "npi": {
+                      "type": "string"
+                    },
+                    "facility_id": {
+                      "type": "integer"
+                    },
+                    "reason": {
+                      "type": "string"
+                    },
+                    "appointment_start_time": {
+                      "type": "string"
+                    },
+                    "appointment_end_time": {
+                      "type": "string"
+                    },
+                    "type_of_care": {
+                      "type": "string"
+                    },
+                    "virtual_or_video_visit": {
+                      "type": "integer"
+                    },
+                    "in_person_visit": {
+                      "type": "integer"
+                    },
+                    "rank_most_available": {
+                      "type": "integer"
+                    },
+                    "rank_soonest_available": {
+                      "type": "integer"
+                    },
+                    "column_id": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "clinician_availability_key",
+                    "license_key",
+                    "available_date",
+                    "profile_id",
+                    "provider_id",
+                    "npi",
+                    "facility_id",
+                    "reason",
+                    "appointment_start_time",
+                    "appointment_end_time",
+                    "type_of_care",
+                    "virtual_or_video_visit",
+                    "in_person_visit",
+                    "rank_most_available",
+                    "rank_soonest_available",
+                    "column_id"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "clinician_availability_key": {
+                      "type": "string"
+                    },
+                    "license_key": {
+                      "type": "integer"
+                    },
+                    "available_date": {
+                      "type": "string"
+                    },
+                    "profile_id": {
+                      "type": "integer"
+                    },
+                    "provider_id": {
+                      "type": "integer"
+                    },
+                    "npi": {
+                      "type": "string"
+                    },
+                    "facility_id": {
+                      "type": "integer"
+                    },
+                    "reason": {
+                      "type": "string"
+                    },
+                    "appointment_start_time": {
+                      "type": "string"
+                    },
+                    "appointment_end_time": {
+                      "type": "string"
+                    },
+                    "type_of_care": {
+                      "type": "string"
+                    },
+                    "virtual_or_video_visit": {
+                      "type": "integer"
+                    },
+                    "in_person_visit": {
+                      "type": "integer"
+                    },
+                    "rank_most_available": {
+                      "type": "integer"
+                    },
+                    "rank_soonest_available": {
+                      "type": "integer"
+                    },
+                    "column_id": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "clinician_availability_key",
+                    "license_key",
+                    "available_date",
+                    "profile_id",
+                    "provider_id",
+                    "npi",
+                    "facility_id",
+                    "reason",
+                    "appointment_start_time",
+                    "appointment_end_time",
+                    "type_of_care",
+                    "virtual_or_video_visit",
+                    "in_person_visit",
+                    "rank_most_available",
+                    "rank_soonest_available",
+                    "column_id"
+                  ]
+                }
+              ]
+            },
+            "clinician_type": {
+              "type": "string"
+            },
+            "first_name": {
+              "type": "string"
+            },
+            "gender": {
+              "type": "string"
+            },
+            "id": {
+              "type": "integer"
+            },
+            "in_office": {
+              "type": "boolean"
+            },
+            "last_name": {
+              "type": "string"
+            },
+            "license_type": {
+              "type": "string"
+            },
+            "photo": {
+              "type": ["string", "null"]
+            },
+            "pronouns": {
+              "type": "string"
+            },
+            "provider_id": {
+              "type": "integer"
+            },
+            "type_of_cares": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "string"
+                }
+              ]
+            },
+            "video_visit": {
+              "type": "boolean"
+            },
+            "license_types": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "name": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "name"
+                  ]
+                }
+              ]
+            },
+            "languages": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "name": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "name"
+                  ]
+                }
+              ]
+            },
+            "expertises": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "name": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "name"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "name": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "name"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "name": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "name"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "name": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "name"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "name": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "name"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "name": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "name"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "name": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "name"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "name": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "name"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "name": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "name"
+                  ]
+                }
+              ]
+            },
+            "concerns": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "name": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "name"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "name": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "name"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "name": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "name"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "name": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "name"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "name": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "name"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "name": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "name"
+                  ]
+                }
+              ]
+            },
+            "populations": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "name": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "name"
+                  ]
+                }
+              ]
+            },
+            "interventions": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "name": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "name"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "name": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "name"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "name": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "name"
+                  ]
+                }
+              ]
+            },
+            "insurances": {
+              "type": "array",
+              "items": {}
+            },
+            "distance_in_miles": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "addresses",
+            "ages_accepted",
+            "clinician_availabilities",
+            "clinician_type",
+            "first_name",
+            "gender",
+            "id",
+            "in_office",
+            "last_name",
+            "license_type",
+            "photo",
+            "pronouns",
+            "provider_id",
+            "type_of_cares",
+            "video_visit",
+            "license_types",
+            "languages",
+            "expertises",
+            "concerns",
+            "populations",
+            "interventions",
+            "insurances",
+            "distance_in_miles"
+          ]
+        }
+      ]
+    },
+    "meta": {
+      "type": "object",
+      "properties": {
+        "clinician_count": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "clinician_count"
+      ]
+    },
+    "status": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "clinicians",
+    "meta",
+    "status"
+  ]
+}

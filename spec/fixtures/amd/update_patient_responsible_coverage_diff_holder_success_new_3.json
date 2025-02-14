@@ -1,0 +1,43 @@
+{
+  "?xml": {
+    "@version": "1.0",
+    "@encoding": "ISO-8859-1"
+  },
+  "PPMDResults": {
+    "@s": "PRDAPI1WFETPAOM",
+    "@lst": "3/22/2022 3:50:28 AM",
+    "Results": {
+      "resppartylist": {
+        "@itemcount": "1",
+        "@page": "1",
+        "@pagecount": "1",
+        "@itemsfrom": "1",
+        "@itemsto": "1",
+        "respparty": {
+          "@id": "resp6849908",
+          "@name": "JANE,CAPTAIN",
+          "@acctnum": "6849908",
+          "@ssn": "            ",
+          "@isinvoiceentity": "0",
+          "@dob": "01/01/1986",
+          "@email": "TEST@GMAIL.COM",
+          "@gender": "F",
+          "address": {
+            "@zipid": "1",
+            "@zip": "30301",
+            "@city": "ATLANTA",
+            "@state": "AT",
+            "@address1": "BLUEFLIES STREET",
+            "@address2": "3RD AVENUE",
+            "@countrycode": "",
+            "@areacode": ""
+          },
+          "contactinfo": {
+            "@homephone": ""
+          }
+        }
+      }
+    },
+    "Error": null
+  }
+}

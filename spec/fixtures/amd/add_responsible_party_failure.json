@@ -1,0 +1,93 @@
+{
+  "?xml": {
+    "@version": "1.0",
+    "@encoding": "ISO-8859-1"
+  },
+  "PPMDResults": {
+    "@s": "PRDAPI1WFEAYQLM",
+    "@lst": "7/9/2021 12:46:03 PM",
+    "Results": {
+      "@success": "1",
+      "respparty": {
+        "@id": "resp6849545",
+        "@name": "AMI,MON",
+        "@accttype": "ac_type4",
+        "@acctnum": "6849545",
+        "@dob": "",
+        "@sex": " ",
+        "@title": "",
+        "@employer": "",
+        "@employstatus": "1",
+        "@ssn": "",
+        "@sendstmt": "1",
+        "@stmtrestart": "",
+        "@holdreasonfid": "0",
+        "@holdreasondesc": "",
+        "@holdreasoncode": "",
+        "@billcycle": "1",
+        "@fincharge": "0",
+        "@stmtformat": "",
+        "@balancefwd": "1",
+        "@lastpmtdate": "",
+        "@lastpmtamount": "",
+        "@laststmtdate": "",
+        "@laststmtamount": "",
+        "@paymentplanbalance": "",
+        "@ispaperless": "0",
+        "@ispaperlessportalchangedate": "",
+        "address": {
+          "@zip": "",
+          "@city": "",
+          "@state": "",
+          "@address1": "",
+          "@address2": "",
+          "@areacode": "",
+          "@countrycode": ""
+        },
+        "contactinfo": {
+          "@name": "",
+          "@homephone": "",
+          "@officephone": "",
+          "@officeext": "",
+          "@otherphone": "",
+          "@othertype": "",
+          "@email": "",
+          "@preferredcommunicationfid": "",
+          "@communicationnote": ""
+        },
+        "creditcardonfile": null,
+        "arbucketlist": {
+          "arbucket": [
+            {
+              "@buckettype": "r",
+              "@current": "0.00",
+              "@past30": "0.00",
+              "@past60": "0.00",
+              "@past90": "0.00",
+              "@past120": "0.00",
+              "@unapplied": "0.00",
+              "@total": "0.00"
+            },
+            {
+              "@buckettype": "ri",
+              "@current": "0.00",
+              "@past30": "0.00",
+              "@past60": "0.00",
+              "@past90": "0.00",
+              "@past120": "0.00",
+              "@unapplied": "0.00",
+              "@total": "0.00"
+            }
+          ]
+        },
+        "familymemberlist": null
+      },
+      "accttype": {
+        "@id": "ac_type4",
+        "@name": "TYPICAL ACCOUNT",
+        "@code": "TA"
+      }
+    },
+    "Error": null
+  }
+}

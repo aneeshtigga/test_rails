@@ -1,0 +1,36 @@
+{
+  "?xml": {
+    "@version": "1.0",
+    "@encoding": "ISO-8859-1"
+  },
+  "PPMDResults": {
+    "@s": "PRDAPI1WFEGWK8T",
+    "@lst": "7/21/2021 11:49:00 AM",
+    "Error": {
+      "Fault": {
+        "faultcode": "Server",
+        "faultstring": "Server Error",
+        "detail": {
+          "code": "-2147221504",
+          "description": "AMD-995456-07211149 | Invalid attempt to read when no data is present.",
+          "class": "AdvancedMD.Demographics.Demographics",
+          "method": "Interop.MSSEventLog._IPPMDGateway.Gateway",
+          "linenum": "0",
+          "source": "System.InvalidOperationException: Invalid attempt to read when no data is present.\r\n   at System.Data.SqlClient.SqlDataReader.CheckDataIsReady(Int32 columnIndex, Boolean allowPartiallyReadColumn, Boolean permitAsync, String methodName)\r\n   at System.Data.SqlClient.SqlDataReader.TryReadColumn(Int32 i, Boolean setTimeout, Boolean allowPartiallyReadColumn)\r\n   at System.Data.SqlClient.SqlDataReader.GetValueInternal(Int32 i)\r\n   at System.Data.SqlClient.SqlDataReader.GetValue(Int32 i)\r\n   at AdvancedMD.Demographics.Demographics.AssembleRespParty(XmlDocument requestXml)\r\n   at AdvancedMD.Demographics.Demographics.Interop.MSSEventLog._IPPMDGateway.Gateway(String xmlIn)",
+          "extrainfo": {
+            "requestinfo": {
+              "ppmdmsg": {
+                "@action": "getrespparty",
+                "@class": "demographics",
+                "@msgtime": "7/21/2021 06:48:55 PM",
+                "@resppartyid": "non-existent",
+                "@ip": "96.237.174.248",
+                "usercontext": "995456[Removed]"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

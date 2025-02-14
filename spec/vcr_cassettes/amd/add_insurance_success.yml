@@ -1,0 +1,63 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://provapi.advancedmd.com/processrequest/api-101/LIFESTANCE/xmlrpc/processrequest.aspx
+    body:
+      encoding: UTF-8
+      string: '{"ppmdmsg":{"@action":"addinsurance","@class":"demographics","@msgtime":"7/13/2021
+        09:35:35 AM","patient":{"@id":"pat61722","@changed":1,"insplanlist":{"insplan":{"@id":"","@begindate":"07/13/2021","@enddate":"07/20/2021","@carrier":"car7562","@subscriber":"resp6849546","@subscribernum":null,"@hipaarelationship":"18","@relationship":"1","@grpname":"","@grpnum":"","@copay":"0.0","@copaytype":"$","@coverage":"3","@payerid":"","@mspcode":"","@eligibilityid":"","@eligibilitystatusid":"","@eligibilitychangedat":"","@eligibilitycreatedat":"","@eligibilityresponsedate":"","@finclasscode":"","@deductible":"0.00","@deductiblemet":"0.00","@yearendmonth":"1","@lifetime":"0.00","insnote":{"@self-closing":"true"}}}}}}'
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/3.0.1p64
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '714'
+      Cookie:
+      - token=995456DpRpI4OYHWz966YDobYwBUbdxqhW9Cw1IQAFYyynzV4ygQseC5eoqYwW7EZTb+8nP3p5B6Z8LPkiLapSbE+Q+Iw8XXv9HfVnbXKsd/u67I2axmjHkPlF3ZT6GTocht3+AeP2UM9hM2tg50rWofrbTnAYy+IgvzpiNbhxGXPgQ5WiSF46NFgDHdCY/Q5k6xb3JAhqCUnBQV+h6hRX1BRsKg==
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - provapi.advancedmd.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 13 Jul 2021 09:35:43 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '233'
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - no-cache,no-store,must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - Tue, 13 Jul 2021 09:34:43 GMT
+      Server:
+      - Microsoft-IIS/10.0
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET,PUT,POST,DELETE,OPTIONS
+      Access-Control-Allow-Headers:
+      - Origin, Depth, User-Agent, X-File-Size, X-Requested-With, If-Modified-Since,
+        X-File-Name, Cache-ControlOrigin, Content-Type, Accept, Authorization, X-ProofSignature,
+        InternalRequestType
+    body:
+      encoding: UTF-8
+      string: '{"?xml":{"@version":"1.0","@encoding":"ISO-8859-1"},"PPMDResults":{"@s":"PRDAPI1WFECSSFR","@lst":"7/13/2021
+        2:35:43 AM","Results":{"@success":"1","patient":{"@id":"ins3700778","@sequence":"13","@insnotefid":"3910315"}},"Error":null}}'
+  recorded_at: Tue, 13 Jul 2021 09:35:43 GMT
+recorded_with: VCR 6.0.0

@@ -1,0 +1,27 @@
+---
+concurrency: 5
+dev:
+  :concurrency: 5
+  pidfile: /lfs/sidekiq.critical.pid
+
+development:
+  :concurrency: 5
+
+qa:
+  :concurrency: 5
+  pidfile: /lfs/sidekiq.critical.pid
+
+uat:
+  :concurrency: 5
+  pidfile: /lfs/sidekiq.critical.pid
+
+production:
+  :concurrency: 5
+  pidfile: /lfs/sidekiq.critical.pid
+
+perf:
+  :concurrency: 5
+  pidfile: /lfs/sidekiq.critical.pid
+
+:queues:
+  - [critical, 1]

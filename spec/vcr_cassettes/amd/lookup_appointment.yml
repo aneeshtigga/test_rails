@@ -1,0 +1,59 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api-102.advancedmd.com/API/scheduler/Appointments/9543326?clientDateTime=&getEecurException=true&id=9543326&includeDetail=true
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/3.0.1p64
+      Content-Type:
+      - application/json
+      Cookie:
+      - token=995456AWX/4q//hQOSOP+0rsMonov4/bHaVJibxm3hyRv/qI7JpWUBjlTuVLlUGckePheIlklan3eaN1lnguYx+Nv8CKp0fYOuo72YYgQOuka2RYSO6fKJEfTgj5QqhASpozpKREN1ENkYkCMXHHs8nJ6w4oX60R+Dsa0ZEkS4IJCD8rUtUo18yWcEBF2nN51t+BIW1UYscsAG9BizZULhlhH+mQ==
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - api-102.advancedmd.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 08 Nov 2021 09:55:58 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - no-store,no-cache
+      Pragma:
+      - no-cache
+      Vary:
+      - none,Accept-Encoding
+      Server:
+      - Microsoft-IIS/10.0
+      Amds-Lst:
+      - 11/08/2021 01:55:58
+    body:
+      encoding: ASCII-8BIT
+      string: '{"id":9543326,"startdatetime":"2021-07-30T14:00:00","status":0,"confirmdate":null,"columnid":18,"heading":"BEACHWOOD
+        - VANCE","profileid":16,"provider":"VANCE,RORY","providercode":"VANCR ","facilityid":230,"facility":"BEACHWOOD","facilitycode":"BEACH","episodeid":5949582,"episode":"STANDARD","patientid":5983942,"firstname":"GODINEZ","lastname":"ROGELIO","middlename":"","ssn":"XXX-XX-1234","dob":"1989-12-04T00:00:00","patientemail":"ROGELIOGODINEZ@ENCORATEST.COM","patientinactivestatusid":null,"ispatientapproved":true,"chartnumber":"2686","deceased":null,"gender":"M","patientaddress":{"address1":"APT
+        B-5","address2":"6923 N MOUNTAINSIDE DR","city":"CORINTH","state":"MS","zipcode":"38834     ","countrycode":""},"responsiblepartyid":6849556,"hasccof":false,"rpname":"CAPTAIN,BLACKBEARD","copay":null,"paymentid":null,"coverageid":null,"carriername":"","carriercode":"","waitlist":null,"recurringappointmentid":null,"recurringappointment":null,"hasrecurrenceexception":false,"recurrenceexception":null,"transitionofcare":false,"tocrequestedavailable":null,"istelemedicine":false,"duration":40,"color":"GREEN","comments":"This
+        is a test for the amd test api","referralplanid":1,"authorizations":null,"referringprovider":{"id":387,"code":"JONES
+        ","name":"JONES,CAMERON"},"visitposted":false,"chargesposted":false,"homephone":"6625551343","officephone":"6625559238","officeextension":"213","otherphone":"6625553823","otherphonetype":"C","preferredphone":"Home:
+        662-555-1343","appointmenttypeids":[19],"appointmenttype":[{"licensekey":995456,"id":19,"name":"TESTING","isdefault":true,"display":true,"billable":true,"transitionofcare":false}],"appointmentinstruction":[{"licensekey":995456,"id":8,"name":"INS       ","instruction":"PLEASE
+        BRING YOUR INSURANCE CARD(S)","documentid":null,"display":true},{"licensekey":995456,"id":10,"name":"EARLY     ","instruction":"PLEASE
+        ARRIVE AT LEAST 15 MINUTES BEFORE YOUR SCHEDULED APPOINTMENT, TO FILL OUT
+        PAPERWORK.","documentid":null,"display":true},{"licensekey":995456,"id":11,"name":"RECORDS   ","instruction":"IF
+        THIS IS YOUR FIRST VISIT, PLEASE BRING OLD RECORDS FROM YOUR PREVIOUS DOCTOR
+        IF AVAILABLE.","documentid":null,"display":true}],"sequence":"","globalperiod":[],"insuranceorder":"","insurance":[],"arpatientbalance":0.0000,"arfamilybalance":0.0000,"remainingvisits":null,"maxauthvisits":null,"authvisitsused":null,"appointmentgroupid":null,"superbill":null,"linkednotestatus":0}'
+  recorded_at: Mon, 08 Nov 2021 09:55:58 GMT
+recorded_with: VCR 6.0.0

@@ -1,0 +1,31 @@
+{
+  "?xml": {
+    "@version": "1.0",
+    "@encoding": "ISO-8859-1"
+  },
+  "PPMDResults": {
+    "@s": "PRDAPI2WFEVTWZG",
+    "@lst": "8/31/2021 10:48:10 AM",
+    "Results": {
+      "@success": "0",
+      "resppartylist" : {
+        "@itemcount" : 0
+      }
+    },
+    "Error": {
+      "Fault": {
+        "faultcode": "Client",
+        "faultstring": "Client Error",
+        "detail": {
+          "code": "-2147217400",
+          "description": "Duplicate name/DOB found",
+          "class": "AdvancedMD.Demographics.Demographics",
+          "method": "AddPatient",
+          "linenum": "0",
+          "source": "AdvancedMD.Demographics.Demographics",
+          "extrainfo": null
+        }
+      }
+    }
+  }
+}

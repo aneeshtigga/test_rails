@@ -1,0 +1,41 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.zipcodeapi.com/rest/ChDimMN4QwCcX3m6by3KzipvDfS27odFD19M1G7Iu2fxbQkjbKvbM0qSD7oz4o5r/info.json/77657/degrees
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (darwin21 arm64) ruby/3.0.1p64
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - www.zipcodeapi.com
+  response:
+    status:
+      code: 429
+      message: Too Many Requests
+    headers:
+      Date:
+      - Thu, 09 Jun 2022 23:44:40 GMT
+      Server:
+      - Apache/2.4.53 () OpenSSL/1.0.2k-fips
+      X-Powered-By:
+      - PHP/7.4.28
+      Upgrade:
+      - h2,h2c
+      Connection:
+      - Upgrade
+      Transfer-Encoding:
+      - chunked
+      Content-Type:
+      - text/html; charset=UTF-8
+    body:
+      encoding: UTF-8
+      string: '{"error_code":429,"error_msg":"Usage limit exceeded."}'
+  recorded_at: Thu, 09 Jun 2022 23:44:40 GMT
+recorded_with: VCR 6.0.0

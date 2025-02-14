@@ -1,0 +1,19 @@
+{
+  "?xml": {
+    "@version": "1.0",
+    "@encoding": "ISO-8859-1"
+  },
+  "PPMDResults": {
+    "@s": "PRDAPI1WFEGWK8T",
+    "@lst": "8/18/2021 1:17:11 AM",
+    "Results": {
+      "marstatuslist": {
+        "marstatus": {
+          "@id": "stat21",
+          "@name": "1-SCHEDULED CONSULT"
+        }
+      }
+    },
+    "Error": null
+  }
+}

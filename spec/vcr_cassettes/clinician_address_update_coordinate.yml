@@ -1,0 +1,56 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.radar.io/v1/geocode/forward?query=3rd%20avenue%20Blueflies%20street%20Atlanta%20FL
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/3.0.1p64
+      Authorization:
+      - prj_live_sk_904d83813f19c9535311ca61350b4f4e93188f2d
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - api.radar.io
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 01 Dec 2023 22:45:07 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Limit:
+      - '1000'
+      X-Ratelimit-Remaining:
+      - '999'
+      X-Ratelimit-Reset:
+      - '1701470709'
+      Etag:
+      - W/"189-fDPH9cfocstkFnKyHO8cvwJux5k"
+      Cf-Cache-Status:
+      - DYNAMIC
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 82eedbcfeb287ff7-IAD
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJtZXRhIjp7ImNvZGUiOjIwMH0sImFkZHJlc3NlcyI6W3sibGF0aXR1ZGUiOjI3Ljk3NzYyLCJsb25naXR1ZGUiOi04MS43Njk2MTEsImdlb21ldHJ5Ijp7InR5cGUiOiJQb2ludCIsImNvb3JkaW5hdGVzIjpbLTgxLjc2OTYxMSwyNy45Nzc2Ml19LCJjb3VudHJ5IjoiVW5pdGVkIFN0YXRlcyIsImNvdW50cnlDb2RlIjoiVVMiLCJjb3VudHJ5RmxhZyI6IvCfh7rwn4e4IiwiZGlzdGFuY2UiOjEyOTQyMDgsImNvbmZpZGVuY2UiOiJmYWxsYmFjayIsImNpdHkiOiJFYWdsZSBMYWtlIiwic3RhdGVDb2RlIjoiRkwiLCJzdGF0ZSI6IkZsb3JpZGEiLCJsYXllciI6InN0YXRlIiwiZm9ybWF0dGVkQWRkcmVzcyI6IkVhZ2xlIExha2UsIEZMIFVTQSIsImFkZHJlc3NMYWJlbCI6IkZsb3JpZGEifV19
+  recorded_at: Wed, 01 Dec 2021 09:00:00 GMT
+recorded_with: VCR 6.0.0

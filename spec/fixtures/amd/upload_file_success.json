@@ -1,0 +1,64 @@
+{
+  "?xml": {
+    "@version": "1.0",
+    "@encoding": "ISO-8859-1"
+  },
+  "PPMDResults": {
+    "@s": "PRDAPI1WFEVBVER",
+    "@lst": "8/18/2021 3:35:56 PM",
+    "Results": {
+      "filelist": {
+        "file": {
+          "@id": "18862007",
+          "@name": "TEST_NAME.PDF",
+          "@description": "TEST",
+          "@filename": "995456-18862007-0000",
+          "@filelocation": "2021\\08\\18\\",
+          "@filetype": "I",
+          "@fileext": "PNG",
+          "@filesize": "",
+          "@patientid": "5983957",
+          "@patientname": "CAPTAIN,BLACKBEARD",
+          "@patientchartnumber": "2697",
+          "@profileid": "",
+          "@profilecode": "",
+          "@profilename": "",
+          "@visitid": "",
+          "@facilityid": "",
+          "@referringproviderid": "",
+          "@referringprovidername": "",
+          "@referringprovidercode": "",
+          "@dos": "",
+          "@createdby": "LS-API",
+          "@createdat": "2021-08-17T23:36:04.910",
+          "@printedby": "",
+          "@printedat": "",
+          "@reviewedby": "",
+          "@reviewedat": "",
+          "@approvedby": "",
+          "@approvedat": "",
+          "@lockedby": "",
+          "@lockedat": "",
+          "@changedby": "LS-API",
+          "@changedat": "2021-08-17T23:36:05.877",
+          "@revision": "0",
+          "@zipmode": "0",
+          "@serverfile": "1",
+          "@charttype": "Chart",
+          "categorylist": {
+            "category": {
+              "@id": "35",
+              "@code": "PTFORM",
+              "@name": "E-Patient Forms",
+              "@groupcode": "PTFORM",
+              "@groupname": "Patient Forms",
+              "@filetype": "1"
+            }
+          },
+          "revisionlist": null
+        }
+      },
+      "updatedlist": null
+    }
+  }
+}

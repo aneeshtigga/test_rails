@@ -1,0 +1,67 @@
+{
+  "?xml": {
+    "@version": "1.0",
+    "@encoding": "ISO-8859-1"
+  },
+  "PPMDResults": {
+    "@s": "PRDAPI3WFEKRRNQ",
+    "@lst": "12/3/2021 12:08:13 AM",
+    "Results": {
+      "@success": "1",
+      "@api": "1",
+      "@version": "21.3",
+      "usercontext": {
+        "@reportingServerURL": "https://reportingservices-100.advancedmd.com/rs/reportrequest.aspx",
+        "@adhocReportingURL": "https://advancedinsight.advancedmd.com",
+        "@aibenchmarksurl": "https://benchmarks.advancedmd.com/index.html",
+        "@helpurl": "https://ow2-help-01-prd.advancedmd.com/help/",
+        "@webserver": "https://provapi.advancedmd.com/processrequest/api-102/LIFESTANCE",
+        "@webserverbaseurl": "https://provapi.advancedmd.com",
+        "@username": "LS-API",
+        "@userguid": "acad6a2d-10f6-42a8-b35b-bb0f839cbe9d",
+        "@email": "bridget.landis@lifestance.com",
+        "@checkemail": "1",
+        "@needsconfirmation": "1",
+        "@sendnewconfirmation": "1",
+        "@pmredirecturl": "https://pm-wfe-136.advancedmd.com/practicemanager",
+        "@ehrredirecturl": "https://wc-wfe-136.advancedmd.com/practicemanager",
+        "@telemedicineapiurl": "https://telemed.advancedmd.com/Application.Web.API",
+        "@pmapiredirecturl": "https://pm-api-136.advancedmd.com",
+        "@ehrapiredirecturl": "https://go.advancedmd.com/api/wc/",
+        "@staticcontentredirecturl": "https://static-999.advancedmd.com",
+        "@capturechallengesettings": "1",
+        "@scanningserverurl": "https://scan.advancedmd.com/dynamsoft/Resources.15.2/Resources/",
+        "@cqmssoserviceurl": "https://ow2-cqmsso-01.advancedmd.com/api/account",
+        "@cqmsolutionurl": "https://ow2-cqm-01.advancedmd.com",
+        "@portalappintakeurl": "https://patientportal.advancedmd.com/995456/onlineintake",
+        "@portalappolsurl": "https://patientportal.advancedmd.com/995456/onlinescheduling",
+        "@apptreminderapiurl": "https://pm-api-136.advancedmd.com/api/reminders",
+        "@servertimezone": "Pacific Standard Time",
+        "@webdavurl": "https://ow2-api-101.advancedmd.com",
+        "@providerid": "0",
+        "@defaultprofileid": "0",
+        "@departmentid": "0",
+        "@clinicaluser": "1",
+        "@ehronly": "0",
+        "@roleid": "219",
+        "@officecode": "995456",
+        "@logincode": "995456",
+        "@officename": "LifeStance Health Demo",
+        "@admin": "0",
+        "@adminlimited": "0",
+        "@edicontact": "0",
+        "@ssoprovidername": "",
+        "@twofactorenabled": "0",
+        "@iscbouser": "1",
+        "@status": " ",
+        "@trainingTrackerUrl": "https://pm-wfe-136.advancedmd.com/AdvancedMD.TrainingTracker/",
+        "#text": "995456UMPcBHH+2AAZpN5TcJ8TT90TYnL23T8ytAkVx0Hbt5HCkXS3+3xPmPHr7n/tHisJm/19Us90vl5jWb9/Ud0XnhF+rsaOCPHHPemtR5rqI2EtveMnp7n5r/2dDrBG8BstOD9UeOL5mL73AIADJbUmvUn26bqXn+yWbldS8vIgPcG8J6/EZ/Oal8zikmoTq1znLIPFfYZxX3/G2Wx7/HB4yw=="
+      },
+      "variation": {
+        "@code": "AMDSPRO",
+        "@name": ""
+      }
+    },
+    "Error": null
+  }
+}

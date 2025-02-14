@@ -1,0 +1,66 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://provapi.advancedmd.com/processrequest/api-101/LIFESTANCE/xmlrpc/processrequest.aspx
+    body:
+      encoding: UTF-8
+      string: '{"ppmdmsg":{"@action":"updatepatient","@class":"api","@msgtime":"7/12/2021
+        10:52:26 PM","@force":"1","@nocookie":"0","patientlist":{"patient":{"@name":"updated
+        name","@employer":"employer updated","address":{},"contactinfo":{}}}}}'
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - rest-client/2.1.0 (darwin20 x86_64) ruby/3.0.1p64
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '230'
+      Cookie:
+      - token=995456mZCp+GLoCIJ1ecE2gtHW9CI4/8p7lo0WVNIpFcaU+dcgjnKTOAZaRHFOZXu7kY67nf9nN9p9KPzGV61map0KHe+9udoBRu3xKGq98GQSpB5KlDVvDZdYM0JV+uE8JCKVUO1kZ6/Zx6VRQymbnQPMAPBH4ncceT1YflO0/PVxBlbRyTQFp/V6nZKxuAW98kHR
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - provapi.advancedmd.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 12 Jul 2021 22:52:26 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '449'
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - no-cache,no-store,must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - Mon, 12 Jul 2021 22:51:26 GMT
+      Server:
+      - Microsoft-IIS/10.0
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET,PUT,POST,DELETE,OPTIONS
+      Access-Control-Allow-Headers:
+      - Origin, Depth, User-Agent, X-File-Size, X-Requested-With, If-Modified-Since,
+        X-File-Name, Cache-ControlOrigin, Content-Type, Accept, Authorization, X-ProofSignature,
+        InternalRequestType
+    body:
+      encoding: UTF-8
+      string: '{"?xml":{"@version":"1.0","@encoding":"ISO-8859-1"},"PPMDResults":{"@s":"PRDAPI1WFECJPSW","@lst":"7/12/2021
+        3:52:26 PM","Results":{"@success":"0"},"Error":{"Fault":{"faultcode":"Server","faultstring":"Server
+        Error","detail":{"code":"-2147218426","description":"AMD-995456-07121552 |
+        No Patient ID Included","class":"AdvancedMD.Demographics.Demographics","method":"UpdatePatient","linenum":"0","source":"AdvancedMD.Demographics","extrainfo":null}}}}}'
+  recorded_at: Mon, 12 Jul 2021 22:52:26 GMT
+recorded_with: VCR 6.0.0

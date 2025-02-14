@@ -1,0 +1,185 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://partnerlogin.advancedmd.com/practicemanager/xmlrpc/processrequest.aspx
+    body:
+      encoding: UTF-8
+      string: '{"ppmdmsg":{"@action":"login","@class":"login","@username":"LS-API","@psw":"lifestance2021!","@officecode":995456,"@appname":"LIFESTANCE"}}'
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/3.0.1p64
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '139'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - partnerlogin.advancedmd.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 13 Oct 2021 11:29:01 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '971'
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - no-cache,no-store,must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - Wed, 13 Oct 2021 11:28:01 GMT
+      Server:
+      - Microsoft-IIS/10.0
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET,PUT,POST,DELETE,OPTIONS
+      Access-Control-Allow-Headers:
+      - Origin, Depth, User-Agent, X-File-Size, X-Requested-With, If-Modified-Since,
+        X-File-Name, Cache-ControlOrigin, Content-Type, Accept, Authorization, X-ProofSignature,
+        InternalRequestType
+    body:
+      encoding: UTF-8
+      string: '{"?xml":{"@version":"1.0","@encoding":"ISO-8859-1"},"PPMDResults":{"@s":"PRDAPI2WFEXR0IK","@lst":"10/13/2021
+        4:29:01 AM","Results":{"@success":"0","usercontext":{"@webserver":"https://provapi.advancedmd.com/processrequest/api-102/LIFESTANCE","@reportingServerURL":"https://reportingservices-100.advancedmd.com/rs/reportrequest.aspx","@helpurl":"https://ow2-help-01-prd.advancedmd.com/help/","@username":"LS-API"}},"Error":{"Fault":{"faultcode":"Client","faultstring":"Client
+        Error","detail":{"code":"-2147220476","description":"The Office Key 995456
+        must be redirected to https://provapi.advancedmd.com/processrequest/api-102/LIFESTANCE.
+        When logging in to AdvancedMD, if no security token (<usercontext> text) is
+        returned, then you must redirect your login to the server indicated in the
+        \"webserver\" attribute of the usercontext element.","class":"AdvancedMD.Security.Login","method":"LoginUser","linenum":"0","source":"AdvancedMD.Security.Login","extrainfo":null}}}}}'
+  recorded_at: Wed, 13 Oct 2021 11:29:02 GMT
+- request:
+    method: post
+    uri: https://provapi.advancedmd.com/processrequest/api-102/LIFESTANCE/xmlrpc/processrequest.aspx
+    body:
+      encoding: UTF-8
+      string: '{"ppmdmsg":{"@action":"login","@class":"login","@username":"LS-API","@psw":"lifestance2021!","@officecode":995456,"@appname":"LIFESTANCE"}}'
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/3.0.1p64
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '139'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - provapi.advancedmd.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 13 Oct 2021 11:29:03 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '2449'
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - no-cache,no-store,must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - Wed, 13 Oct 2021 11:28:03 GMT
+      Server:
+      - Microsoft-IIS/10.0
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET,PUT,POST,DELETE,OPTIONS
+      Access-Control-Allow-Headers:
+      - Origin, Depth, User-Agent, X-File-Size, X-Requested-With, If-Modified-Since,
+        X-File-Name, Cache-ControlOrigin, Content-Type, Accept, Authorization, X-ProofSignature,
+        InternalRequestType
+    body:
+      encoding: UTF-8
+      string: '{"?xml":{"@version":"1.0","@encoding":"ISO-8859-1"},"PPMDResults":{"@s":"PRDAPI2WFE3NHSK","@lst":"10/13/2021
+        4:29:03 AM","Results":{"@success":"1","@api":"1","@version":"21.2","usercontext":{"@reportingServerURL":"https://reportingservices-100.advancedmd.com/rs/reportrequest.aspx","@adhocReportingURL":"https://advancedinsight.advancedmd.com","@aibenchmarksurl":"https://benchmarks.advancedmd.com/index.html","@helpurl":"https://ow2-help-01-prd.advancedmd.com/help/","@webserver":"https://provapi.advancedmd.com/processrequest/api-102/LIFESTANCE","@webserverbaseurl":"https://provapi.advancedmd.com","@username":"LS-API","@userguid":"acad6a2d-10f6-42a8-b35b-bb0f839cbe9d","@email":"bridget.landis@lifestance.com","@checkemail":"1","@needsconfirmation":"1","@sendnewconfirmation":"1","@pmredirecturl":"https://pm-wfe-120.advancedmd.com/practicemanager","@ehrredirecturl":"https://wc-wfe-120.advancedmd.com/practicemanager","@telemedicineapiurl":"https://telemed.advancedmd.com/Application.Web.API","@pmapiredirecturl":"https://pm-api-120.advancedmd.com","@ehrapiredirecturl":"https://go.advancedmd.com/api/wc/","@staticcontentredirecturl":"https://static-100.advancedmd.com","@capturechallengesettings":"1","@scanningserverurl":"https://scan.advancedmd.com/dynamsoft/Resources.15.2/Resources/","@cqmssoserviceurl":"https://ow2-cqmsso-01.advancedmd.com/api/account","@cqmsolutionurl":"https://ow2-cqm-01.advancedmd.com","@portalappintakeurl":"https://patientportal.advancedmd.com/995456/onlineintake","@portalappolsurl":"https://patientportal.advancedmd.com/995456/onlinescheduling","@apptreminderapiurl":"https://pm-api-120.advancedmd.com/api/reminders","@servertimezone":"Pacific
+        Standard Time","@webdavurl":"https://ow2-api-102.advancedmd.com","@providerid":"0","@defaultprofileid":"0","@departmentid":"0","@clinicaluser":"1","@ehronly":"0","@roleid":"219","@officecode":"995456","@logincode":"995456","@officename":"LifeStance
+        Health Demo","@admin":"0","@adminlimited":"0","@edicontact":"0","@ssoprovidername":"","@twofactorenabled":"0","@iscbouser":"1","@status":"
+        ","@trainingTrackerUrl":"https://pm-wfe-120.advancedmd.com/AdvancedMD.TrainingTracker/","#text":"995456LO8u5KAFxFBUk+Q6hyI39SS6Pmyif/EqYIa20qbLFnQwjzZ6MH81yxhyRsy8oWQwAGvfoCP5x1jCI1aUYMQ4iGHEZbs/7diPN/vNllJVb45bxZEznxeVupCHI4cvjWkP7GFOZ873169fXJepmgzF3H4OSkUGIdAEaAZ0BfvXlZXM2D346jh19ArDYyjDyTtXdAZUJ99FbmlNvxdPfsHOWg=="},"variation":{"@code":"AMDSPRO","@name":""}},"Error":null}}'
+  recorded_at: Wed, 13 Oct 2021 11:29:03 GMT
+- request:
+    method: post
+    uri: https://provapi.advancedmd.com/processrequest/api-102/LIFESTANCE/xmlrpc/processrequest.aspx/xmlrpc/processrequest.aspx
+    body:
+      encoding: UTF-8
+      string: '{"ppmdmsg":{"@action":"uploadfile","@class":"files","file":{"@name":"InsuranceCardFrontView","@description":"InsuranceCardFrontView","@filetype":"I","@fileext":"jpeg","@patientid":5983957,"@savechanges":true,"@zipmode":"0","filecontents":"/9j/4AAQSkZJRgABAQAAAQABAAD/4QBqRXhpZgAASUkqAAgAAAADABIBAwAB\nAAAAAQAAADEBAgARAAAAMgAAAGmHBAABAAAARAAAAAAAAABTaG90d2VsbCAw\nLjMwLjEwAAACAAKgCQABAAAAeAYAAAOgCQABAAAAKAYAAAAAAAD/2wBDAAMC\nAgICAgMCAgIDAwMDBAYEBAQEBAgGBgUGCQgKCgkICQkKDA8MCgsOCwkJDREN\nDg8QEBEQCgwSExIQEw8QEBD/wAALCAR2BLABAREA/8QAHQABAQEBAAIDAQAA\nAAAAAAAAAAUGAgEHAwQICf/EAEAQAQAAAwQJBAEDAwIEBAcAAAABAgMEBVSR\nBhQVFjJTcXSxBxE0NhIIITETQVEiYQlCc4EmM1KhOERkcnW0wf/aAAgBAQAA\nPwD+nsZoSw94x9nP9Wn/AOuDx/XpQ/54PGsUf/XA1mhzIGs0OZB41qhzZczW\nqHNlzNaoc2XM1qhzZczWqHNlzNaoc2XM1qhzZczWqHNlzNaoc2XM1qhzZczW\nqHNlzNaoc2XM1qhzZczWqHNlzNaoc2XM1qhzZczWqHNlzNaoc2XM1qhzZczW\nqHNlzNaoc2XM1qhzZczWqHNlzNaoc2XM1qhzZczWqHNlzNaoc2XM1qhzZczW\nqHNlzNaoc2XM1qhzZczWqHNlzNaoc2XM1qhzZczWqHNlzNaoc2XM1qhzZczW\nqHNlzNaoc2XM1qhzZczWqHNlzNaoc2XM1qhzZczWqHNlzNaoc2XM1qhzZczW\nqHNlzNaoc2XM1qhzZczWqHNlzNaoc2XM1qhzZczWqHNlzNaoc2XM1qhzZczW\nqHNlzNaoc2XM1qhzZczWqHNlzNaoc2XM1qhzZczWqHNlzNaoc2XM1qhzZczW\nqHNlzNaoc2XM1qhzZczWqHNlzNaoc2XM1qhzZczWqHNlzNaoc2XM1qhzZczW\nqHNlzNaoc2XM1qhzZczWqHNlzNaoc2XM1qhzZczWqHNlzNaoc2XM1qhzZczW\nqHNlzNaoc2XM1qhzZczWqHNlzNaoc2XM1qhzZczWqHNlzNaoc2XM1qhzZczW\nqHNlzNaoc2XM1qhzZczWqHNlzNaoc2XM1qhzZczWqHNlzNaoc2XM1qhzZczW\nqHNlzNaoc2XM1qhzZczWqHNlzNaoc2XM1qhzZczWqHNlzNaoc2XM1qhzZczW\nqHNlzNaoc2XM1qhzZczWqHNlzNaoc2XM1qhzZczWqHNlzNaoc2XM1qhzZczW\nqHNlzNaoc2XM1qhzZczWqHNlzNaoc2XM1qhzZczWqHNlzNaoc2XM1qhzZczW\nqHNlzNaoc2XM1qhzZczWqHNlzNaoc2XM1qhzZczWqHNlzNaoc2XM1qhzZc3n\nWaHMgazQ5kDWaPMgaxRj/wA8HUKtOP8AzwP6kkf+aDzCaWP7QjB5fBNCWe10\nKU8PeWaeEIw/zBTjdlgj/NlkeI3Vd0f5slPJ4jc92R/mx03jYt14KnkbFurA\n08njYl1YGmbEurA0zYl1YGmbEurA0zYl1YGmbEurA0zYl1YGmbEurA0zYl1Y\nGmbEurA0zYl1YGmbEurA0zYl1YGmbEurA0zYl1YGmbEurA0zYl1YGmbEurA0\nzYl1YGmbEurA0zYl1YGmbEurA0zYl1YGmbEurA0zYl1YGmbEurA0zYl1YGmb\nEurA0zYl1YGmbEurA0zYl1YGmbEurA0zYl1YGmbEurA0zYl1YGmbEurA0zYl\n1YGmbEurA0zYl1YGmbEurA0zYl1YGmbEurA0zYl1YGmbEurA0zYl1YGmbEur\nA0zYl1YGmbEurA0zYl1YGmbEurA0zYl1YGmbEurA0zYl1YGmbEurA0zYl1YG\nmbEurA0zYl1YGmbEurA0zYl1YGmbEurA0zYl1YGmbEurA0zYl1YGmbEurA0z\nYl1YGmbEurA0zYl1YGmbEurA0zYl1YGmbEurA0zYl1YGmbEurA0zYl1YGmbE\nurA0zYl1YGmbEurA0zYl1YGmbEurA0zYl1YGmbEurA0zYl1YGmbEurA0zYl1\nYGmbEurA0zYl1YGmbEurA0zYl1YGmbEurA0zYl1YGmbEurA0zYl1YGmbEurA\n0zYl1YGmbEurA0zYl1YGmbEurA0zYl1YGmbEurA0zYl1YGmbEurA0zYl1YGm\nbEurA0zYl1YGmbEurA0zYl1YGmbEurA0zYl1YGmbEurA0zYl1YGmbEurA0zY\nl1YGmbEurA0zYl1YGmbEurA0zYl1YGmbEurA0zYl1YGmbEurA0zYl1YGmbEu\nrA0zYl1YGmbEurA0zYl1YGmbEurA0zYl1YGmbEurA0zYl1YGmbEurA0zYl1Y\nGmbEurA0zYl1YGmbEurA0zYl1YGmbEurA0zYl1YGmbEurA0zYt1YGnk87Fur\nA08jY11w/wDkqeTqF03bD+LJTeYXZYIfxZZMnULvsUP4s8mT69us9CjSlmp0\n5ZYxnhD3h/3fDD+H1Kk/teVkl/zVg0IAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\nAAAAAAAAAAAAAAAAAAAPo3tH2o0/96kIf+0X14fwnWmb2vewQ/zWhDy04AAA\nAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAJ19R9qFH/rQ8RfF\nD+IJNsm9r7u6H+bRD/8ArWAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\nAAAAAAAAAAAmX7H2s9H/AK0PEXxy8MOiNb4+1/XXD/6mXxFsAAAAAAAAAAAA\nAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAS7/AI+1nof9eXxFxLww6Il4\nx9tILr7mXxFsgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\nAStIPj0P+vL4i5l4YdEO8o/+Ibq7qXxFswAAAAAAAAAAAAAAAAAAAAAAAAAA\nAAAAAAAAAAAAAAAAAAAAAAStIfj2fuJfEXMvDDohXn9iunupfEW0AAAAAAAA\nAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABK0h+PZ+4l8Rcy8MOiFe\nf2K6e6l8RbQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAE\nrSH49n7iXxFzLww6IV5/Yrp7qXxFtAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\nAAAAAAAAAAAAAAAAAAStIfj2fuJfEXMvDDohXn9iunupfEW0AAAAAAAAAAAA\nAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABK0h+PZ+4l8Rcy8MOiFef2K6\ne6l8RbQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAErSH4\n9n7iXxFzLww6IV5/Yrp7qXxFtAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\nAAAAAAAAAAAAAAStIfj2fuJfEXMvDDohXn9iunupfEW0AAAAAAAAAAAAAAAA\nAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABK0h+PZ+4l8Rcy8MOiFef2K6e6l8\nRbQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAErSH49n7i\nXxFzLww6IV5/Yrp7qXxFtAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\nAAAAAAAAAAStIfj2fuJfEXMvDDohXn9iunupfEW0AAAAAAAAAAAAAAAAAAAA\nAAAAAAAAAAAAAAAAAAAAAAAAAAAABK0h+PZ+4l8Rcy8MOiFef2K6e6l8RbQA\nAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAErSH49n7iXxFz\nLww6IV5/Yrp7qXxFtAAAAAB+cP1B/ql9TfQOhpFpNbP0031fWhejsklWrpFQ\n0gsNKnUpzfjCM0KE039WHtNN+Pt+Pv8At7/w23ox6r+q/qPa6sdOf0/3poHd\nk1jktdjt9rvyxW2W0xmjD2khJQmjNLH8Y/l7xh7f2/l7XhVpzTxpy1JYzy/z\nLCP7w/7PE9WnTjLCpUlljNH2lhGPt7x/2Y++vVrQ64PU/Rz0hvG0WmXSHSmw\n228bvkloxjSmo2X8P6v5T/xLH/XL7Q/v+7K+r3rD6laF39Z9FvTD0B0h9QLd\nUsevWi1UbbZ7BYLPJGaaWFONevNCE1WP4xj+EsPf29o/3fJ+nD9Q9w/qL0Ov\nDSC7tH7y0evW4b0rXLfly3j+OsWC20vb86cYy/tND2jCMJof7/4e2PeEP5j/\nAC8SVKdT3/CeWb2j7R9o+/tF9O+bx2Xddtt0n4TVbNZqteSnNH2/KMksY+3T\n9n5mh+sS/bL+ie6f1O23RGwVtIL6o0KNlumlWnks01sr2vV6UsZ4+80JPyjC\nMf7/AMvevpVW9WK+i/5+stDRilf/APXm9t3Zq0bLGh+MsZf/ADv9UJ4RjNCP\n7xh+0I/39myAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAStIfj2fuJf\nEXMvDDohXn9iunupfEW0AAAAAH5x/wCIl/8ABj6n/wD4un/+xSU/1F+oWknp\nX+jXSXT3RCpNSvm6tE6U9jrSw940Kk1OSSFWH/2/l+X/AGfle6PRv1Sslw6A\n6Xei36bNNbh09sduuy8bdpnb9M7FX2zZp5pY2zW5dZmjVkq05p5oS/j+0fx9\nv4bn9SWglPRj1u0m9Xv1C+lF/eonpZbLssUl23nc9vqzVdDv6UsYWieNkkqS\nTfjNNGFSNaT3jD2/f/Cf6peifoZ6o/rN9FbZsea+Lj030Lva8q1o2haIRt0l\nCjZtVq/lCeE0P9E0P49vf3/f3i/VHrT6x6Ifpy9OrPba1jrW23Twp3To1cFk\n96lrvS2fjCWjZqUv7zTfxD8po8MIRjGLNfo89FNJfR/05vO8PUGrRn0207vq\n06VaRy0Y+9Kz2q0RhGFnkj/eWnLCEvv/AHj+X9mB/XTdds0k03/T9ojZtJ73\nuKhf+nVSwWq13Vao2e0QoT2Op+csk8OGM0PeX3/mH5e8P3Z+l6d6N/pk/Wn6\nXaNejmvXbcfqJcl8UNILkjb61oo157LShVpWz8ak00YVITftGb+/vH/LLeiH\nolon+pf0w0//AFAep19X9U08t2kF+0bBe1lvatQraP0LHVnpUKFnllm/CSWW\nWSEZoRljCaE37/y9XaW+n2ielH/C49JdIr8uyNpvC6Ldddlslb+tUk/p07Re\n0tOtD8ZYwhH8pf294wjGH9vZ/Sn069PNEfSzROyaGaDXVG7rosk09SjZ416l\nX8Zp5ozTR/KpNNNH3jGP92mAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\nAAStIfj2fuJfEXMvDDohXn9iunupfEW0AAAAAGJ9aPSfR/1x9Mb+9KtKbZbr\nLdekNnhZrTWsM8steSWE8s8IyRmlmlhH3lh/MIrF7aEaN6QaE2j090gu+S8b\njtl3bLtNmr/vCtZ40/wjLN7f5h/eH93prQ79I1bQqtdV3XZ+on1XqaK3HVpT\n2HR2pe1DV5KVOaEZKE1WFGFaelD2hD8Yz/xD2jGMH3fU/wDStL6n3vfdS2+u\nPqTdWjuk0IS3vo3YbzpajaJPxhLPJJGelNUoyzyw9ppZJoQj7x9vb3fY9S/0\no6G6dx0GtujelWkmgV7enVknu64by0ctFOnWoWKelLSns8YVZJ5ZpIySSw/e\nHv8Askeqv6NdHvVX1C0d9T7V6veo1xX/AKMXTLdFgtF1XhZpfwl/f863tVoT\n+1ap7/655fb39ofw0mjf6dbRcuhOlehF8+uHqVpNR0qskbHNbb3vSjNarvlj\nLNLGazT0qMn4TR/L394wj/EHpb9UX6e579ofpv8ASeyy6VX5cNxaUy2W8b1l\ntFSa3ULPJY54S2mraJIQjJPCeEsfz/b9/Z7d9Kv0saPenXqBV9VtIfUDS/T/\nAEthYI3TYbz0mtlOtPd9ijH3mpUZadOSWX8owh+U3tGaP+f5Z28P0O6CWjSH\n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\nAAAAAAAAAAAAAAAAAAAAAAAAErSH49n7iXxFzLww6Mfb78oz37dlT+jPD8LR\nLH+3+7W7zUMNPnA3moYafOBvNQw0+cDeahhp84G81DDT5wN5qGGnzgbzUMNP\nnA3moYafOBvNQw0+cDeahhp84G81DDT5wN5qGGnzgbzUMNPnA3moYafOBvNQ\nw0+cDeahhp84G81DDT5wN5qGGnzgbzUMNPnA3moYafOBvNQw0+cDeahhp84G\n81DDT5wN5qGGnzgbzUMNPnA3moYafOBvNQw0+cDeahhp84G81DDT5wN5qGGn\nzgbzUMNPnA3moYafOBvNQw0+cDeahhp84G81DDT5wN5qGGnzgbzUMNPnA3mo\nYafOBvNQw0+cDeahhp84G81DDT5wN5qGGnzgbzUMNPnA3moYafOBvNQw0+cD\neahhp84G81DDT5wN5qGGnzgbzUMNPnA3moYafOBvNQw0+cDeahhp84G81DDT\n5wN5qGGnzgbzUMNPnA3moYafOBvNQw0+cDeahhp84G81DDT5wN5qGGnzgbzU\nMNPnA3moYafOBvNQw0+cDeahhp84G81DDT5wN5qGGnzgbzUMNPnA3moYafOB\nvNQw0+cDeahhp84G81DDT5wN5qGGnzgbzUMNPnA3moYafOBvNQw0+cDeahhp\n84G81DDT5wN5qGGnzgbzUMNPnA3moYafOBvNQw0+cDeahhp84G81DDT5wN5q\nGGnzgbzUMNPnA3moYafOBvNQw0+cDeahhp84G81DDT5wN5qGGnzgbzUMNPnA\n3moYafOBvNQw0+cDeahhp84G81DDT5wN5qGGnzgbzUMNPnA3moYafOBvNQw0\n+cDeahhp84G81DDT5wN5qGGnzgbzUMNPnA3moYafOBvNQw0+cDeahhp84G81\nDDT5wN5qGGnzgbzUMNPnA3moYafOBvNQw0+cDeahhp84G81DDT5wN5qGGnzg\nbzUMNPnA3moYafOBvNQw0+cDeahhp84G81DDT5wN5qGGnzgbzUMNPnA3moYa\nfOBvNQw0+cDeahhp84G81DDT5wN5qGGnzgbzUMNPnA3moYafOBvNQw0+cDea\nhhp84G81DDT5wN5qGGnzgbzUMNPnA3moYafOBvNQw0+cDeahhp84G81DDT5w\nN5qGGnzgbzUMNPnA3moYafOBvNQw0+cDeahhp84G81DDT5wN5qGGnzgbzUMN\nPnA3moYafOBvNQw0+cEy/dIqNShQh/Qnh7V5Y/2/xFzDSShCEIavP/7P/9k=\n","grouplist":{"group":{"@id":4,"@code":"MISC","@name":"Miscellaneous","categorylist":{"category":{"@id":19,"@filegroupfid":"4","@code":"MIUNSP","@name":"Unspecified","@filetype":"0","@level":"0","@default":"1"}}}}}}}'
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/3.0.1p64
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '17878'
+      Cookie:
+      - token=995456LO8u5KAFxFBUk+Q6hyI39SS6Pmyif/EqYIa20qbLFnQwjzZ6MH81yxhyRsy8oWQwAGvfoCP5x1jCI1aUYMQ4iGHEZbs/7diPN/vNllJVb45bxZEznxeVupCHI4cvjWkP7GFOZ873169fXJepmgzF3H4OSkUGIdAEaAZ0BfvXlZXM2D346jh19ArDYyjDyTtXdAZUJ99FbmlNvxdPfsHOWg==
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - provapi.advancedmd.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 13 Oct 2021 11:29:05 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '1132'
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - no-cache,no-store,must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - Wed, 13 Oct 2021 11:28:04 GMT
+      Server:
+      - Microsoft-IIS/10.0
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET,PUT,POST,DELETE,OPTIONS
+      Access-Control-Allow-Headers:
+      - Origin, Depth, User-Agent, X-File-Size, X-Requested-With, If-Modified-Since,
+        X-File-Name, Cache-ControlOrigin, Content-Type, Accept, Authorization, X-ProofSignature,
+        InternalRequestType
+    body:
+      encoding: UTF-8
+      string: '{"?xml":{"@version":"1.0","@encoding":"ISO-8859-1"},"PPMDResults":{"@s":"PRDAPI2WFES2KDM","@lst":"10/13/2021
+        4:29:04 AM","Results":{"filelist":{"file":{"@id":"18862439","@name":"INSURANCECARDFRONTVIEW","@description":"INSURANCECARDFRONTVIEW","@filename":"995456-18862439-0000","@filelocation":"2021\\10\\13\\","@filetype":"I","@fileext":"JPEG","@filesize":"","@patientid":"5983957","@patientname":"CAPTAIN,BLACKBEARD","@patientchartnumber":"2697","@profileid":"","@profilecode":"","@profilename":"","@visitid":"","@facilityid":"","@referringproviderid":"","@referringprovidername":"","@referringprovidercode":"","@dos":"","@createdby":"LS-API","@createdat":"2021-10-13T00:29:05.100","@printedby":"","@printedat":"","@reviewedby":"","@reviewedat":"","@approvedby":"","@approvedat":"","@lockedby":"","@lockedat":"","@changedby":"LS-API","@changedat":"2021-10-13T00:29:05.320","@revision":"0","@zipmode":"0","@serverfile":"1","@charttype":"Chart","categorylist":{"category":{"@id":"19","@code":"BININS","@name":"Insurance
+        Cards","@groupcode":"BILLIN","@groupname":"Billing","@filetype":"1"}},"revisionlist":null}},"updatedlist":null}}}'
+  recorded_at: Wed, 13 Oct 2021 11:29:05 GMT
+recorded_with: VCR 6.0.0

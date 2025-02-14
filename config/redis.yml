@@ -1,0 +1,46 @@
+---
+defaults: &defaults
+  :driver: :hiredis
+  :namespace: polaris
+  :host: localhost
+  :db: 0
+  :services: {}
+development:
+  <<: *defaults
+  :services:
+    :sidekiq:
+      :host: localhost
+      :db: 1
+dev:
+  <<: *defaults
+  :services:
+    :sidekiq:
+      :host: localhost
+      :db: 1
+qa:
+  <<: *defaults
+  :services:
+    :sidekiq:
+      :host: localhost
+      :db: 1
+test:
+  <<: *defaults
+uat:
+  <<: *defaults
+  :services:
+    :sidekiq:
+      :host: localhost
+      :db: 1
+production:
+  <<: *defaults
+  :services:
+    :sidekiq:
+      :host: localhost
+      :db: 1
+
+perf:
+  <<: *defaults
+  :services:
+    :sidekiq:
+      :host: localhost
+      :db: 1

@@ -1,0 +1,85 @@
+{
+  "?xml": {
+    "@version": "1.0",
+    "@encoding": "ISO-8859-1"
+  },
+  "PPMDResults": {
+    "@s": "PRDAPI2WFE2AAQJ",
+    "@lst": "10/28/2021 3:00:29 AM",
+    "Results": {
+      "patientlist": {
+        "patient": {
+          "@id": "5983942",
+          "@visitid": "9543326",
+          "@visitdos": "07/30/2021",
+          "templatelist": {
+            "template": {
+              "@id": "515",
+              "@restrictupdates": "0",
+              "instancelist": {
+                "instance": {
+                  "@id": "21622",
+                  "@createdby": "LS-API",
+                  "@changedat": "",
+                  "@changedby": "",
+                  "fieldvaluelist": {
+                    "fieldvalue": [
+                      {
+                        "@id": "151047",
+                        "@templatefieldid": "5159",
+                        "@ordinal": "0",
+                        "@value": "DAV",
+                        "@valuecode": "",
+                        "@valuename": "",
+                        "@createdat": "2021-10-28T03:00:29.517",
+                        "@createdby": "LS-API",
+                        "@changedat": "",
+                        "@changedby": ""
+                      },
+                      {
+                        "@id": "151048",
+                        "@templatefieldid": "5164",
+                        "@ordinal": "1",
+                        "@value": "1",
+                        "@valuecode": "",
+                        "@valuename": "SHE HER",
+                        "@createdat": "2021-10-28T03:00:29.517",
+                        "@createdby": "LS-API",
+                        "@changedat": "",
+                        "@changedby": ""
+                      },
+                      {
+                        "@id": "151049",
+                        "@templatefieldid": "5160",
+                        "@ordinal": "2",
+                        "@value": "BEEN THROUGH COUPLE OF THERAPHIES IN THE PAST",
+                        "@valuecode": "",
+                        "@valuename": "",
+                        "@createdat": "2021-10-28T03:00:29.517",
+                        "@createdby": "LS-API",
+                        "@changedat": "",
+                        "@changedby": ""
+                      },
+                      {
+                        "@id": "151050",
+                        "@templatefieldid": "5163",
+                        "@ordinal": "3",
+                        "@value": "7",
+                        "@valuecode": "",
+                        "@valuename": "NONE APPLY",
+                        "@createdat": "2021-10-28T03:00:29.517",
+                        "@createdby": "LS-API",
+                        "@changedat": "",
+                        "@changedby": ""
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

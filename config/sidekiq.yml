@@ -1,0 +1,103 @@
+---
+concurrency: 20
+dev:
+  :concurrency: 20
+  pidfile: /lfs/sidekiq.pid
+
+development:
+  :concurrency: 20
+
+qa:
+  :concurrency: 20
+  pidfile: /lfs/sidekiq.pid
+
+uat:
+  :concurrency: 20
+  pidfile: /lfs/sidekiq.pid
+
+production:
+  :concurrency: 20
+  pidfile: /lfs/sidekiq.pid
+
+perf:
+  :concurrency: 20
+  pidfile: /lfs/sidekiq.pid
+
+:queues:
+  - critical
+  - default
+#
+# High Priority on demand
+  - patient_appointment_confirmation_mailer_worker_queue
+  - patient_appointment_hold_mailer_worker_queue
+#
+# On demand
+  - clinician_address_coordinate_worker_queue
+  - clinician_remover_worker_queue #is it used?
+  - clinician_sync_worker_queue
+  - insurance_worker_queue
+  - patient_referral_source_worker_queue
+  - patients_custom_data_worker_queue
+  - save_insurance_card_worker_queue
+  - upload_insurance_card_worker_queue
+  - upload_insurance_worker_queue
+  - zip_code_worker_queue
+#
+# 5-minute sync
+  - monitoring_sidekiq_worker_queue # every 5 minutes
+#
+# Daily Imports
+  - active_record_sso_session_clear_worker_queue # Runs at 0030
+  - import_special_cases_worker_queue # every day at 0400
+  - update_clinician_special_case_worker_queue # Spawned by import_special_cases_worker
+#
+  - clinician_inactive_worker_queue # every day at 0630
+#
+  - daily_postgres_import_orchestrator_worker_queue # big daddy
+#  
+  - import_clinician_mart_worker_queue # every day at 0800
+  - clinician_updater_worker_queue # Spawned by import_clinician_mart_worker
+#
+  - import_clinician_locations_worker_queue # every day at 0820
+  - clinician_location_updater_worker_queue # Spawned by import_clinician_locations_worker
+#  
+  - import_clinician_educations_worker_queue # every day at 0840
+  - create_educations_worker_queue # Spawned by import_clinician_educations_worker
+#
+  - import_carrier_categories_worker_queue # every day at 0845
+  - associate_facilities_to_insurance_worker_queue # Spawned by import_carrier_categories_worker
+# 
+  - import_type_of_care_worker_queue  # every day 1200
+  - create_type_of_cares_worker_queue # Spawned by import_type_of_care_worker
+#
+# Daily Pruning
+  - clinician_availability_status_prune_worker_queue # every day at 0900
+#
+# Other imports  
+  - concerns_sync_worker_queue
+  - expertises_sync_worker_queue
+  - interventions_sync_worker_queue
+  - populations_sync_worker_queue
+#  
+# Monthly Imports
+  - state_postal_code_worker_queue # every month on 15th at 0200
+  - state_worker_queue # Spawned by state_postal_code_worker
+#
+# Weekly Imports
+  - clinician_data_worker_queue # Spawns clinician_updater_worker
+  - clinician_location_data_worker_queue # Spawns clinician_location_updater_worker
+#
+# Lowest priority on demand
+  - api_log_worker_queue
+#
+# Unused?
+  - clinician_address_mart_queue
+  - clinician_availability_refresh
+  - polaris_dev_default
+  - polaris_development_default
+  - polaris_qa_default
+  - polaris_staging_default
+  - polaris_uat_default
+  - polaris_production_default
+  - polaris_perf_default
+  - slack_monitoring_service_worker_queue

@@ -1,0 +1,478 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://partnerlogin.advancedmd.com/practicemanager/xmlrpc/processrequest.aspx
+    body:
+      encoding: UTF-8
+      string: '{"ppmdmsg":{"@action":"login","@class":"login","@username":"LS-API","@psw":"lifestance2021!","@officecode":995456,"@appname":"LIFESTANCE"}}'
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/3.0.1p64
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '139'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - partnerlogin.advancedmd.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 18 Aug 2021 08:17:05 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '970'
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - no-cache,no-store,must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - Wed, 18 Aug 2021 08:16:05 GMT
+      Server:
+      - Microsoft-IIS/10.0
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET,PUT,POST,DELETE,OPTIONS
+      Access-Control-Allow-Headers:
+      - Origin, Depth, User-Agent, X-File-Size, X-Requested-With, If-Modified-Since,
+        X-File-Name, Cache-ControlOrigin, Content-Type, Accept, Authorization, X-ProofSignature,
+        InternalRequestType
+    body:
+      encoding: UTF-8
+      string: '{"?xml":{"@version":"1.0","@encoding":"ISO-8859-1"},"PPMDResults":{"@s":"PRDAPI1WFEJ24Y9","@lst":"8/18/2021
+        1:17:05 AM","Results":{"@success":"0","usercontext":{"@webserver":"https://provapi.advancedmd.com/processrequest/api-101/LIFESTANCE","@reportingServerURL":"https://reportingservices-100.advancedmd.com/rs/reportrequest.aspx","@helpurl":"https://ow2-help-01-prd.advancedmd.com/help/","@username":"LS-API"}},"Error":{"Fault":{"faultcode":"Client","faultstring":"Client
+        Error","detail":{"code":"-2147220476","description":"The Office Key 995456
+        must be redirected to https://provapi.advancedmd.com/processrequest/api-101/LIFESTANCE.
+        When logging in to AdvancedMD, if no security token (<usercontext> text) is
+        returned, then you must redirect your login to the server indicated in the
+        \"webserver\" attribute of the usercontext element.","class":"AdvancedMD.Security.Login","method":"LoginUser","linenum":"0","source":"AdvancedMD.Security.Login","extrainfo":null}}}}}'
+  recorded_at: Wed, 18 Aug 2021 08:17:05 GMT
+- request:
+    method: post
+    uri: https://provapi.advancedmd.com/processrequest/api-101/LIFESTANCE/xmlrpc/processrequest.aspx
+    body:
+      encoding: UTF-8
+      string: '{"ppmdmsg":{"@action":"login","@class":"login","@username":"LS-API","@psw":"lifestance2021!","@officecode":995456,"@appname":"LIFESTANCE"}}'
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/3.0.1p64
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '139'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - provapi.advancedmd.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 18 Aug 2021 08:17:07 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '2398'
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - no-cache,no-store,must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - Wed, 18 Aug 2021 08:16:07 GMT
+      Server:
+      - Microsoft-IIS/10.0
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET,PUT,POST,DELETE,OPTIONS
+      Access-Control-Allow-Headers:
+      - Origin, Depth, User-Agent, X-File-Size, X-Requested-With, If-Modified-Since,
+        X-File-Name, Cache-ControlOrigin, Content-Type, Accept, Authorization, X-ProofSignature,
+        InternalRequestType
+    body:
+      encoding: UTF-8
+      string: '{"?xml":{"@version":"1.0","@encoding":"ISO-8859-1"},"PPMDResults":{"@s":"PRDAPI1WFE5AP9B","@lst":"8/18/2021
+        1:17:07 AM","Results":{"@success":"1","@api":"1","@version":"21.1","usercontext":{"@reportingServerURL":"https://reportingservices-100.advancedmd.com/rs/reportrequest.aspx","@adhocReportingURL":"https://advancedinsight.advancedmd.com","@aibenchmarksurl":"https://benchmarks.advancedmd.com/index.html","@helpurl":"https://ow2-help-01-prd.advancedmd.com/help/","@webserver":"https://provapi.advancedmd.com/processrequest/api-101/LIFESTANCE","@webserverbaseurl":"https://provapi.advancedmd.com","@username":"LS-API","@userguid":"acad6a2d-10f6-42a8-b35b-bb0f839cbe9d","@email":"bridget.landis@lifestance.com","@checkemail":"1","@needsconfirmation":"1","@sendnewconfirmation":"1","@pmredirecturl":"https://pm-wfe-120.advancedmd.com/practicemanager","@ehrredirecturl":"https://wc-wfe-120.advancedmd.com/practicemanager","@telemedicineapiurl":"https://telemed.advancedmd.com/Application.Web.API","@pmapiredirecturl":"https://pm-api-120.advancedmd.com","@ehrapiredirecturl":"https://go.advancedmd.com/api/wc/","@staticcontentredirecturl":"https://static-999.advancedmd.com","@capturechallengesettings":"1","@scanningserverurl":"https://scan.advancedmd.com/dynamsoft/Resources.15.2/Resources/","@cqmssoserviceurl":"https://ow2-cqmsso-01.advancedmd.com/api/account","@cqmsolutionurl":"https://ow2-cqm-01.advancedmd.com","@portalappintakeurl":"https://patientportal.advancedmd.com/995456/onlineintake","@portalappolsurl":"https://patientportal.advancedmd.com/995456/onlinescheduling","@apptreminderapiurl":"https://pm-api-120.advancedmd.com/api/reminders","@servertimezone":"Pacific
+        Standard Time","@providerid":"0","@defaultprofileid":"0","@departmentid":"0","@clinicaluser":"0","@ehronly":"0","@roleid":"219","@officecode":"995456","@logincode":"995456","@officename":"LifeStance
+        Health Demo","@admin":"0","@adminlimited":"0","@edicontact":"0","@ssoprovidername":"","@twofactorenabled":"0","@iscbouser":"1","@status":"
+        ","@trainingTrackerUrl":"https://pm-wfe-120.advancedmd.com/AdvancedMD.TrainingTracker/","#text":"995456iush7kw9uXgDOSyWe+9pS11nM+G7xf7SEZKZZ82lVW1TYegbbxTQK6+LeKuHcwFe/vRVX28yx66z/eMZfiWmWEM9gy48tME2T0QgYPgiBxINZzxuAJSVrVNCf7ZE9WB470luhng8QT3/8sdHI4aSCYJqSKO6mrHSsb/+5TkqaYEd4uCH11J1+JxdyLlOWnAG5khQpGFIHHXoYhzQ7JGFQA=="},"variation":{"@code":"AMDSPRO","@name":""}},"Error":null}}'
+  recorded_at: Wed, 18 Aug 2021 08:17:07 GMT
+- request:
+    method: post
+    uri: https://provapi.advancedmd.com/processrequest/api-101/LIFESTANCE/xmlrpc/processrequest.aspx/xmlrpc/processrequest.aspx
+    body:
+      encoding: UTF-8
+      string: '{"ppmdmsg":{"@action":"lookuppatient","@class":"api","@exactmatch":"-1","@name":"Wilson,test","@page":"1"}}'
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/3.0.1p64
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '107'
+      Cookie:
+      - token=995456iush7kw9uXgDOSyWe+9pS11nM+G7xf7SEZKZZ82lVW1TYegbbxTQK6+LeKuHcwFe/vRVX28yx66z/eMZfiWmWEM9gy48tME2T0QgYPgiBxINZzxuAJSVrVNCf7ZE9WB470luhng8QT3/8sdHI4aSCYJqSKO6mrHSsb/+5TkqaYEd4uCH11J1+JxdyLlOWnAG5khQpGFIHHXoYhzQ7JGFQA==
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - provapi.advancedmd.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 18 Aug 2021 08:17:08 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '240'
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - no-cache,no-store,must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - Wed, 18 Aug 2021 08:16:08 GMT
+      Server:
+      - Microsoft-IIS/10.0
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET,PUT,POST,DELETE,OPTIONS
+      Access-Control-Allow-Headers:
+      - Origin, Depth, User-Agent, X-File-Size, X-Requested-With, If-Modified-Since,
+        X-File-Name, Cache-ControlOrigin, Content-Type, Accept, Authorization, X-ProofSignature,
+        InternalRequestType
+    body:
+      encoding: UTF-8
+      string: '{"?xml":{"@version":"1.0","@encoding":"ISO-8859-1"},"PPMDResults":{"@s":"PRDAPI1WFEAYQLM","@lst":"8/18/2021
+        1:17:08 AM","Results":{"patientlist":{"@itemcount":"0","@page":"1","@pagecount":"0","@itemsfrom":"0","@itemsto":"0"}},"Error":null}}'
+  recorded_at: Wed, 18 Aug 2021 08:17:09 GMT
+- request:
+    method: post
+    uri: https://provapi.advancedmd.com/processrequest/api-101/LIFESTANCE/xmlrpc/processrequest.aspx/xmlrpc/processrequest.aspx
+    body:
+      encoding: UTF-8
+      string: '{"ppmdmsg":{"@action":"lookupmarsource","@class":"api","@exactmatch":"0","@name":"SEARCH
+        ENGINE"}}'
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/3.0.1p64
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '98'
+      Cookie:
+      - token=995456iush7kw9uXgDOSyWe+9pS11nM+G7xf7SEZKZZ82lVW1TYegbbxTQK6+LeKuHcwFe/vRVX28yx66z/eMZfiWmWEM9gy48tME2T0QgYPgiBxINZzxuAJSVrVNCf7ZE9WB470luhng8QT3/8sdHI4aSCYJqSKO6mrHSsb/+5TkqaYEd4uCH11J1+JxdyLlOWnAG5khQpGFIHHXoYhzQ7JGFQA==
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - provapi.advancedmd.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 18 Aug 2021 08:17:10 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '219'
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - no-cache,no-store,must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - Wed, 18 Aug 2021 08:16:10 GMT
+      Server:
+      - Microsoft-IIS/10.0
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET,PUT,POST,DELETE,OPTIONS
+      Access-Control-Allow-Headers:
+      - Origin, Depth, User-Agent, X-File-Size, X-Requested-With, If-Modified-Since,
+        X-File-Name, Cache-ControlOrigin, Content-Type, Accept, Authorization, X-ProofSignature,
+        InternalRequestType
+    body:
+      encoding: UTF-8
+      string: '{"?xml":{"@version":"1.0","@encoding":"ISO-8859-1"},"PPMDResults":{"@s":"PRDAPI1WFEHOX3K","@lst":"8/18/2021
+        1:17:10 AM","Results":{"marsourcelist":{"marsource":{"@id":"source19","@name":"SEARCH
+        ENGINE"}}},"Error":null}}'
+  recorded_at: Wed, 18 Aug 2021 08:17:10 GMT
+- request:
+    method: post
+    uri: https://provapi.advancedmd.com/processrequest/api-101/LIFESTANCE/xmlrpc/processrequest.aspx/xmlrpc/processrequest.aspx
+    body:
+      encoding: UTF-8
+      string: '{"ppmdmsg":{"@action":"lookupmarstatus","@class":"api","@exactmatch":"0","@name":"1-SCHEDULED
+        CONSULT"}}'
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/3.0.1p64
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '104'
+      Cookie:
+      - token=995456iush7kw9uXgDOSyWe+9pS11nM+G7xf7SEZKZZ82lVW1TYegbbxTQK6+LeKuHcwFe/vRVX28yx66z/eMZfiWmWEM9gy48tME2T0QgYPgiBxINZzxuAJSVrVNCf7ZE9WB470luhng8QT3/8sdHI4aSCYJqSKO6mrHSsb/+5TkqaYEd4uCH11J1+JxdyLlOWnAG5khQpGFIHHXoYhzQ7JGFQA==
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - provapi.advancedmd.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 18 Aug 2021 08:17:11 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '223'
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - no-cache,no-store,must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - Wed, 18 Aug 2021 08:16:11 GMT
+      Server:
+      - Microsoft-IIS/10.0
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET,PUT,POST,DELETE,OPTIONS
+      Access-Control-Allow-Headers:
+      - Origin, Depth, User-Agent, X-File-Size, X-Requested-With, If-Modified-Since,
+        X-File-Name, Cache-ControlOrigin, Content-Type, Accept, Authorization, X-ProofSignature,
+        InternalRequestType
+    body:
+      encoding: UTF-8
+      string: '{"?xml":{"@version":"1.0","@encoding":"ISO-8859-1"},"PPMDResults":{"@s":"PRDAPI1WFEGWK8T","@lst":"8/18/2021
+        1:17:11 AM","Results":{"marstatuslist":{"marstatus":{"@id":"stat21","@name":"1-SCHEDULED
+        CONSULT"}}},"Error":null}}'
+  recorded_at: Wed, 18 Aug 2021 08:17:11 GMT
+- request:
+    method: post
+    uri: https://provapi.advancedmd.com/api/api-101/LIFESTANCE/referral/MarketingReferrals
+    body:
+      encoding: UTF-8
+      string: '{"patientid":5983942,"sourceid":19,"statusid":21}'
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/3.0.1p64
+      Content-Type:
+      - application/json
+      Authorization:
+      - Bearer 995456iush7kw9uXgDOSyWe+9pS11nM+G7xf7SEZKZZ82lVW1TYegbbxTQK6+LeKuHcwFe/vRVX28yx66z/eMZfiWmWEM9gy48tME2T0QgYPgiBxINZzxuAJSVrVNCf7ZE9WB470luhng8QT3/8sdHI4aSCYJqSKO6mrHSsb/+5TkqaYEd4uCH11J1+JxdyLlOWnAG5khQpGFIHHXoYhzQ7JGFQA==
+      Content-Length:
+      - '49'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - provapi.advancedmd.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 18 Aug 2021 08:17:13 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - no-store,no-cache
+      Pragma:
+      - no-cache
+      Vary:
+      - none,Accept-Encoding
+      Server:
+      - Microsoft-IIS/10.0
+      Amds-Lst:
+      - '08/18/2021 01:17:12'
+      Permission-Granted:
+      - REFERRALS
+    body:
+      encoding: ASCII-8BIT
+      string: '{"notes":[],"id":317,"statusid":21,"sourceid":19,"description":"","createdby":"LS-API","createdat":"2021-08-18T01:17:13.003","changedby":"","changedat":null}'
+  recorded_at: Wed, 18 Aug 2021 08:17:13 GMT
+- request:
+    method: post
+    uri: https://provapi.advancedmd.com/processrequest/api-101/LIFESTANCE/xmlrpc/processrequest.aspx/xmlrpc/processrequest.aspx
+    body:
+      encoding: UTF-8
+      string: '{"ppmdmsg":{"@action":"lookupmarsource","@class":"api","@exactmatch":"0","@name":"SEARCH
+        ENGINE"}}'
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/3.0.1p64
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '98'
+      Cookie:
+      - token=995456iush7kw9uXgDOSyWe+9pS11nM+G7xf7SEZKZZ82lVW1TYegbbxTQK6+LeKuHcwFe/vRVX28yx66z/eMZfiWmWEM9gy48tME2T0QgYPgiBxINZzxuAJSVrVNCf7ZE9WB470luhng8QT3/8sdHI4aSCYJqSKO6mrHSsb/+5TkqaYEd4uCH11J1+JxdyLlOWnAG5khQpGFIHHXoYhzQ7JGFQA==
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - provapi.advancedmd.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 18 Aug 2021 08:17:27 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '219'
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - no-cache,no-store,must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - Wed, 18 Aug 2021 08:16:27 GMT
+      Server:
+      - Microsoft-IIS/10.0
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET,PUT,POST,DELETE,OPTIONS
+      Access-Control-Allow-Headers:
+      - Origin, Depth, User-Agent, X-File-Size, X-Requested-With, If-Modified-Since,
+        X-File-Name, Cache-ControlOrigin, Content-Type, Accept, Authorization, X-ProofSignature,
+        InternalRequestType
+    body:
+      encoding: UTF-8
+      string: '{"?xml":{"@version":"1.0","@encoding":"ISO-8859-1"},"PPMDResults":{"@s":"PRDAPI1WFEFKQTQ","@lst":"8/18/2021
+        1:17:27 AM","Results":{"marsourcelist":{"marsource":{"@id":"source19","@name":"SEARCH
+        ENGINE"}}},"Error":null}}'
+  recorded_at: Wed, 18 Aug 2021 08:17:27 GMT
+- request:
+    method: post
+    uri: https://provapi.advancedmd.com/processrequest/api-101/LIFESTANCE/xmlrpc/processrequest.aspx/xmlrpc/processrequest.aspx
+    body:
+      encoding: UTF-8
+      string: '{"ppmdmsg":{"@action":"lookupmarsource","@class":"api","@exactmatch":"0","@name":"SEARCH
+        ENGINE"}}'
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/3.0.1p64
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '98'
+      Cookie:
+      - token=995456iush7kw9uXgDOSyWe+9pS11nM+G7xf7SEZKZZ82lVW1TYegbbxTQK6+LeKuHcwFe/vRVX28yx66z/eMZfiWmWEM9gy48tME2T0QgYPgiBxINZzxuAJSVrVNCf7ZE9WB470luhng8QT3/8sdHI4aSCYJqSKO6mrHSsb/+5TkqaYEd4uCH11J1+JxdyLlOWnAG5khQpGFIHHXoYhzQ7JGFQA==
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - provapi.advancedmd.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 18 Aug 2021 08:17:34 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '219'
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - no-cache,no-store,must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - Wed, 18 Aug 2021 08:16:34 GMT
+      Server:
+      - Microsoft-IIS/10.0
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET,PUT,POST,DELETE,OPTIONS
+      Access-Control-Allow-Headers:
+      - Origin, Depth, User-Agent, X-File-Size, X-Requested-With, If-Modified-Since,
+        X-File-Name, Cache-ControlOrigin, Content-Type, Accept, Authorization, X-ProofSignature,
+        InternalRequestType
+    body:
+      encoding: UTF-8
+      string: '{"?xml":{"@version":"1.0","@encoding":"ISO-8859-1"},"PPMDResults":{"@s":"PRDAPI1WFEYP3NE","@lst":"8/18/2021
+        1:17:34 AM","Results":{"marsourcelist":{"marsource":{"@id":"source19","@name":"SEARCH
+        ENGINE"}}},"Error":null}}'
+  recorded_at: Wed, 18 Aug 2021 08:17:34 GMT
+recorded_with: VCR 6.0.0

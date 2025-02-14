@@ -1,0 +1,72 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://provapi.advancedmd.com/processrequest/api-101/LIFESTANCE/xmlrpc/processrequest.aspx
+    body:
+      encoding: UTF-8
+      string: '{"ppmdmsg":{"@action":"addrespparty","@class":"demographics","@msgtime":"7/9/2021
+        06:47:43 PM","patientlist":{"patient":{"@respparty":"SELF","@name":"ami,mon","@sex":"M","@relationship":"1","@hipaarelationship":"18","@dob":"12/04/1965","@ssn":"682-39-8688","@chart":"AUTO","@profile":"3","@finclass":"","@deceased":"","@title":"MR","@maritalstatus":"2","@insorder":"","@employer":"ibm,
+        inc.","address":{"@zip":"38834","@city":"CORINTH","@state":"MS","@address1":"apt
+        b-5","@address2":"6923 n mountainside dr"},"contactinfo":{"@homephone":"(662)
+        555-1343","@officephone":"(662) 555-9238","@officeext":"213","@otherphone":"(662)
+        555-3823","@othertype":"C","@email":"monami@example.com"}}},"resppartylist":{"respparty":{"@name":"ami,mon","@accttype":"4"}}}}'
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - rest-client/2.1.0 (darwin20 x86_64) ruby/3.0.1p64
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '754'
+      Cookie:
+      - token=995456bctAuAB6+BPxl24Ude+kIAdV/JJODiggKjfy9Z6KkdziZDsUYHrGPiVPMmJ6gZcRotcXyH9ODX8CcG0FZr+z3zBqh8p1ytO4JvR07ltz4t+ikFkbS8ngtmOY0FNOoR7NIcQhiu6bR0irUKpvZQzojI68v6CP1eGTq0VSkLayTmMe8mQISD9eGxEOBzVbl1B7
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - provapi.advancedmd.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 09 Jul 2021 18:47:44 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '1497'
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - no-cache,no-store,must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - Fri, 09 Jul 2021 18:46:43 GMT
+      Server:
+      - Microsoft-IIS/10.0
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET,PUT,POST,DELETE,OPTIONS
+      Access-Control-Allow-Headers:
+      - Origin, Depth, User-Agent, X-File-Size, X-Requested-With, If-Modified-Since,
+        X-File-Name, Cache-ControlOrigin, Content-Type, Accept, Authorization, X-ProofSignature,
+        InternalRequestType
+    body:
+      encoding: UTF-8
+      string: '{"?xml":{"@version":"1.0","@encoding":"ISO-8859-1"},"PPMDResults":{"@s":"PRDAPI1WFE5AP9B","@lst":"7/9/2021
+        11:47:43 AM","Results":{"@success":"1","respparty":{"@id":"resp6849535","@name":"AMI,MON","@accttype":"ac_type4","@acctnum":"6849535","@dob":"","@sex":"
+        ","@title":"","@employer":"","@employstatus":"1","@ssn":"","@sendstmt":"0","@stmtrestart":"01/01/1900","@holdreasonfid":"0","@holdreasondesc":"","@holdreasoncode":"","@billcycle":"0","@fincharge":"0","@stmtformat":"","@balancefwd":"0","@lastpmtdate":"","@lastpmtamount":"","@laststmtdate":"","@laststmtamount":"","@paymentplanbalance":"","@ispaperless":"0","@ispaperlessportalchangedate":"","address":{"@zip":"38834","@city":"CORINTH","@state":"MS","@address1":"APT
+        B-5","@address2":"6923 N MOUNTAINSIDE DR","@areacode":"662","@countrycode":""},"contactinfo":{"@name":"","@homephone":"(662)
+        555-1343","@officephone":"(662) 555-9238","@officeext":"213","@otherphone":"(662)
+        555-3823","@othertype":"C","@email":"MONAMI@EXAMPLE.COM","@preferredcommunicationfid":"","@communicationnote":""},"creditcardonfile":null,"arbucketlist":{"arbucket":[{"@buckettype":"r","@current":"0.00","@past30":"0.00","@past60":"0.00","@past90":"0.00","@past120":"0.00","@unapplied":"0.00","@total":"0.00"},{"@buckettype":"ri","@current":"0.00","@past30":"0.00","@past60":"0.00","@past90":"0.00","@past120":"0.00","@unapplied":"0.00","@total":"0.00"}]},"familymemberlist":null},"accttype":{"@id":"ac_type4","@name":"TYPICAL
+        ACCOUNT","@code":"TA"}},"Error":null}}'
+  recorded_at: Fri, 09 Jul 2021 18:47:44 GMT
+recorded_with: VCR 6.0.0

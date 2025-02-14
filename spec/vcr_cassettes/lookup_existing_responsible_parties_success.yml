@@ -1,0 +1,130 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://provapi.advancedmd.com/processrequest/api-102/LIFESTANCE/xmlrpc/processrequest.aspx/xmlrpc/processrequest.aspx
+    body:
+      encoding: UTF-8
+      string: '{"ppmdmsg":{"@action":"lookuprespparty","@class":"api","@exactmatch":"-1","@name":"ANDRIEU,ADDISON","@page":"1"}}'
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/3.0.1p64
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '113'
+      Cookie:
+      - token=995456xMPCPJ8pT+FdHwviF9eS29kkCCeM9xUNnL9k81KTRAsHhRiSToheF8yCx9eueuf4fo/HRTFhi7O0yxwaH9CEKDMLyTbifSGgeDp6OciWzF8s4FlSoU5PZFrpS9FjzmBcoAhwZcR4mK+o/GlvrXcTswMds1KX/fzoUKOkqOvituiWqRI2d6TiUnI6G6mkhZgJCd3hYo8FYz7uGjel6fo6Og==
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - provapi.advancedmd.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 03 Sep 2021 06:28:41 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '653'
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - no-cache,no-store,must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - Fri, 03 Sep 2021 06:27:41 GMT
+      Server:
+      - Microsoft-IIS/10.0
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET,PUT,POST,DELETE,OPTIONS
+      Access-Control-Allow-Headers:
+      - Origin, Depth, User-Agent, X-File-Size, X-Requested-With, If-Modified-Since,
+        X-File-Name, Cache-ControlOrigin, Content-Type, Accept, Authorization, X-ProofSignature,
+        InternalRequestType
+    body:
+      encoding: UTF-8
+      string: '{"?xml":{"@version":"1.0","@encoding":"ISO-8859-1"},"PPMDResults":{"@s":"PRDAPI2WFES2KDM","@lst":"9/2/2021
+        11:28:41 PM","Results":{"resppartylist":{"@itemcount":"1","@page":"1","@pagecount":"1","@itemsfrom":"1","@itemsto":"1","respparty":{"@id":"resp6847854","@name":"ANDRIEU,ADDISON","@acctnum":"6847854","@ssn":"XXX-XX-5487","@isinvoiceentity":"0","@dob":"01/23/1980","@email":"ANDRIEU.ADDISON@EXAMPLE.COM","@gender":"F","address":{"@zipid":"1","@zip":"74073-2837","@city":"ANCHORAGE
+        MUNICIPALITY","@state":"AK","@address1":"","@address2":"9780 MILL ST","@countrycode":"","@areacode":""},"contactinfo":{"@homephone":"(334)
+        211-6777"}}}},"Error":null}}'
+  recorded_at: Fri, 03 Sep 2021 06:28:41 GMT
+- request:
+    method: post
+    uri: https://provapi.advancedmd.com/processrequest/api-102/LIFESTANCE/xmlrpc/processrequest.aspx/xmlrpc/processrequest.aspx
+    body:
+      encoding: UTF-8
+      string: '{"ppmdmsg":{"@action":"getrespparty","@class":"demographics","@msgtime":"9/3/2021
+        06:28:41 AM","@resppartyid":"resp6847854"}}'
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/3.0.1p64
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '125'
+      Cookie:
+      - token=995456xMPCPJ8pT+FdHwviF9eS29kkCCeM9xUNnL9k81KTRAsHhRiSToheF8yCx9eueuf4fo/HRTFhi7O0yxwaH9CEKDMLyTbifSGgeDp6OciWzF8s4FlSoU5PZFrpS9FjzmBcoAhwZcR4mK+o/GlvrXcTswMds1KX/fzoUKOkqOvituiWqRI2d6TiUnI6G6mkhZgJCd3hYo8FYz7uGjel6fo6Og==
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - provapi.advancedmd.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 03 Sep 2021 06:28:43 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '2040'
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - no-cache,no-store,must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - Fri, 03 Sep 2021 06:27:43 GMT
+      Server:
+      - Microsoft-IIS/10.0
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET,PUT,POST,DELETE,OPTIONS
+      Access-Control-Allow-Headers:
+      - Origin, Depth, User-Agent, X-File-Size, X-Requested-With, If-Modified-Since,
+        X-File-Name, Cache-ControlOrigin, Content-Type, Accept, Authorization, X-ProofSignature,
+        InternalRequestType
+    body:
+      encoding: UTF-8
+      string: '{"?xml":{"@version":"1.0","@encoding":"ISO-8859-1"},"PPMDResults":{"@s":"PRDAPI2WFEVTWZG","@lst":"9/2/2021
+        11:28:43 PM","Results":{"resppartylist":{"respparty":{"@id":"resp6847854","@name":"ANDRIEU,ADDISON","@accttype":"ac_type5","@acctnum":"6847854","@dob":"01/23/1980","@sex":"F","@title":"MS","@employer":"","@employstatus":"1","@ssn":"XXX-XX-5487","@sendstmt":"0","@stmtrestart":"","@holdreasonfid":"0","@holdreasondesc":"","@holdreasoncode":"","@billcycle":"25","@fincharge":"0","@stmtformat":"","@balancefwd":"1","@lastpmtdate":"","@lastpmtamount":"","@laststmtdate":"","@laststmtamount":"","@paymentplanbalance":"","@ispaperless":"0","@ispaperlessportalchangedate":"","address":{"@zip":"74073-2837","@city":"ANCHORAGE
+        MUNICIPALITY","@state":"AK","@address1":"","@address2":"9780 MILL ST","@areacode":"","@countrycode":""},"contactinfo":{"@name":"","@homephone":"(334)
+        211-6777","@officephone":"","@officeext":"","@otherphone":"","@othertype":"C","@email":"ANDRIEU.ADDISON@EXAMPLE.COM","@preferredcommunicationfid":"","@communicationnote":""},"creditcardonfile":null,"arbucketlist":{"arbucket":[{"@buckettype":"r","@current":"0.00","@past30":"0.00","@past60":"0.00","@past90":"0.00","@past120":"20.00","@unapplied":"0.00","@total":"20.00"},{"@buckettype":"ri","@current":"0.00","@past30":"0.00","@past60":"0.00","@past90":"0.00","@past120":"132.00","@unapplied":"0.00","@total":"132.00"}]},"familymemberlist":{"familymember":{"@id":"family5982454","@name":"ANDRIEU,ADDISON","@chart":"2577","@isrp":"1","@previousfirstname":"","@previousmiddlename":"","@previouslastname":"","@hipparelationship":"18","contactinfo":{"@homephone":"(334)
+        211-6777"},"address":{"@zip":"74073-2837","@city":"ANCHORAGE MUNICIPALITY","@state":"AK","@address1":"","@address2":"9780
+        MILL ST","@countrycode":""},"previousaddress":{"@address1":"","@address2":"9780
+        MILL RD","@countrycode":"","@state":"AK","@city":"ANCHORAGE MUNICIPALITY","@zip":"74073-2837"}}}}},"accttypelist":{"accttype":{"@id":"ac_type5","@name":"NO
+        STATEMENT","@code":"NS"}}},"Error":null}}'
+  recorded_at: Fri, 03 Sep 2021 06:28:43 GMT
+recorded_with: VCR 6.0.0

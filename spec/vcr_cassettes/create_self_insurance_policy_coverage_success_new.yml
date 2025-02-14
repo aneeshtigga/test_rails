@@ -1,0 +1,66 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://provapi.advancedmd.com/processrequest/api-102/LIFESTANCE/xmlrpc/processrequest.aspx/xmlrpc/processrequest.aspx
+    body:
+      encoding: UTF-8
+      string: '{"ppmdmsg":{"@action":"addinsurance","@class":"demographics","@msgtime":"3/22/2022
+        11:03:19 AM","@ltq":"2022-03-22T11:03:19.944Z","@lst":"2022-03-22T11:03:19.944Z","patient":{"@id":"pat61722","@changed":1,"insplanlist":{"insplan":{"@id":"","@begindate":"3/1/2022","@enddate":"","@carrier":7562,"@subscriber":"resp6850251","@subscribernum":"NFC123456","@hipaarelationship":"G8","@relationship":"4","@grpname":null,"@grpnum":null,"@copay":null,"@copaytype":null,"@coverage":null,"@payerid":null,"@mspcode":null,"@eligibilityid":null,"@eligibilitystatusid":null,"@eligibilitychangedat":null,"@eligibilitycreatedat":null,"@eligibilityresponsedate":null,"@finclasscode":null,"@deductible":null,"@deductiblemet":null,"@yearendmonth":null,"@lifetime":null,"insnote":{"@self-closing":"true"}}}}}}'
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/3.0.1p64
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '788'
+      Cookie:
+      - token=995456rteCp3zkaMPg7cqmutJVJbn3eFtQewPqIL1kACeS5Rk7aqKUtAf+ggtAoZkm/z1wzESJ7ihgnm1g/NYTOYb/2v55OU0/zweuicWnOMw7iRBuliujJIZMqENYA74v/l9AGkJmRFdTSroJeJ1sVeS3Fi1ABfgWbi28cWAt5TuX9JWO9Urobr42h2qCvaYxYGrsnwCLRIDaNzacfuru8NKeqw==
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - provapi.advancedmd.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 22 Mar 2022 11:03:21 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '584'
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - no-cache,no-store,must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - Tue, 22 Mar 2022 11:02:21 GMT
+      Server:
+      - Microsoft-IIS/10.0
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET,PUT,POST,DELETE,OPTIONS
+      Access-Control-Allow-Headers:
+      - Origin, Depth, User-Agent, X-File-Size, X-Requested-With, If-Modified-Since,
+        X-File-Name, Cache-ControlOrigin, Content-Type, Accept, Authorization, X-ProofSignature,
+        InternalRequestType
+    body:
+      encoding: UTF-8
+      string: '{"?xml":{"@version":"1.0","@encoding":"ISO-8859-1"},"PPMDResults":{"@s":"PRDAPI1WFETPAOM","@lst":"3/22/2022
+        4:03:21 AM","Results":{"@success":"1","patient":{"@id":"ins3701149","@sequence":"27","@insnotefid":"3910690"}},"Error":null,"ticklersdue":{"@countDue":"0","@countSeen":"0","@ltq":"2022-03-22
+        11:03:19 ","@resolutionitems":"0","@olsresolutionitems":"13","@admin":"0"},"notificationtypelist":{"notificationtype":[{"@name":"Critical
+        Alert","@count":"0"},{"@name":"Maintenance","@count":"0"},{"@name":"Public
+        Alert Incident","@count":"0"},{"@name":"System Alerts","@count":"0"}]}}}'
+  recorded_at: Tue, 22 Mar 2022 11:03:21 GMT
+recorded_with: VCR 6.0.0

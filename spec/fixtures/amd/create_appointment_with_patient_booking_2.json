@@ -1,0 +1,36 @@
+{
+  "?xml": {
+    "@version": "1.0",
+    "@encoding": "ISO-8859-1"
+  },
+  "PPMDResults": {
+    "@s": "PRDAPI1WFE9EA2U",
+    "@lst": "3/21/2022 6:27:12 AM",
+    "Error": {
+      "Fault": {
+        "faultcode": "Server",
+        "faultstring": "Server Error",
+        "detail": {
+          "code": "-2147221504",
+          "description": "AMD-995456-03210627 | Exception has been thrown by the target of an invocation.",
+          "class": "C:\\azp\\agent\\_work\\8\\s\\Demographics.cs",
+          "method": "Gateway",
+          "linenum": "277",
+          "source": "System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.Data.SqlClient.SqlException: Parent tag ID 4 is not among the open tags. FOR XML EXPLICIT requires parent tags to be opened first. Check the ordering of the result set.\r\n   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)\r\n   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)\r\n   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)\r\n   at System.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)\r\n   at System.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)\r\n   at System.Data.SqlClient.SqlDataReader.Read()\r\n   at System.Data.SqlClient.SqlStream.ReadBytes(Byte[] buffer, Int32 offset, Int32 count)\r\n   at System.Data.SqlClient.SqlStream.Read(Byte[] buffer, Int32 offset, Int32 count)\r\n   at System.Xml.XmlReader.CreateSqlReader(Stream input, XmlReaderSettings settings, XmlParserContext inputContext)\r\n   at System.Data.SqlTypes.SqlXml.CreateSqlXmlReader(Stream stream, Boolean closeInput, Boolean throwTargetInvocationExceptions)\r\n   --- End of inner exception stack trace ---\r\n   at System.Data.SqlTypes.SqlXml.CreateSqlXmlReader(Stream stream, Boolean closeInput, Boolean throwTargetInvocationExceptions)\r\n   at System.Data.SqlClient.SqlCommand.CompleteXmlReader(SqlDataReader ds)\r\n   at System.Data.SqlClient.SqlCommand.ExecuteXmlReader()\r\n   at AdvancedMD.Utility.DbUtilInternal.QueryXml(String dbServer, String dbName, SqlCommand command, String appName, Boolean readonlyIntent)\r\n   at AdvancedMD.Demographics.Demographics.GetPatientEpisodes(XmlDocument xmlIn)\r\n   at AdvancedMD.Demographics.Demographics.Interop.MSSEventLog._IPPMDGateway.Gateway(String xmlIn)",
+          "extrainfo": {
+            "requestinfo": {
+              "ppmdmsg": {
+                "@action": "getepisodes",
+                "@class": "demographics",
+                "@msgtime": "3/21/2022 01:27:11 PM",
+                "@patientid": "",
+                "@ip": "49.205.210.94",
+                "usercontext": "995456[Removed]"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

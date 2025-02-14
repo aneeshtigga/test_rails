@@ -1,0 +1,119 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 20 } %>
+development:
+  primary:
+    <<: *default
+    database: polaris_development
+    username: postgres
+  data_warehouse:
+    <<: *default
+    database: polaris_dw_development
+    username: postgres
+    migrations_paths: db/data_warehouse_migrate
+
+dev:
+  primary:
+    <<: *default
+    adapter: postgresql
+    host: <%= Rails.application.credentials.primary_database_host %>
+    database: <%= Rails.application.credentials.primary_database_name %>
+    username: <%= Rails.application.credentials.primary_database_username %>
+    password: <%= Rails.application.credentials.primary_database_password %>
+  data_warehouse:
+    <<: *default
+    adapter: redshift
+    host: <%= Rails.application.credentials.data_warehouse_host %>
+    database: <%= Rails.application.credentials.data_warehouse_name %>
+    username: <%= Rails.application.credentials.data_warehouse_username %>
+    password: <%= Rails.application.credentials.data_warehouse_password %>
+    migrations_paths: db/data_warehouse_migrate
+    port: 5439
+
+qa:
+  primary:
+    <<: *default
+    adapter: postgresql
+    host: <%= Rails.application.credentials.primary_database_host %>
+    database: <%= Rails.application.credentials.primary_database_name %>
+    username: <%= Rails.application.credentials.primary_database_username %>
+    password: <%= Rails.application.credentials.primary_database_password %>
+    port: 5432
+  data_warehouse:
+    <<: *default
+    adapter: redshift
+    host: <%= Rails.application.credentials.data_warehouse_host %>
+    database: <%= Rails.application.credentials.data_warehouse_name %>
+    username: <%= Rails.application.credentials.data_warehouse_username %>
+    password: <%= Rails.application.credentials.data_warehouse_password %>
+    migrations_paths: db/data_warehouse_migrate
+    port: 5439
+
+uat:
+  primary:
+    <<: *default
+    adapter: postgresql
+    host: <%= Rails.application.credentials.primary_database_host %>
+    database: <%= Rails.application.credentials.primary_database_name %>
+    username: <%= Rails.application.credentials.primary_database_username %>
+    password: <%= Rails.application.credentials.primary_database_password %>
+    port: 5432
+  data_warehouse:
+    <<: *default
+    adapter: redshift
+    host: <%= Rails.application.credentials.data_warehouse_host %>
+    database: <%= Rails.application.credentials.data_warehouse_name %>
+    username: <%= Rails.application.credentials.data_warehouse_username %>
+    password: <%= Rails.application.credentials.data_warehouse_password %>
+    migrations_paths: db/data_warehouse_migrate
+    port: 5439
+
+test:
+  primary:
+    <<: *default
+    database: polaris_test
+    username: postgres
+  data_warehouse:
+    <<: *default
+    database: polaris_dw_test
+    username: postgres
+    migrations_paths: db/data_warehouse_migrate
+
+production:
+  primary:
+    <<: *default
+    adapter: postgresql
+    host: <%= Rails.application.credentials.primary_database_host %>
+    database: <%= Rails.application.credentials.primary_database_name %>
+    username: <%= Rails.application.credentials.primary_database_username %>
+    password: <%= Rails.application.credentials.primary_database_password %>
+    port: 5432
+  data_warehouse:
+    <<: *default
+    adapter: redshift
+    host: <%= Rails.application.credentials.data_warehouse_host %>
+    database: <%= Rails.application.credentials.data_warehouse_name %>
+    username: <%= Rails.application.credentials.data_warehouse_username %>
+    password: <%= Rails.application.credentials.data_warehouse_password %>
+    migrations_paths: db/data_warehouse_migrate
+    port: 5439
+
+perf:
+  primary:
+    <<: *default
+    adapter: postgresql
+    host: <%= Rails.application.credentials.primary_database_host %>
+    database: <%= Rails.application.credentials.primary_database_name %>
+    username: <%= Rails.application.credentials.primary_database_username %>
+    password: <%= Rails.application.credentials.primary_database_password %>
+    port: 5432
+  data_warehouse:
+    <<: *default
+    adapter: redshift
+    host: <%= Rails.application.credentials.data_warehouse_host %>
+    database: <%= Rails.application.credentials.data_warehouse_name %>
+    username: <%= Rails.application.credentials.data_warehouse_username %>
+    password: <%= Rails.application.credentials.data_warehouse_password %>
+    migrations_paths: db/data_warehouse_migrate
+    port: 5439

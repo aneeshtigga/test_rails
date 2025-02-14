@@ -1,0 +1,43 @@
+{
+  "?xml": {
+    "@version": "1.0",
+    "@encoding": "ISO-8859-1"
+  },
+  "PPMDResults": {
+    "@s": "PRDAPI2WFEIEPSA",
+    "@lst": "8/31/2021 11:22:53 AM",
+    "Results": {
+      "resppartylist": {
+        "@itemcount": "1",
+        "@page": "1",
+        "@pagecount": "1",
+        "@itemsfrom": "1",
+        "@itemsto": "1",
+        "respparty": {
+          "@id": "resp6847854",
+          "@name": "ANDRIEU,ADDISON",
+          "@acctnum": "6847854",
+          "@ssn": "XXX-XX-5487",
+          "@isinvoiceentity": "0",
+          "@dob": "01/23/1980",
+          "@email": "ANDRIEU.ADDISON@EXAMPLE.COM",
+          "@gender": "F",
+          "address": {
+            "@zipid": "1",
+            "@zip": "74073-2837",
+            "@city": "ANCHORAGE MUNICIPALITY",
+            "@state": "AK",
+            "@address1": "",
+            "@address2": "9780 MILL ST",
+            "@countrycode": "",
+            "@areacode": ""
+          },
+          "contactinfo": {
+            "@homephone": "(334) 211-6777"
+          }
+        }
+      }
+    },
+    "Error": null
+  }
+}

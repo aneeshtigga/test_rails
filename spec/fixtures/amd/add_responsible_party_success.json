@@ -1,0 +1,93 @@
+{
+  "?xml": {
+    "@version": "1.0",
+    "@encoding": "ISO-8859-1"
+  },
+  "PPMDResults": {
+    "@s": "PRDAPI1WFE5AP9B",
+    "@lst": "7/9/2021 11:47:43 AM",
+    "Results": {
+      "@success": "1",
+      "respparty": {
+        "@id": "resp6849535",
+        "@name": "AMI,MON",
+        "@accttype": "ac_type4",
+        "@acctnum": "6849535",
+        "@dob": "",
+        "@sex": " ",
+        "@title": "",
+        "@employer": "",
+        "@employstatus": "1",
+        "@ssn": "",
+        "@sendstmt": "0",
+        "@stmtrestart": "01/01/1900",
+        "@holdreasonfid": "0",
+        "@holdreasondesc": "",
+        "@holdreasoncode": "",
+        "@billcycle": "0",
+        "@fincharge": "0",
+        "@stmtformat": "",
+        "@balancefwd": "0",
+        "@lastpmtdate": "",
+        "@lastpmtamount": "",
+        "@laststmtdate": "",
+        "@laststmtamount": "",
+        "@paymentplanbalance": "",
+        "@ispaperless": "0",
+        "@ispaperlessportalchangedate": "",
+        "address": {
+          "@zip": "38834",
+          "@city": "CORINTH",
+          "@state": "MS",
+          "@address1": "APT B-5",
+          "@address2": "6923 N MOUNTAINSIDE DR",
+          "@areacode": "662",
+          "@countrycode": ""
+        },
+        "contactinfo": {
+          "@name": "",
+          "@homephone": "(662) 555-1343",
+          "@officephone": "(662) 555-9238",
+          "@officeext": "213",
+          "@otherphone": "(662) 555-3823",
+          "@othertype": "C",
+          "@email": "MONAMI@EXAMPLE.COM",
+          "@preferredcommunicationfid": "",
+          "@communicationnote": ""
+        },
+        "creditcardonfile": null,
+        "arbucketlist": {
+          "arbucket": [
+            {
+              "@buckettype": "r",
+              "@current": "0.00",
+              "@past30": "0.00",
+              "@past60": "0.00",
+              "@past90": "0.00",
+              "@past120": "0.00",
+              "@unapplied": "0.00",
+              "@total": "0.00"
+            },
+            {
+              "@buckettype": "ri",
+              "@current": "0.00",
+              "@past30": "0.00",
+              "@past60": "0.00",
+              "@past90": "0.00",
+              "@past120": "0.00",
+              "@unapplied": "0.00",
+              "@total": "0.00"
+            }
+          ]
+        },
+        "familymemberlist": null
+      },
+      "accttype": {
+        "@id": "ac_type4",
+        "@name": "TYPICAL ACCOUNT",
+        "@code": "TA"
+      }
+    },
+    "Error": null
+  }
+}

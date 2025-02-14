@@ -1,0 +1,126 @@
+{
+  "?xml": {
+    "@version": "1.0",
+    "@encoding": "ISO-8859-1"
+  },
+  "PPMDResults": {
+    "@s": "PRDAPI2WFEVTWZG",
+    "@lst": "9/2/2021 11:28:43 PM",
+    "Results": {
+      "resppartylist": {
+        "respparty": {
+          "@id": "resp6847854",
+          "@name": "ANDRIEU,ADDISON",
+          "@accttype": "ac_type5",
+          "@acctnum": "6847854",
+          "@dob": "01/23/1980",
+          "@sex": "F",
+          "@title": "MS",
+          "@employer": "",
+          "@employstatus": "1",
+          "@ssn": "XXX-XX-5487",
+          "@sendstmt": "0",
+          "@stmtrestart": "",
+          "@holdreasonfid": "0",
+          "@holdreasondesc": "",
+          "@holdreasoncode": "",
+          "@billcycle": "25",
+          "@fincharge": "0",
+          "@stmtformat": "",
+          "@balancefwd": "1",
+          "@lastpmtdate": "",
+          "@lastpmtamount": "",
+          "@laststmtdate": "",
+          "@laststmtamount": "",
+          "@paymentplanbalance": "",
+          "@ispaperless": "0",
+          "@ispaperlessportalchangedate": "",
+          "address": {
+            "@zip": "74073-2837",
+            "@city": "ANCHORAGE MUNICIPALITY",
+            "@state": "AK",
+            "@address1": "",
+            "@address2": "9780 MILL ST",
+            "@areacode": "",
+            "@countrycode": ""
+          },
+          "contactinfo": {
+            "@name": "",
+            "@homephone": "(334) 211-6777",
+            "@officephone": "",
+            "@officeext": "",
+            "@otherphone": "",
+            "@othertype": "C",
+            "@email": "ANDRIEU.ADDISON@EXAMPLE.COM",
+            "@preferredcommunicationfid": "",
+            "@communicationnote": ""
+          },
+          "creditcardonfile": null,
+          "arbucketlist": {
+            "arbucket": [
+              {
+                "@buckettype": "r",
+                "@current": "0.00",
+                "@past30": "0.00",
+                "@past60": "0.00",
+                "@past90": "0.00",
+                "@past120": "20.00",
+                "@unapplied": "0.00",
+                "@total": "20.00"
+              },
+              {
+                "@buckettype": "ri",
+                "@current": "0.00",
+                "@past30": "0.00",
+                "@past60": "0.00",
+                "@past90": "0.00",
+                "@past120": "132.00",
+                "@unapplied": "0.00",
+                "@total": "132.00"
+              }
+            ]
+          },
+          "familymemberlist": {
+            "familymember": {
+              "@id": "family5982454",
+              "@name": "ANDRIEU,ADDISON",
+              "@chart": "2577",
+              "@isrp": "1",
+              "@previousfirstname": "",
+              "@previousmiddlename": "",
+              "@previouslastname": "",
+              "@hipparelationship": "18",
+              "contactinfo": {
+                "@homephone": "(334) 211-6777"
+              },
+              "address": {
+                "@zip": "74073-2837",
+                "@city": "ANCHORAGE MUNICIPALITY",
+                "@state": "AK",
+                "@address1": "",
+                "@address2": "9780 MILL ST",
+                "@countrycode": ""
+              },
+              "previousaddress": {
+                "@address1": "",
+                "@address2": "9780 MILL RD",
+                "@countrycode": "",
+                "@state": "AK",
+                "@city": "ANCHORAGE MUNICIPALITY",
+                "@zip": "74073-2837"
+              }
+            }
+          }
+        }
+      },
+      "accttypelist": {
+        "accttype": {
+          "@id": "ac_type5",
+          "@name": "NO STATEMENT",
+          "@code": "NS"
+        }
+      }
+    },
+    "Error": null
+  }
+}

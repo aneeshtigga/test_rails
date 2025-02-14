@@ -1,0 +1,127 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://provapi.advancedmd.com/processrequest/api-101/LIFESTANCE/xmlrpc/processrequest.aspx
+    body:
+      encoding: UTF-8
+      string: '{"ppmdmsg":{"@action":"getepisodes","@class":"demographics","@msgtime":"7/29/2021
+        08:55:00 PM","@patientid":5982717}}'
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - rest-client/2.1.0 (darwin20 x86_64) ruby/3.0.1p64
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '117'
+      Cookie:
+      - token=9954565fVnC0PeO5O48YlXNEiKSuS3pnu+fAACpa01MNP26fKlHrr2uB0ZRqF1LHhO3H5rZL5QJi/Tbel+KoFKXFlQoTYDh+P5noR37phofNVoHnz1YOjxwpKo5KRbbBg7k4bg9EGRR1iOqWZUNitsivQsNJYxiEsgTRaUiIY//mdsVW+RX2xLZkLAnPVs02BgtzvV/w+JYIfexSBLZhw8QLCeBg==
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - provapi.advancedmd.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 29 Jul 2021 20:55:01 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '1265'
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - no-cache,no-store,must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - Thu, 29 Jul 2021 20:54:01 GMT
+      Server:
+      - Microsoft-IIS/10.0
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET,PUT,POST,DELETE,OPTIONS
+      Access-Control-Allow-Headers:
+      - Origin, Depth, User-Agent, X-File-Size, X-Requested-With, If-Modified-Since,
+        X-File-Name, Cache-ControlOrigin, Content-Type, Accept, Authorization, X-ProofSignature,
+        InternalRequestType
+    body:
+      encoding: UTF-8
+      string: '{"?xml":{"@version":"1.0","@encoding":"ISO-8859-1"},"PPMDResults":{"@s":"PRDAPI1WFECJPSW","@lst":"7/29/2021
+        1:55:01 PM","Results":{"patientlist":{"patient":{"@id":"pat5982717","@name":"TEST,LUCY","@respparty":"resp6848164","@profile":"prof3","@insorder":"","@chart":"2600","@finclasscode":"XX","episodelist":{"episode":{"@id":"eps5948273","@name":"STANDARD","@insorder":"","@respparty":"resp6848164","@finclasscode":"XX","@refplan":"rplan6893975","@groupbymonth":"0","@plancreatedate":"","@ptoffsetdays":"","@stoffsetdays":"","@otoffsetdays":"","@maintenancedate":"","authorizationlist":null,"extins":null}},"refplanlist":{"refplan":{"@id":"rplan6893975","@refprov":"rprov387","@type":"I","@reason":"SELF-REFERRAL","@preauthreq":"0","@preauth":"","@begindate":"07/05/2018","@enddate":"","@maxvisits":"","@usedvisits":"0","@maxamount":"","@usedamount":"0.00","@sequence":"1","@ismain":"1"}},"insplanlist":null}},"defaults":{"finclass":{"@id":"fclass12","@code":"SP","@name":"SELF
+        PAY"}},"carrierlist":null,"resppartylist":{"respparty":{"@id":"resp6848164","@name":"TEST,LUCY","@isinvoiceentity":"0"}},"finclasslist":{"finclass":{"@id":"fclass16","@code":"XX","@name":"CHANGE
+        THIS!!!!"}},"refproviderlist":{"refprovider":{"@id":"rprov387","@name":"JONES,CAMERON"}}}}}'
+  recorded_at: Thu, 29 Jul 2021 20:55:01 GMT
+- request:
+    method: post
+    uri: https://provapi.advancedmd.com/processrequest/api-101/LIFESTANCE/xmlrpc/processrequest.aspx
+    body:
+      encoding: UTF-8
+      string: '{"ppmdmsg":{"@action":"getepisodes","@class":"demographics","@msgtime":"7/29/2021
+        08:55:01 PM","@patientid":5982717}}'
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - rest-client/2.1.0 (darwin20 x86_64) ruby/3.0.1p64
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '117'
+      Cookie:
+      - token=9954565fVnC0PeO5O48YlXNEiKSuS3pnu+fAACpa01MNP26fKlHrr2uB0ZRqF1LHhO3H5rZL5QJi/Tbel+KoFKXFlQoTYDh+P5noR37phofNVoHnz1YOjxwpKo5KRbbBg7k4bg9EGRR1iOqWZUNitsivQsNJYxiEsgTRaUiIY//mdsVW+RX2xLZkLAnPVs02BgtzvV/w+JYIfexSBLZhw8QLCeBg==
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - provapi.advancedmd.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 29 Jul 2021 20:55:02 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '1265'
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - no-cache,no-store,must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - Thu, 29 Jul 2021 20:54:02 GMT
+      Server:
+      - Microsoft-IIS/10.0
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET,PUT,POST,DELETE,OPTIONS
+      Access-Control-Allow-Headers:
+      - Origin, Depth, User-Agent, X-File-Size, X-Requested-With, If-Modified-Since,
+        X-File-Name, Cache-ControlOrigin, Content-Type, Accept, Authorization, X-ProofSignature,
+        InternalRequestType
+    body:
+      encoding: UTF-8
+      string: '{"?xml":{"@version":"1.0","@encoding":"ISO-8859-1"},"PPMDResults":{"@s":"PRDAPI1WFEYP3NE","@lst":"7/29/2021
+        1:55:02 PM","Results":{"patientlist":{"patient":{"@id":"pat5982717","@name":"TEST,LUCY","@respparty":"resp6848164","@profile":"prof3","@insorder":"","@chart":"2600","@finclasscode":"XX","episodelist":{"episode":{"@id":"eps5948273","@name":"STANDARD","@insorder":"","@respparty":"resp6848164","@finclasscode":"XX","@refplan":"rplan6893975","@groupbymonth":"0","@plancreatedate":"","@ptoffsetdays":"","@stoffsetdays":"","@otoffsetdays":"","@maintenancedate":"","authorizationlist":null,"extins":null}},"refplanlist":{"refplan":{"@id":"rplan6893975","@refprov":"rprov387","@type":"I","@reason":"SELF-REFERRAL","@preauthreq":"0","@preauth":"","@begindate":"07/05/2018","@enddate":"","@maxvisits":"","@usedvisits":"0","@maxamount":"","@usedamount":"0.00","@sequence":"1","@ismain":"1"}},"insplanlist":null}},"defaults":{"finclass":{"@id":"fclass12","@code":"SP","@name":"SELF
+        PAY"}},"carrierlist":null,"resppartylist":{"respparty":{"@id":"resp6848164","@name":"TEST,LUCY","@isinvoiceentity":"0"}},"finclasslist":{"finclass":{"@id":"fclass16","@code":"XX","@name":"CHANGE
+        THIS!!!!"}},"refproviderlist":{"refprovider":{"@id":"rprov387","@name":"JONES,CAMERON"}}}}}'
+  recorded_at: Thu, 29 Jul 2021 20:55:02 GMT
+recorded_with: VCR 6.0.0

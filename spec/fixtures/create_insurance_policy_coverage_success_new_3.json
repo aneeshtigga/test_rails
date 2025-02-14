@@ -1,0 +1,47 @@
+{
+  "?xml": {
+    "@version": "1.0",
+    "@encoding": "ISO-8859-1"
+  },
+  "PPMDResults": {
+    "@s": "PRDAPI1WFEYB9SS",
+    "@lst": "3/22/2022 4:03:08 AM",
+    "Results": {
+      "@success": "1",
+      "patient": {
+        "@id": "ins3701148",
+        "@sequence": "26",
+        "@insnotefid": "3910689"
+      }
+    },
+    "Error": null,
+    "ticklersdue": {
+      "@countDue": "0",
+      "@countSeen": "0",
+      "@ltq": "2022-03-22 11:03:07 ",
+      "@resolutionitems": "0",
+      "@olsresolutionitems": "13",
+      "@admin": "0"
+    },
+    "notificationtypelist": {
+      "notificationtype": [
+        {
+          "@name": "Critical Alert",
+          "@count": "0"
+        },
+        {
+          "@name": "Maintenance",
+          "@count": "0"
+        },
+        {
+          "@name": "Public Alert Incident",
+          "@count": "0"
+        },
+        {
+          "@name": "System Alerts",
+          "@count": "0"
+        }
+      ]
+    }
+  }
+}

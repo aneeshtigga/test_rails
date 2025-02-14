@@ -1,0 +1,28 @@
+{
+  "meta": {
+    "code": 200
+  },
+  "addresses": [
+    {
+      "latitude": 27.97762,
+      "longitude": -81.769611,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.769611,
+          27.97762
+        ]
+      },
+      "country": "United States",
+      "countryCode": "US",
+      "countryFlag": "🇺🇸",
+      "distance": 0,
+      "confidence": "fallback",
+      "stateCode": "FL",
+      "state": "Florida",
+      "layer": "state",
+      "formattedAddress": "FL USA",
+      "addressLabel": "Florida"
+    }
+  ]
+}

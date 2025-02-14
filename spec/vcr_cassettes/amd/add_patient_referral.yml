@@ -1,0 +1,347 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://provapi.advancedmd.com/processrequest/api-102/LIFESTANCE/xmlrpc/processrequest.aspx/xmlrpc/processrequest.aspx
+    body:
+      encoding: UTF-8
+      string: '{"ppmdmsg":{"@action":"lookuppatient","@class":"api","@exactmatch":"-1","@name":"Wilson,test","@page":"1"}}'
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/3.0.1p64
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '107'
+      Cookie:
+      - token=995456CjDc6o1RLzquOBu3UOrcBXnUfXMoj1MWcxhtfuLZOXG2NGTGdOc+255GQrKW2kOLSYGMPcWxgAEHYspGr9ePHylxJkiPaFGE9tpA0Xqpaqwq8X7ToMJ4dIIHshhQMp5lMcnMp5+kY53qy0Te2yFqjexzhrP891sKuAXl7MIa33E+EyB2/DtzGW5lceP0k+y4MoYx+c4cr+3wb7AU+inOfQ==
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - provapi.advancedmd.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 08 Nov 2021 10:41:59 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '240'
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - no-cache,no-store,must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - Mon, 08 Nov 2021 10:40:59 GMT
+      Server:
+      - Microsoft-IIS/10.0
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET,PUT,POST,DELETE,OPTIONS
+      Access-Control-Allow-Headers:
+      - Origin, Depth, User-Agent, X-File-Size, X-Requested-With, If-Modified-Since,
+        X-File-Name, Cache-ControlOrigin, Content-Type, Accept, Authorization, X-ProofSignature,
+        InternalRequestType
+    body:
+      encoding: UTF-8
+      string: '{"?xml":{"@version":"1.0","@encoding":"ISO-8859-1"},"PPMDResults":{"@s":"PRDAPI2WFE3NHSK","@lst":"11/8/2021
+        2:41:59 AM","Results":{"patientlist":{"@itemcount":"0","@page":"1","@pagecount":"0","@itemsfrom":"0","@itemsto":"0"}},"Error":null}}'
+  recorded_at: Mon, 08 Nov 2021 10:41:59 GMT
+- request:
+    method: post
+    uri: https://provapi.advancedmd.com/processrequest/api-102/LIFESTANCE/xmlrpc/processrequest.aspx/xmlrpc/processrequest.aspx
+    body:
+      encoding: UTF-8
+      string: '{"ppmdmsg":{"@action":"lookupmarsource","@class":"api","@exactmatch":"0","@name":"SEARCH
+        ENGINE"}}'
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/3.0.1p64
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '98'
+      Cookie:
+      - token=995456CjDc6o1RLzquOBu3UOrcBXnUfXMoj1MWcxhtfuLZOXG2NGTGdOc+255GQrKW2kOLSYGMPcWxgAEHYspGr9ePHylxJkiPaFGE9tpA0Xqpaqwq8X7ToMJ4dIIHshhQMp5lMcnMp5+kY53qy0Te2yFqjexzhrP891sKuAXl7MIa33E+EyB2/DtzGW5lceP0k+y4MoYx+c4cr+3wb7AU+inOfQ==
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - provapi.advancedmd.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 08 Nov 2021 10:42:00 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '219'
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - no-cache,no-store,must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - Mon, 08 Nov 2021 10:41:00 GMT
+      Server:
+      - Microsoft-IIS/10.0
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET,PUT,POST,DELETE,OPTIONS
+      Access-Control-Allow-Headers:
+      - Origin, Depth, User-Agent, X-File-Size, X-Requested-With, If-Modified-Since,
+        X-File-Name, Cache-ControlOrigin, Content-Type, Accept, Authorization, X-ProofSignature,
+        InternalRequestType
+    body:
+      encoding: UTF-8
+      string: '{"?xml":{"@version":"1.0","@encoding":"ISO-8859-1"},"PPMDResults":{"@s":"PRDAPI2WFEVTWZG","@lst":"11/8/2021
+        2:42:00 AM","Results":{"marsourcelist":{"marsource":{"@id":"source19","@name":"SEARCH
+        ENGINE"}}},"Error":null}}'
+  recorded_at: Mon, 08 Nov 2021 10:42:00 GMT
+- request:
+    method: post
+    uri: https://provapi.advancedmd.com/processrequest/api-102/LIFESTANCE/xmlrpc/processrequest.aspx/xmlrpc/processrequest.aspx
+    body:
+      encoding: UTF-8
+      string: '{"ppmdmsg":{"@action":"lookupmarstatus","@class":"api","@exactmatch":"0","@name":"1-SCHEDULED
+        CONSULT"}}'
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/3.0.1p64
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '104'
+      Cookie:
+      - token=995456CjDc6o1RLzquOBu3UOrcBXnUfXMoj1MWcxhtfuLZOXG2NGTGdOc+255GQrKW2kOLSYGMPcWxgAEHYspGr9ePHylxJkiPaFGE9tpA0Xqpaqwq8X7ToMJ4dIIHshhQMp5lMcnMp5+kY53qy0Te2yFqjexzhrP891sKuAXl7MIa33E+EyB2/DtzGW5lceP0k+y4MoYx+c4cr+3wb7AU+inOfQ==
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - provapi.advancedmd.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 08 Nov 2021 10:42:01 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '223'
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - no-cache,no-store,must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - Mon, 08 Nov 2021 10:41:01 GMT
+      Server:
+      - Microsoft-IIS/10.0
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET,PUT,POST,DELETE,OPTIONS
+      Access-Control-Allow-Headers:
+      - Origin, Depth, User-Agent, X-File-Size, X-Requested-With, If-Modified-Since,
+        X-File-Name, Cache-ControlOrigin, Content-Type, Accept, Authorization, X-ProofSignature,
+        InternalRequestType
+    body:
+      encoding: UTF-8
+      string: '{"?xml":{"@version":"1.0","@encoding":"ISO-8859-1"},"PPMDResults":{"@s":"PRDAPI2WFEIEPSA","@lst":"11/8/2021
+        2:42:01 AM","Results":{"marstatuslist":{"marstatus":{"@id":"stat21","@name":"1-SCHEDULED
+        CONSULT"}}},"Error":null}}'
+  recorded_at: Mon, 08 Nov 2021 10:42:02 GMT
+- request:
+    method: post
+    uri: https://provapi.advancedmd.com/api/api-101/LIFESTANCE/referral/MarketingReferrals
+    body:
+      encoding: UTF-8
+      string: '{"patientid":5983942,"sourceid":19,"statusid":21}'
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/3.0.1p64
+      Content-Type:
+      - application/json
+      Authorization:
+      - Bearer 995456CjDc6o1RLzquOBu3UOrcBXnUfXMoj1MWcxhtfuLZOXG2NGTGdOc+255GQrKW2kOLSYGMPcWxgAEHYspGr9ePHylxJkiPaFGE9tpA0Xqpaqwq8X7ToMJ4dIIHshhQMp5lMcnMp5+kY53qy0Te2yFqjexzhrP891sKuAXl7MIa33E+EyB2/DtzGW5lceP0k+y4MoYx+c4cr+3wb7AU+inOfQ==
+      Content-Length:
+      - '49'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - provapi.advancedmd.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 08 Nov 2021 10:42:03 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - no-store,no-cache
+      Pragma:
+      - no-cache
+      Vary:
+      - none,Accept-Encoding
+      Server:
+      - Microsoft-IIS/10.0
+      Amds-Lst:
+      - 11/08/2021 02:42:03
+      Permission-Granted:
+      - REFERRALS
+    body:
+      encoding: ASCII-8BIT
+      string: '{"id":469,"statusid":21,"statusname":"1-SCHEDULED CONSULT","sourceid":19,"sourcename":"SEARCH
+        ENGINE","description":"","createdby":"LS-API","createdat":"2021-11-08T02:42:03.32","changedby":"","changedat":null,"notes":[]}'
+  recorded_at: Mon, 08 Nov 2021 10:42:03 GMT
+- request:
+    method: post
+    uri: https://provapi.advancedmd.com/processrequest/api-102/LIFESTANCE/xmlrpc/processrequest.aspx
+    body:
+      encoding: UTF-8
+      string: '{"ppmdmsg":{"@action":"lookupmarstatus","@class":"api","@exactmatch":"0","@name":"1-SCHEDULED
+        CONSULT"}}'
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/3.0.1p64
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '104'
+      Cookie:
+      - token=995456AWX/4q//hQOSOP+0rsMonov4/bHaVJibxm3hyRv/qI7JpWUBjlTuVLlUGckePheIlklan3eaN1lnguYx+Nv8CKp0fYOuo72YYgQOuka2RYSO6fKJEfTgj5QqhASpozpKREN1ENkYkCMXHHs8nJ6w4oX60R+Dsa0ZEkS4IJCD8rUtUo18yWcEBF2nN51t+BIW1UYscsAG9BizZULhlhH+mQ==
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - provapi.advancedmd.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 08 Nov 2021 10:42:04 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '223'
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - no-cache,no-store,must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - Mon, 08 Nov 2021 10:41:04 GMT
+      Server:
+      - Microsoft-IIS/10.0
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET,PUT,POST,DELETE,OPTIONS
+      Access-Control-Allow-Headers:
+      - Origin, Depth, User-Agent, X-File-Size, X-Requested-With, If-Modified-Since,
+        X-File-Name, Cache-ControlOrigin, Content-Type, Accept, Authorization, X-ProofSignature,
+        InternalRequestType
+    body:
+      encoding: UTF-8
+      string: '{"?xml":{"@version":"1.0","@encoding":"ISO-8859-1"},"PPMDResults":{"@s":"PRDAPI2WFES2KDM","@lst":"11/8/2021
+        2:42:04 AM","Results":{"marstatuslist":{"marstatus":{"@id":"stat21","@name":"1-SCHEDULED
+        CONSULT"}}},"Error":null}}'
+  recorded_at: Mon, 08 Nov 2021 10:42:05 GMT
+- request:
+    method: post
+    uri: https://provapi.advancedmd.com/api/api-102/LIFESTANCE/referral/MarketingReferrals
+    body:
+      encoding: UTF-8
+      string: '{"patientid":5983942,"sourceid":19,"statusid":21}'
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/3.0.1p64
+      Content-Type:
+      - application/json
+      Authorization:
+      - Bearer 995456AWX/4q//hQOSOP+0rsMonov4/bHaVJibxm3hyRv/qI7JpWUBjlTuVLlUGckePheIlklan3eaN1lnguYx+Nv8CKp0fYOuo72YYgQOuka2RYSO6fKJEfTgj5QqhASpozpKREN1ENkYkCMXHHs8nJ6w4oX60R+Dsa0ZEkS4IJCD8rUtUo18yWcEBF2nN51t+BIW1UYscsAG9BizZULhlhH+mQ==
+      Content-Length:
+      - '49'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - provapi.advancedmd.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 08 Nov 2021 10:42:06 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - no-store,no-cache
+      Pragma:
+      - no-cache
+      Vary:
+      - none,Accept-Encoding
+      Server:
+      - Microsoft-IIS/10.0
+      Amds-Lst:
+      - 11/08/2021 02:42:06
+      Permission-Granted:
+      - REFERRALS
+    body:
+      encoding: ASCII-8BIT
+      string: '{"id":470,"statusid":21,"statusname":"1-SCHEDULED CONSULT","sourceid":19,"sourcename":"SEARCH
+        ENGINE","description":"","createdby":"LS-API","createdat":"2021-11-08T02:42:06.323","changedby":"","changedat":null,"notes":[]}'
+  recorded_at: Mon, 08 Nov 2021 10:42:06 GMT
+recorded_with: VCR 6.0.0

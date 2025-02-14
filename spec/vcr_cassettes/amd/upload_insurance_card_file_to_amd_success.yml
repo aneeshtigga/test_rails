@@ -1,0 +1,306 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://partnerlogin.advancedmd.com/practicemanager/xmlrpc/processrequest.aspx
+    body:
+      encoding: UTF-8
+      string: '{"ppmdmsg":{"@action":"login","@class":"login","@username":"LS-API","@psw":"lifestance2021!","@officecode":995456,"@appname":"LIFESTANCE"}}'
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/3.0.1p64
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '139'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - partnerlogin.advancedmd.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 09 Dec 2021 10:40:58 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '970'
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - no-cache,no-store,must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - Thu, 09 Dec 2021 10:39:58 GMT
+      Server:
+      - Microsoft-IIS/10.0
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET,PUT,POST,DELETE,OPTIONS
+      Access-Control-Allow-Headers:
+      - Origin, Depth, User-Agent, X-File-Size, X-Requested-With, If-Modified-Since,
+        X-File-Name, Cache-ControlOrigin, Content-Type, Accept, Authorization, X-ProofSignature,
+        InternalRequestType
+    body:
+      encoding: UTF-8
+      string: '{"?xml":{"@version":"1.0","@encoding":"ISO-8859-1"},"PPMDResults":{"@s":"PRDAPI3WFEDN5KK","@lst":"12/9/2021
+        2:40:58 AM","Results":{"@success":"0","usercontext":{"@webserver":"https://provapi.advancedmd.com/processrequest/api-101/LIFESTANCE","@reportingServerURL":"https://reportingservices-100.advancedmd.com/rs/reportrequest.aspx","@helpurl":"https://ow2-help-01-prd.advancedmd.com/help/","@username":"LS-API"}},"Error":{"Fault":{"faultcode":"Client","faultstring":"Client
+        Error","detail":{"code":"-2147220476","description":"The Office Key 995456
+        must be redirected to https://provapi.advancedmd.com/processrequest/api-101/LIFESTANCE.
+        When logging in to AdvancedMD, if no security token (<usercontext> text) is
+        returned, then you must redirect your login to the server indicated in the
+        \"webserver\" attribute of the usercontext element.","class":"AdvancedMD.Security.Login","method":"LoginUser","linenum":"0","source":"AdvancedMD.Security.Login","extrainfo":null}}}}}'
+  recorded_at: Thu, 09 Dec 2021 10:40:57 GMT
+- request:
+    method: post
+    uri: https://provapi.advancedmd.com/processrequest/api-101/LIFESTANCE/xmlrpc/processrequest.aspx
+    body:
+      encoding: UTF-8
+      string: '{"ppmdmsg":{"@action":"login","@class":"login","@username":"LS-API","@psw":"lifestance2021!","@officecode":995456,"@appname":"LIFESTANCE"}}'
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/3.0.1p64
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '139'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - provapi.advancedmd.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 09 Dec 2021 10:41:09 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '2448'
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - no-cache,no-store,must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - Thu, 09 Dec 2021 10:40:09 GMT
+      Server:
+      - Microsoft-IIS/10.0
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET,PUT,POST,DELETE,OPTIONS
+      Access-Control-Allow-Headers:
+      - Origin, Depth, User-Agent, X-File-Size, X-Requested-With, If-Modified-Since,
+        X-File-Name, Cache-ControlOrigin, Content-Type, Accept, Authorization, X-ProofSignature,
+        InternalRequestType
+    body:
+      encoding: UTF-8
+      string: '{"?xml":{"@version":"1.0","@encoding":"ISO-8859-1"},"PPMDResults":{"@s":"PRDAPI3WFEWUBDU","@lst":"12/9/2021
+        2:41:09 AM","Results":{"@success":"1","@api":"1","@version":"21.3","usercontext":{"@reportingServerURL":"https://reportingservices-100.advancedmd.com/rs/reportrequest.aspx","@adhocReportingURL":"https://advancedinsight.advancedmd.com","@aibenchmarksurl":"https://benchmarks.advancedmd.com/index.html","@helpurl":"https://ow2-help-01-prd.advancedmd.com/help/","@webserver":"https://provapi.advancedmd.com/processrequest/api-101/LIFESTANCE","@webserverbaseurl":"https://provapi.advancedmd.com","@username":"LS-API","@userguid":"acad6a2d-10f6-42a8-b35b-bb0f839cbe9d","@email":"bridget.landis@lifestance.com","@checkemail":"1","@needsconfirmation":"1","@sendnewconfirmation":"1","@pmredirecturl":"https://pm-wfe-136.advancedmd.com/practicemanager","@ehrredirecturl":"https://wc-wfe-136.advancedmd.com/practicemanager","@telemedicineapiurl":"https://telemed.advancedmd.com/Application.Web.API","@pmapiredirecturl":"https://pm-api-136.advancedmd.com","@ehrapiredirecturl":"https://go.advancedmd.com/api/wc/","@staticcontentredirecturl":"https://static-999.advancedmd.com","@capturechallengesettings":"1","@scanningserverurl":"https://scan.advancedmd.com/dynamsoft/Resources.15.2/Resources/","@cqmssoserviceurl":"https://ow2-cqmsso-01.advancedmd.com/api/account","@cqmsolutionurl":"https://ow2-cqm-01.advancedmd.com","@portalappintakeurl":"https://patientportal.advancedmd.com/995456/onlineintake","@portalappolsurl":"https://patientportal.advancedmd.com/995456/onlinescheduling","@apptreminderapiurl":"https://pm-api-136.advancedmd.com/api/reminders","@servertimezone":"Pacific
+        Standard Time","@webdavurl":"https://ow2-api-101.advancedmd.com","@providerid":"0","@defaultprofileid":"0","@departmentid":"0","@clinicaluser":"1","@ehronly":"0","@roleid":"219","@officecode":"995456","@logincode":"995456","@officename":"LifeStance
+        Health Demo","@admin":"0","@adminlimited":"0","@edicontact":"0","@ssoprovidername":"","@twofactorenabled":"0","@iscbouser":"1","@status":"
+        ","@trainingTrackerUrl":"https://pm-wfe-136.advancedmd.com/AdvancedMD.TrainingTracker/","#text":"995456LphS/3K7u4kYaYzhPKKQk2CO0YIWZYjOXhk4IwRIEAkQBvEfF4l1rpQGby5a3Iqpo59wlNgjGwjJS568w/qArD//stAevod3wX/9mBs70CEGh7qUio7+QoLEyjkThQeEt9VFTIVjEbVOr5MKECXb11aVXyVs4sCKDtKkXOpyD1lLeqsQXJlS7SK/8WNa2ZQdHZ68c5OKIxKDL+Rdv/mEgw=="},"variation":{"@code":"AMDSPRO","@name":""}},"Error":null}}'
+  recorded_at: Thu, 09 Dec 2021 10:41:08 GMT
+- request:
+    method: post
+    uri: https://provapi.advancedmd.com/processrequest/api-101/LIFESTANCE/xmlrpc/processrequest.aspx/xmlrpc/processrequest.aspx
+    body:
+      encoding: UTF-8
+      string: '{"ppmdmsg":{"@action":"uploadfile","@class":"files","file":{"@name":"InsuranceCardFrontView","@description":"InsuranceCardFrontView","@filetype":"I","@fileext":"jpeg","@patientid":5983957,"@savechanges":true,"@zipmode":"0","filecontents":"/9j/4AAQSkZJRgABAQAAAQABAAD/4QBqRXhpZgAASUkqAAgAAAADABIBAwAB\nAAAAAQAAADEBAgARAAAAMgAAAGmHBAABAAAARAAAAAAAAABTaG90d2VsbCAw\nLjMwLjEwAAACAAKgCQABAAAAXgEAAAOgCQABAAAAwQEAAAAAAAD/2wBDAAMC\nAgICAgMCAgIDAwMDBAYEBAQEBAgGBgUGCQgKCgkICQkKDA8MCgsOCwkJDREN\nDg8QEBEQCgwSExIQEw8QEBD/wAALCAHBAV4BAREA/8QAHAABAQADAAMBAAAA\nAAAAAAAAAAgFBgcCBAkD/8QAOhABAAEDBAEDAwEEBgsBAAAAAAECAwQFBgcR\nEggTIQkiMRQVMkFRFiM5YXezFxgzOFhicXaWobLT/9oACAEBAAA/APqmAAAA\nAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\nAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\nAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\nAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\nAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\nAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOTeoHnzM\n4I0/Rs7D4X5E5CnV7161Va2do859eH7dNM+V+ImPCKvLqn+fjV/JPdr6oui3\n923tg2fSdzvc3Pj4sZ17RaduUTn28aZiPeqx4ue5FvuqmPKaevuj5+VHcB83\nZXOe3NR3Bl8Rb94/q0/N/Rxhbv0mcDIyI9umv3bVMzPlR93j3/OJh08GpZnK\n/HmByZg8OZm6cS1vPUtMq1nE0iqK/eu4VNVdE3onrx68rdyOu+/tn4Z3Xtf0\nLaujZm4tzazhaTpWn2pv5ebm36bNixbj81V11TFNMf3zKeOF/X3wzz/znncK\ncZYOuahGHpl/U7ev3cemzg5dFm5RRX7MV1Rdqp7r6iqaIiZpq/h1M0uA9fPy\nZw8HJzKaYqmxZruRTP8AHxpmev8A04f6KPUNuD1QcD4HLG5tA0/R8/K1DMw6\n8XAqrqsxTZueNMx5zNXcx+fn8uWcM+q/1N+o7fGbubiDiLZs8O6Vuv8Ao9ka\nlquqXberZWPbuURfy7FMTFv7bVyLkUTTP58IqqmJ6ssAAAAAAAAAQ1tb+193\nh/hXa/zsNSvqZ500n038I7n5g1bB/XfsTHopxMKK/D9Xl3a6bVi15fPVM110\n+UxEzFMVT1PXSbqdr/Ue1Diued6vUftzA3DVpc6/b47t7OxatOi17fuxhVZl\nUzfi5NP2zPc9V/b7nX3svuv126vX9PuPVvs/a2L/AEhyLFrBqwLvlcxcLUJy\n4xLtdfUxVNqmvuumJnuYqtxM/My2bhTYfrAp1HaPI2u+r3bXIu1tZt28vWNI\njaeJi4049y3MxVg5mNPnXNMzTFM1RTTVEdz/ACS1yRx56pLv1LdvaDg+ojSb\nO8M7Y+VnaLr87Ux5tadpE5Wd44NWNPdN2qPG5/W1d1ffH8l/UcPUb94g0zjT\n1HZWncjZNE2L+r5NWD+ixtQyLN+Ltquce1VFMUxNNHdH7tXjPcTEzCXNu6Zp\nujfVtytJ0fT8bBwcPie3Zx8bGtU2rVm3TdtRTRRRTERTTEfEREdQu5Mn1DOc\n9/8Ap44Bs8jccanTg6na3Hp2JeqqxrV73cWua5u2oi7TVTE1RR15ddx38TDm\nHIuN9SzF441b1C2eWtp7YytIwbuuf6Mcbb1jLtW8K1TNyvHu51yJu3Mj26Z8\noo6pmuJiiqnuHRK/XFo1r0K2/WDXoVqcq5pcU06RFyfbnV/1H6T2PL972v1E\nTPf73tx3+XNtC0r6l1fGONzxmcubS3Bl6npsatkcY3tvWcWzGFdt+f6e1m0x\nF2nJi3V8RVMxFfxVXXEfOJ+nZt7k/dH0+cHSOH+QsTZW5rm4c+rH1fK0q3qN\nu3bpyYm5RNm59s+VPcdz301X6TGzee8rjbT92aRzNp+Fxxjbl1KjUtp17fs3\nb+ZeizTE1xmT/WW+66rdXUfjwmP4y+l4AAAAAAAAAhra39r7vD/Cu1/nYbfP\nqb8b7l5M9H27dO2ng387UNHvYmt/pLFM1XL1nHuxN7xiPzNNuquvr+Ph8fPT\ng/FnF30pN+8X6NvjUN1aHpN7I0+zc1HB1TkjPw8rEyPbj3bVdi5mU1RMV+UR\n1ExV13TMxMSo7beoeibif0vaVp+m5mhYnCW58q7pmNc1CcnLwcu7kXbsVxdu\nX/OuKarlu599yYop8Y6mI8UqZ9jjX0z+pLiLS/Q3zfXrum8g7mtYG4uP9O3B\nTrWl29Prro93Lp8a65sTTRNdUVV1TV9s1RV4010z0nnjeW1+Lfqm8W745D13\nC29t3P42yNKt6tqV+nHxKMmMjPqmiu7XMUUf7S3HczEd3Kf5wsbI5f4qxNgU\n8rZXIu3bOzK4iqjX7mo2qdPqibvtUzF+avCYm59kTE/M/EIIwfULwTR9UbUO\nS6+YNn07TuccU6fTrc6xY/RVZXu259mL3l4efUTPj338LU5R9S/DnEfE1jm7\nc267eXs/MuY9vD1DSaJzqMub0z7c2ptdxVExFU999dUz/wBEzfVi13TNy+iT\nA3NomR+p0/Vdd0bOxLvjNPuWbtu5XRV1MRMd01RPUx38tw5O+oJ6Z8/00bo3\nvpnImlftnM0PLw7G1cu/Rb1mjULlqq3Ti3cOZ9ynxuT41V+M0RETVFUx8zO+\n4vT3v/Tfo54e1r2jZca/heO8cnTvbq96jFrz6r8xNP5iacW5F2qmY7jxqj8w\npLTfX76a6/TvpG87XIGmZ+t6hotjFs7R029Tf1u5qVdqKP0dGHTPu+Xuz4RV\nNMUfiry8ZiZwX0kLddr0a6RauUTTXRruq01UzHUxMXvmHofSB/3S7/8A3dqn\n/wA2VugAAAAAAAADBWth7IsbxvciWNn6Lb3Vk4cafe1unAtRn3MWJiYs1X4p\n9ybfdNM+Mz19sfHxDOuVap6UvTJrmvXNz6x6f+PszVL1yb13JvbdxaqrtyZ7\nmuuJo6rqmf41RMt51PY2ytb2vVsjWdn6Jn7dqtU2J0jJ0+1dwptU/u0exVTN\nHjHUdR11HTXeP+AeD+KNQvavxrxJtLbOfkUzbuZemaTYsX6qJ/NHuU0xV4/8\nvfX9zJchcT8Y8s6fj6Xydx/t/dWLh3Ju41rV9OtZUWK5jqarfnTM0TMRETNP\nXcfEv1yeL+NM3ZFvjPN4921k7QtW7dmjQL2lWLmnU0W6oropjGqpm31TVEVR\nHj8TET+Wo/6p3pY/4aeKv/DdO/8AxbXqnFPGGt7Lscb6vx1tnM2ljU26LGhX\n9JsV6faptz3bijHmn26Ypn5jqmOv4Jv+pnxTvXkv0s29j8U7LzNa1Cxr+m3L\nOm6XjxNVvHtxcpmaaI6iKKYmmPj4iP7neNS9PHA2s70jkbVuGtl5m5/di/Or\nX9Exq8qq7H4uzXNHc1x1HVc/dHUdT8OgzEVRNNURMT8TE/xc+236eOBtnbrr\n31tPhrZej7hrqqr/AGnhaJjWcimqr96qmumiJpmrue5p6me/nttO09mbQ2Hp\nFO39j7W0jb2l03bl+MLS8K3i2IuV1eVdft24inyqmZmZ6+ZeGz9i7K480idv\n7B2hou29Lm9XkThaTgWsSxN2v9+v27dMU+U9R3PXc9QzgAAAAAAAAAAAAAAA\nAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\nAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\nAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\nAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\nAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\nAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\nAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP/2Q==\n","grouplist":{"group":{"@id":4,"@code":"MISC","@name":"Miscellaneous","categorylist":{"category":{"@id":19,"@filegroupfid":"4","@code":"MIUNSP","@name":"Unspecified","@filetype":"0","@level":"0","@default":"1"}}}}}}}'
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/3.0.1p64
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '4858'
+      Cookie:
+      - token=995456LphS/3K7u4kYaYzhPKKQk2CO0YIWZYjOXhk4IwRIEAkQBvEfF4l1rpQGby5a3Iqpo59wlNgjGwjJS568w/qArD//stAevod3wX/9mBs70CEGh7qUio7+QoLEyjkThQeEt9VFTIVjEbVOr5MKECXb11aVXyVs4sCKDtKkXOpyD1lLeqsQXJlS7SK/8WNa2ZQdHZ68c5OKIxKDL+Rdv/mEgw==
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - provapi.advancedmd.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 09 Dec 2021 10:41:18 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '1131'
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - no-cache,no-store,must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - Thu, 09 Dec 2021 10:40:10 GMT
+      Server:
+      - Microsoft-IIS/10.0
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET,PUT,POST,DELETE,OPTIONS
+      Access-Control-Allow-Headers:
+      - Origin, Depth, User-Agent, X-File-Size, X-Requested-With, If-Modified-Since,
+        X-File-Name, Cache-ControlOrigin, Content-Type, Accept, Authorization, X-ProofSignature,
+        InternalRequestType
+    body:
+      encoding: UTF-8
+      string: '{"?xml":{"@version":"1.0","@encoding":"ISO-8859-1"},"PPMDResults":{"@s":"PRDAPI3WFEDN5KK","@lst":"12/9/2021
+        2:41:10 AM","Results":{"filelist":{"file":{"@id":"18862684","@name":"INSURANCECARDFRONTVIEW","@description":"INSURANCECARDFRONTVIEW","@filename":"995456-18862684-0000","@filelocation":"2021\\12\\09\\","@filetype":"I","@fileext":"JPEG","@filesize":"","@patientid":"5983957","@patientname":"CAPTAIN,BLACKBEARD","@patientchartnumber":"2697","@profileid":"","@profilecode":"","@profilename":"","@visitid":"","@facilityid":"","@referringproviderid":"","@referringprovidername":"","@referringprovidercode":"","@dos":"","@createdby":"LS-API","@createdat":"2021-12-08T23:41:18.427","@printedby":"","@printedat":"","@reviewedby":"","@reviewedat":"","@approvedby":"","@approvedat":"","@lockedby":"","@lockedat":"","@changedby":"LS-API","@changedat":"2021-12-08T23:41:18.897","@revision":"0","@zipmode":"0","@serverfile":"1","@charttype":"Chart","categorylist":{"category":{"@id":"19","@code":"BININS","@name":"Insurance
+        Cards","@groupcode":"BILLIN","@groupname":"Billing","@filetype":"1"}},"revisionlist":null}},"updatedlist":null}}}'
+  recorded_at: Thu, 09 Dec 2021 10:41:18 GMT
+- request:
+    method: post
+    uri: https://provapi.advancedmd.com/processrequest/api-101/LIFESTANCE/xmlrpc/processrequest.aspx/xmlrpc/processrequest.aspx
+    body:
+      encoding: UTF-8
+      string: '{"ppmdmsg":{"@action":"deletefile","@class":"files","@msgtime":"12/9/2021
+        10:41:18 AM","@ltq":"12/9/2021 10:41:18 AM","@fileid":"18862684","@la":"deletefile","@lac":"files","@lst":"12/9/2021
+        10:41:18 AM"}}'
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/3.0.1p64
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '205'
+      Cookie:
+      - token=995456LphS/3K7u4kYaYzhPKKQk2CO0YIWZYjOXhk4IwRIEAkQBvEfF4l1rpQGby5a3Iqpo59wlNgjGwjJS568w/qArD//stAevod3wX/9mBs70CEGh7qUio7+QoLEyjkThQeEt9VFTIVjEbVOr5MKECXb11aVXyVs4sCKDtKkXOpyD1lLeqsQXJlS7SK/8WNa2ZQdHZ68c5OKIxKDL+Rdv/mEgw==
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - provapi.advancedmd.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 09 Dec 2021 10:41:25 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '185'
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - no-cache,no-store,must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - Thu, 09 Dec 2021 10:40:25 GMT
+      Server:
+      - Microsoft-IIS/10.0
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET,PUT,POST,DELETE,OPTIONS
+      Access-Control-Allow-Headers:
+      - Origin, Depth, User-Agent, X-File-Size, X-Requested-With, If-Modified-Since,
+        X-File-Name, Cache-ControlOrigin, Content-Type, Accept, Authorization, X-ProofSignature,
+        InternalRequestType
+    body:
+      encoding: UTF-8
+      string: '{"?xml":{"@version":"1.0","@encoding":"ISO-8859-1"},"PPMDResults":{"@s":"PRDAPI3WFEWAIUQ","@lst":"12/9/2021
+        2:41:25 AM","Results":{"@success":"true","@fileid":"18862684"},"Error":null}}'
+  recorded_at: Thu, 09 Dec 2021 10:41:24 GMT
+- request:
+    method: post
+    uri: https://provapi.advancedmd.com/processrequest/api-101/LIFESTANCE/xmlrpc/processrequest.aspx/xmlrpc/processrequest.aspx
+    body:
+      encoding: UTF-8
+      string: '{"ppmdmsg":{"@action":"uploadfile","@class":"files","file":{"@name":"InsuranceCardFrontView","@description":"InsuranceCardFrontView","@filetype":"I","@fileext":"jpeg","@patientid":5983957,"@savechanges":true,"@zipmode":"0","filecontents":"/9j/4AAQSkZJRgABAQAAAQABAAD/4QBqRXhpZgAASUkqAAgAAAADABIBAwAB\nAAAAAQAAADEBAgARAAAAMgAAAGmHBAABAAAARAAAAAAAAABTaG90d2VsbCAw\nLjMwLjEwAAACAAKgCQABAAAAXgEAAAOgCQABAAAAwQEAAAAAAAD/2wBDAAMC\nAgICAgMCAgIDAwMDBAYEBAQEBAgGBgUGCQgKCgkICQkKDA8MCgsOCwkJDREN\nDg8QEBEQCgwSExIQEw8QEBD/wAALCAHBAV4BAREA/8QAHAABAQADAAMBAAAA\nAAAAAAAAAAgFBgcCBAkD/8QAOhABAAEDBAEDAwEEBgsBAAAAAAECAwQFBgcR\nEggTIQkiMRQVMkFRFiM5YXezFxgzOFhicXaWobLT/9oACAEBAAA/APqmAAAA\nAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\nAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\nAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\nAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\nAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\nAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOTeoHnzM\n4I0/Rs7D4X5E5CnV7161Va2do859eH7dNM+V+ImPCKvLqn+fjV/JPdr6oui3\n923tg2fSdzvc3Pj4sZ17RaduUTn28aZiPeqx4ue5FvuqmPKaevuj5+VHcB83\nZXOe3NR3Bl8Rb94/q0/N/Rxhbv0mcDIyI9umv3bVMzPlR93j3/OJh08GpZnK\n/HmByZg8OZm6cS1vPUtMq1nE0iqK/eu4VNVdE3onrx68rdyOu+/tn4Z3Xtf0\nLaujZm4tzazhaTpWn2pv5ebm36bNixbj81V11TFNMf3zKeOF/X3wzz/znncK\ncZYOuahGHpl/U7ev3cemzg5dFm5RRX7MV1Rdqp7r6iqaIiZpq/h1M0uA9fPy\nZw8HJzKaYqmxZruRTP8AHxpmev8A04f6KPUNuD1QcD4HLG5tA0/R8/K1DMw6\n8XAqrqsxTZueNMx5zNXcx+fn8uWcM+q/1N+o7fGbubiDiLZs8O6Vuv8Ao9ka\nlquqXberZWPbuURfy7FMTFv7bVyLkUTTP58IqqmJ6ssAAAAAAAAAQ1tb+193\nh/hXa/zsNSvqZ500n038I7n5g1bB/XfsTHopxMKK/D9Xl3a6bVi15fPVM110\n+UxEzFMVT1PXSbqdr/Ue1Diued6vUftzA3DVpc6/b47t7OxatOi17fuxhVZl\nUzfi5NP2zPc9V/b7nX3svuv126vX9PuPVvs/a2L/AEhyLFrBqwLvlcxcLUJy\n4xLtdfUxVNqmvuumJnuYqtxM/My2bhTYfrAp1HaPI2u+r3bXIu1tZt28vWNI\njaeJi4049y3MxVg5mNPnXNMzTFM1RTTVEdz/ACS1yRx56pLv1LdvaDg+ojSb\nO8M7Y+VnaLr87Ux5tadpE5Wd44NWNPdN2qPG5/W1d1ffH8l/UcPUb94g0zjT\n1HZWncjZNE2L+r5NWD+ixtQyLN+Ltquce1VFMUxNNHdH7tXjPcTEzCXNu6Zp\nujfVtytJ0fT8bBwcPie3Zx8bGtU2rVm3TdtRTRRRTERTTEfEREdQu5Mn1DOc\n9/8Ap44Bs8jccanTg6na3Hp2JeqqxrV73cWua5u2oi7TVTE1RR15ddx38TDm\nHIuN9SzF441b1C2eWtp7YytIwbuuf6Mcbb1jLtW8K1TNyvHu51yJu3Mj26Z8\noo6pmuJiiqnuHRK/XFo1r0K2/WDXoVqcq5pcU06RFyfbnV/1H6T2PL972v1E\nTPf73tx3+XNtC0r6l1fGONzxmcubS3Bl6npsatkcY3tvWcWzGFdt+f6e1m0x\nF2nJi3V8RVMxFfxVXXEfOJ+nZt7k/dH0+cHSOH+QsTZW5rm4c+rH1fK0q3qN\nu3bpyYm5RNm59s+VPcdz301X6TGzee8rjbT92aRzNp+Fxxjbl1KjUtp17fs3\nb+ZeizTE1xmT/WW+66rdXUfjwmP4y+l4AAAAAAAAAhra39r7vD/Cu1/nYbfP\nqb8b7l5M9H27dO2ng387UNHvYmt/pLFM1XL1nHuxN7xiPzNNuquvr+Ph8fPT\ng/FnF30pN+8X6NvjUN1aHpN7I0+zc1HB1TkjPw8rEyPbj3bVdi5mU1RMV+UR\n1ExV13TMxMSo7beoeibif0vaVp+m5mhYnCW58q7pmNc1CcnLwcu7kXbsVxdu\nX/OuKarlu599yYop8Y6mI8UqZ9jjX0z+pLiLS/Q3zfXrum8g7mtYG4uP9O3B\nTrWl29Prro93Lp8a65sTTRNdUVV1TV9s1RV4010z0nnjeW1+Lfqm8W745D13\nC29t3P42yNKt6tqV+nHxKMmMjPqmiu7XMUUf7S3HczEd3Kf5wsbI5f4qxNgU\n8rZXIu3bOzK4iqjX7mo2qdPqibvtUzF+avCYm59kTE/M/EIIwfULwTR9UbUO\nS6+YNn07TuccU6fTrc6xY/RVZXu259mL3l4efUTPj338LU5R9S/DnEfE1jm7\nc267eXs/MuY9vD1DSaJzqMub0z7c2ptdxVExFU999dUz/wBEzfVi13TNy+iT\nA3NomR+p0/Vdd0bOxLvjNPuWbtu5XRV1MRMd01RPUx38tw5O+oJ6Z8/00bo3\nvpnImlftnM0PLw7G1cu/Rb1mjULlqq3Ti3cOZ9ynxuT41V+M0RETVFUx8zO+\n4vT3v/Tfo54e1r2jZca/heO8cnTvbq96jFrz6r8xNP5iacW5F2qmY7jxqj8w\npLTfX76a6/TvpG87XIGmZ+t6hotjFs7R029Tf1u5qVdqKP0dGHTPu+Xuz4RV\nNMUfiry8ZiZwX0kLddr0a6RauUTTXRruq01UzHUxMXvmHofSB/3S7/8A3dqn\n/wA2VugAAAAAAAADBWth7IsbxvciWNn6Lb3Vk4cafe1unAtRn3MWJiYs1X4p\n9ybfdNM+Mz19sfHxDOuVap6UvTJrmvXNz6x6f+PszVL1yb13JvbdxaqrtyZ7\nmuuJo6rqmf41RMt51PY2ytb2vVsjWdn6Jn7dqtU2J0jJ0+1dwptU/u0exVTN\nHjHUdR11HTXeP+AeD+KNQvavxrxJtLbOfkUzbuZemaTYsX6qJ/NHuU0xV4/8\nvfX9zJchcT8Y8s6fj6Xydx/t/dWLh3Ju41rV9OtZUWK5jqarfnTM0TMRETNP\nXcfEv1yeL+NM3ZFvjPN4921k7QtW7dmjQL2lWLmnU0W6oropjGqpm31TVEVR\nHj8TET+Wo/6p3pY/4aeKv/DdO/8AxbXqnFPGGt7Lscb6vx1tnM2ljU26LGhX\n9JsV6faptz3bijHmn26Ypn5jqmOv4Jv+pnxTvXkv0s29j8U7LzNa1Cxr+m3L\nOm6XjxNVvHtxcpmaaI6iKKYmmPj4iP7neNS9PHA2s70jkbVuGtl5m5/di/Or\nX9Exq8qq7H4uzXNHc1x1HVc/dHUdT8OgzEVRNNURMT8TE/xc+236eOBtnbrr\n31tPhrZej7hrqqr/AGnhaJjWcimqr96qmumiJpmrue5p6me/nttO09mbQ2Hp\nFO39j7W0jb2l03bl+MLS8K3i2IuV1eVdft24inyqmZmZ6+ZeGz9i7K480idv\n7B2hou29Lm9XkThaTgWsSxN2v9+v27dMU+U9R3PXc9QzgAAAAAAAAAAAAAAA\nAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\nAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\nAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\nAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\nAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\nAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\nAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP/2Q==\n","grouplist":{"group":{"@id":4,"@code":"MISC","@name":"Miscellaneous","categorylist":{"category":{"@id":19,"@filegroupfid":"4","@code":"MIUNSP","@name":"Unspecified","@filetype":"0","@level":"0","@default":"1"}}}}}}}'
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/3.0.1p64
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '4858'
+      Cookie:
+      - token=995456LphS/3K7u4kYaYzhPKKQk2CO0YIWZYjOXhk4IwRIEAkQBvEfF4l1rpQGby5a3Iqpo59wlNgjGwjJS568w/qArD//stAevod3wX/9mBs70CEGh7qUio7+QoLEyjkThQeEt9VFTIVjEbVOr5MKECXb11aVXyVs4sCKDtKkXOpyD1lLeqsQXJlS7SK/8WNa2ZQdHZ68c5OKIxKDL+Rdv/mEgw==
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - provapi.advancedmd.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 09 Dec 2021 10:41:26 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '1131'
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - no-cache,no-store,must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - Thu, 09 Dec 2021 10:40:26 GMT
+      Server:
+      - Microsoft-IIS/10.0
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET,PUT,POST,DELETE,OPTIONS
+      Access-Control-Allow-Headers:
+      - Origin, Depth, User-Agent, X-File-Size, X-Requested-With, If-Modified-Since,
+        X-File-Name, Cache-ControlOrigin, Content-Type, Accept, Authorization, X-ProofSignature,
+        InternalRequestType
+    body:
+      encoding: UTF-8
+      string: '{"?xml":{"@version":"1.0","@encoding":"ISO-8859-1"},"PPMDResults":{"@s":"PRDAPI3WFEOT8NE","@lst":"12/9/2021
+        2:41:26 AM","Results":{"filelist":{"file":{"@id":"18862685","@name":"INSURANCECARDFRONTVIEW","@description":"INSURANCECARDFRONTVIEW","@filename":"995456-18862685-0000","@filelocation":"2021\\12\\09\\","@filetype":"I","@fileext":"JPEG","@filesize":"","@patientid":"5983957","@patientname":"CAPTAIN,BLACKBEARD","@patientchartnumber":"2697","@profileid":"","@profilecode":"","@profilename":"","@visitid":"","@facilityid":"","@referringproviderid":"","@referringprovidername":"","@referringprovidercode":"","@dos":"","@createdby":"LS-API","@createdat":"2021-12-08T23:41:26.597","@printedby":"","@printedat":"","@reviewedby":"","@reviewedat":"","@approvedby":"","@approvedat":"","@lockedby":"","@lockedat":"","@changedby":"LS-API","@changedat":"2021-12-08T23:41:26.677","@revision":"0","@zipmode":"0","@serverfile":"1","@charttype":"Chart","categorylist":{"category":{"@id":"19","@code":"BININS","@name":"Insurance
+        Cards","@groupcode":"BILLIN","@groupname":"Billing","@filetype":"1"}},"revisionlist":null}},"updatedlist":null}}}'
+  recorded_at: Thu, 09 Dec 2021 10:41:25 GMT
+recorded_with: VCR 6.0.0

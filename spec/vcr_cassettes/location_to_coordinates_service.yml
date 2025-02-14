@@ -1,0 +1,117 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.radar.io/v1/geocode/forward?query=40213
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (darwin19 x86_64) ruby/3.0.1p64
+      Authorization:
+      - prj_live_sk_904d83813f19c9535311ca61350b4f4e93188f2d
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - api.radar.io
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 11 Feb 2022 11:40:25 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '299'
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Etag:
+      - W/"1be-BgCBk+oVh6QbPFw3368PPjUFS8Q"
+      X-Moesif-Transaction-Id:
+      - b3ef19b7-5557-4c9f-b3f4-2d5b7bfab25d
+      X-Powered-By:
+      - Express
+      X-Ratelimit-Limit:
+      - '30'
+      X-Ratelimit-Remaining:
+      - '29'
+      X-Ratelimit-Reset:
+      - '1644579627'
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 6dbd4d5e2f236ebe-BOM
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJtZXRhIjp7ImNvZGUiOjIwMH0sImFkZHJlc3NlcyI6W3sibGF0aXR1ZGUiOjM4LjE4Nzg4MywibG9uZ2l0dWRlIjotODUuNzEwNzgyLCJnZW9tZXRyeSI6eyJ0eXBlIjoiUG9pbnQiLCJjb29yZGluYXRlcyI6Wy04NS43MTA3ODIsMzguMTg3ODgzXX0sImNvdW50cnkiOiJVbml0ZWQgU3RhdGVzIiwiY291bnRyeUNvZGUiOiJVUyIsImNvdW50cnlGbGFnIjoi8J+HuvCfh7giLCJkaXN0YW5jZSI6MCwiY29uZmlkZW5jZSI6ImV4YWN0IiwiY2l0eSI6IkxvdWlzdmlsbGUiLCJuZWlnaGJvcmhvb2QiOiJDYW1wIFRheWxvciIsInBvc3RhbENvZGUiOiI0MDIxMyIsInN0YXRlQ29kZSI6IktZIiwic3RhdGUiOiJLZW50dWNreSIsImxheWVyIjoicG9zdGFsQ29kZSIsImZvcm1hdHRlZEFkZHJlc3MiOiJMb3Vpc3ZpbGxlLCBLWSA0MDIxMyBVU0EiLCJhZGRyZXNzTGFiZWwiOiI0MDIxMyJ9XX0=
+  recorded_at: Fri, 11 Feb 2022 11:40:25 GMT
+- request:
+    method: get
+    uri: https://api.radar.io/v1/geocode/forward?query=40213
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (darwin19 x86_64) ruby/3.0.1p64
+      Authorization:
+      - prj_live_sk_904d83813f19c9535311ca61350b4f4e93188f2d
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - api.radar.io
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 11 Feb 2022 11:40:27 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '299'
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Etag:
+      - W/"1be-BgCBk+oVh6QbPFw3368PPjUFS8Q"
+      X-Moesif-Transaction-Id:
+      - 800c6c8d-188b-4209-a222-982cce0cf006
+      X-Powered-By:
+      - Express
+      X-Ratelimit-Limit:
+      - '30'
+      X-Ratelimit-Remaining:
+      - '29'
+      X-Ratelimit-Reset:
+      - '1644579628'
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 6dbd4d66af043228-BOM
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJtZXRhIjp7ImNvZGUiOjIwMH0sImFkZHJlc3NlcyI6W3sibGF0aXR1ZGUiOjM4LjE4Nzg4MywibG9uZ2l0dWRlIjotODUuNzEwNzgyLCJnZW9tZXRyeSI6eyJ0eXBlIjoiUG9pbnQiLCJjb29yZGluYXRlcyI6Wy04NS43MTA3ODIsMzguMTg3ODgzXX0sImNvdW50cnkiOiJVbml0ZWQgU3RhdGVzIiwiY291bnRyeUNvZGUiOiJVUyIsImNvdW50cnlGbGFnIjoi8J+HuvCfh7giLCJkaXN0YW5jZSI6MCwiY29uZmlkZW5jZSI6ImV4YWN0IiwiY2l0eSI6IkxvdWlzdmlsbGUiLCJuZWlnaGJvcmhvb2QiOiJDYW1wIFRheWxvciIsInBvc3RhbENvZGUiOiI0MDIxMyIsInN0YXRlQ29kZSI6IktZIiwic3RhdGUiOiJLZW50dWNreSIsImxheWVyIjoicG9zdGFsQ29kZSIsImZvcm1hdHRlZEFkZHJlc3MiOiJMb3Vpc3ZpbGxlLCBLWSA0MDIxMyBVU0EiLCJhZGRyZXNzTGFiZWwiOiI0MDIxMyJ9XX0=
+  recorded_at: Fri, 11 Feb 2022 11:40:27 GMT
+recorded_with: VCR 6.0.0

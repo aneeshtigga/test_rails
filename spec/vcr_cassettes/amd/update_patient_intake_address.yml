@@ -1,0 +1,255 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://partnerlogin.advancedmd.com/practicemanager/xmlrpc/processrequest.aspx
+    body:
+      encoding: UTF-8
+      string: '{"ppmdmsg":{"@action":"login","@class":"login","@username":"LS-API","@psw":"lifestance2021!","@officecode":995456,"@appname":"LIFESTANCE"}}'
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - rest-client/2.1.0 (darwin19 x86_64) ruby/3.0.1p64
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '139'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - partnerlogin.advancedmd.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 23 Feb 2022 12:27:20 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '970'
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - no-cache,no-store,must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - Wed, 23 Feb 2022 12:26:20 GMT
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET,PUT,POST,DELETE,OPTIONS
+      Access-Control-Allow-Headers:
+      - Origin, Depth, User-Agent, X-File-Size, X-Requested-With, If-Modified-Since,
+        X-File-Name, Cache-ControlOrigin, Content-Type, Accept, Authorization, X-ProofSignature,
+        InternalRequestType
+    body:
+      encoding: UTF-8
+      string: '{"?xml":{"@version":"1.0","@encoding":"ISO-8859-1"},"PPMDResults":{"@s":"PRDAPI3WFEPUQXJ","@lst":"2/23/2022
+        4:27:20 AM","Results":{"@success":"0","usercontext":{"@webserver":"https://provapi.advancedmd.com/processrequest/api-101/LIFESTANCE","@reportingServerURL":"https://reportingservices-100.advancedmd.com/rs/reportrequest.aspx","@helpurl":"https://ow2-help-01-prd.advancedmd.com/help/","@username":"LS-API"}},"Error":{"Fault":{"faultcode":"Client","faultstring":"Client
+        Error","detail":{"code":"-2147220476","description":"The Office Key 995456
+        must be redirected to https://provapi.advancedmd.com/processrequest/api-101/LIFESTANCE.
+        When logging in to AdvancedMD, if no security token (<usercontext> text) is
+        returned, then you must redirect your login to the server indicated in the
+        \"webserver\" attribute of the usercontext element.","class":"AdvancedMD.Security.Login","method":"LoginUser","linenum":"0","source":"AdvancedMD.Security.Login","extrainfo":null}}}}}'
+  recorded_at: Wed, 23 Feb 2022 12:27:20 GMT
+- request:
+    method: post
+    uri: https://provapi.advancedmd.com/processrequest/api-101/LIFESTANCE/xmlrpc/processrequest.aspx
+    body:
+      encoding: UTF-8
+      string: '{"ppmdmsg":{"@action":"login","@class":"login","@username":"LS-API","@psw":"lifestance2021!","@officecode":995456,"@appname":"LIFESTANCE"}}'
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - rest-client/2.1.0 (darwin19 x86_64) ruby/3.0.1p64
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '139'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - provapi.advancedmd.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 23 Feb 2022 12:27:21 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '2448'
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - no-cache,no-store,must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - Wed, 23 Feb 2022 12:26:21 GMT
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET,PUT,POST,DELETE,OPTIONS
+      Access-Control-Allow-Headers:
+      - Origin, Depth, User-Agent, X-File-Size, X-Requested-With, If-Modified-Since,
+        X-File-Name, Cache-ControlOrigin, Content-Type, Accept, Authorization, X-ProofSignature,
+        InternalRequestType
+    body:
+      encoding: UTF-8
+      string: '{"?xml":{"@version":"1.0","@encoding":"ISO-8859-1"},"PPMDResults":{"@s":"PRDAPI3WFEWAIUQ","@lst":"2/23/2022
+        4:27:21 AM","Results":{"@success":"1","@api":"1","@version":"21.3","usercontext":{"@reportingServerURL":"https://reportingservices-100.advancedmd.com/rs/reportrequest.aspx","@adhocReportingURL":"https://advancedinsight.advancedmd.com","@aibenchmarksurl":"https://benchmarks.advancedmd.com/index.html","@helpurl":"https://ow2-help-01-prd.advancedmd.com/help/","@webserver":"https://provapi.advancedmd.com/processrequest/api-101/LIFESTANCE","@webserverbaseurl":"https://provapi.advancedmd.com","@username":"LS-API","@userguid":"acad6a2d-10f6-42a8-b35b-bb0f839cbe9d","@email":"bridget.landis@lifestance.com","@checkemail":"1","@needsconfirmation":"1","@sendnewconfirmation":"1","@pmredirecturl":"https://pm-wfe-136.advancedmd.com/practicemanager","@ehrredirecturl":"https://wc-wfe-136.advancedmd.com/practicemanager","@telemedicineapiurl":"https://telemed.advancedmd.com/Application.Web.API","@pmapiredirecturl":"https://pm-api-136.advancedmd.com","@ehrapiredirecturl":"https://go.advancedmd.com/api/wc/","@staticcontentredirecturl":"https://static-100.advancedmd.com","@capturechallengesettings":"1","@scanningserverurl":"https://scan.advancedmd.com/dynamsoft/Resources.15.2/Resources/","@cqmssoserviceurl":"https://ow2-cqmsso-01.advancedmd.com/api/account","@cqmsolutionurl":"https://ow2-cqm-01.advancedmd.com","@portalappintakeurl":"https://patientportal.advancedmd.com/995456/onlineintake","@portalappolsurl":"https://patientportal.advancedmd.com/995456/onlinescheduling","@apptreminderapiurl":"https://pm-api-136.advancedmd.com/api/reminders","@servertimezone":"Pacific
+        Standard Time","@webdavurl":"https://ow2-api-101.advancedmd.com","@providerid":"0","@defaultprofileid":"0","@departmentid":"0","@clinicaluser":"1","@ehronly":"0","@roleid":"219","@officecode":"995456","@logincode":"995456","@officename":"LifeStance
+        Health Demo","@admin":"0","@adminlimited":"0","@edicontact":"0","@ssoprovidername":"","@twofactorenabled":"0","@iscbouser":"1","@status":"
+        ","@trainingTrackerUrl":"https://pm-wfe-136.advancedmd.com/AdvancedMD.TrainingTracker/","#text":"995456Yxsbxrw78MYy72RbGO/t4NDNwepkWvHuecyNEyHmQ9S+pGCWXBa3RNoFgp5oM+MKDJlgOvoUTj//Afo6RixXrjsql1cnRJ2C43p2eXPJkCyw1X07uGvmZ0mbtqtV/x6PxU1PKwEDOpGBdvu2vvScrWrkhy7+tuvCxbA79VABNk7N5Cj25VWRtChT+A2t5hL+JXRU5fBQxXl6eiFh3Bw+Iw=="},"variation":{"@code":"AMDSPRO","@name":""}},"Error":null}}'
+  recorded_at: Wed, 23 Feb 2022 12:27:21 GMT
+- request:
+    method: post
+    uri: https://provapi.advancedmd.com/processrequest/api-101/LIFESTANCE/xmlrpc/processrequest.aspx/xmlrpc/processrequest.aspx
+    body:
+      encoding: UTF-8
+      string: '{"ppmdmsg":{"@action":"lookuppatient","@class":"api","@exactmatch":"-1","@name":"intake
+        address,test patients","@page":"1"}}'
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - rest-client/2.1.0 (darwin19 x86_64) ruby/3.0.1p64
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '124'
+      Cookie:
+      - token=995456Yxsbxrw78MYy72RbGO/t4NDNwepkWvHuecyNEyHmQ9S+pGCWXBa3RNoFgp5oM+MKDJlgOvoUTj//Afo6RixXrjsql1cnRJ2C43p2eXPJkCyw1X07uGvmZ0mbtqtV/x6PxU1PKwEDOpGBdvu2vvScrWrkhy7+tuvCxbA79VABNk7N5Cj25VWRtChT+A2t5hL+JXRU5fBQxXl6eiFh3Bw+Iw==
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - provapi.advancedmd.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 23 Feb 2022 12:27:22 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '240'
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - no-cache,no-store,must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - Wed, 23 Feb 2022 12:26:22 GMT
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET,PUT,POST,DELETE,OPTIONS
+      Access-Control-Allow-Headers:
+      - Origin, Depth, User-Agent, X-File-Size, X-Requested-With, If-Modified-Since,
+        X-File-Name, Cache-ControlOrigin, Content-Type, Accept, Authorization, X-ProofSignature,
+        InternalRequestType
+    body:
+      encoding: UTF-8
+      string: '{"?xml":{"@version":"1.0","@encoding":"ISO-8859-1"},"PPMDResults":{"@s":"PRDAPI3WFEKRRNQ","@lst":"2/23/2022
+        4:27:22 AM","Results":{"patientlist":{"@itemcount":"0","@page":"1","@pagecount":"0","@itemsfrom":"0","@itemsto":"0"}},"Error":null}}'
+  recorded_at: Wed, 23 Feb 2022 12:27:23 GMT
+- request:
+    method: post
+    uri: https://provapi.advancedmd.com/processrequest/api-101/LIFESTANCE/xmlrpc/processrequest.aspx/xmlrpc/processrequest.aspx
+    body:
+      encoding: UTF-8
+      string: '{"ppmdmsg":{"@action":"updatepatient","@class":"api","@msgtime":"2/23/2022
+        12:27:23 PM","@force":"1","@nocookie":0,"patientlist":{"patient":{"@id":5983942,"address":{"@address1":"Blueflies
+        street","@address2":"3rd avenue","@city":"Atlanta","@zip":"30301","@state":"AT"}}}}}'
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - rest-client/2.1.0 (darwin19 x86_64) ruby/3.0.1p64
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '273'
+      Cookie:
+      - token=995456Yxsbxrw78MYy72RbGO/t4NDNwepkWvHuecyNEyHmQ9S+pGCWXBa3RNoFgp5oM+MKDJlgOvoUTj//Afo6RixXrjsql1cnRJ2C43p2eXPJkCyw1X07uGvmZ0mbtqtV/x6PxU1PKwEDOpGBdvu2vvScrWrkhy7+tuvCxbA79VABNk7N5Cj25VWRtChT+A2t5hL+JXRU5fBQxXl6eiFh3Bw+Iw==
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - provapi.advancedmd.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 23 Feb 2022 12:27:26 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '10144'
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - no-cache,no-store,must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - Wed, 23 Feb 2022 12:26:24 GMT
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET,PUT,POST,DELETE,OPTIONS
+      Access-Control-Allow-Headers:
+      - Origin, Depth, User-Agent, X-File-Size, X-Requested-With, If-Modified-Since,
+        X-File-Name, Cache-ControlOrigin, Content-Type, Accept, Authorization, X-ProofSignature,
+        InternalRequestType
+    body:
+      encoding: UTF-8
+      string: '{"?xml":{"@version":"1.0","@encoding":"ISO-8859-1"},"PPMDResults":{"@s":"PRDAPI3WFEF4KPI","@lst":"2/23/2022
+        4:27:24 AM","Results":{"patientlist":{"patient":{"@id":"pat5983942","@importid":"","@dob":"12/04/1989","@deceased":"","@inactive":"","@inactivestatus":"","@inactivetitle":"","@inactivedescription":"","@name":"ROGELIO,GODINEZ","@previouslastname":"","@previousfirstname":"","@previousmiddlename":"","@respparty":"resp6849556","@isinvoiceentity":"0","@profile":"prof3","@insorder":"","@sex":"M","@genderidentity":"","@genderidentityother":"","@orientation":"","@orientationother":"","@chart":"2686","@maritalstatus":"2","@employerid":"","@employer":"ENCORATEST,
+        INC.","@ssn":"XXX-XX-1234","@finclasscode":"SP","@title":"MR","@relationship":"1","@hipaarelationship":"18","@languageid":"","@ethnicityid":"","@language":"","@ethnicity":"","@races":"","@recalcbuckets":"0","@additionalmrn":"","address":{"@zip":"30301","@city":"ATLANTA","@state":"AT","@address1":"BLUEFLIES
+        STREET","@address2":"3RD AVENUE","@areacode":"662","@countrycode":""},"previousaddress":{"@zip":"","@city":"","@state":"","@address1":"","@address2":"","@countrycode":""},"contactinfo":{"@name":"","@homephone":"(662)
+        555-1343","@officephone":"(662) 555-9238","@officeext":"213","@otherphone":"(662)
+        555-3823","@othertype":"C","@email":"ROGELIOGODINEZ@ENCORATEST.COM","@emailverificationstatus":"2","@preferredcommunicationfid":"","@confidentialcommunicationfid":"","@communicationnote":""},"arbucketlist":{"arbucket":[{"@buckettype":"p","@current":"0.00","@past30":"0.00","@past60":"0.00","@past90":"0.00","@past120":"0.00","@unapplied":"0.00","@total":"0.00"},{"@buckettype":"pi","@current":"0.00","@past30":"0.00","@past60":"0.00","@past90":"0.00","@past120":"0.00","@unapplied":"0.00","@total":"0.00"}]},"primarycareprovider":null}},"resppartylist":{"respparty":{"@id":"resp6849556","@name":"CAPTAIN,BLACKBEARD","@accttype":"ac_type4","@acctnum":"6849556","@dob":"07/14/1991","@sex":"M","@title":"","@employer":"","@employstatus":"1","@ssn":"XXX-XX-1234","@sendstmt":"1","@stmtrestart":"","@holdreasonfid":"0","@holdreasondesc":"","@holdreasoncode":"","@billcycle":"1","@fincharge":"0","@stmtformat":"","@balancefwd":"1","@lastpmtdate":"","@lastpmtamount":"","@laststmtdate":"","@laststmtamount":"","@lastbillingcaption":"","@lastbillingtip":"","@paymentplanbalance":"","@ispaperless":"0","@ispaperlessportalchangedate":"","address":{"@zip":"","@city":"","@state":"","@address1":"","@address2":"","@areacode":"","@countrycode":""},"contactinfo":{"@name":"","@homephone":"","@officephone":"","@officeext":"","@otherphone":"","@othertype":"","@email":"TEST@GMAIL.COM","@preferredcommunicationfid":"","@communicationnote":""},"creditcardonfile":null,"arbucketlist":{"arbucket":[{"@buckettype":"r","@current":"0.00","@past30":"0.00","@past60":"0.00","@past90":"0.00","@past120":"0.00","@unapplied":"0.00","@total":"0.00"},{"@buckettype":"ri","@current":"0.00","@past30":"0.00","@past60":"0.00","@past90":"0.00","@past120":"0.00","@unapplied":"0.00","@total":"0.00"}]},"familymemberlist":{"familymember":[{"@id":"family5983942","@name":"ROGELIO,GODINEZ","@chart":"2686","@isrp":"1","@previousfirstname":"","@previousmiddlename":"","@previouslastname":"","@hipparelationship":"18","contactinfo":{"@homephone":"(662)
+        555-1343"},"address":{"@zip":"30301","@city":"ATLANTA","@state":"AT","@address1":"BLUEFLIES
+        STREET","@address2":"3RD AVENUE","@countrycode":""},"previousaddress":{"@address1":"","@address2":"","@countrycode":"","@state":"","@city":"","@zip":""}},{"@id":"family5983957","@name":"CAPTAIN,BLACKBEARD","@chart":"2697","@isrp":"1","@previousfirstname":"","@previousmiddlename":"","@previouslastname":"","@hipparelationship":"18","contactinfo":{"@homephone":""},"address":{"@zip":"","@city":"","@state":"","@address1":"","@address2":"","@countrycode":""},"previousaddress":{"@address1":"","@address2":"","@countrycode":"","@state":"","@city":"","@zip":""}}]}}},"profilelist":{"profile":{"@id":"prof3","@name":"JONES,CAMERON","@fullname":"JONES,CAMERON","@code":"JONES","@chargefeesched":"feesch21092","@fullinactive":"No","@status":"ACTIVE","finclasslist":{"finclass":[{"@id":"fclass1","@name":"","@code":"","@billins":"0","@billlab":"1","@ca":"0","@responsible":"0","@acceptassign":"0","@allowablewocode":"","@autowo":"0","@autowocode":"","@riskwocode":"","@riskpercent":"0"},{"@id":"fclass2","@name":"DOUBLE
+        INSURANCE COVERAGE","@code":"DC","@billins":"1","@billlab":"1","@ca":"0","@responsible":"1","@accttype":"ac_type4","@acceptassign":"1","@allowablewocode":"WOINS","@autowo":"0","@autowocode":"None","@riskwocode":"None","@riskpercent":"0"},{"@id":"fclass4","@name":"COMMERCIAL","@code":"CM","@billins":"1","@billlab":"1","@ca":"0","@responsible":"1","@accttype":"ac_type4","@acceptassign":"1","@allowablewocode":"WOINS","@autowo":"0","@autowocode":"None","@riskwocode":"None","@riskpercent":"0"},{"@id":"fclass6","@name":"MONTGOMERY
+        HEALTH","@code":"MH","@billins":"1","@billlab":"1","@ca":"0","@responsible":"1","@accttype":"ac_type4","@acceptassign":"1","@allowfeesched":"feesch21103","@allowablewocode":"WOINS","@autowo":"0","@autowocode":"WOCOUR","@riskwocode":"None","@riskpercent":"0"},{"@id":"fclass8","@name":"MEDICARE","@code":"MC","@billins":"1","@billlab":"1","@ca":"0","@responsible":"1","@accttype":"ac_type4","@acceptassign":"1","@allowfeesched":"feesch21110","@allowablewocode":"WOINS","@autowo":"0","@autowocode":"WOINS","@riskwocode":"None","@riskpercent":"0"},{"@id":"fclass10","@name":"MEDICAID","@code":"MD","@billins":"1","@billlab":"1","@ca":"0","@responsible":"1","@accttype":"ac_type5","@acceptassign":"1","@allowfeesched":"feesch21111","@allowablewocode":"WOINS","@autowo":"1","@autowocode":"WOINS","@riskwocode":"None","@riskpercent":"0"},{"@id":"fclass12","@name":"SELF
+        PAY","@code":"SP","@billins":"0","@billlab":"1","@ca":"0","@responsible":"0","@accttype":"ac_type4","@acceptassign":"1","@allowfeesched":"feesch21780","@allowablewocode":"SDDISC","@autowo":"0","@autowocode":"None","@riskwocode":"None","@riskpercent":"0"},{"@id":"fclass14","@name":"WORKERS
+        COMP","@code":"WC","@billins":"1","@billlab":"1","@ca":"0","@responsible":"1","@accttype":"ac_type4","@acceptassign":"1","@allowablewocode":"WOINS","@autowo":"1","@autowocode":"WOWC","@riskwocode":"None","@riskpercent":"0"},{"@id":"fclass16","@name":"CHANGE
+        THIS!!!!","@code":"XX","@billins":"1","@billlab":"1","@ca":"0","@responsible":"0","@accttype":"ac_type4","@acceptassign":"1","@allowfeesched":"feesch21093","@allowablewocode":"WOINS","@autowo":"0","@autowocode":"None","@riskwocode":"None","@riskpercent":"0"},{"@id":"fclass18","@name":"NO
+        PAY","@code":"NP","@billins":"0","@billlab":"1","@ca":"0","@responsible":"0","@acceptassign":"0","@allowfeesched":"feesch21093","@allowablewocode":"WOCOUR","@autowo":"0","@autowocode":"WOCOUR","@riskwocode":"","@riskpercent":"0"},{"@id":"fclass19","@name":"TEST","@code":"TE","@billins":"1","@billlab":"1","@ca":"0","@responsible":"1","@accttype":"ac_type4","@acceptassign":"1","@allowablewocode":"None","@autowo":"0","@autowocode":"","@riskwocode":"","@riskpercent":"0"},{"@id":"fclass24","@name":"BLUECROSS
+        BLUESHIELD","@code":"BA","@billins":"1","@billlab":"1","@ca":"0","@responsible":"1","@accttype":"ac_type4","@acceptassign":"1","@allowfeesched":"feesch21107","@allowablewocode":"WOINS","@autowo":"0","@autowocode":"","@riskwocode":"","@riskpercent":"0"},{"@id":"fclass25","@name":"TRICARE","@code":"TC","@billins":"1","@billlab":"1","@ca":"0","@responsible":"1","@accttype":"ac_type4","@acceptassign":"1","@allowfeesched":"feesch21112","@allowablewocode":"WOINS","@autowo":"0","@autowocode":"","@riskwocode":"","@riskpercent":"0"},{"@id":"fclass26","@name":"AETNA","@code":"AT","@billins":"1","@billlab":"1","@ca":"0","@responsible":"1","@accttype":"ac_type4","@acceptassign":"1","@allowfeesched":"feesch21104","@allowablewocode":"WOINS","@autowo":"0","@autowocode":"WOINS","@riskwocode":"","@riskpercent":"0"},{"@id":"fclass27","@name":"CIGNA","@code":"CA","@billins":"1","@billlab":"1","@ca":"0","@responsible":"1","@accttype":"ac_type4","@acceptassign":"1","@allowfeesched":"feesch21108","@allowablewocode":"WOINS","@autowo":"0","@autowocode":"","@riskwocode":"","@riskpercent":"0"},{"@id":"fclass28","@name":"UNITED
+        HEALTHCARE","@code":"UH","@billins":"1","@billlab":"1","@ca":"0","@responsible":"1","@accttype":"ac_type4","@acceptassign":"1","@allowfeesched":"feesch21113","@allowablewocode":"WOINS","@autowo":"0","@autowocode":"","@riskwocode":"","@riskpercent":"0"},{"@id":"fclass29","@name":"ALTIUS","@code":"AS","@billins":"1","@billlab":"1","@ca":"0","@responsible":"1","@accttype":"ac_type4","@acceptassign":"1","@allowfeesched":"feesch21106","@allowablewocode":"WOINS","@autowo":"0","@autowocode":"","@riskwocode":"","@riskpercent":"0"},{"@id":"fclass30","@name":"IHC","@code":"IH","@billins":"1","@billlab":"1","@ca":"0","@responsible":"1","@accttype":"ac_type4","@acceptassign":"1","@allowfeesched":"feesch21109","@allowablewocode":"WOINS","@autowo":"0","@autowocode":"","@riskwocode":"","@riskpercent":"0"},{"@id":"fclass259","@name":"AETNA
+        BBH MD","@code":"A1","@billins":"1","@billlab":"1","@ca":"0","@responsible":"1","@accttype":"ac_type4","@acceptassign":"1","@allowfeesched":"feesch21777","@allowablewocode":"WOINS","@autowo":"0","@autowocode":"","@riskwocode":"","@riskpercent":"0"},{"@id":"fclass260","@name":"AETNA
+        BBH APN","@code":"A2","@billins":"1","@billlab":"1","@ca":"0","@responsible":"1","@accttype":"ac_type4","@acceptassign":"1","@allowfeesched":"feesch21778","@allowablewocode":"WOINS","@autowo":"0","@autowocode":"","@riskwocode":"","@riskpercent":"0"},{"@id":"fclass269","@name":"GOVERNMENT
+        OTHER","@code":"GO","@billins":"1","@billlab":"1","@ca":"0","@responsible":"1","@accttype":"ac_type4","@acceptassign":"1","@allowablewocode":"WOMISC","@autowo":"0","@autowocode":"","@riskwocode":"","@riskpercent":"0"},{"@id":"fclass270","@name":"OTHER","@code":"OT","@billins":"1","@billlab":"1","@ca":"0","@responsible":"1","@accttype":"ac_type4","@acceptassign":"1","@allowablewocode":"WOMISC","@autowo":"0","@autowocode":"","@riskwocode":"","@riskpercent":"0"}]}}}},"Error":null}}'
+  recorded_at: Wed, 23 Feb 2022 12:27:26 GMT
+recorded_with: VCR 6.0.0

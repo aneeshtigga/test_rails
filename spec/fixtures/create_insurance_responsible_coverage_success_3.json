@@ -1,0 +1,47 @@
+{
+  "?xml": {
+    "@version": "1.0",
+    "@encoding": "ISO-8859-1"
+  },
+  "PPMDResults": {
+    "@s": "PRDAPI3WFEBVBXZ",
+    "@lst": "12/3/2021 11:42:21 PM",
+    "Results": {
+      "@success": "1",
+      "patient": {
+        "@id": "ins3701121",
+        "@sequence": "21",
+        "@insnotefid": "3910662"
+      }
+    },
+    "Error": null,
+    "ticklersdue": {
+      "@countDue": "0",
+      "@countSeen": "0",
+      "@ltq": "2021-12-04 07:42:20 ",
+      "@resolutionitems": "0",
+      "@olsresolutionitems": "13",
+      "@admin": "0"
+    },
+    "notificationtypelist": {
+      "notificationtype": [
+        {
+          "@name": "Critical Alert",
+          "@count": "0"
+        },
+        {
+          "@name": "Maintenance",
+          "@count": "0"
+        },
+        {
+          "@name": "Public Alert Incident",
+          "@count": "0"
+        },
+        {
+          "@name": "System Alerts",
+          "@count": "0"
+        }
+      ]
+    }
+  }
+}

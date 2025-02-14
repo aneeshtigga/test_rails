@@ -1,0 +1,18 @@
+{
+  "PPMDResults": {
+    "Results": {
+      "@success": "0"
+    },
+    "Error": {
+      "Fault": {
+        "faultcode": "Client",
+        "faultstring": "Client Error",
+        "detail": {
+          "code": "403",
+          "description": "Forbidden: Invalid Appname",
+          "extrainfo": "Invalid appname: You must use the same Appname for subsequent calls that you used to log in."
+        }
+      }
+    }
+  }
+}

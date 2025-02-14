@@ -1,0 +1,46 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.zipcodeapi.com/rest/ChDimMN4QwCcX3m6by3KzipvDfS27odFD19M1G7Iu2fxbQkjbKvbM0qSD7oz4o5r/info.json/27041/degrees
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/3.0.0p0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - www.zipcodeapi.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 18 May 2021 07:08:02 GMT
+      Server:
+      - Apache/2.4.46 () OpenSSL/1.0.2k-fips PHP/7.4.11
+      Upgrade:
+      - h2,h2c
+      Connection:
+      - Upgrade
+      X-Powered-By:
+      - PHP/7.4.11
+      Vary:
+      - Accept-Encoding
+      Content-Length:
+      - '232'
+      Content-Type:
+      - application/json
+    body:
+      encoding: ASCII-8BIT
+      string: '{"zip_code":"27041","lat":36.425276,"lng":-80.487393,"city":"Pilot
+        Mountain","state":"NC","timezone":{"timezone_identifier":"America\/New_York","timezone_abbr":"EDT","utc_offset_sec":-14400,"is_dst":"T"},"acceptable_city_names":[{"city":"Pilot
+        Mnt","state":"NC"},{"city":"Pilot Mt","state":"NC"},{"city":"Pilot Mtn","state":"NC"},{"city":"Pilot
+        Mts","state":"NC"}],"area_codes":[336]}'
+  recorded_at: Tue, 18 May 2021 07:08:03 GMT
+recorded_with: VCR 6.0.0

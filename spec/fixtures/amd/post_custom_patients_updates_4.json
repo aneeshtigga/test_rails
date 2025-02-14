@@ -1,0 +1,97 @@
+{
+  "?xml": {
+    "@version": "1.0",
+    "@encoding": "ISO-8859-1"
+  },
+  "PPMDResults": {
+    "@s": "PRDAPI2WFES2KDM",
+    "@lst": "11/3/2021 12:16:22 AM",
+    "Results": {
+      "patientlist": {
+        "patient": {
+          "@id": "5983942",
+          "@visitid": "9543326",
+          "@visitdos": "07/30/2021",
+          "templatelist": {
+            "template": {
+              "@id": "515",
+              "@restrictupdates": "0",
+              "instancelist": {
+                "instance": {
+                  "@id": "21624",
+                  "@createdby": "LS-API",
+                  "@changedat": "",
+                  "@changedby": "",
+                  "fieldvaluelist": {
+                    "fieldvalue": [
+                      {
+                        "@id": "151109",
+                        "@templatefieldid": "5159",
+                        "@ordinal": "0",
+                        "@value": "DAV",
+                        "@valuecode": "",
+                        "@valuename": "",
+                        "@createdat": "2021-11-03T00:16:22.550",
+                        "@createdby": "LS-API",
+                        "@changedat": "",
+                        "@changedby": ""
+                      },
+                      {
+                        "@id": "151110",
+                        "@templatefieldid": "5164",
+                        "@ordinal": "1",
+                        "@value": "1",
+                        "@valuecode": "",
+                        "@valuename": "SHE HER",
+                        "@createdat": "2021-11-03T00:16:22.550",
+                        "@createdby": "LS-API",
+                        "@changedat": "",
+                        "@changedby": ""
+                      },
+                      {
+                        "@id": "151111",
+                        "@templatefieldid": "5160",
+                        "@ordinal": "2",
+                        "@value": "BEEN THROUGH COUPLE OF THERAPHIES IN THE PAST",
+                        "@valuecode": "",
+                        "@valuename": "",
+                        "@createdat": "2021-11-03T00:16:22.550",
+                        "@createdby": "LS-API",
+                        "@changedat": "",
+                        "@changedby": ""
+                      },
+                      {
+                        "@id": "151112",
+                        "@templatefieldid": "5163",
+                        "@ordinal": "3",
+                        "@value": "2",
+                        "@valuecode": "",
+                        "@valuename": "COURT ORDERED TREATMENT",
+                        "@createdat": "2021-11-03T00:16:22.550",
+                        "@createdby": "LS-API",
+                        "@changedat": "",
+                        "@changedby": ""
+                      },
+                      {
+                        "@id": "151113",
+                        "@templatefieldid": "5168",
+                        "@ordinal": "4",
+                        "@value": "",
+                        "@valuecode": "",
+                        "@valuename": "",
+                        "@createdat": "2021-11-03T00:16:22.550",
+                        "@createdby": "LS-API",
+                        "@changedat": "",
+                        "@changedby": ""
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

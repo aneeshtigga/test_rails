@@ -1,0 +1,91 @@
+{
+  "?xml": {
+    "@version": "1.0",
+    "@encoding": "ISO-8859-1"
+  },
+  "PPMDResults": {
+    "@s": "PRDAPI2WFELUJVG",
+    "@lst": "6/26/2023 1:53:21 PM",
+    "Results": {
+      "resppartylist": {
+        "@itemcount": "3",
+        "@page": "1",
+        "@pagecount": "1",
+        "@itemsfrom": "1",
+        "@itemsto": "3",
+        "respparty": [
+          {
+            "@id": "resp6853948",
+            "@name": "MOUSE,MICK",
+            "@acctnum": "6853948",
+            "@ssn": "            ",
+            "@isinvoiceentity": "0",
+            "@dob": "09/21/1989",
+            "@email": "MICKEYMOUSE@MAIL.COM",
+            "@gender": "M",
+            "address": {
+              "@zipid": "1",
+              "@zip": "36111",
+              "@city": "MONTGOMERY",
+              "@state": "AL",
+              "@address1": "",
+              "@address2": "12121",
+              "@countrycode": "",
+              "@areacode": "334"
+            },
+            "contactinfo": {
+              "@homephone": ""
+            }
+          },
+          {
+            "@id": "resp6853961",
+            "@name": "MOUSE,MICK",
+            "@acctnum": "6853961",
+            "@ssn": "            ",
+            "@isinvoiceentity": "0",
+            "@dob": "09/12/1989",
+            "@email": "MICKEYMOUSE@MAIL.COM",
+            "@gender": "M",
+            "address": {
+              "@zipid": "1",
+              "@zip": "36111",
+              "@city": "MONTGOMERY",
+              "@state": "AL",
+              "@address1": "",
+              "@address2": "888",
+              "@countrycode": "",
+              "@areacode": "334"
+            },
+            "contactinfo": {
+              "@homephone": ""
+            }
+          },
+          {
+            "@id": "resp6853967",
+            "@name": "MOUSE,MICK",
+            "@acctnum": "6853967",
+            "@ssn": "            ",
+            "@isinvoiceentity": "0",
+            "@dob": "09/12/1994",
+            "@email": "MICKEYMOUSE@MAIL.COM",
+            "@gender": "M",
+            "address": {
+              "@zipid": "1",
+              "@zip": "36111",
+              "@city": "MONTGOMERY",
+              "@state": "AL",
+              "@address1": "",
+              "@address2": "WER",
+              "@countrycode": "",
+              "@areacode": "334"
+            },
+            "contactinfo": {
+              "@homephone": ""
+            }
+          }
+        ]
+      }
+    },
+    "Error": null
+  }
+}

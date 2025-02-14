@@ -1,0 +1,42 @@
+inherit_from: .rubocop_todo.yml
+
+AllCops:
+  Exclude:
+    - config/**/*
+    - db/schema.db
+    - db/migrate/**/*
+    - 'bin/**/*'
+    - 'node_modules/**/*'
+    - 'vendor/**/*'
+  NewCops: enable
+  SuggestExtensions: false
+
+require: 
+  - rubocop-performance
+  - rubocop-rails
+
+Metrics/BlockLength:
+  Exclude:
+    - 'db/**/*'
+    - 'spec/**/*'
+
+Metrics/MethodLength:
+  Exclude:
+    - 'db/migrate/**/*'
+
+Rails/NotNullColumn: 
+  Enabled: false
+
+Style/StringLiterals:
+  EnforcedStyle: double_quotes
+  Exclude:
+    - 'Gemfile'
+
+Style/Documentation: 
+  Enabled: false
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Style/NumericLiterals:
+  Enabled: false

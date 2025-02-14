@@ -1,0 +1,45 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api-101.advancedmd.com/API/scheduler/Appointments/0000?clientDateTime=&getEecurException=true&id=0000&includeDetail=true
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - rest-client/2.1.0 (darwin20 x86_64) ruby/3.0.1p64
+      Content-Type:
+      - application/json
+      Cookie:
+      - token=995456SFs/bC0hmiZrMJnw+SpjWe06jcpnNH4k3iVVPl9d7EPDV93eWfdCtoEDvZmhCKDS1TJM5qeoSrl0pZY1eWco4EOh93AaieKmNwp295xSrp1/sSR3de50kztmlTH3d3lO1stCrracrIDIkXtQUNh7VCp7lzCOPuL56RpO1VsFC7ymBmNvfwM4BCM0orNbxz9U
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - api-101.advancedmd.com
+  response:
+    status:
+      code: 204
+      message: No Content
+    headers:
+      Date:
+      - Wed, 21 Jul 2021 22:03:46 GMT
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - no-store,no-cache
+      Pragma:
+      - no-cache
+      Vary:
+      - none
+      Server:
+      - Microsoft-IIS/10.0
+      Amds-Lst:
+      - 07/21/2021 15:03:46
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: Wed, 21 Jul 2021 22:03:46 GMT
+recorded_with: VCR 6.0.0

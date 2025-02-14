@@ -1,0 +1,43 @@
+{
+  "?xml": {
+    "@version": "1.0",
+    "@encoding": "ISO-8859-1"
+  },
+  "PPMDResults": {
+    "@s": "advancedmd-api-processrequest-76c86754f6-d57cx",
+    "@lst": "09/17/2024 12:40:52",
+    "Results": {
+      "resppartylist": {
+        "@itemcount": "1",
+        "@page": "1",
+        "@pagecount": "1",
+        "@itemsfrom": "1",
+        "@itemsto": "1",
+        "respparty": {
+          "@id": "resp15573524",
+          "@name": "MOUSE,MICK",
+          "@acctnum": "15573524",
+          "@ssn": "",
+          "@isinvoiceentity": "0",
+          "@dob": "10/11/2000",
+          "@email": "MICKMOUSE@GMAIL.COM",
+          "@gender": "M",
+          "address": {
+            "@zipid": "1",
+            "@zip": "03867",
+            "@city": "SOME STREET",
+            "@state": "NH",
+            "@address1": "",
+            "@address2": "",
+            "@countrycode": "",
+            "@areacode": "603"
+          },
+          "contactinfo": {
+            "@homephone": ""
+          }
+        }
+      }
+    },
+    "Error": null
+  }
+}

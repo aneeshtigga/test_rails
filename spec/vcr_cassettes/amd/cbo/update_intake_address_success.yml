@@ -1,0 +1,74 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://provapi.advancedmd.com/processrequest/api-102/LIFESTANCE/xmlrpc/processrequest.aspx/xmlrpc/processrequest.aspx
+    body:
+      encoding: UTF-8
+      string: '{"ppmdmsg":{"@action":"updatepatient","@class":"api","@msgtime":"10/29/2021
+        11:06:41 AM","@force":"1","@nocookie":0,"patientlist":{"patient":{"@id":5985721,"address":{"@address1":"Blueflies
+        street","@address2":"3rd avenue","@city":"Atlanta","@zip":"30301","@state":"AT"}}}}}'
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/3.0.1p64
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '274'
+      Cookie:
+      - token=996075BejtPPQ540ObpPaZKsVNaeCc/rzMQawJgoA5g1eWkM7YsYlmDeidxQ3GBS5UzJdE514sQ0+BSKsrUsBT86GduM7eq9qMy+wpNmPZ0RMFqz3Om1rdnrmfrSGSxGR541IXO2bs0Y/Z+UPPGF21bQFoC4Qr95hfkFhwTspkqwMPXzPSQGB+mXYrZWB4dItRLl8eztSbFSYUH9nSxsxvKn2OZA==
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - provapi.advancedmd.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 29 Oct 2021 11:06:44 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '6850'
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - no-cache,no-store,must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - Fri, 29 Oct 2021 11:05:43 GMT
+      Server:
+      - Microsoft-IIS/10.0
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET,PUT,POST,DELETE,OPTIONS
+      Access-Control-Allow-Headers:
+      - Origin, Depth, User-Agent, X-File-Size, X-Requested-With, If-Modified-Since,
+        X-File-Name, Cache-ControlOrigin, Content-Type, Accept, Authorization, X-ProofSignature,
+        InternalRequestType
+    body:
+      encoding: UTF-8
+      string: '{"?xml":{"@version":"1.0","@encoding":"ISO-8859-1"},"PPMDResults":{"@s":"PRDAPI2WFE82WDD","@lst":"10/29/2021
+        4:06:43 AM","Results":{"patientlist":{"patient":{"@id":"pat5985721","@importid":"","@dob":"04/01/1996","@deceased":"","@inactive":"","@inactivestatus":"","@inactivetitle":"","@inactivedescription":"","@name":"LEE,BRAD","@previouslastname":"","@previousfirstname":"","@previousmiddlename":"","@respparty":"resp6851337","@isinvoiceentity":"0","@profile":"prof1","@insorder":"","@sex":"M","@genderidentity":"","@genderidentityother":"","@orientation":"","@orientationother":"","@chart":"3195","@maritalstatus":"0","@employerid":"","@employer":"","@ssn":"","@finclasscode":"SP","@title":"","@relationship":"3","@hipaarelationship":"19","@languageid":"","@ethnicityid":"","@language":"","@ethnicity":"","@races":"","@recalcbuckets":"0","@additionalmrn":"","address":{"@zip":"30301","@city":"ATLANTA","@state":"AT","@address1":"BLUEFLIES
+        STREET","@address2":"3RD AVENUE","@areacode":"","@countrycode":""},"previousaddress":{"@zip":"","@city":"","@state":"","@address1":"","@address2":"","@countrycode":""},"contactinfo":{"@name":"","@homephone":"","@officephone":"","@officeext":"","@otherphone":"(123)
+        456-7890","@othertype":"C","@email":"TEST@GMAIL.COM","@emailverificationstatus":"0","@preferredcommunicationfid":"","@confidentialcommunicationfid":"","@communicationnote":""},"arbucketlist":{"arbucket":[{"@buckettype":"p","@current":"0.00","@past30":"0.00","@past60":"0.00","@past90":"0.00","@past120":"0.00","@unapplied":"0.00","@total":"0.00"},{"@buckettype":"pi","@current":"0.00","@past30":"0.00","@past60":"0.00","@past90":"0.00","@past120":"0.00","@unapplied":"0.00","@total":"0.00"}]},"primarycareprovider":null}},"resppartylist":{"respparty":{"@id":"resp6851337","@name":"LEE,BRAD","@accttype":"ac_type4","@acctnum":"6851337","@dob":"04/01/1996","@sex":"M","@title":"","@employer":"","@employstatus":"1","@ssn":"","@sendstmt":"1","@stmtrestart":"","@holdreasonfid":"0","@holdreasondesc":"","@holdreasoncode":"","@billcycle":"1","@fincharge":"0","@stmtformat":"","@balancefwd":"1","@lastpmtdate":"","@lastpmtamount":"","@laststmtdate":"","@laststmtamount":"","@lastbillingcaption":"","@lastbillingtip":"","@paymentplanbalance":"","@ispaperless":"0","@ispaperlessportalchangedate":"","address":{"@zip":"","@city":"","@state":"","@address1":"","@address2":"","@areacode":"","@countrycode":""},"contactinfo":{"@name":"","@homephone":"","@officephone":"","@officeext":"","@otherphone":"(123)
+        456-7890","@othertype":"C","@email":"TEST@GMAIL.COM","@preferredcommunicationfid":"","@communicationnote":""},"creditcardonfile":null,"arbucketlist":{"arbucket":[{"@buckettype":"r","@current":"0.00","@past30":"0.00","@past60":"0.00","@past90":"0.00","@past120":"0.00","@unapplied":"0.00","@total":"0.00"},{"@buckettype":"ri","@current":"0.00","@past30":"0.00","@past60":"0.00","@past90":"0.00","@past120":"0.00","@unapplied":"0.00","@total":"0.00"}]},"familymemberlist":{"familymember":{"@id":"family5985721","@name":"LEE,BRAD","@chart":"3195","@isrp":"0","@previousfirstname":"","@previousmiddlename":"","@previouslastname":"","@hipparelationship":"19","contactinfo":{"@homephone":""},"address":{"@zip":"30301","@city":"ATLANTA","@state":"AT","@address1":"BLUEFLIES
+        STREET","@address2":"3RD AVENUE","@countrycode":""},"previousaddress":{"@address1":"","@address2":"","@countrycode":"","@state":"","@city":"","@zip":""}}}}},"profilelist":{"profile":{"@id":"prof1","@name":"","@fullname":"
+        ,","@code":"","@chargefeesched":"feesch1","@fullinactive":"No","@status":"","finclasslist":{"finclass":[{"@id":"fclass1","@name":"","@code":"","@billins":"0","@billlab":"1","@ca":"0","@responsible":"0","@acceptassign":"0","@allowablewocode":"","@autowo":"0","@autowocode":"","@riskwocode":"","@riskpercent":"0"},{"@id":"fclass24","@name":"BLUECROSS
+        BLUESHIELD","@code":"BA","@billins":"1","@billlab":"1","@ca":"0","@responsible":"1","@accttype":"ac_type4","@acceptassign":"1","@allowfeesched":"feesch21107","@allowablewocode":"WOINS","@autowo":"0","@autowocode":"","@riskwocode":"","@riskpercent":"0"},{"@id":"fclass25","@name":"TRICARE","@code":"TC","@billins":"1","@billlab":"1","@ca":"0","@responsible":"1","@accttype":"ac_type4","@acceptassign":"1","@allowfeesched":"feesch21112","@allowablewocode":"WOINS","@autowo":"0","@autowocode":"","@riskwocode":"","@riskpercent":"0"},{"@id":"fclass26","@name":"AETNA","@code":"AT","@billins":"1","@billlab":"1","@ca":"0","@responsible":"1","@accttype":"ac_type4","@acceptassign":"1","@allowfeesched":"feesch21104","@allowablewocode":"WOINS","@autowo":"0","@autowocode":"WOINS","@riskwocode":"","@riskpercent":"0"},{"@id":"fclass27","@name":"CIGNA","@code":"CA","@billins":"1","@billlab":"1","@ca":"0","@responsible":"1","@accttype":"ac_type4","@acceptassign":"1","@allowfeesched":"feesch21108","@allowablewocode":"WOINS","@autowo":"0","@autowocode":"","@riskwocode":"","@riskpercent":"0"},{"@id":"fclass28","@name":"UNITED
+        HEALTHCARE","@code":"UH","@billins":"1","@billlab":"1","@ca":"0","@responsible":"1","@accttype":"ac_type4","@acceptassign":"1","@allowfeesched":"feesch21113","@allowablewocode":"WOINS","@autowo":"0","@autowocode":"","@riskwocode":"","@riskpercent":"0"},{"@id":"fclass29","@name":"ALTIUS","@code":"AS","@billins":"1","@billlab":"1","@ca":"0","@responsible":"1","@accttype":"ac_type4","@acceptassign":"1","@allowfeesched":"feesch21106","@allowablewocode":"WOINS","@autowo":"0","@autowocode":"","@riskwocode":"","@riskpercent":"0"},{"@id":"fclass30","@name":"IHC","@code":"IH","@billins":"1","@billlab":"1","@ca":"0","@responsible":"1","@accttype":"ac_type4","@acceptassign":"1","@allowfeesched":"feesch21109","@allowablewocode":"WOINS","@autowo":"0","@autowocode":"","@riskwocode":"","@riskpercent":"0"},{"@id":"fclass259","@name":"AETNA
+        BBH MD","@code":"A1","@billins":"1","@billlab":"1","@ca":"0","@responsible":"1","@accttype":"ac_type4","@acceptassign":"1","@allowfeesched":"feesch21777","@allowablewocode":"WOINS","@autowo":"0","@autowocode":"","@riskwocode":"","@riskpercent":"0"},{"@id":"fclass260","@name":"AETNA
+        BBH APN","@code":"A2","@billins":"1","@billlab":"1","@ca":"0","@responsible":"1","@accttype":"ac_type4","@acceptassign":"1","@allowfeesched":"feesch21778","@allowablewocode":"WOINS","@autowo":"0","@autowocode":"","@riskwocode":"","@riskpercent":"0"},{"@id":"fclass269","@name":"GOVERNMENT
+        OTHER","@code":"GO","@billins":"1","@billlab":"1","@ca":"0","@responsible":"1","@accttype":"ac_type4","@acceptassign":"1","@allowablewocode":"WOMISC","@autowo":"0","@autowocode":"","@riskwocode":"","@riskpercent":"0"},{"@id":"fclass270","@name":"OTHER","@code":"OT","@billins":"1","@billlab":"1","@ca":"0","@responsible":"1","@accttype":"ac_type4","@acceptassign":"1","@allowablewocode":"WOMISC","@autowo":"0","@autowocode":"","@riskwocode":"","@riskpercent":"0"}]}}}},"Error":null}}'
+  recorded_at: Fri, 29 Oct 2021 11:06:44 GMT
+recorded_with: VCR 6.0.0

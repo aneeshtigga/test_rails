@@ -1,0 +1,88 @@
+{
+  "?xml": {
+    "@version": "1.0",
+    "@encoding": "ISO-8859-1"
+  },
+  "PPMDResults": {
+    "@s": "PRDAPI1WFEFKQTQ",
+    "@lst": "7/28/2021 5:26:03 PM",
+    "Results": {
+      "patientlist": {
+        "patient": {
+          "@id": "pat5982717",
+          "@name": "TEST,LUCY",
+          "@respparty": "resp6848164",
+          "@profile": "prof3",
+          "@insorder": "",
+          "@chart": "2600",
+          "@finclasscode": "XX",
+          "episodelist": {
+            "episode": {
+              "@id": "eps5948273",
+              "@name": "STANDARD",
+              "@insorder": "",
+              "@respparty": "resp6848164",
+              "@finclasscode": "XX",
+              "@refplan": "rplan6893975",
+              "@groupbymonth": "0",
+              "@plancreatedate": "",
+              "@ptoffsetdays": "",
+              "@stoffsetdays": "",
+              "@otoffsetdays": "",
+              "@maintenancedate": "",
+              "authorizationlist": null,
+              "extins": null
+            }
+          },
+          "refplanlist": {
+            "refplan": {
+              "@id": "rplan6893975",
+              "@refprov": "rprov387",
+              "@type": "I",
+              "@reason": "SELF-REFERRAL",
+              "@preauthreq": "0",
+              "@preauth": "",
+              "@begindate": "07/05/2018",
+              "@enddate": "",
+              "@maxvisits": "",
+              "@usedvisits": "0",
+              "@maxamount": "",
+              "@usedamount": "0.00",
+              "@sequence": "1",
+              "@ismain": "1"
+            }
+          },
+          "insplanlist": null
+        }
+      },
+      "defaults": {
+        "finclass": {
+          "@id": "fclass12",
+          "@code": "SP",
+          "@name": "SELF PAY"
+        }
+      },
+      "carrierlist": null,
+      "resppartylist": {
+        "respparty": {
+          "@id": "resp6848164",
+          "@name": "TEST,LUCY",
+          "@isinvoiceentity": "0"
+        }
+      },
+      "finclasslist": {
+        "finclass": {
+          "@id": "fclass16",
+          "@code": "XX",
+          "@name": "CHANGE THIS!!!!"
+        }
+      },
+      "refproviderlist": {
+        "refprovider": {
+          "@id": "rprov387",
+          "@name": "JONES,CAMERON"
+        }
+      }
+    }
+  }
+}

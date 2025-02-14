@@ -1,0 +1,20 @@
+{
+  "?xml": {
+    "@version": "1.0",
+    "@encoding": "ISO-8859-1"
+  },
+  "PPMDResults": {
+    "@s": "PRDAPI2WFE3NHSK",
+    "@lst": "11/8/2021 2:41:59 AM",
+    "Results": {
+      "patientlist": {
+        "@itemcount": "0",
+        "@page": "1",
+        "@pagecount": "0",
+        "@itemsfrom": "0",
+        "@itemsto": "0"
+      }
+    },
+    "Error": null
+  }
+}

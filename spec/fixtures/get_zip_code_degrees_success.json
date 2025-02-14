@@ -1,0 +1,34 @@
+{
+  "zip_code": "27041",
+  "lat": 36.425276,
+  "lng": -80.487393,
+  "city": "Pilot Mountain",
+  "state": "NC",
+  "timezone": {
+    "timezone_identifier": "America/New_York",
+    "timezone_abbr": "EDT",
+    "utc_offset_sec": -14400,
+    "is_dst": "T"
+  },
+  "acceptable_city_names": [
+    {
+      "city": "Pilot Mnt",
+      "state": "NC"
+    },
+    {
+      "city": "Pilot Mt",
+      "state": "NC"
+    },
+    {
+      "city": "Pilot Mtn",
+      "state": "NC"
+    },
+    {
+      "city": "Pilot Mts",
+      "state": "NC"
+    }
+  ],
+  "area_codes": [
+    336
+  ]
+}

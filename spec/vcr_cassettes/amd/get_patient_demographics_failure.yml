@@ -1,0 +1,90 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://provapi.advancedmd.com/processrequest/api-102/LIFESTANCE/xmlrpc/processrequest.aspx
+    body:
+      encoding: UTF-8
+      string: '{"ppmdmsg":{"@action":"getdemographic","@class":"api","@msgtime":"12/10/2021
+        10:24:49 AM","@patientid":"-123"}}'
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - rest-client/2.1.0 (darwin19 x86_64) ruby/3.0.1p64
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '111'
+      Cookie:
+      - token=995456n2Ubgmmv5oZ5uxlhPM4LbPslpRqbt67scFy15yQIvf2okqlmwVsr9y2fQgdDBCkUwRrKGAtTmg8YnTLxpULQIMycrByHslNLPly+rwqQVqOAVNqklMo4+vdRVe+cUL3K5NXU2lhOurLvLdQrra1Wb/xzmKtgH/zmh8zPEsfiJq9/BTi9TU921sBsZ2Jwo56OMepWEU2ULm4EAk9iuvpOmg==
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - provapi.advancedmd.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 10 Dec 2021 10:24:50 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '3043'
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - no-cache,no-store,must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - Fri, 10 Dec 2021 10:23:50 GMT
+      Server:
+      - Microsoft-IIS/10.0
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET,PUT,POST,DELETE,OPTIONS
+      Access-Control-Allow-Headers:
+      - Origin, Depth, User-Agent, X-File-Size, X-Requested-With, If-Modified-Since,
+        X-File-Name, Cache-ControlOrigin, Content-Type, Accept, Authorization, X-ProofSignature,
+        InternalRequestType
+    body:
+      encoding: UTF-8
+      string: '{"?xml":{"@version":"1.0","@encoding":"ISO-8859-1"},"PPMDResults":{"@s":"PRDAPI3WFEBVBXZ","@lst":"12/10/2021
+        2:24:50 AM","Error":{"Fault":{"faultcode":"Server","faultstring":"Server Error","detail":{"code":"-2147221504","description":"AMD-995456-12100224
+        | The INSERT statement conflicted with the FOREIGN KEY constraint \"FK_pt_ReferralPlans_pt_PatientInfo\".
+        The conflict occurred in database \"PPMD_CLIENT_CBO_2615_5_0\", table \"dbo.pt_PatientInfo\".","class":"AdvancedMD.Demographics.Demographics","method":"Interop.MSSEventLog._IPPMDGateway.Gateway","linenum":"0","source":"System.Data.SqlClient.SqlException
+        (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint
+        \"FK_pt_ReferralPlans_pt_PatientInfo\". The conflict occurred in database
+        \"PPMD_CLIENT_CBO_2615_5_0\", table \"dbo.pt_PatientInfo\".\r\n   at System.Data.SqlClient.SqlConnection.OnError(SqlException
+        exception, Boolean breakConnection, Action`1 wrapCloseInAction)\r\n   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject
+        stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)\r\n   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior
+        runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet
+        bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)\r\n   at
+        System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()\r\n   at System.Data.SqlClient.SqlDataReader.get_MetaData()\r\n   at
+        System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior
+        runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption,
+        Boolean shouldCacheForAlwaysEncrypted)\r\n   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior
+        cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async,
+        Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader
+        ds, Boolean describeParameterEncryptionRequest)\r\n   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior
+        cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method,
+        TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache,
+        Boolean asyncWrite, Boolean inRetry)\r\n   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior
+        cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)\r\n   at
+        System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String
+        method)\r\n   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior
+        behavior)\r\n   at AdvancedMD.Demographics.DemographicsHelper.AssembleDemographic(XmlDocument
+        xmlIn)\r\n   at AdvancedMD.Demographics.Demographics.Interop.MSSEventLog._IPPMDGateway.Gateway(String
+        xmlIn)\r\nClientConnectionId:0b301ccf-d6e8-4514-be6c-0383e1553c66\r\nError
+        Number:547,State:0,Class:16","extrainfo":{"requestinfo":{"ppmdmsg":{"@action":"getdemographic","@class":"api","@msgtime":"12/10/2021
+        10:24:49 AM","@patientid":"-123","@ip":"49.204.227.56","usercontext":"995456[Removed]"}}}}}}}}'
+  recorded_at: Fri, 10 Dec 2021 10:24:50 GMT
+recorded_with: VCR 6.0.0
